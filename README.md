@@ -20,7 +20,7 @@ Play the [demo](https://lmnet.io/)!
 ![](framework.png)
 
 ## Requirements
-We use `python 3.8` and all the required packages can be installed by pip:
+We use `python 3.10` and all the required packages can be installed by pip:
 ```
 pip install -r requirements.txt
 ```

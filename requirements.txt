@@ -4,6 +4,6 @@ fire
 tqdm
 scipy
 nltk
-openai
+openai==0.16.0
 thefuzz
 prettytable

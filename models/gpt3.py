@@ -8,7 +8,7 @@ class GPT3:
 
     def call(self,
              prompt,
-             engine="text-davinci-002",
+             engine="gpt-3.5-turbo-instruct",
              temperature=1.,
              max_tokens=30,
              top_p=1.,

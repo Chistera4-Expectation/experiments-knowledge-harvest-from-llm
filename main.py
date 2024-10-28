@@ -5,7 +5,7 @@ import fire
 from models.knowledge_harvester import KnowledgeHarvester
 
 
-def main(rel_set='conceptnet',
+def main(rel_set='nutrition',
          model_name='roberta-large',
          max_n_ent_tuples=1000,
          max_n_prompts=20,

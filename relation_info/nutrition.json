@@ -1,0 +1,82 @@
+{
+    "ingredient_of": {
+        "init_prompts": [
+            "<ENT0> is ingredient of <ENT1> ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "flour",
+                "bread"
+            ],
+            [
+                "sugar",
+                "cake"
+            ],
+            [
+                "tomato",
+                "sauce"
+            ],
+            [
+                "cheese",
+                "pizza"
+            ],
+            [
+                "chicken",
+                "soup"
+            ]
+        ],
+        "prompts": [
+            "<ENT1> contains <ENT0> .",
+            "<ENT1> is comprised of <ENT0> .",
+            "The <ENT1> is made with <ENT0> .",
+            "The ingredient of <ENT1> is <ENT0> .",
+            "<ENT0> is the main component of <ENT1> .",
+            "<ENT1> contains <ENT0> as an ingredient .",
+            "<ENT0> is included as an ingredient in <ENT1> .",
+            "<ENT0> is one of the elements found in <ENT1> .",
+            "One of the main components of <ENT1> is <ENT0> .",
+            "<ENT0> is a necessary component in making <ENT1> .",
+            "<ENT1>'s composition includes <ENT0> as one of its main components ."
+        ]
+    },
+    "instance_of": {
+        "init_prompts": [
+            "<ENT0> is instance of <ENT1> ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "apple",
+                "fruit"
+            ],
+            [
+                "carrot",
+                "vegetable"
+            ],
+            [
+                "chicken",
+                "meat"
+            ],
+            [
+                "milk",
+                "dairy"
+            ],
+            [
+                "rice",
+                "grain"
+            ]
+        ],
+        "prompts": [
+            "<ENT1> is <ENT0> .",
+            "<ENT0> is a type of <ENT1> .",
+            "The <ENT1> is an example of an <ENT0> .",
+            "The <ENT0> is an illustration of <ENT1> .",
+            "<ENT0> is classified as a form of <ENT1> .",
+            "<ENT0> falls under the category of <ENT1> .",
+            "<ENT0> is just one of many <ENT1> products .",
+            "<ENT0> is considered a type of <ENT1> product .",
+            "An <ENT0> can be categorized as a type of <ENT1> .",
+            "The <ENT1> serves as a representation of a source of <ENT0> .",
+            "<ENT1> refers to the liquid produced by the mammary glands of mammals, commonly known as <ENT0> ."
+        ]
+    }
+}

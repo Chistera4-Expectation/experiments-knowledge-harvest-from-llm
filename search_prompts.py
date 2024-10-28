@@ -2,9 +2,7 @@ import fire
 import json
 from nltk import sent_tokenize
 from thefuzz import fuzz
-
 from models.gpt3 import GPT3
-
 from data_utils.data_utils import get_n_ents, get_sent, fix_prompt_style
 
 
@@ -106,7 +104,7 @@ def search_prompts(init_prompts, seed_ent_tuples, similarity_threshold):
     return prompts
 
 
-def main(rel_set='conceptnet', similarity_threshold=75):
+def main(rel_set='nutrition', similarity_threshold=75):
     relation_info = json.load(open(f'relation_info/{rel_set}.json'))
 
     for rel, info in relation_info.items():
