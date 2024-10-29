@@ -1,82 +1,173 @@
 {
-    "ingredient_of": {
-        "init_prompts": [
-            "<ENT0> is ingredient of <ENT1> ."
-        ],
-        "seed_ent_tuples": [
-            [
-                "flour",
-                "bread"
-            ],
-            [
-                "sugar",
-                "cake"
-            ],
-            [
-                "tomato",
-                "sauce"
-            ],
-            [
-                "cheese",
-                "pizza"
-            ],
-            [
-                "chicken",
-                "soup"
-            ]
-        ],
-        "prompts": [
-            "<ENT1> contains <ENT0> .",
-            "<ENT1> is comprised of <ENT0> .",
-            "The <ENT1> is made with <ENT0> .",
-            "The ingredient of <ENT1> is <ENT0> .",
-            "<ENT0> is the main component of <ENT1> .",
-            "<ENT1> contains <ENT0> as an ingredient .",
-            "<ENT0> is included as an ingredient in <ENT1> .",
-            "<ENT0> is one of the elements found in <ENT1> .",
-            "One of the main components of <ENT1> is <ENT0> .",
-            "<ENT0> is a necessary component in making <ENT1> .",
-            "<ENT1>'s composition includes <ENT0> as one of its main components ."
-        ]
-    },
-    "instance_of": {
-        "init_prompts": [
-            "<ENT0> is instance of <ENT1> ."
-        ],
-        "seed_ent_tuples": [
-            [
-                "apple",
-                "fruit"
-            ],
-            [
-                "carrot",
-                "vegetable"
-            ],
-            [
-                "chicken",
-                "meat"
-            ],
-            [
-                "milk",
-                "dairy"
-            ],
-            [
-                "rice",
-                "grain"
-            ]
-        ],
-        "prompts": [
-            "<ENT1> is <ENT0> .",
-            "<ENT0> is a type of <ENT1> .",
-            "The <ENT1> is an example of an <ENT0> .",
-            "The <ENT0> is an illustration of <ENT1> .",
-            "<ENT0> is classified as a form of <ENT1> .",
-            "<ENT0> falls under the category of <ENT1> .",
-            "<ENT0> is just one of many <ENT1> products .",
-            "<ENT0> is considered a type of <ENT1> product .",
-            "An <ENT0> can be categorized as a type of <ENT1> .",
-            "The <ENT1> serves as a representation of a source of <ENT0> .",
-            "<ENT1> refers to the liquid produced by the mammary glands of mammals, commonly known as <ENT0> ."
-        ]
-    }
+	"is_instance_of_food_dressing": [
+		"<ENT0> is instance of Food Dressing ."
+	],
+	"is_instance_of_sauce": [
+		"<ENT0> is instance of Sauce ."
+	],
+	"is_instance_of_food_seasoning": [
+		"<ENT0> is instance of Food Seasoning ."
+	],
+	"is_instance_of_spice": [
+		"<ENT0> is instance of Spice ."
+	],
+	"is_instance_of_sweetener": [
+		"<ENT0> is instance of Sweetener ."
+	],
+	"is_instance_of_food_additive": [
+		"<ENT0> is instance of Food Additive ."
+	],
+	"is_instance_of_beef": [
+		"<ENT0> is instance of Beef ."
+	],
+	"is_instance_of_pork-derived_food": [
+		"<ENT0> is instance of Pork-derived Food ."
+	],
+	"is_instance_of_poultry-derived_food": [
+		"<ENT0> is instance of Poultry-derived Food ."
+	],
+	"is_instance_of_meat": [
+		"<ENT0> is instance of Meat ."
+	],
+	"is_instance_of_butter": [
+		"<ENT0> is instance of Butter ."
+	],
+	"is_instance_of_cheese": [
+		"<ENT0> is instance of Cheese ."
+	],
+	"is_instance_of_milk": [
+		"<ENT0> is instance of Milk ."
+	],
+	"is_instance_of_yogurt": [
+		"<ENT0> is instance of Yogurt ."
+	],
+	"is_instance_of_dairy_product": [
+		"<ENT0> is instance of Dairy Product ."
+	],
+	"is_instance_of_edible_crustaceans": [
+		"<ENT0> is instance of Edible Crustaceans ."
+	],
+	"is_instance_of_edible_fish": [
+		"<ENT0> is instance of Edible Fish ."
+	],
+	"is_instance_of_edible_molluscs": [
+		"<ENT0> is instance of Edible Molluscs ."
+	],
+	"is_instance_of_seafood": [
+		"<ENT0> is instance of Seafood ."
+	],
+	"is_instance_of_honey": [
+		"<ENT0> is instance of Honey ."
+	],
+	"is_instance_of_insect-derived_food": [
+		"<ENT0> is instance of Insect-Derived Food ."
+	],
+	"is_instance_of_animal-derived_food": [
+		"<ENT0> is instance of Animal-derived Food ."
+	],
+	"is_instance_of_breakfast_cereal": [
+		"<ENT0> is instance of Breakfast Cereal ."
+	],
+	"is_instance_of_bread": [
+		"<ENT0> is instance of Bread ."
+	],
+	"is_instance_of_rice": [
+		"<ENT0> is instance of Rice ."
+	],
+	"is_instance_of_pasta_types": [
+		"<ENT0> is instance of Pasta Types ."
+	],
+	"is_instance_of_edible_cereal": [
+		"<ENT0> is instance of Edible Cereal ."
+	],
+	"is_instance_of_edible_fruit": [
+		"<ENT0> is instance of Edible Fruit ."
+	],
+	"is_instance_of_edible_mushrooms": [
+		"<ENT0> is instance of Edible Mushrooms ."
+	],
+	"is_instance_of_edible_vegetal_oil": [
+		"<ENT0> is instance of Edible Vegetal Oil ."
+	],
+	"is_instance_of_edible_seaweed": [
+		"<ENT0> is instance of Edible Seaweed ."
+	],
+	"is_instance_of_edible_seeds": [
+		"<ENT0> is instance of Edible Seeds ."
+	],
+	"is_instance_of_edible_vegetable": [
+		"<ENT0> is instance of Edible Vegetable ."
+	],
+	"is_instance_of_vegetal-derived_food": [
+		"<ENT0> is instance of Vegetal-derived Food ."
+	],
+	"is_instance_of_italian_cuisine_recipe": [
+		"<ENT0> is instance of Italian Cuisine Recipe ."
+	],
+	"is_instance_of_latin_cuisine_recipe": [
+		"<ENT0> is instance of Latin Cuisine Recipe ."
+	],
+	"is_instance_of_african_cuisine_recipe": [
+		"<ENT0> is instance of African Cuisine Recipe ."
+	],
+	"is_instance_of_american_cuisine_recipe": [
+		"<ENT0> is instance of American Cuisine Recipe ."
+	],
+	"is_instance_of_carribean_cuisine_recipe": [
+		"<ENT0> is instance of Carribean Cuisine Recipe ."
+	],
+	"is_instance_of_japanese_cuisine_recipe": [
+		"<ENT0> is instance of Japanese Cuisine Recipe ."
+	],
+	"is_instance_of_chinese_cuisine_recipe": [
+		"<ENT0> is instance of Chinese Cuisine Recipe ."
+	],
+	"is_instance_of_indian_cuisine_recipe": [
+		"<ENT0> is instance of Indian Cuisine Recipe ."
+	],
+	"is_instance_of_recipe": [
+		"<ENT0> is instance of Recipe ."
+	],
+	"is_instance_of_food": [
+		"<ENT0> is instance of Food ."
+	],
+	"is_instance_of_alcoholic_drink": [
+		"<ENT0> is instance of Alcoholic Drink ."
+	],
+	"is_instance_of_coffee": [
+		"<ENT0> is instance of Coffee ."
+	],
+	"is_instance_of_tea": [
+		"<ENT0> is instance of Tea ."
+	],
+	"is_instance_of_infusion_drink": [
+		"<ENT0> is instance of Infusion Drink ."
+	],
+	"is_instance_of_energy_drink": [
+		"<ENT0> is instance of Energy Drink ."
+	],
+	"is_instance_of_juice": [
+		"<ENT0> is instance of Juice ."
+	],
+	"is_instance_of_milk": [
+		"<ENT0> is instance of Milk ."
+	],
+	"is_instance_of_drinking_water": [
+		"<ENT0> is instance of Drinking Water ."
+	],
+	"is_instance_of_drink": [
+		"<ENT0> is instance of Drink ."
+	],
+	"is_instance_of_honey": [
+		"<ENT0> is instance of Honey ."
+	],
+	"is_instance_of_edible_vegetal_oil": [
+		"<ENT0> is instance of Edible Vegetal Oil ."
+	],
+	"is_instance_of_drinkable_liquid": [
+		"<ENT0> is instance of Drinkable Liquid ."
+	],
+	"is_instance_of_edible": [
+		"<ENT0> is instance of Edible ."
+	],
 }

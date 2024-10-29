@@ -3,7 +3,10 @@ torch
 fire
 tqdm
 scipy
+lazy-property
 nltk
 openai==0.16.0
+Owlready2
 thefuzz
 prettytable
+Unidecode
