@@ -1,173 +1,1178 @@
 {
-	"is_instance_of_food_dressing": [
-		"<ENT0> is instance of Food Dressing ."
-	],
-	"is_instance_of_sauce": [
-		"<ENT0> is instance of Sauce ."
-	],
-	"is_instance_of_food_seasoning": [
-		"<ENT0> is instance of Food Seasoning ."
-	],
-	"is_instance_of_spice": [
-		"<ENT0> is instance of Spice ."
-	],
-	"is_instance_of_sweetener": [
-		"<ENT0> is instance of Sweetener ."
-	],
-	"is_instance_of_food_additive": [
-		"<ENT0> is instance of Food Additive ."
-	],
-	"is_instance_of_beef": [
-		"<ENT0> is instance of Beef ."
-	],
-	"is_instance_of_pork-derived_food": [
-		"<ENT0> is instance of Pork-derived Food ."
-	],
-	"is_instance_of_poultry-derived_food": [
-		"<ENT0> is instance of Poultry-derived Food ."
-	],
-	"is_instance_of_meat": [
-		"<ENT0> is instance of Meat ."
-	],
-	"is_instance_of_butter": [
-		"<ENT0> is instance of Butter ."
-	],
-	"is_instance_of_cheese": [
-		"<ENT0> is instance of Cheese ."
-	],
-	"is_instance_of_milk": [
-		"<ENT0> is instance of Milk ."
-	],
-	"is_instance_of_yogurt": [
-		"<ENT0> is instance of Yogurt ."
-	],
-	"is_instance_of_dairy_product": [
-		"<ENT0> is instance of Dairy Product ."
-	],
-	"is_instance_of_edible_crustaceans": [
-		"<ENT0> is instance of Edible Crustaceans ."
-	],
-	"is_instance_of_edible_fish": [
-		"<ENT0> is instance of Edible Fish ."
-	],
-	"is_instance_of_edible_molluscs": [
-		"<ENT0> is instance of Edible Molluscs ."
-	],
-	"is_instance_of_seafood": [
-		"<ENT0> is instance of Seafood ."
-	],
-	"is_instance_of_honey": [
-		"<ENT0> is instance of Honey ."
-	],
-	"is_instance_of_insect-derived_food": [
-		"<ENT0> is instance of Insect-Derived Food ."
-	],
-	"is_instance_of_animal-derived_food": [
-		"<ENT0> is instance of Animal-derived Food ."
-	],
-	"is_instance_of_breakfast_cereal": [
-		"<ENT0> is instance of Breakfast Cereal ."
-	],
-	"is_instance_of_bread": [
-		"<ENT0> is instance of Bread ."
-	],
-	"is_instance_of_rice": [
-		"<ENT0> is instance of Rice ."
-	],
-	"is_instance_of_pasta_types": [
-		"<ENT0> is instance of Pasta Types ."
-	],
-	"is_instance_of_edible_cereal": [
-		"<ENT0> is instance of Edible Cereal ."
-	],
-	"is_instance_of_edible_fruit": [
-		"<ENT0> is instance of Edible Fruit ."
-	],
-	"is_instance_of_edible_mushrooms": [
-		"<ENT0> is instance of Edible Mushrooms ."
-	],
-	"is_instance_of_edible_vegetal_oil": [
-		"<ENT0> is instance of Edible Vegetal Oil ."
-	],
-	"is_instance_of_edible_seaweed": [
-		"<ENT0> is instance of Edible Seaweed ."
-	],
-	"is_instance_of_edible_seeds": [
-		"<ENT0> is instance of Edible Seeds ."
-	],
-	"is_instance_of_edible_vegetable": [
-		"<ENT0> is instance of Edible Vegetable ."
-	],
-	"is_instance_of_vegetal-derived_food": [
-		"<ENT0> is instance of Vegetal-derived Food ."
-	],
-	"is_instance_of_italian_cuisine_recipe": [
-		"<ENT0> is instance of Italian Cuisine Recipe ."
-	],
-	"is_instance_of_latin_cuisine_recipe": [
-		"<ENT0> is instance of Latin Cuisine Recipe ."
-	],
-	"is_instance_of_african_cuisine_recipe": [
-		"<ENT0> is instance of African Cuisine Recipe ."
-	],
-	"is_instance_of_american_cuisine_recipe": [
-		"<ENT0> is instance of American Cuisine Recipe ."
-	],
-	"is_instance_of_carribean_cuisine_recipe": [
-		"<ENT0> is instance of Carribean Cuisine Recipe ."
-	],
-	"is_instance_of_japanese_cuisine_recipe": [
-		"<ENT0> is instance of Japanese Cuisine Recipe ."
-	],
-	"is_instance_of_chinese_cuisine_recipe": [
-		"<ENT0> is instance of Chinese Cuisine Recipe ."
-	],
-	"is_instance_of_indian_cuisine_recipe": [
-		"<ENT0> is instance of Indian Cuisine Recipe ."
-	],
-	"is_instance_of_recipe": [
-		"<ENT0> is instance of Recipe ."
-	],
-	"is_instance_of_food": [
-		"<ENT0> is instance of Food ."
-	],
-	"is_instance_of_alcoholic_drink": [
-		"<ENT0> is instance of Alcoholic Drink ."
-	],
-	"is_instance_of_coffee": [
-		"<ENT0> is instance of Coffee ."
-	],
-	"is_instance_of_tea": [
-		"<ENT0> is instance of Tea ."
-	],
-	"is_instance_of_infusion_drink": [
-		"<ENT0> is instance of Infusion Drink ."
-	],
-	"is_instance_of_energy_drink": [
-		"<ENT0> is instance of Energy Drink ."
-	],
-	"is_instance_of_juice": [
-		"<ENT0> is instance of Juice ."
-	],
-	"is_instance_of_milk": [
-		"<ENT0> is instance of Milk ."
-	],
-	"is_instance_of_drinking_water": [
-		"<ENT0> is instance of Drinking Water ."
-	],
-	"is_instance_of_drink": [
-		"<ENT0> is instance of Drink ."
-	],
-	"is_instance_of_honey": [
-		"<ENT0> is instance of Honey ."
-	],
-	"is_instance_of_edible_vegetal_oil": [
-		"<ENT0> is instance of Edible Vegetal Oil ."
-	],
-	"is_instance_of_drinkable_liquid": [
-		"<ENT0> is instance of Drinkable Liquid ."
-	],
-	"is_instance_of_edible": [
-		"<ENT0> is instance of Edible ."
-	],
+	"is_instance_of_food_dressing": {
+		"init_prompts": [
+			"<ENT0> is instance of Food Dressing ."
+		],
+		"seed_ent_tuples": [
+			[
+				"ketchup"
+			],
+			[
+				"caesar"
+			],
+			[
+				"ranch"
+			],
+			[
+				"red_wine_vinegar"
+			],
+			[
+				"blue_cheese"
+			]
+		]
+	},
+	"is_instance_of_sauce": {
+		"init_prompts": [
+			"<ENT0> is instance of Sauce ."
+		],
+		"seed_ent_tuples": [
+			[
+				"tomato_sauce"
+			],
+			[
+				"marsala_wine"
+			],
+			[
+				"marinara"
+			],
+			[
+				"sweet_relish"
+			],
+			[
+				"broth"
+			]
+		]
+	},
+	"is_instance_of_food_seasoning": {
+		"init_prompts": [
+			"<ENT0> is instance of Food Seasoning ."
+		],
+		"seed_ent_tuples": [
+			[
+				"chili_powder"
+			],
+			[
+				"celery_salt"
+			],
+			[
+				"vanilla_extract"
+			],
+			[
+				"dashi_stock"
+			],
+			[
+				"basil"
+			]
+		]
+	},
+	"is_instance_of_spice": {
+		"init_prompts": [
+			"<ENT0> is instance of Spice ."
+		],
+		"seed_ent_tuples": [
+			[
+				"chinese_five_spice_powder"
+			],
+			[
+				"cilantro"
+			],
+			[
+				"star_anise"
+			],
+			[
+				"turmeric"
+			],
+			[
+				"cardamom"
+			]
+		]
+	},
+	"is_instance_of_sweetener": {
+		"init_prompts": [
+			"<ENT0> is instance of Sweetener ."
+		],
+		"seed_ent_tuples": [
+			[
+				"stevia"
+			],
+			[
+				"apricot_jam"
+			],
+			[
+				"aspartame"
+			],
+			[
+				"yellow_cake"
+			],
+			[
+				"honey"
+			]
+		]
+	},
+	"is_instance_of_food_additive": {
+		"init_prompts": [
+			"<ENT0> is instance of Food Additive ."
+		],
+		"seed_ent_tuples": [
+			[
+				"chili_powder"
+			],
+			[
+				"chinese_five_spice_powder"
+			],
+			[
+				"ketchup"
+			],
+			[
+				"cilantro"
+			],
+			[
+				"star_anise"
+			]
+		]
+	},
+	"is_instance_of_beef": {
+		"init_prompts": [
+			"<ENT0> is instance of Beef ."
+		],
+		"seed_ent_tuples": [
+			[
+				"ground_beef"
+			],
+			[
+				"thinly_sliced_beef"
+			],
+			[
+				"beef_brisket"
+			],
+			[
+				"beef_broth"
+			],
+			[
+				"beef"
+			]
+		]
+	},
+	"is_instance_of_pork-derived_food": {
+		"init_prompts": [
+			"<ENT0> is instance of Pork-derived Food ."
+		],
+		"seed_ent_tuples": [
+			[
+				"ham"
+			],
+			[
+				"prosciutto"
+			],
+			[
+				"pork_sausage"
+			],
+			[
+				"pepperoni"
+			],
+			[
+				"meat"
+			]
+		]
+	},
+	"is_instance_of_poultry-derived_food": {
+		"init_prompts": [
+			"<ENT0> is instance of Poultry-derived Food ."
+		],
+		"seed_ent_tuples": [
+			[
+				"quail"
+			],
+			[
+				"chicken_parmesan"
+			],
+			[
+				"chicken_salad"
+			],
+			[
+				"ground_lamb"
+			],
+			[
+				"turkey_burger"
+			]
+		]
+	},
+	"is_instance_of_meat": {
+		"init_prompts": [
+			"<ENT0> is instance of Meat ."
+		],
+		"seed_ent_tuples": [
+			[
+				"ham"
+			],
+			[
+				"quail"
+			],
+			[
+				"chicken_parmesan"
+			],
+			[
+				"ground_beef"
+			],
+			[
+				"chicken_salad"
+			]
+		]
+	},
+	"is_instance_of_butter": {
+		"init_prompts": [
+			"<ENT0> is instance of Butter ."
+		],
+		"seed_ent_tuples": [
+			[
+				"grass_fed_butter"
+			],
+			[
+				"peanut_butter"
+			],
+			[
+				"unsalted_butter"
+			],
+			[
+				"salted_butter"
+			],
+			[
+				"cultured_butter"
+			]
+		]
+	},
+	"is_instance_of_cheese": {
+		"init_prompts": [
+			"<ENT0> is instance of Cheese ."
+		],
+		"seed_ent_tuples": [
+			[
+				"pecorino_romano_cheese"
+			],
+			[
+				"brie"
+			],
+			[
+				"cheddar"
+			],
+			[
+				"blue_cheese"
+			],
+			[
+				"gouda"
+			]
+		]
+	},
+	"is_instance_of_milk": {
+		"init_prompts": [
+			"<ENT0> is instance of Milk ."
+		],
+		"seed_ent_tuples": [
+			[
+				"soy_milk"
+			],
+			[
+				"2__milk"
+			],
+			[
+				"buttermilk"
+			],
+			[
+				"whole_milk"
+			],
+			[
+				"ice_cream"
+			]
+		]
+	},
+	"is_instance_of_yogurt": {
+		"init_prompts": [
+			"<ENT0> is instance of Yogurt ."
+		],
+		"seed_ent_tuples": [
+			[
+				"greek_yogurt"
+			],
+			[
+				"low_fat_yogurt"
+			],
+			[
+				"almond_milk_yogurt"
+			],
+			[
+				"full_fat_yogurt"
+			],
+			[
+				"probiotic_yogurt"
+			]
+		]
+	},
+	"is_instance_of_dairy_product": {
+		"init_prompts": [
+			"<ENT0> is instance of Dairy Product ."
+		],
+		"seed_ent_tuples": [
+			[
+				"pecorino_romano_cheese"
+			],
+			[
+				"greek_yogurt"
+			],
+			[
+				"grass_fed_butter"
+			],
+			[
+				"brie"
+			],
+			[
+				"cheddar"
+			]
+		]
+	},
+	"is_instance_of_edible_crustaceans": {
+		"init_prompts": [
+			"<ENT0> is instance of Edible Crustaceans ."
+		],
+		"seed_ent_tuples": [
+			[
+				"shrimp"
+			],
+			[
+				"crawfish"
+			],
+			[
+				"lobster"
+			],
+			[
+				"prawn"
+			],
+			[
+				"shrimp_dumplings"
+			]
+		]
+	},
+	"is_instance_of_edible_fish": {
+		"init_prompts": [
+			"<ENT0> is instance of Edible Fish ."
+		],
+		"seed_ent_tuples": [
+			[
+				"mackerel"
+			],
+			[
+				"trout"
+			],
+			[
+				"fish"
+			],
+			[
+				"salmon"
+			],
+			[
+				"tuna"
+			]
+		]
+	},
+	"is_instance_of_edible_molluscs": {
+		"init_prompts": [
+			"<ENT0> is instance of Edible Molluscs ."
+		],
+		"seed_ent_tuples": [
+			[
+				"conch"
+			],
+			[
+				"octopus"
+			],
+			[
+				"gelatin"
+			],
+			[
+				"clams"
+			],
+			[
+				"mussels"
+			]
+		]
+	},
+	"is_instance_of_seafood": {
+		"init_prompts": [
+			"<ENT0> is instance of Seafood ."
+		],
+		"seed_ent_tuples": [
+			[
+				"conch"
+			],
+			[
+				"octopus"
+			],
+			[
+				"gelatin"
+			],
+			[
+				"mackerel"
+			],
+			[
+				"shrimp"
+			]
+		]
+	},
+	"is_instance_of_honey": {
+		"init_prompts": [
+			"<ENT0> is instance of Honey ."
+		],
+		"seed_ent_tuples": [
+			[
+				"clover"
+			],
+			[
+				"wildflower"
+			],
+			[
+				"orange_blossom"
+			],
+			[
+				"acacia"
+			]
+		]
+	},
+	"is_instance_of_insect-derived_food": {
+		"init_prompts": [
+			"<ENT0> is instance of Insect-Derived Food ."
+		],
+		"seed_ent_tuples": [
+			[
+				"cricket_flour"
+			],
+			[
+				"grasshoppers"
+			],
+			[
+				"clover"
+			],
+			[
+				"wildflower"
+			],
+			[
+				"bee_larvae"
+			]
+		]
+	},
+	"is_instance_of_animal-derived_food": {
+		"init_prompts": [
+			"<ENT0> is instance of Animal-derived Food ."
+		],
+		"seed_ent_tuples": [
+			[
+				"cricket_flour"
+			],
+			[
+				"conch"
+			],
+			[
+				"ham"
+			],
+			[
+				"pecorino_romano_cheese"
+			],
+			[
+				"grasshoppers"
+			]
+		]
+	},
+	"is_instance_of_breakfast_cereal": {
+		"init_prompts": [
+			"<ENT0> is instance of Breakfast Cereal ."
+		],
+		"seed_ent_tuples": [
+			[
+				"cheerios"
+			],
+			[
+				"malt"
+			],
+			[
+				"lucky_charms"
+			],
+			[
+				"corn_flakes"
+			],
+			[
+				"cocoa_puffs"
+			]
+		]
+	},
+	"is_instance_of_bread": {
+		"init_prompts": [
+			"<ENT0> is instance of Bread ."
+		],
+		"seed_ent_tuples": [
+			[
+				"white_bread"
+			],
+			[
+				"sourdough_bread"
+			],
+			[
+				"bread_crumbs"
+			],
+			[
+				"ladyfingers"
+			],
+			[
+				"burger_bun"
+			]
+		]
+	},
+	"is_instance_of_rice": {
+		"init_prompts": [
+			"<ENT0> is instance of Rice ."
+		],
+		"seed_ent_tuples": [
+			[
+				"jasmine_rice"
+			],
+			[
+				"basmati_rice"
+			],
+			[
+				"sushi_rice"
+			],
+			[
+				"wild_rice"
+			],
+			[
+				"sticky_rice_in_lotus_leaf"
+			]
+		]
+	},
+	"is_instance_of_pasta_types": {
+		"init_prompts": [
+			"<ENT0> is instance of Pasta Types ."
+		],
+		"seed_ent_tuples": [
+			[
+				"noodles"
+			],
+			[
+				"cornmeal"
+			],
+			[
+				"orzo"
+			],
+			[
+				"corn_masa"
+			],
+			[
+				"macaroni"
+			]
+		]
+	},
+	"is_instance_of_edible_cereal": {
+		"init_prompts": [
+			"<ENT0> is instance of Edible Cereal ."
+		],
+		"seed_ent_tuples": [
+			[
+				"noodles"
+			],
+			[
+				"white_bread"
+			],
+			[
+				"cornmeal"
+			],
+			[
+				"cheerios"
+			],
+			[
+				"malt"
+			]
+		]
+	},
+	"is_instance_of_edible_fruit": {
+		"init_prompts": [
+			"<ENT0> is instance of Edible Fruit ."
+		],
+		"seed_ent_tuples": [
+			[
+				"peach"
+			],
+			[
+				"lemon"
+			],
+			[
+				"kiwi"
+			],
+			[
+				"banana"
+			],
+			[
+				"mango"
+			]
+		]
+	},
+	"is_instance_of_edible_mushrooms": {
+		"init_prompts": [
+			"<ENT0> is instance of Edible Mushrooms ."
+		],
+		"seed_ent_tuples": [
+			[
+				"shiitake"
+			],
+			[
+				"oyster"
+			],
+			[
+				"truffle"
+			],
+			[
+				"morel"
+			],
+			[
+				"yeast"
+			]
+		]
+	},
+	"is_instance_of_edible_vegetal_oil": {
+		"init_prompts": [
+			"<ENT0> is instance of Edible Vegetal Oil ."
+		],
+		"seed_ent_tuples": [
+			[
+				"soybean_oil"
+			],
+			[
+				"ghee"
+			],
+			[
+				"olive_oil"
+			],
+			[
+				"corn_oil"
+			],
+			[
+				"vegetable_oil"
+			]
+		]
+	},
+	"is_instance_of_edible_seaweed": {
+		"init_prompts": [
+			"<ENT0> is instance of Edible Seaweed ."
+		],
+		"seed_ent_tuples": [
+			[
+				"seaweed"
+			],
+			[
+				"miso_soup_garnish"
+			],
+			[
+				"dulse"
+			],
+			[
+				"sea_lettuce"
+			]
+		]
+	},
+	"is_instance_of_edible_seeds": {
+		"init_prompts": [
+			"<ENT0> is instance of Edible Seeds ."
+		],
+		"seed_ent_tuples": [
+			[
+				"rice"
+			],
+			[
+				"flaxseeds"
+			],
+			[
+				"almonds"
+			],
+			[
+				"sesame_seeds"
+			],
+			[
+				"buckwheat_flour"
+			]
+		]
+	},
+	"is_instance_of_edible_vegetable": {
+		"init_prompts": [
+			"<ENT0> is instance of Edible Vegetable ."
+		],
+		"seed_ent_tuples": [
+			[
+				"vegetables"
+			],
+			[
+				"cucumber"
+			],
+			[
+				"feet"
+			],
+			[
+				"chives"
+			],
+			[
+				"onion"
+			]
+		]
+	},
+	"is_instance_of_vegetal-derived_food": {
+		"init_prompts": [
+			"<ENT0> is instance of Vegetal-derived Food ."
+		],
+		"seed_ent_tuples": [
+			[
+				"peach"
+			],
+			[
+				"vegetables"
+			],
+			[
+				"noodles"
+			],
+			[
+				"soybean_oil"
+			],
+			[
+				"white_bread"
+			]
+		]
+	},
+	"is_instance_of_italian_cuisine_recipe": {
+		"init_prompts": [
+			"<ENT0> is instance of Italian Cuisine Recipe ."
+		],
+		"seed_ent_tuples": [
+			[
+				"tricolore_salad"
+			],
+			[
+				"risotto_alla_milanese"
+			],
+			[
+				"margherita_pizza"
+			],
+			[
+				"spaghetti_carbonara"
+			],
+			[
+				"tiramisu"
+			]
+		]
+	},
+	"is_instance_of_latin_cuisine_recipe": {
+		"init_prompts": [
+			"<ENT0> is instance of Latin Cuisine Recipe ."
+		],
+		"seed_ent_tuples": [
+			[
+				"chimichurri_steak"
+			],
+			[
+				"aji_de_gallina"
+			],
+			[
+				"sopa_de_lima"
+			],
+			[
+				"tamales"
+			]
+		]
+	},
+	"is_instance_of_african_cuisine_recipe": {
+		"init_prompts": [
+			"<ENT0> is instance of African Cuisine Recipe ."
+		],
+		"seed_ent_tuples": [
+			[
+				"moambe_chicken"
+			],
+			[
+				"pepe_soup"
+			],
+			[
+				"plantain_chips"
+			],
+			[
+				"bunny_chow"
+			],
+			[
+				"jollof_rice"
+			]
+		]
+	},
+	"is_instance_of_american_cuisine_recipe": {
+		"init_prompts": [
+			"<ENT0> is instance of American Cuisine Recipe ."
+		],
+		"seed_ent_tuples": [
+			[
+				"maryland_crab_cakes"
+			],
+			[
+				"southern_fried_chicken"
+			],
+			[
+				"louisiana_gumbo"
+			],
+			[
+				"apple_pie"
+			],
+			[
+				"cobb_salad"
+			]
+		]
+	},
+	"is_instance_of_carribean_cuisine_recipe": {
+		"init_prompts": [
+			"<ENT0> is instance of Carribean Cuisine Recipe ."
+		],
+		"seed_ent_tuples": [
+			[
+				"barbados_flying_fish_cutter"
+			],
+			[
+				"doubles"
+			],
+			[
+				"sorrel_drink"
+			],
+			[
+				"oxtail"
+			],
+			[
+				"souse"
+			]
+		]
+	},
+	"is_instance_of_japanese_cuisine_recipe": {
+		"init_prompts": [
+			"<ENT0> is instance of Japanese Cuisine Recipe ."
+		],
+		"seed_ent_tuples": [
+			[
+				"tempura"
+			],
+			[
+				"miso_soup"
+			],
+			[
+				"sashimi"
+			],
+			[
+				"shabu_shabu"
+			],
+			[
+				"soba_noodles"
+			]
+		]
+	},
+	"is_instance_of_chinese_cuisine_recipe": {
+		"init_prompts": [
+			"<ENT0> is instance of Chinese Cuisine Recipe ."
+		],
+		"seed_ent_tuples": [
+			[
+				"beef_noodle_soup"
+			],
+			[
+				"dumplings"
+			],
+			[
+				"steamed_fish_with_ginger_and_scallions"
+			],
+			[
+				"general_tso_s_chicken"
+			],
+			[
+				"peking_duck"
+			]
+		]
+	},
+	"is_instance_of_indian_cuisine_recipe": {
+		"init_prompts": [
+			"<ENT0> is instance of Indian Cuisine Recipe ."
+		],
+		"seed_ent_tuples": [
+			[
+				"kofta_curry"
+			],
+			[
+				"samosa"
+			],
+			[
+				"aloo_gobi"
+			],
+			[
+				"tandoori_chicken"
+			],
+			[
+				"rogan_josh"
+			]
+		]
+	},
+	"is_instance_of_recipe": {
+		"init_prompts": [
+			"<ENT0> is instance of Recipe ."
+		],
+		"seed_ent_tuples": [
+			[
+				"barbados_flying_fish_cutter"
+			],
+			[
+				"maryland_crab_cakes"
+			],
+			[
+				"beef_noodle_soup"
+			],
+			[
+				"southern_fried_chicken"
+			],
+			[
+				"tricolore_salad"
+			]
+		]
+	},
+	"is_instance_of_food": {
+		"init_prompts": [
+			"<ENT0> is instance of Food ."
+		],
+		"seed_ent_tuples": [
+			[
+				"cricket_flour"
+			],
+			[
+				"conch"
+			],
+			[
+				"peach"
+			],
+			[
+				"chili_powder"
+			],
+			[
+				"chinese_five_spice_powder"
+			]
+		]
+	},
+	"is_instance_of_alcoholic_drink": {
+		"init_prompts": [
+			"<ENT0> is instance of Alcoholic Drink ."
+		],
+		"seed_ent_tuples": [
+			[
+				"rice_wine"
+			],
+			[
+				"tequila"
+			],
+			[
+				"sherry"
+			],
+			[
+				"vodka"
+			],
+			[
+				"rum"
+			]
+		]
+	},
+	"is_instance_of_coffee": {
+		"init_prompts": [
+			"<ENT0> is instance of Coffee ."
+		],
+		"seed_ent_tuples": [
+			[
+				"espresso"
+			],
+			[
+				"flat_white"
+			],
+			[
+				"turkish_coffee"
+			],
+			[
+				"cappuccino"
+			],
+			[
+				"irish_coffee"
+			]
+		]
+	},
+	"is_instance_of_tea": {
+		"init_prompts": [
+			"<ENT0> is instance of Tea ."
+		],
+		"seed_ent_tuples": [
+			[
+				"lemon_zest"
+			],
+			[
+				"peppermint_tea"
+			],
+			[
+				"black_tea"
+			],
+			[
+				"tea"
+			],
+			[
+				"green_tea"
+			]
+		]
+	},
+	"is_instance_of_infusion_drink": {
+		"init_prompts": [
+			"<ENT0> is instance of Infusion Drink ."
+		],
+		"seed_ent_tuples": [
+			[
+				"lemon_zest"
+			],
+			[
+				"peppermint_tea"
+			],
+			[
+				"black_tea"
+			],
+			[
+				"tea"
+			],
+			[
+				"espresso"
+			]
+		]
+	},
+	"is_instance_of_energy_drink": {
+		"init_prompts": [
+			"<ENT0> is instance of Energy Drink ."
+		],
+		"seed_ent_tuples": [
+			[
+				"5_hour_energy"
+			],
+			[
+				"celsius"
+			],
+			[
+				"nos"
+			],
+			[
+				"bang"
+			],
+			[
+				"full_throttle"
+			]
+		]
+	},
+	"is_instance_of_juice": {
+		"init_prompts": [
+			"<ENT0> is instance of Juice ."
+		],
+		"seed_ent_tuples": [
+			[
+				"lemonade"
+			],
+			[
+				"grape_juice"
+			],
+			[
+				"pineapple_juice"
+			],
+			[
+				"key_lime_juice"
+			],
+			[
+				"lemon_juice"
+			]
+		]
+	},
+	"is_instance_of_drinking_water": {
+		"init_prompts": [
+			"<ENT0> is instance of Drinking Water ."
+		],
+		"seed_ent_tuples": [
+			[
+				"hot_water"
+			],
+			[
+				"bottled_water"
+			],
+			[
+				"sparkling_water"
+			],
+			[
+				"tap_water"
+			]
+		]
+	},
+	"is_instance_of_drink": {
+		"init_prompts": [
+			"<ENT0> is instance of Drink ."
+		],
+		"seed_ent_tuples": [
+			[
+				"lemonade"
+			],
+			[
+				"grape_juice"
+			],
+			[
+				"rice_wine"
+			],
+			[
+				"tequila"
+			],
+			[
+				"soda"
+			]
+		]
+	},
+	"is_instance_of_drinkable_liquid": {
+		"init_prompts": [
+			"<ENT0> is instance of Drinkable Liquid ."
+		],
+		"seed_ent_tuples": [
+			[
+				"soybean_oil"
+			],
+			[
+				"clover"
+			],
+			[
+				"ghee"
+			],
+			[
+				"lemonade"
+			],
+			[
+				"grape_juice"
+			]
+		]
+	},
+	"is_instance_of_edible": {
+		"init_prompts": [
+			"<ENT0> is instance of Edible ."
+		],
+		"seed_ent_tuples": [
+			[
+				"cricket_flour"
+			],
+			[
+				"conch"
+			],
+			[
+				"peach"
+			],
+			[
+				"chili_powder"
+			],
+			[
+				"chinese_five_spice_powder"
+			]
+		]
+	}
 }
