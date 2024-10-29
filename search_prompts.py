@@ -21,7 +21,7 @@ def get_paraphrase_prompt(gpt3, prompt, ent_tuple):
         raw_response = gpt3.call(prompt=f'paraphrase:\n{sent}\n')
 
         para_sent = raw_response['choices'][0]['text']
-        para_sent = sent_tokenize(para_sent)[0]
+        para_sent = sent_tokenize(para_sent)[0] if len(sent_tokenize(para_sent)) > 0 else para_sent
         para_sent = para_sent.strip().strip('.').lower()
 
         print('para_sent:', para_sent)

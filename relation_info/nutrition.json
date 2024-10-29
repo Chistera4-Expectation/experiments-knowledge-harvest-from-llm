@@ -1,1178 +1,1952 @@
 {
-	"is_instance_of_food_dressing": {
-		"init_prompts": [
-			"<ENT0> is instance of Food Dressing ."
-		],
-		"seed_ent_tuples": [
-			[
-				"ketchup"
-			],
-			[
-				"caesar"
-			],
-			[
-				"ranch"
-			],
-			[
-				"red_wine_vinegar"
-			],
-			[
-				"blue_cheese"
-			]
-		]
-	},
-	"is_instance_of_sauce": {
-		"init_prompts": [
-			"<ENT0> is instance of Sauce ."
-		],
-		"seed_ent_tuples": [
-			[
-				"tomato_sauce"
-			],
-			[
-				"marsala_wine"
-			],
-			[
-				"marinara"
-			],
-			[
-				"sweet_relish"
-			],
-			[
-				"broth"
-			]
-		]
-	},
-	"is_instance_of_food_seasoning": {
-		"init_prompts": [
-			"<ENT0> is instance of Food Seasoning ."
-		],
-		"seed_ent_tuples": [
-			[
-				"chili_powder"
-			],
-			[
-				"celery_salt"
-			],
-			[
-				"vanilla_extract"
-			],
-			[
-				"dashi_stock"
-			],
-			[
-				"basil"
-			]
-		]
-	},
-	"is_instance_of_spice": {
-		"init_prompts": [
-			"<ENT0> is instance of Spice ."
-		],
-		"seed_ent_tuples": [
-			[
-				"chinese_five_spice_powder"
-			],
-			[
-				"cilantro"
-			],
-			[
-				"star_anise"
-			],
-			[
-				"turmeric"
-			],
-			[
-				"cardamom"
-			]
-		]
-	},
-	"is_instance_of_sweetener": {
-		"init_prompts": [
-			"<ENT0> is instance of Sweetener ."
-		],
-		"seed_ent_tuples": [
-			[
-				"stevia"
-			],
-			[
-				"apricot_jam"
-			],
-			[
-				"aspartame"
-			],
-			[
-				"yellow_cake"
-			],
-			[
-				"honey"
-			]
-		]
-	},
-	"is_instance_of_food_additive": {
-		"init_prompts": [
-			"<ENT0> is instance of Food Additive ."
-		],
-		"seed_ent_tuples": [
-			[
-				"chili_powder"
-			],
-			[
-				"chinese_five_spice_powder"
-			],
-			[
-				"ketchup"
-			],
-			[
-				"cilantro"
-			],
-			[
-				"star_anise"
-			]
-		]
-	},
-	"is_instance_of_beef": {
-		"init_prompts": [
-			"<ENT0> is instance of Beef ."
-		],
-		"seed_ent_tuples": [
-			[
-				"ground_beef"
-			],
-			[
-				"thinly_sliced_beef"
-			],
-			[
-				"beef_brisket"
-			],
-			[
-				"beef_broth"
-			],
-			[
-				"beef"
-			]
-		]
-	},
-	"is_instance_of_pork-derived_food": {
-		"init_prompts": [
-			"<ENT0> is instance of Pork-derived Food ."
-		],
-		"seed_ent_tuples": [
-			[
-				"ham"
-			],
-			[
-				"prosciutto"
-			],
-			[
-				"pork_sausage"
-			],
-			[
-				"pepperoni"
-			],
-			[
-				"meat"
-			]
-		]
-	},
-	"is_instance_of_poultry-derived_food": {
-		"init_prompts": [
-			"<ENT0> is instance of Poultry-derived Food ."
-		],
-		"seed_ent_tuples": [
-			[
-				"quail"
-			],
-			[
-				"chicken_parmesan"
-			],
-			[
-				"chicken_salad"
-			],
-			[
-				"ground_lamb"
-			],
-			[
-				"turkey_burger"
-			]
-		]
-	},
-	"is_instance_of_meat": {
-		"init_prompts": [
-			"<ENT0> is instance of Meat ."
-		],
-		"seed_ent_tuples": [
-			[
-				"ham"
-			],
-			[
-				"quail"
-			],
-			[
-				"chicken_parmesan"
-			],
-			[
-				"ground_beef"
-			],
-			[
-				"chicken_salad"
-			]
-		]
-	},
-	"is_instance_of_butter": {
-		"init_prompts": [
-			"<ENT0> is instance of Butter ."
-		],
-		"seed_ent_tuples": [
-			[
-				"grass_fed_butter"
-			],
-			[
-				"peanut_butter"
-			],
-			[
-				"unsalted_butter"
-			],
-			[
-				"salted_butter"
-			],
-			[
-				"cultured_butter"
-			]
-		]
-	},
-	"is_instance_of_cheese": {
-		"init_prompts": [
-			"<ENT0> is instance of Cheese ."
-		],
-		"seed_ent_tuples": [
-			[
-				"pecorino_romano_cheese"
-			],
-			[
-				"brie"
-			],
-			[
-				"cheddar"
-			],
-			[
-				"blue_cheese"
-			],
-			[
-				"gouda"
-			]
-		]
-	},
-	"is_instance_of_milk": {
-		"init_prompts": [
-			"<ENT0> is instance of Milk ."
-		],
-		"seed_ent_tuples": [
-			[
-				"soy_milk"
-			],
-			[
-				"2__milk"
-			],
-			[
-				"buttermilk"
-			],
-			[
-				"whole_milk"
-			],
-			[
-				"ice_cream"
-			]
-		]
-	},
-	"is_instance_of_yogurt": {
-		"init_prompts": [
-			"<ENT0> is instance of Yogurt ."
-		],
-		"seed_ent_tuples": [
-			[
-				"greek_yogurt"
-			],
-			[
-				"low_fat_yogurt"
-			],
-			[
-				"almond_milk_yogurt"
-			],
-			[
-				"full_fat_yogurt"
-			],
-			[
-				"probiotic_yogurt"
-			]
-		]
-	},
-	"is_instance_of_dairy_product": {
-		"init_prompts": [
-			"<ENT0> is instance of Dairy Product ."
-		],
-		"seed_ent_tuples": [
-			[
-				"pecorino_romano_cheese"
-			],
-			[
-				"greek_yogurt"
-			],
-			[
-				"grass_fed_butter"
-			],
-			[
-				"brie"
-			],
-			[
-				"cheddar"
-			]
-		]
-	},
-	"is_instance_of_edible_crustaceans": {
-		"init_prompts": [
-			"<ENT0> is instance of Edible Crustaceans ."
-		],
-		"seed_ent_tuples": [
-			[
-				"shrimp"
-			],
-			[
-				"crawfish"
-			],
-			[
-				"lobster"
-			],
-			[
-				"prawn"
-			],
-			[
-				"shrimp_dumplings"
-			]
-		]
-	},
-	"is_instance_of_edible_fish": {
-		"init_prompts": [
-			"<ENT0> is instance of Edible Fish ."
-		],
-		"seed_ent_tuples": [
-			[
-				"mackerel"
-			],
-			[
-				"trout"
-			],
-			[
-				"fish"
-			],
-			[
-				"salmon"
-			],
-			[
-				"tuna"
-			]
-		]
-	},
-	"is_instance_of_edible_molluscs": {
-		"init_prompts": [
-			"<ENT0> is instance of Edible Molluscs ."
-		],
-		"seed_ent_tuples": [
-			[
-				"conch"
-			],
-			[
-				"octopus"
-			],
-			[
-				"gelatin"
-			],
-			[
-				"clams"
-			],
-			[
-				"mussels"
-			]
-		]
-	},
-	"is_instance_of_seafood": {
-		"init_prompts": [
-			"<ENT0> is instance of Seafood ."
-		],
-		"seed_ent_tuples": [
-			[
-				"conch"
-			],
-			[
-				"octopus"
-			],
-			[
-				"gelatin"
-			],
-			[
-				"mackerel"
-			],
-			[
-				"shrimp"
-			]
-		]
-	},
-	"is_instance_of_honey": {
-		"init_prompts": [
-			"<ENT0> is instance of Honey ."
-		],
-		"seed_ent_tuples": [
-			[
-				"clover"
-			],
-			[
-				"wildflower"
-			],
-			[
-				"orange_blossom"
-			],
-			[
-				"acacia"
-			]
-		]
-	},
-	"is_instance_of_insect-derived_food": {
-		"init_prompts": [
-			"<ENT0> is instance of Insect-Derived Food ."
-		],
-		"seed_ent_tuples": [
-			[
-				"cricket_flour"
-			],
-			[
-				"grasshoppers"
-			],
-			[
-				"clover"
-			],
-			[
-				"wildflower"
-			],
-			[
-				"bee_larvae"
-			]
-		]
-	},
-	"is_instance_of_animal-derived_food": {
-		"init_prompts": [
-			"<ENT0> is instance of Animal-derived Food ."
-		],
-		"seed_ent_tuples": [
-			[
-				"cricket_flour"
-			],
-			[
-				"conch"
-			],
-			[
-				"ham"
-			],
-			[
-				"pecorino_romano_cheese"
-			],
-			[
-				"grasshoppers"
-			]
-		]
-	},
-	"is_instance_of_breakfast_cereal": {
-		"init_prompts": [
-			"<ENT0> is instance of Breakfast Cereal ."
-		],
-		"seed_ent_tuples": [
-			[
-				"cheerios"
-			],
-			[
-				"malt"
-			],
-			[
-				"lucky_charms"
-			],
-			[
-				"corn_flakes"
-			],
-			[
-				"cocoa_puffs"
-			]
-		]
-	},
-	"is_instance_of_bread": {
-		"init_prompts": [
-			"<ENT0> is instance of Bread ."
-		],
-		"seed_ent_tuples": [
-			[
-				"white_bread"
-			],
-			[
-				"sourdough_bread"
-			],
-			[
-				"bread_crumbs"
-			],
-			[
-				"ladyfingers"
-			],
-			[
-				"burger_bun"
-			]
-		]
-	},
-	"is_instance_of_rice": {
-		"init_prompts": [
-			"<ENT0> is instance of Rice ."
-		],
-		"seed_ent_tuples": [
-			[
-				"jasmine_rice"
-			],
-			[
-				"basmati_rice"
-			],
-			[
-				"sushi_rice"
-			],
-			[
-				"wild_rice"
-			],
-			[
-				"sticky_rice_in_lotus_leaf"
-			]
-		]
-	},
-	"is_instance_of_pasta_types": {
-		"init_prompts": [
-			"<ENT0> is instance of Pasta Types ."
-		],
-		"seed_ent_tuples": [
-			[
-				"noodles"
-			],
-			[
-				"cornmeal"
-			],
-			[
-				"orzo"
-			],
-			[
-				"corn_masa"
-			],
-			[
-				"macaroni"
-			]
-		]
-	},
-	"is_instance_of_edible_cereal": {
-		"init_prompts": [
-			"<ENT0> is instance of Edible Cereal ."
-		],
-		"seed_ent_tuples": [
-			[
-				"noodles"
-			],
-			[
-				"white_bread"
-			],
-			[
-				"cornmeal"
-			],
-			[
-				"cheerios"
-			],
-			[
-				"malt"
-			]
-		]
-	},
-	"is_instance_of_edible_fruit": {
-		"init_prompts": [
-			"<ENT0> is instance of Edible Fruit ."
-		],
-		"seed_ent_tuples": [
-			[
-				"peach"
-			],
-			[
-				"lemon"
-			],
-			[
-				"kiwi"
-			],
-			[
-				"banana"
-			],
-			[
-				"mango"
-			]
-		]
-	},
-	"is_instance_of_edible_mushrooms": {
-		"init_prompts": [
-			"<ENT0> is instance of Edible Mushrooms ."
-		],
-		"seed_ent_tuples": [
-			[
-				"shiitake"
-			],
-			[
-				"oyster"
-			],
-			[
-				"truffle"
-			],
-			[
-				"morel"
-			],
-			[
-				"yeast"
-			]
-		]
-	},
-	"is_instance_of_edible_vegetal_oil": {
-		"init_prompts": [
-			"<ENT0> is instance of Edible Vegetal Oil ."
-		],
-		"seed_ent_tuples": [
-			[
-				"soybean_oil"
-			],
-			[
-				"ghee"
-			],
-			[
-				"olive_oil"
-			],
-			[
-				"corn_oil"
-			],
-			[
-				"vegetable_oil"
-			]
-		]
-	},
-	"is_instance_of_edible_seaweed": {
-		"init_prompts": [
-			"<ENT0> is instance of Edible Seaweed ."
-		],
-		"seed_ent_tuples": [
-			[
-				"seaweed"
-			],
-			[
-				"miso_soup_garnish"
-			],
-			[
-				"dulse"
-			],
-			[
-				"sea_lettuce"
-			]
-		]
-	},
-	"is_instance_of_edible_seeds": {
-		"init_prompts": [
-			"<ENT0> is instance of Edible Seeds ."
-		],
-		"seed_ent_tuples": [
-			[
-				"rice"
-			],
-			[
-				"flaxseeds"
-			],
-			[
-				"almonds"
-			],
-			[
-				"sesame_seeds"
-			],
-			[
-				"buckwheat_flour"
-			]
-		]
-	},
-	"is_instance_of_edible_vegetable": {
-		"init_prompts": [
-			"<ENT0> is instance of Edible Vegetable ."
-		],
-		"seed_ent_tuples": [
-			[
-				"vegetables"
-			],
-			[
-				"cucumber"
-			],
-			[
-				"feet"
-			],
-			[
-				"chives"
-			],
-			[
-				"onion"
-			]
-		]
-	},
-	"is_instance_of_vegetal-derived_food": {
-		"init_prompts": [
-			"<ENT0> is instance of Vegetal-derived Food ."
-		],
-		"seed_ent_tuples": [
-			[
-				"peach"
-			],
-			[
-				"vegetables"
-			],
-			[
-				"noodles"
-			],
-			[
-				"soybean_oil"
-			],
-			[
-				"white_bread"
-			]
-		]
-	},
-	"is_instance_of_italian_cuisine_recipe": {
-		"init_prompts": [
-			"<ENT0> is instance of Italian Cuisine Recipe ."
-		],
-		"seed_ent_tuples": [
-			[
-				"tricolore_salad"
-			],
-			[
-				"risotto_alla_milanese"
-			],
-			[
-				"margherita_pizza"
-			],
-			[
-				"spaghetti_carbonara"
-			],
-			[
-				"tiramisu"
-			]
-		]
-	},
-	"is_instance_of_latin_cuisine_recipe": {
-		"init_prompts": [
-			"<ENT0> is instance of Latin Cuisine Recipe ."
-		],
-		"seed_ent_tuples": [
-			[
-				"chimichurri_steak"
-			],
-			[
-				"aji_de_gallina"
-			],
-			[
-				"sopa_de_lima"
-			],
-			[
-				"tamales"
-			]
-		]
-	},
-	"is_instance_of_african_cuisine_recipe": {
-		"init_prompts": [
-			"<ENT0> is instance of African Cuisine Recipe ."
-		],
-		"seed_ent_tuples": [
-			[
-				"moambe_chicken"
-			],
-			[
-				"pepe_soup"
-			],
-			[
-				"plantain_chips"
-			],
-			[
-				"bunny_chow"
-			],
-			[
-				"jollof_rice"
-			]
-		]
-	},
-	"is_instance_of_american_cuisine_recipe": {
-		"init_prompts": [
-			"<ENT0> is instance of American Cuisine Recipe ."
-		],
-		"seed_ent_tuples": [
-			[
-				"maryland_crab_cakes"
-			],
-			[
-				"southern_fried_chicken"
-			],
-			[
-				"louisiana_gumbo"
-			],
-			[
-				"apple_pie"
-			],
-			[
-				"cobb_salad"
-			]
-		]
-	},
-	"is_instance_of_carribean_cuisine_recipe": {
-		"init_prompts": [
-			"<ENT0> is instance of Carribean Cuisine Recipe ."
-		],
-		"seed_ent_tuples": [
-			[
-				"barbados_flying_fish_cutter"
-			],
-			[
-				"doubles"
-			],
-			[
-				"sorrel_drink"
-			],
-			[
-				"oxtail"
-			],
-			[
-				"souse"
-			]
-		]
-	},
-	"is_instance_of_japanese_cuisine_recipe": {
-		"init_prompts": [
-			"<ENT0> is instance of Japanese Cuisine Recipe ."
-		],
-		"seed_ent_tuples": [
-			[
-				"tempura"
-			],
-			[
-				"miso_soup"
-			],
-			[
-				"sashimi"
-			],
-			[
-				"shabu_shabu"
-			],
-			[
-				"soba_noodles"
-			]
-		]
-	},
-	"is_instance_of_chinese_cuisine_recipe": {
-		"init_prompts": [
-			"<ENT0> is instance of Chinese Cuisine Recipe ."
-		],
-		"seed_ent_tuples": [
-			[
-				"beef_noodle_soup"
-			],
-			[
-				"dumplings"
-			],
-			[
-				"steamed_fish_with_ginger_and_scallions"
-			],
-			[
-				"general_tso_s_chicken"
-			],
-			[
-				"peking_duck"
-			]
-		]
-	},
-	"is_instance_of_indian_cuisine_recipe": {
-		"init_prompts": [
-			"<ENT0> is instance of Indian Cuisine Recipe ."
-		],
-		"seed_ent_tuples": [
-			[
-				"kofta_curry"
-			],
-			[
-				"samosa"
-			],
-			[
-				"aloo_gobi"
-			],
-			[
-				"tandoori_chicken"
-			],
-			[
-				"rogan_josh"
-			]
-		]
-	},
-	"is_instance_of_recipe": {
-		"init_prompts": [
-			"<ENT0> is instance of Recipe ."
-		],
-		"seed_ent_tuples": [
-			[
-				"barbados_flying_fish_cutter"
-			],
-			[
-				"maryland_crab_cakes"
-			],
-			[
-				"beef_noodle_soup"
-			],
-			[
-				"southern_fried_chicken"
-			],
-			[
-				"tricolore_salad"
-			]
-		]
-	},
-	"is_instance_of_food": {
-		"init_prompts": [
-			"<ENT0> is instance of Food ."
-		],
-		"seed_ent_tuples": [
-			[
-				"cricket_flour"
-			],
-			[
-				"conch"
-			],
-			[
-				"peach"
-			],
-			[
-				"chili_powder"
-			],
-			[
-				"chinese_five_spice_powder"
-			]
-		]
-	},
-	"is_instance_of_alcoholic_drink": {
-		"init_prompts": [
-			"<ENT0> is instance of Alcoholic Drink ."
-		],
-		"seed_ent_tuples": [
-			[
-				"rice_wine"
-			],
-			[
-				"tequila"
-			],
-			[
-				"sherry"
-			],
-			[
-				"vodka"
-			],
-			[
-				"rum"
-			]
-		]
-	},
-	"is_instance_of_coffee": {
-		"init_prompts": [
-			"<ENT0> is instance of Coffee ."
-		],
-		"seed_ent_tuples": [
-			[
-				"espresso"
-			],
-			[
-				"flat_white"
-			],
-			[
-				"turkish_coffee"
-			],
-			[
-				"cappuccino"
-			],
-			[
-				"irish_coffee"
-			]
-		]
-	},
-	"is_instance_of_tea": {
-		"init_prompts": [
-			"<ENT0> is instance of Tea ."
-		],
-		"seed_ent_tuples": [
-			[
-				"lemon_zest"
-			],
-			[
-				"peppermint_tea"
-			],
-			[
-				"black_tea"
-			],
-			[
-				"tea"
-			],
-			[
-				"green_tea"
-			]
-		]
-	},
-	"is_instance_of_infusion_drink": {
-		"init_prompts": [
-			"<ENT0> is instance of Infusion Drink ."
-		],
-		"seed_ent_tuples": [
-			[
-				"lemon_zest"
-			],
-			[
-				"peppermint_tea"
-			],
-			[
-				"black_tea"
-			],
-			[
-				"tea"
-			],
-			[
-				"espresso"
-			]
-		]
-	},
-	"is_instance_of_energy_drink": {
-		"init_prompts": [
-			"<ENT0> is instance of Energy Drink ."
-		],
-		"seed_ent_tuples": [
-			[
-				"5_hour_energy"
-			],
-			[
-				"celsius"
-			],
-			[
-				"nos"
-			],
-			[
-				"bang"
-			],
-			[
-				"full_throttle"
-			]
-		]
-	},
-	"is_instance_of_juice": {
-		"init_prompts": [
-			"<ENT0> is instance of Juice ."
-		],
-		"seed_ent_tuples": [
-			[
-				"lemonade"
-			],
-			[
-				"grape_juice"
-			],
-			[
-				"pineapple_juice"
-			],
-			[
-				"key_lime_juice"
-			],
-			[
-				"lemon_juice"
-			]
-		]
-	},
-	"is_instance_of_drinking_water": {
-		"init_prompts": [
-			"<ENT0> is instance of Drinking Water ."
-		],
-		"seed_ent_tuples": [
-			[
-				"hot_water"
-			],
-			[
-				"bottled_water"
-			],
-			[
-				"sparkling_water"
-			],
-			[
-				"tap_water"
-			]
-		]
-	},
-	"is_instance_of_drink": {
-		"init_prompts": [
-			"<ENT0> is instance of Drink ."
-		],
-		"seed_ent_tuples": [
-			[
-				"lemonade"
-			],
-			[
-				"grape_juice"
-			],
-			[
-				"rice_wine"
-			],
-			[
-				"tequila"
-			],
-			[
-				"soda"
-			]
-		]
-	},
-	"is_instance_of_drinkable_liquid": {
-		"init_prompts": [
-			"<ENT0> is instance of Drinkable Liquid ."
-		],
-		"seed_ent_tuples": [
-			[
-				"soybean_oil"
-			],
-			[
-				"clover"
-			],
-			[
-				"ghee"
-			],
-			[
-				"lemonade"
-			],
-			[
-				"grape_juice"
-			]
-		]
-	},
-	"is_instance_of_edible": {
-		"init_prompts": [
-			"<ENT0> is instance of Edible ."
-		],
-		"seed_ent_tuples": [
-			[
-				"cricket_flour"
-			],
-			[
-				"conch"
-			],
-			[
-				"peach"
-			],
-			[
-				"chili_powder"
-			],
-			[
-				"chinese_five_spice_powder"
-			]
-		]
-	}
+    "is_instance_of_food_dressing": {
+        "init_prompts": [
+            "<ENT0> is instance of Food Dressing ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "ketchup"
+            ],
+            [
+                "french dressing"
+            ],
+            [
+                "thousand island"
+            ],
+            [
+                "ranch"
+            ],
+            [
+                "whipped cream"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of food dressing .",
+            "<ENT0> is a form of edible topping .",
+            "<ENT0> serves as a condiment for food .",
+            "A <ENT0> is a type of dressing used on food .",
+            "<ENT0> dressing is identified as a condiment .",
+            "<ENT0> is categorized as a type of condiment .",
+            "One type of food dressing is <ENT0> dressing .",
+            "<ENT0> falls under the category of condiments .",
+            "One type of food dressing is exemplified by <ENT0> .",
+            "<ENT0> dressing is a kind of condiment used on food .",
+            "<ENT0> is a variety of condiment used for flavoring food .",
+            "<ENT0> dressing is one example of a type of food dressing .",
+            "<ENT0> dressing is a specific type of condiment commonly used as a dressing for food .",
+            "<ENT0> dressing is a type of food sauce often used to accompany salads and other dishes ."
+        ]
+    },
+    "is_instance_of_sauce": {
+        "init_prompts": [
+            "<ENT0> is instance of Sauce ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "hoisin sauce"
+            ],
+            [
+                "tamarind chutney"
+            ],
+            [
+                "peanut sauce"
+            ],
+            [
+                "marsala wine"
+            ],
+            [
+                "dipping sauces"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of sauce .",
+            "<ENT0> is a sauce variety .",
+            "<ENT0> are examples of sauces .",
+            "<ENT0> are a form of condiment .",
+            "Sauces can include <ENT0> as well .",
+            "Sauces are commonly used as <ENT0> .",
+            "Sauce can be exemplified by <ENT0> .",
+            "Sauce is a category that includes <ENT0> .",
+            "<ENT0> belongs to the category of sauces .",
+            "Sauces can include tasty options like <ENT0> .",
+            "<ENT0> can be categorized as a type of sauce .",
+            "Sauces such as <ENT0> are prime illustrations .",
+            "The sauce known as <ENT0> is a type of condiment .",
+            "\"<ENT0>, similar to other sauces, are a type of condiment.\" ."
+        ]
+    },
+    "is_instance_of_food_seasoning": {
+        "init_prompts": [
+            "<ENT0> is instance of Food Seasoning ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "paprika"
+            ],
+            [
+                "curry powder"
+            ],
+            [
+                "garlic powder"
+            ],
+            [
+                "file powder"
+            ],
+            [
+                "wasabi"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of food seasoning .",
+            "<ENT0> is a variety of spice used to flavor food .",
+            "<ENT0> refers to a particular kind of culinary spice .",
+            "<ENT0>, a food condiment, falls into its own category .",
+            "A popular spice used to flavor food is known as <ENT0> .",
+            "<ENT0> is an example of a type of seasoning used in food .",
+            "A common type of flavoring utilized in cooking is <ENT0> .",
+            "One type of seasoning commonly employed in food is known as <ENT0> .",
+            "One illustration of a kind of seasoning employed in cuisine is <ENT0> .",
+            "<ENT0> can be seen as a seasoning that is commonly utilized in cooking .",
+            "<ENT0> is a specific type of seasoning that is commonly utilized in the culinary world ."
+        ]
+    },
+    "is_instance_of_spice": {
+        "init_prompts": [
+            "<ENT0> is instance of Spice ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "coriander"
+            ],
+            [
+                "paprika"
+            ],
+            [
+                "cardamom"
+            ],
+            [
+                "basil leaves"
+            ],
+            [
+                "kashmiri chili"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of spice .",
+            "<ENT0> is a kind of seasoning .",
+            "A specific spice is known as <ENT0> .",
+            "<ENT0> can be categorized as a spice .",
+            "<ENT0> is a specific variety of spice .",
+            "A kind of seasoning is known as <ENT0> .",
+            "<ENT0> can be classified as a seasoning .",
+            "<ENT0> belongs to the category of spices .",
+            "One type of spice is referred to as <ENT0> .",
+            "<ENT0> are considered to be a type of spice .",
+            "<ENT0> is categorized as a variety of seasoning .",
+            "Spice is a type of item that includes <ENT0> as one of its examples ."
+        ]
+    },
+    "is_instance_of_sweetener": {
+        "init_prompts": [
+            "<ENT0> is instance of Sweetener ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "monk fruit"
+            ],
+            [
+                "aspartame"
+            ],
+            [
+                "sugar"
+            ],
+            [
+                "stevia"
+            ],
+            [
+                "saccharin"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of sweetener .",
+            "<ENT0> serves as a kind of sweetener .",
+            "<ENT0> is a form of sweetening agent .",
+            "<ENT0> is a kind of sugar substitute .",
+            "<ENT0> belongs to the category of sweeteners .",
+            "-\n<ENT0> can be classified as a type of sweetener .",
+            "<ENT0> is a type of substance used to add sweetness .",
+            "<ENT0> falls under the classification of sweeteners .",
+            "<ENT0> is classified as a variety of sugar substitute .",
+            "<ENT0> can be described as a type of sweetener that is used as a substitute for sugar ."
+        ]
+    },
+    "is_instance_of_food_additive": {
+        "init_prompts": [
+            "<ENT0> is instance of Food Additive ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "coriander"
+            ],
+            [
+                "paprika"
+            ],
+            [
+                "curry powder"
+            ],
+            [
+                "hoisin sauce"
+            ],
+            [
+                "garlic powder"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a food seasoning .",
+            "<ENT0> is a type of food additive .",
+            "<ENT0> is a seasoning used in food .",
+            "<ENT0> functions as a culinary spice .",
+            "<ENT0> is a type of cooking condiment .",
+            "<ENT0> is a type of kitchen spice blend .",
+            "<ENT0> is a form of culinary supplement .",
+            "<ENT0> is a condiment used to flavor food .",
+            "<ENT0> belongs to the group of food additives .",
+            "<ENT0> falls under the category of food additives .",
+            "<ENT0> is a spice used to enhance the flavor of food .",
+            "<ENT0> can be classified as a form of food enhancement .",
+            "<ENT0> is a type of spice that is commonly used in cooking .",
+            "<ENT0> is a kind of culinary substance used to enhance dishes .",
+            "The type of food additive that <ENT0> falls under is known as an instance ."
+        ]
+    },
+    "is_instance_of_beef": {
+        "init_prompts": [
+            "<ENT0> is instance of Beef ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "flank"
+            ],
+            [
+                "beef balls"
+            ],
+            [
+                "sirloin"
+            ],
+            [
+                "new york strip"
+            ],
+            [
+                "ground beef"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of beef .",
+            "Beef is a type of <ENT0> .",
+            "<ENT0> are a version of beef .",
+            "Beef <ENT0> is a variety of meat .",
+            "<ENT0> belongs to the category of beef .",
+            "Beef categorizes <ENT0> within its class .",
+            "Beef is the category that includes <ENT0> .",
+            "<ENT0> falls under the designation of beef .",
+            "The type of <ENT0> is considered to be beef .",
+            "<ENT0> is categorized as a variety of bovine meat .",
+            "Beef of the ground variety is classified as <ENT0> .",
+            "This piece of information implies that a <ENT0> is a type of beef ."
+        ]
+    },
+    "is_instance_of_pork-derived_food": {
+        "init_prompts": [
+            "<ENT0> is instance of Pork-derived Food ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "prosciutto"
+            ],
+            [
+                "roast pork"
+            ],
+            [
+                "pork chop"
+            ],
+            [
+                "meat"
+            ],
+            [
+                "pork sausage"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a pork-based culinary item .",
+            "<ENT0> is a culinary dish made from pork .",
+            "Pork-derived food is an example of <ENT0> .",
+            "A <ENT0> is a food product derived from pork .",
+            "<ENT0> is a type of food that comes from pork .",
+            "One illustration of pork products is a <ENT0> .",
+            "Pork-based cuisine is a type of <ENT0>-focused dish .",
+            "A <ENT0> belongs to the category of pork-derived foods .",
+            "<ENT0> can be classified as a type of pork-derived food .",
+            "One illustration of <ENT0> is food that is made from pork .",
+            "Pork is a type of food that falls under the category of <ENT0> .",
+            "Pork is a type of edible substance that is derived from <ENT0> .",
+            "A <ENT0> can be categorized as a type of food that is derived from pork ."
+        ]
+    },
+    "is_instance_of_poultry-derived_food": {
+        "init_prompts": [
+            "<ENT0> is instance of Poultry-derived Food ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "turkey sausage"
+            ],
+            [
+                "chicken soup"
+            ],
+            [
+                "egg yolks"
+            ],
+            [
+                "ground lamb"
+            ],
+            [
+                "duck confit"
+            ]
+        ],
+        "prompts": [
+            "Poultry-derived food includes <ENT0> .",
+            "<ENT0> is a type of food made from poultry .",
+            "<ENT0> is a culinary dish composed of poultry meat .",
+            "<ENT0> is classified as a type of poultry-based food .",
+            "<ENT0> are a form of sustenance derived from poultry .",
+            "One example of a dish that comes from poultry is <ENT0> .",
+            "<ENT0> can be classified as a type of food that comes from poultry .",
+            "<ENT0> belongs to the category of food that is derived from poultry .",
+            "A type of cuisine called <ENT0> is created using poultry ingredients .",
+            "<ENT0> falls under the group of nourishment that is made from poultry .",
+            "<ENT0> is a form of cuisine that consists of fowl as the main ingredient ."
+        ]
+    },
+    "is_instance_of_meat": {
+        "init_prompts": [
+            "<ENT0> is instance of Meat ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "flank"
+            ],
+            [
+                "prosciutto"
+            ],
+            [
+                "turkey sausage"
+            ],
+            [
+                "chicken soup"
+            ],
+            [
+                "beef balls"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of meat .",
+            "An example of meat is <ENT0> .",
+            "A form of meat known as <ENT0> .",
+            "<ENT0> is a kind of cured meat .",
+            "<ENT0> falls into the category of meat .",
+            "Meat includes <ENT0> as one of its types .",
+            "A <ENT0> is a form of edible animal flesh .",
+            "<ENT0> can be classified as a type of meat .",
+            "<ENT0> is a type of meat that can be used as an example .",
+            "A representation of a type of animal flesh is seen in the form of <ENT0> ."
+        ]
+    },
+    "is_instance_of_butter": {
+        "init_prompts": [
+            "<ENT0> is instance of Butter ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "grass fed butter"
+            ],
+            [
+                "cultured butter"
+            ],
+            [
+                "unsalted butter"
+            ],
+            [
+                "peanut butter"
+            ],
+            [
+                "salted butter"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of butter .",
+            "Butter is an example of <ENT0> .",
+            "<ENT0> is represented by butter .",
+            "One example of butter is <ENT0> .",
+            "<ENT0> could be exemplified by butter .",
+            "<ENT0> refers to a specific type of butter .",
+            "The existence of <ENT0> is an example of butter .",
+            "<ENT0> can be considered a type or example of butter .",
+            "The term <ENT0> can be categorized as a type of butter .",
+            "Butter that has been seasoned with salt is known as <ENT0> .",
+            "Butter that is derived from cows that have been exclusively fed grass is known as <ENT0> ."
+        ]
+    },
+    "is_instance_of_cheese": {
+        "init_prompts": [
+            "<ENT0> is instance of Cheese ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "brie"
+            ],
+            [
+                "mascarpone"
+            ],
+            [
+                "cheese"
+            ],
+            [
+                "mozzarella"
+            ],
+            [
+                "gouda"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of cheese .",
+            "<ENT0> is a variety of dairy product .",
+            "<ENT0> is known as an example of itself .",
+            "<ENT0> belongs to the category of cheese .",
+            "<ENT0> refers to a specific type of cheese .",
+            "<ENT0> falls under the classification of cheese .",
+            "<ENT0> can be described as an example of itself .",
+            "<ENT0> is considered to be an example of cheese .",
+            "<ENT0> cheese can be regarded as a type or instance of cheese .",
+            "<ENT0> cheese is an example or type of cheese that can be referenced .",
+            "The cheese known as <ENT0> can be considered an example or case of cheese .",
+            "<ENT0> cheese could be seen as a specific instance or illustration of cheese ."
+        ]
+    },
+    "is_instance_of_milk": {
+        "init_prompts": [
+            "<ENT0> is instance of Milk ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "ice cream"
+            ],
+            [
+                "almond milk"
+            ],
+            [
+                "sweetened condensed milk"
+            ],
+            [
+                "soy milk"
+            ],
+            [
+                "2  milk"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of milk .",
+            "Milk can be represented by <ENT0> .",
+            "<ENT0> falls under the category of milk .",
+            "<ENT0> can be classified as a type of milk .",
+            "Milk can be categorized as a form of <ENT0> .",
+            "Milk is the category to which <ENT0> belongs .",
+            "<ENT0> belongs to the broader category of milk .",
+            "One could categorize <ENT0> as a variety of milk .",
+            "Milk is the general category that <ENT0> falls under .",
+            "<ENT0> is a variation of dairy product made from milk .",
+            "Milk can be classified as the main ingredient in <ENT0> .",
+            "<ENT0> is classified as a type of milk in the general category .",
+            "Milk that has been sweetened and condensed can be classified as <ENT0> .",
+            "Milk alternatives, such as <ENT0>, are considered to be in the category of milk products ."
+        ]
+    },
+    "is_instance_of_yogurt": {
+        "init_prompts": [
+            "<ENT0> is instance of Yogurt ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "greek yogurt"
+            ],
+            [
+                "almond milk yogurt"
+            ],
+            [
+                "low fat yogurt"
+            ],
+            [
+                "probiotic yogurt"
+            ],
+            [
+                "full fat yogurt"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of yogurt .",
+            "<ENT0> is classified as yogurt .",
+            "<ENT0> falls under the category of yogurt .",
+            "<ENT0> can be referred to as a type of yogurt .",
+            "<ENT0> belongs to the classification of yogurt .",
+            "Yogurt containing probiotics is categorized as <ENT0> .",
+            "The type of yogurt known as <ENT0> is an example of yogurt .",
+            "Paraphrase: yogurt that contains probiotics is an example of <ENT0> .",
+            "<ENT0> is a type of yogurt that serves as an illustration of yogurt .",
+            "<ENT0>, a well-known variety of yogurt, serves as a prime instance of yogurt .",
+            "Yogurt that contains a small amount of fat falls under the category of <ENT0> ."
+        ]
+    },
+    "is_instance_of_dairy_product": {
+        "init_prompts": [
+            "<ENT0> is instance of Dairy Product ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "grass fed butter"
+            ],
+            [
+                "ice cream"
+            ],
+            [
+                "almond milk"
+            ],
+            [
+                "brie"
+            ],
+            [
+                "milk"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of dairy product .",
+            "The dairy product category includes <ENT0> .",
+            "<ENT0> falls into the group of dairy items .",
+            "<ENT0> falls under the dairy product category .",
+            "<ENT0> belongs to the category of dairy products .",
+            "Dairy products encompass <ENT0> as one of its members .",
+            "<ENT0> falls under the classification of dairy products .",
+            "One of the products included in the dairy category is <ENT0> .",
+            "<ENT0> can be classified as one of the various dairy products .",
+            "As one of its members, <ENT0> makes up part of the group of dairy products .",
+            "A dairy product that can serve as an alternative to actual dairy milk is <ENT0> ."
+        ]
+    },
+    "is_instance_of_edible_crustaceans": {
+        "init_prompts": [
+            "<ENT0> is instance of Edible Crustaceans ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "shrimp"
+            ],
+            [
+                "shrimp dumplings"
+            ],
+            [
+                "crab"
+            ],
+            [
+                "lobster"
+            ],
+            [
+                "graham cracker crust"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> are a type of edible crustacean .",
+            "<ENT0> can be classified as an edible crustacean .",
+            "<ENT0> are a species of crustacean that can be eaten .",
+            "The edible crustaceans are exemplified by the <ENT0> .",
+            "The <ENT0> belongs to the category of edible crustaceans .",
+            "<ENT0>s are a type of crustacean that is safe for consumption .",
+            "Edible crustaceans, such as <ENT0>, are a common type of crust .",
+            "A common way to categorize <ENT0> is as a type of edible shellfish .",
+            "The crust used in <ENT0>s is considered a type of edible crustacean .",
+            "A <ENT0> can be considered to be an example of an edible crustacean .",
+            "<ENT0>s are a type of edible crust made from crushed graham crackers .",
+            "A <ENT0> can be described as a type of consumable shell made from crustaceans .",
+            "The creature known as a <ENT0> falls into the category of a crustacean that is safe for consumption ."
+        ]
+    },
+    "is_instance_of_edible_fish": {
+        "init_prompts": [
+            "<ENT0> is instance of Edible Fish ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "salmon"
+            ],
+            [
+                "yellowtail"
+            ],
+            [
+                "cod"
+            ],
+            [
+                "haddock"
+            ],
+            [
+                "trout"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of edible fish .",
+            "A <ENT0> is a type of fish that is edible .",
+            "<ENT0> can be categorized as an edible fish .",
+            "A <ENT0> is considered to be an edible fish .",
+            "<ENT0> is classified as an edible fish species .",
+            "<ENT0> is a variety of fish that is safe to consume .",
+            "<ENT0> is a kind of fish that can be consumed as food .",
+            "<ENT0> is an example of a type of fish that can be eaten .",
+            "A possible paraphrase could be:\n\n<ENT0> is classified as an edible species of fish .",
+            "<ENT0> is considered to be an example of a type of fish that is safe for consumption ."
+        ]
+    },
+    "is_instance_of_edible_molluscs": {
+        "init_prompts": [
+            "<ENT0> is instance of Edible Molluscs ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "conch"
+            ],
+            [
+                "oysters"
+            ],
+            [
+                "scallops"
+            ],
+            [
+                "mussels"
+            ],
+            [
+                "sea urchin"
+            ]
+        ],
+        "prompts": [
+            "A <ENT0> is an edible mollusk .",
+            "Some edible mollusks include <ENT0> .",
+            "An edible mollusk is a type of <ENT0> .",
+            "<ENT0> are a type of mollusk that is edible .",
+            "<ENT0> are a specific example of edible mollusks .",
+            "A <ENT0> belongs to the category of edible molluscs .",
+            "<ENT0>s are a class of mollusks that can be consumed .",
+            "<ENT0> are a mollusk species that is suitable for consumption .",
+            "<ENT0> are a category of mollusk known for being safe for consumption .",
+            "<ENT0>, a type of mollusk, is considered a food source that is safe for human consumption ."
+        ]
+    },
+    "is_instance_of_seafood": {
+        "init_prompts": [
+            "<ENT0> is instance of Seafood ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "shrimp"
+            ],
+            [
+                "shrimp dumplings"
+            ],
+            [
+                "crab"
+            ],
+            [
+                "conch"
+            ],
+            [
+                "salmon"
+            ]
+        ],
+        "prompts": [
+            "Seafood includes <ENT0> .",
+            "<ENT0> is a type of seafood .",
+            "A type of seafood is known as <ENT0> .",
+            "<ENT0> is a part of the seafood category .",
+            "<ENT0> are a specific example of seafood .",
+            "A <ENT0> belongs to the category of seafood .",
+            "A <ENT0> is categorized as a form of seafood .",
+            "<ENT0> refers to a variety of edible shellfish .",
+            "<ENT0> serve as a distinct representation of seafood .",
+            "Examples of seafood are crab, lobster, salmon, and <ENT0> .",
+            "Shellfish and other ocean delicacies, such as <ENT0>, are considered seafood ."
+        ]
+    },
+    "is_instance_of_honey": {
+        "init_prompts": [
+            "<ENT0> is instance of Honey ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "acacia"
+            ],
+            [
+                "orange blossom"
+            ],
+            [
+                "wildflower"
+            ],
+            [
+                "clover"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a kind of honey .",
+            "Honey is an example of <ENT0> .",
+            "Honey is represented by <ENT0> .",
+            "The <ENT0> is an example of honey .",
+            "A type of honey is derived from <ENT0> .",
+            "<ENT0> is classified as a type of honey .",
+            "<ENT0> falls under the category of honey .",
+            "<ENT0> represents a specific type of honey .",
+            "<ENT0> is a type of sweet, sticky substance .",
+            "<ENT0> is a type of plant that produces honey .",
+            "It can be said that <ENT0> is a type of honey .",
+            "A <ENT0> is a prime example of a type of honey .",
+            "<ENT0> serves as the perfect representation of honey .",
+            "The <ENT0> can be considered as a type or example of honey .",
+            "Honey is one type of plant that belongs to the <ENT0> family .",
+            "<ENT0> is a common type of plant that is often compared to honey .",
+            "A <ENT0> is an example of a type of plant, specifically honey plants .",
+            "The substance known as honey can be seen as a representation of <ENT0> ."
+        ]
+    },
+    "is_instance_of_insect-derived_food": {
+        "init_prompts": [
+            "<ENT0> is instance of Insect-Derived Food ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "ant eggs"
+            ],
+            [
+                "acacia"
+            ],
+            [
+                "orange blossom"
+            ],
+            [
+                "wildflower"
+            ],
+            [
+                "clover"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> are a type of insect-derived food .",
+            "A common dish made from insects is <ENT0> .",
+            "Insects produce a type of food known as <ENT0> .",
+            "One type of food that comes from bugs is <ENT0> .",
+            "An instance of an insect-derived food is <ENT0> .",
+            "<ENT0> is an example of food derived from insects .",
+            "<ENT0> are a type of food that comes from insects .",
+            "<ENT0> belong to the category of food that is derived from insects .",
+            "<ENT0> is classified as a form of nourishment that comes from insects .",
+            "Edible citrus flower buds, commonly known as <ENT0>, are derived from insect pollination ."
+        ]
+    },
+    "is_instance_of_animal-derived_food": {
+        "init_prompts": [
+            "<ENT0> is instance of Animal-derived Food ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "flank"
+            ],
+            [
+                "shrimp"
+            ],
+            [
+                "prosciutto"
+            ],
+            [
+                "shrimp dumplings"
+            ],
+            [
+                "grass fed butter"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> are classified as an animal-based food .",
+            "A type of food derived from animals is <ENT0> .",
+            "<ENT0> is a type of food that comes from animals .",
+            "<ENT0> exemplify a dish made from an animal source .",
+            "A popular delicacy, <ENT0> is derived from animals .",
+            "<ENT0> is an example of food derived from an animal .",
+            "<ENT0> are categorized as a food derived from animals .",
+            "<ENT0> falls under the category of animal-derived food .",
+            "<ENT0> are a food made from creatures as their main ingredient .",
+            "The term \"<ENT0>\" refers to a type of food that is derived from animals ."
+        ]
+    },
+    "is_instance_of_breakfast_cereal": {
+        "init_prompts": [
+            "<ENT0> is instance of Breakfast Cereal ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "cocoa puffs"
+            ],
+            [
+                "lucky charms"
+            ],
+            [
+                "malt"
+            ],
+            [
+                "corn flakes"
+            ],
+            [
+                "cheerios"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of breakfast cereal .",
+            "<ENT0> is a kind of morning meal grain .",
+            "<ENT0> can be described as breakfast cereal .",
+            "One form of cereal is referred to as <ENT0> .",
+            "A type of breakfast cereal is known as <ENT0> .",
+            "A <ENT0> cereal is a variety of breakfast food .",
+            "<ENT0> belongs to the category of breakfast cereal .",
+            "A breakfast cereal variant goes by the name <ENT0> .",
+            "Breakfast cereal is a category that <ENT0> belongs to .",
+            "<ENT0> falls under the classification of breakfast cereal .",
+            "A variety of morning meal cereal is commonly referred to as <ENT0> .",
+            "<ENT0> refers to a variety of cereal commonly eaten as breakfast food .",
+            "A common type of breakfast food is represented by <ENT0>, which is often used as an example of a breakfast cereal ."
+        ]
+    },
+    "is_instance_of_bread": {
+        "init_prompts": [
+            "<ENT0> is instance of Bread ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "ladyfingers"
+            ],
+            [
+                "bread rolls"
+            ],
+            [
+                "burger bun"
+            ],
+            [
+                "sourdough bread"
+            ],
+            [
+                "pie crust"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of bread .",
+            "<ENT0> is categorized as bread .",
+            "Bread includes <ENT0> in its category .",
+            "Bread is the classification of <ENT0> .",
+            "<ENT0> fall under the category of bread .",
+            "<ENT0> are classified as bread products .",
+            "<ENT0> are a variety or variant of bread .",
+            "The <ENT0> can be considered a type of bread .",
+            "<ENT0> fall under the classification of baked goods .",
+            "The <ENT0> belongs to the category of bread products ."
+        ]
+    },
+    "is_instance_of_rice": {
+        "init_prompts": [
+            "<ENT0> is instance of Rice ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "sticky rice in lotus leaf"
+            ],
+            [
+                "arborio rice"
+            ],
+            [
+                "sushi rice"
+            ],
+            [
+                "brown rice"
+            ],
+            [
+                "wild rice"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of rice .",
+            "<ENT0> refers to a variety of rice .",
+            "<ENT0> belongs to the category of rice .",
+            "One example of rice is the dish of <ENT0> .",
+            "<ENT0> can be considered as a type of rice .",
+            "One could consider <ENT0> as a type of rice .",
+            "<ENT0> falls under the classification of rice .",
+            "<ENT0> encompasses a diverse range of rice types .",
+            "Varieties of rice are included in the term <ENT0> .",
+            "A traditional dish called <ENT0> is a type of rice .",
+            "<ENT0> is a term used to describe different types of rice .",
+            "<ENT0> is a type of grain that falls into the category of rice .",
+            "The term \"<ENT0>\" pertains to a type of rice that comes in different varieties ."
+        ]
+    },
+    "is_instance_of_pasta_types": {
+        "init_prompts": [
+            "<ENT0> is instance of Pasta Types ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "linguine"
+            ],
+            [
+                "orzo"
+            ],
+            [
+                "penne"
+            ],
+            [
+                "noodles"
+            ],
+            [
+                "farfalle"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of pasta .",
+            "<ENT0> is a variety of noodle .",
+            "<ENT0> are considered to be a type of pasta .",
+            "<ENT0> belongs to the category of pasta types .",
+            "<ENT0> falls under the group of pasta varieties .",
+            "<ENT0> is classified as one of the types of pasta .",
+            "<ENT0> is one of the many types of pasta available .",
+            "<ENT0> are a category within the classification of pasta types .",
+            "<ENT0> is considered to be one of the various varieties of pasta .",
+            "Past types include <ENT0> pasta, which is a type of cylindrical pasta ."
+        ]
+    },
+    "is_instance_of_edible_cereal": {
+        "init_prompts": [
+            "<ENT0> is instance of Edible Cereal ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "sticky rice in lotus leaf"
+            ],
+            [
+                "cocoa puffs"
+            ],
+            [
+                "ladyfingers"
+            ],
+            [
+                "linguine"
+            ],
+            [
+                "arborio rice"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a kind of edible seed .",
+            "<ENT0> is a type of edible grain .",
+            "<ENT0> are a variety of consumable grain .",
+            "<ENT0> can be classified as an edible cereal .",
+            "Edible grain refers to <ENT0>, a type of food .",
+            "<ENT0> belongs to the category of edible cereal .",
+            "The type of cereal <ENT0> falls under is edible .",
+            "<ENT0> could be considered a type of edible cereal .",
+            "Edible cereal includes <ENT0> as one of its varieties .",
+            "<ENT0> can be classified as a type of cereal that is edible .",
+            "<ENT0> is a type of cereal that is suitable for consumption .",
+            "<ENT0> is an example of a type of breakfast cereal that can be eaten ."
+        ]
+    },
+    "is_instance_of_edible_fruit": {
+        "init_prompts": [
+            "<ENT0> is instance of Edible Fruit ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "lime"
+            ],
+            [
+                "avocado"
+            ],
+            [
+                "apple"
+            ],
+            [
+                "watermelon"
+            ],
+            [
+                "blueberry"
+            ]
+        ],
+        "prompts": [
+            "An <ENT0> is a type of edible fruit .",
+            "<ENT0> is classified as an edible fruit .",
+            "An example of an edible fruit is <ENT0> .",
+            "<ENT0> is categorized as a consumable produce .",
+            "<ENT0> is an example of a fruit that can be eaten .",
+            "<ENT0> is considered to be one type of consumable fruit .",
+            "A <ENT0> is one of various types of fruits that can be consumed .",
+            "The edible fruit known as <ENT0> falls under the category of fruit .",
+            "The fruit known as <ENT0> is considered to be a type of edible fruit .",
+            "<ENT0> is categorized as a type of fruit that is safe for consumption .",
+            "An edible fruit, <ENT0> falls under the category of being an instance of such ."
+        ]
+    },
+    "is_instance_of_edible_mushrooms": {
+        "init_prompts": [
+            "<ENT0> is instance of Edible Mushrooms ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "shiitake"
+            ],
+            [
+                "mushrooms"
+            ],
+            [
+                "yeast"
+            ],
+            [
+                "truffle"
+            ],
+            [
+                "morel"
+            ]
+        ],
+        "prompts": [
+            "Edible mushrooms include <ENT0> .",
+            "<ENT0> are a type of edible fungi .",
+            "<ENT0> are a kind of consumable fungi .",
+            "The <ENT0> is a type of edible mushroom .",
+            "<ENT0>s are a form of consumable mushrooms .",
+            "The <ENT0> mushroom is a variety of edible fungi .",
+            "Edible fungi that are consumed are called <ENT0> .",
+            "<ENT0> are considered to be a type of edible mushroom .",
+            "The term <ENT0> refers to a variety of consumable fungus .",
+            "<ENT0> mushrooms belong to the category of edible mushrooms .",
+            "The <ENT0> is a type of mushroom that is safe for consumption ."
+        ]
+    },
+    "is_instance_of_edible_vegetal_oil": {
+        "init_prompts": [
+            "<ENT0> is instance of Edible Vegetal Oil ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "peanut oil"
+            ],
+            [
+                "avocado oil"
+            ],
+            [
+                "canola oil"
+            ],
+            [
+                "sesame oil"
+            ],
+            [
+                "ghee"
+            ]
+        ],
+        "prompts": [
+            "Edible vegetable oil known as <ENT0> .",
+            "<ENT0> is a type of edible vegetable oil .",
+            "<ENT0> is a variety of consumable cooking oil .",
+            "<ENT0> is a form of ingestible plant-derived oil .",
+            "<ENT0> is a type of edible oil derived from plants .",
+            "<ENT0> is an example of a consumable plant-based oil .",
+            "<ENT0> is a kind of vegetable oil meant for consumption .",
+            "An instance of an edible oil derived from plants is <ENT0> .",
+            "<ENT0> is an example of a vegetable oil that can be consumed .",
+            "One example of a consumable plant-based oil is known as <ENT0> .",
+            "An instance of a plant-derived oil that can be consumed is <ENT0> .",
+            "\"<ENT0> can be classified as a type of consumable plant-based oil.\" .",
+            "One example of a plant-based oil that is safe for consumption is <ENT0> .",
+            "An edible oil derived from plants, such as <ENT0>, serves as a prime illustration of consumable plant-based oils ."
+        ]
+    },
+    "is_instance_of_edible_seaweed": {
+        "init_prompts": [
+            "<ENT0> is instance of Edible Seaweed ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "sea lettuce"
+            ],
+            [
+                "seaweed"
+            ],
+            [
+                "miso soup garnish"
+            ],
+            [
+                "dulse"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is edible seaweed .",
+            "<ENT0> is a kind of edible marine plant .",
+            "Edible seaweed can be exemplified by <ENT0> .",
+            "<ENT0> is a type of seaweed that can be eaten .",
+            "<ENT0> is an example of a type of edible seaweed .",
+            "A type of edible seaweed, <ENT0> serves as a prime example .",
+            "<ENT0> is a good example of seaweed that is safe for consumption .",
+            "<ENT0>, also known as sea lettuce, is a variety of edible seaweed .",
+            "<ENT0>ed with seaweed is a type of seaweed that can be consumed as food .",
+            "<ENT0> is a variety of marine vegetation that is suitable for consumption ."
+        ]
+    },
+    "is_instance_of_edible_seeds": {
+        "init_prompts": [
+            "<ENT0> is instance of Edible Seeds ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "lentils"
+            ],
+            [
+                "peanuts"
+            ],
+            [
+                "sesame seeds"
+            ],
+            [
+                "sunflower seeds"
+            ],
+            [
+                "walnuts"
+            ]
+        ],
+        "prompts": [
+            "Edible seeds include <ENT0> .",
+            "<ENT0> are a type of edible seed .",
+            "<ENT0> are seeds that can be eaten .",
+            "Nuts that can be eaten include <ENT0> .",
+            "Edible seeds are exemplified by <ENT0> .",
+            "<ENT0> belong to the category of edible seeds .",
+            "<ENT0> are a variety of seed that is safe to eat .",
+            "Some types of seeds that can be consumed are <ENT0> .",
+            "<ENT0> are classified as a variety of consumable seed .",
+            "<ENT0> are considered to be an example of edible seeds .",
+            "Possible rephrased sentence:\n\n<ENT0> are an example of edible seeds ."
+        ]
+    },
+    "is_instance_of_edible_vegetable": {
+        "init_prompts": [
+            "<ENT0> is instance of Edible Vegetable ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "coconut milk"
+            ],
+            [
+                "plantain"
+            ],
+            [
+                "carrot"
+            ],
+            [
+                "kidney beans"
+            ],
+            [
+                "spinach"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> are a type of edible plant .",
+            "A <ENT0> is a kind of consumable plant .",
+            "A <ENT0> is a type of edible vegetable .",
+            "The <ENT0> is classified as an edible vegetable .",
+            "Edible vegetable can include <ENT0> as one type .",
+            "<ENT0> is a type of vegetable that can be consumed .",
+            "<ENT0> is an example of consumable plant-based food .",
+            "<ENT0> belongs to the category of edible vegetables .",
+            "<ENT0> is a variety of plant-based, consumable liquid .",
+            "<ENT0> is considered an example of an edible vegetable .",
+            "Edible vegetable refers to <ENT0> as one of its varieties .",
+            "<ENT0> is a specific type of vegetable that is suitable for eating .",
+            "A <ENT0> is a kind of food crop that can be consumed as a vegetable ."
+        ]
+    },
+    "is_instance_of_vegetal-derived_food": {
+        "init_prompts": [
+            "<ENT0> is instance of Vegetal-derived Food ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "lime"
+            ],
+            [
+                "peanut oil"
+            ],
+            [
+                "lentils"
+            ],
+            [
+                "sticky rice in lotus leaf"
+            ],
+            [
+                "coconut milk"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of plant-based food .",
+            "Vegetal-derived food is exemplified by <ENT0> .",
+            "A good illustration of a plant-based food is <ENT0> .",
+            "<ENT0> are an example of a food derived from plants .",
+            "<ENT0> serves as a prime example of a plant-based food .",
+            "<ENT0> are a type of food that is made from vegetables .",
+            "One example of a nutritious plant-based option is <ENT0> .",
+            "A <ENT0> is an example of food that is derived from vegetation .",
+            "<ENT0> is classified as a vegetable that is derived from plants .",
+            "<ENT0>s are a type of edible item that comes from plant sources .",
+            "Plant-based foods, like <ENT0>, serve as a prime example of food products that originate from plants ."
+        ]
+    },
+    "is_instance_of_italian_cuisine_recipe": {
+        "init_prompts": [
+            "<ENT0> is instance of Italian Cuisine Recipe ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "tricolore salad"
+            ],
+            [
+                "spaghetti carbonara"
+            ],
+            [
+                "margherita pizza"
+            ],
+            [
+                "risotto alla milanese"
+            ],
+            [
+                "caprese salad"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of italian recipe .",
+            "One dish commonly found in italian cuisine is a <ENT0> .",
+            "A <ENT0> is an example of a recipe from italian cuisine .",
+            "The <ENT0> is a classic representation of an italian recipe .",
+            "One illustration of a dish from italian cuisine is a <ENT0> .",
+            "The <ENT0> is a perfect example of an italian cuisine recipe .",
+            "<ENT0> can be categorized as a type of italian cuisine recipe .",
+            "<ENT0> is a type of recipe that is representative of italian cuisine .",
+            "An italian recipe, the <ENT0>, exemplifies a dish from italian cuisine .",
+            "An italian <ENT0> is a prime instance of a dish found in the italian culinary tradition .",
+            "Italian cuisine is widely recognized for its rich and flavorful dishes, and <ENT0> is no exception ."
+        ]
+    },
+    "is_instance_of_latin_cuisine_recipe": {
+        "init_prompts": [
+            "<ENT0> is instance of Latin Cuisine Recipe ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "sopa de lima"
+            ],
+            [
+                "aji de gallina"
+            ],
+            [
+                "chimichurri steak"
+            ],
+            [
+                "tamales"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a latin cuisine recipe .",
+            "<ENT0> is a typical latin american dish .",
+            "<ENT0> is a common dish in latin america .",
+            "<ENT0> is a traditional dish from latin cuisine .",
+            "One of the staple dishes in latin america is <ENT0> .",
+            "<ENT0> is an example of a recipe from latin cuisine .",
+            "<ENT0> are a prime example of a latin cuisine recipe .",
+            "<ENT0> exemplify a dish originating from latin cooking .",
+            "A traditional latin american meal often includes <ENT0> .",
+            "<ENT0> is a classic dish found in latin american cuisine .",
+            "<ENT0> is a dish from the latin american culinary tradition .",
+            "The <ENT0> is an excellent example of a latin american recipe .",
+            "<ENT0> is a notable example of a latin american culinary dish .",
+            "<ENT0> is a recipe that belongs to the category of latin cuisine ."
+        ]
+    },
+    "is_instance_of_african_cuisine_recipe": {
+        "init_prompts": [
+            "<ENT0> is instance of African Cuisine Recipe ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "bunny chow"
+            ],
+            [
+                "jollof rice"
+            ],
+            [
+                "pepe soup"
+            ],
+            [
+                "dodo"
+            ],
+            [
+                "egusi soup"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a classic dish from africa .",
+            "\"<ENT0> is a classic african food dish.\" .",
+            "<ENT0> is a popular dish in african cuisine .",
+            "<ENT0> is a traditional african cuisine recipe .",
+            "<ENT0> is a type of recipe from african cuisine .",
+            "African cuisine includes <ENT0> as a popular dish .",
+            "<ENT0> is a prime example of a traditional african recipe .",
+            "African cuisine recipe features <ENT0> as a distinct dish .",
+            "<ENT0> represents a popular african recipe in the realm of cuisine .",
+            "The dish known as <ENT0> holds its roots in traditional african cuisine .",
+            "<ENT0> originates from african cuisine and is a particular type of recipe .",
+            "The <ENT0> can be considered a typical example of an african cuisine recipe .",
+            "The <ENT0> bird can be classified as an example of a recipe found in african cuisine ."
+        ]
+    },
+    "is_instance_of_american_cuisine_recipe": {
+        "init_prompts": [
+            "<ENT0> is instance of American Cuisine Recipe ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "chicago style hot dog"
+            ],
+            [
+                "apple pie"
+            ],
+            [
+                "california roll"
+            ],
+            [
+                "key lime pie"
+            ],
+            [
+                "maryland crab cakes"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is considered a classic american dish .",
+            "A classic american meal, <ENT0> are highly revered .",
+            "The <ENT0> is an example of an american-style recipe .",
+            "The <ENT0> is thought of as an american favorite food .",
+            "The <ENT0> is a type of recipe within american cuisine .",
+            "A classic recipe that represents american cuisine is <ENT0> .",
+            "<ENT0> is commonly regarded as a traditional american cuisine .",
+            "A quintessential example of an american cuisine recipe is <ENT0> .",
+            "<ENT0> represent a classic example of a recipe from american cuisine .",
+            "The <ENT0> can be considered a prime example of an american cuisine recipe .",
+            "<ENT0> is an authentic american cuisine recipe that is a perfect representation of the nation's unique culinary style ."
+        ]
+    },
+    "is_instance_of_carribean_cuisine_recipe": {
+        "init_prompts": [
+            "<ENT0> is instance of Carribean Cuisine Recipe ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "guava duff"
+            ],
+            [
+                "johnny cakes"
+            ],
+            [
+                "escovitch fish"
+            ],
+            [
+                "oxtail"
+            ],
+            [
+                "curried goat"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a classic caribbean dish .",
+            "A timeless caribbean meal is <ENT0> .",
+            "<ENT0> is a traditional caribbean cuisine .",
+            "<ENT0> is an example of a recipe in caribbean cuisine .",
+            "A traditional caribbean meal is represented by <ENT0> .",
+            "<ENT0> is a prime example of a caribbean culinary dish .",
+            "One of the beloved dishes from the caribbean is <ENT0> .",
+            "<ENT0> is a representation of a caribbean-inspired dish .",
+            "<ENT0> is a type of cuisine that originated in the caribbean .",
+            "<ENT0> are a specific type of dish found in caribbean cuisine .",
+            "<ENT0> can be considered as a type of caribbean cuisine recipe .",
+            "<ENT0> is a dish that is representative of the caribbean cuisine recipe ."
+        ]
+    },
+    "is_instance_of_japanese_cuisine_recipe": {
+        "init_prompts": [
+            "<ENT0> is instance of Japanese Cuisine Recipe ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "katsu curry"
+            ],
+            [
+                "miso soup"
+            ],
+            [
+                "shabu shabu"
+            ],
+            [
+                "tempura"
+            ],
+            [
+                "sashimi"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of japanese dish .",
+            "<ENT0> is a japanese-style cuisine .",
+            "<ENT0> is a popular cuisine from japan .",
+            "A popular dish in japanese cuisine is <ENT0> .",
+            "<ENT0> is a popular recipe in japanese cuisine .",
+            "<ENT0> is an example of a japanese cuisine recipe .",
+            "<ENT0> is an example of a traditional japanese dish .",
+            "<ENT0> is a dish commonly found in japanese cuisine .",
+            "<ENT0> is a japanese dish that originates from japan .",
+            "<ENT0> can be considered as a typical dish in japanese cooking .",
+            "One type of japanese dish that serves as a key example is <ENT0> .",
+            "<ENT0> is a specific type of recipe that belongs to the cuisine of japan .",
+            "<ENT0>, a dish from japan, serves as an illustration of a traditional japanese recipe .",
+            "<ENT0> is a type of japanese dish that serves as a prime example of the country's culinary recipes ."
+        ]
+    },
+    "is_instance_of_chinese_cuisine_recipe": {
+        "init_prompts": [
+            "<ENT0> is instance of Chinese Cuisine Recipe ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "kung pao chicken"
+            ],
+            [
+                "dim sum"
+            ],
+            [
+                "hot pot"
+            ],
+            [
+                "shrimp with lobster sauce"
+            ],
+            [
+                "dongpo pork"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a form of chinese cuisine .",
+            "\"<ENT0> is a popular chinese dish.\" .",
+            "<ENT0> is a type of chinese culinary dish .",
+            "A popular dish in chinese cuisine is <ENT0> .",
+            "<ENT0> is widely enjoyed among chinese cuisine .",
+            "<ENT0> is a well-liked dish in chinese cuisine .",
+            "<ENT0> is a type of recipe found in chinese cuisine .",
+            "One example of a recipe in chinese cuisine is <ENT0> .",
+            "Chinese cuisine has a variety of meals, including <ENT0> .",
+            "<ENT0> is a classic dish found in chinese cuisine recipes .",
+            "<ENT0> is a prime example of a traditional chinese culinary dish .",
+            "The technique known as <ENT0> is a commonly utilized part of chinese cuisine .",
+            "<ENT0> is a traditional chinese dish that is widely enjoyed in culinary cuisine ."
+        ]
+    },
+    "is_instance_of_indian_cuisine_recipe": {
+        "init_prompts": [
+            "<ENT0> is instance of Indian Cuisine Recipe ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "kofta curry"
+            ],
+            [
+                "tandoori chicken"
+            ],
+            [
+                "samosa"
+            ],
+            [
+                "biryani"
+            ],
+            [
+                "aloo gobi"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a staple dish in indian cuisine .",
+            "<ENT0> is a type of traditional indian dish .",
+            "The <ENT0> is a fundamental food in the indian diet .",
+            "<ENT0> is a common meal in the famous indian cuisine .",
+            "<ENT0> is an example of a recipe from indian cuisine .",
+            "The recipe for <ENT0> is a prime example of indian cuisine .",
+            "<ENT0> is a traditional and essential dish of indian cooking .",
+            "In the indian cuisine, <ENT0> is a common and essential dish .",
+            "<ENT0> is a representative example of an indian culinary dish .",
+            "<ENT0> is a specific representation of a recipe found in indian cuisine .",
+            "<ENT0> is a classic dish found in the varied and vibrant indian cuisine .",
+            "A <ENT0> can be considered a type of recipe that originated in indian cuisine ."
+        ]
+    },
+    "is_instance_of_recipe": {
+        "init_prompts": [
+            "<ENT0> is instance of Recipe ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "kofta curry"
+            ],
+            [
+                "tricolore salad"
+            ],
+            [
+                "sopa de lima"
+            ],
+            [
+                "kung pao chicken"
+            ],
+            [
+                "katsu curry"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of recipe .",
+            "A <ENT0> is a variety of dish .",
+            "<ENT0> is a kind of culinary dish .",
+            "One type of dish is known as <ENT0> .",
+            "<ENT0> can be classified as a recipe .",
+            "<ENT0> falls under the category of recipe .",
+            "One can classify <ENT0> as a type of recipe .",
+            "The <ENT0> is a specific example of a recipe .",
+            "There is a category of recipe that includes <ENT0> .",
+            "Tossed together, <ENT0> constitutes as a variety of dish .",
+            "The recipe for <ENT0> is a perfect example of a classic indian dish .",
+            "<ENT0> is a kind of dish that can be prepared following specific steps .",
+            "A dish comprised of <ENT0> would fit into the classification of a recipe ."
+        ]
+    },
+    "is_instance_of_food": {
+        "init_prompts": [
+            "<ENT0> is instance of Food ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "flank"
+            ],
+            [
+                "shrimp"
+            ],
+            [
+                "kofta curry"
+            ],
+            [
+                "tricolore salad"
+            ],
+            [
+                "sopa de lima"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a kind of dish .",
+            "<ENT0> is a type of food .",
+            "<ENT0> is a variety of cuisine .",
+            "<ENT0> is an example of culinary fare .",
+            "<ENT0> represents a type of sustenance .",
+            "<ENT0> can be considered a type of food .",
+            "A type of food is what <ENT0> is known as .",
+            "The <ENT0> is an example of a type of food .",
+            "One could classify <ENT0> as a variety of cuisine .",
+            "<ENT0> could be categorized as a form of sustenance .",
+            "\"<ENT0> may be classified as a form of nourishment.\" .",
+            "<ENT0> is a type of food that can serve as an example .",
+            "<ENT0> is a representative case of a particular kind of cuisine .",
+            "The <ENT0> serves as an illustration of a particular variety of cuisine .",
+            "Originating from india, <ENT0> is just one of the many delicious dishes in the world of food ."
+        ]
+    },
+    "is_instance_of_alcoholic_drink": {
+        "init_prompts": [
+            "<ENT0> is instance of Alcoholic Drink ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "beer"
+            ],
+            [
+                "wine"
+            ],
+            [
+                "cider"
+            ],
+            [
+                "rice wine"
+            ],
+            [
+                "whiskey"
+            ]
+        ],
+        "prompts": [
+            "Alcoholic beverages include <ENT0> .",
+            "<ENT0> is a form of alcoholic drink .",
+            "<ENT0> is a kind of intoxicating drink .",
+            "<ENT0> is a type of alcoholic beverage .",
+            "<ENT0> can be classified as an alcoholic drink .",
+            "One example of an alcoholic beverage is <ENT0> .",
+            "A form of alcoholic drink, <ENT0> is often consumed .",
+            "<ENT0> falls under the category of alcoholic drinks .",
+            "<ENT0> falls into the classification of beverages containing alcohol .",
+            "One type of beverage that falls into the category of alcoholic drinks is <ENT0> ."
+        ]
+    },
+    "is_instance_of_coffee": {
+        "init_prompts": [
+            "<ENT0> is instance of Coffee ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "espresso"
+            ],
+            [
+                "flat white"
+            ],
+            [
+                "turkish coffee"
+            ],
+            [
+                "latte"
+            ],
+            [
+                "mocha"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a form of coffee .",
+            "One kind of coffee is a <ENT0> .",
+            "A <ENT0> is a type of coffee variety .",
+            "<ENT0> can be considered a type of coffee .",
+            "A <ENT0> is an example of a type of coffee .",
+            "<ENT0> may be classified as a form of coffee .",
+            "<ENT0> is a variation of the coffee beverage .",
+            "A <ENT0> represents a specific kind of coffee .",
+            "One could categorize <ENT0> as a form of coffee .",
+            "A <ENT0> illustrates a particular style of coffee .",
+            "<ENT0> is often categorized as a variety of coffee ."
+        ]
+    },
+    "is_instance_of_tea": {
+        "init_prompts": [
+            "<ENT0> is instance of Tea ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "oolong tea"
+            ],
+            [
+                "berry blast"
+            ],
+            [
+                "tropical twist"
+            ],
+            [
+                "citrus splash"
+            ],
+            [
+                "watermelon wave"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a form of tea .",
+            "<ENT0> ere presents tea .",
+            "An example of tea is <ENT0> .",
+            "Tea is an example of <ENT0> .",
+            "Tea is represented by <ENT0> .",
+            "Tea can be exemplified by <ENT0> .",
+            "<ENT0> can serve as an example of tea .",
+            "<ENT0> is an example of a type of tea .",
+            "<ENT0> can be considered a type of tea .",
+            "Tea is a category that <ENT0> falls under .",
+            "One potential illustration for tea is a <ENT0> .",
+            "One instance of tea could be likened to a <ENT0> .",
+            "Tea has a variety of flavors, one of which is <ENT0> .",
+            "A type of tea that can be used as an example is <ENT0> .",
+            "A possible representation of tea is a type called \"<ENT0>.\" .",
+            "A possible rewording could be: <ENT0> is an example of a type of tea .",
+            "Tea is the general category that encompasses the specific type of drink known as <ENT0> ."
+        ]
+    },
+    "is_instance_of_infusion_drink": {
+        "init_prompts": [
+            "<ENT0> is instance of Infusion Drink ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "espresso"
+            ],
+            [
+                "oolong tea"
+            ],
+            [
+                "berry blast"
+            ],
+            [
+                "tropical twist"
+            ],
+            [
+                "citrus splash"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of infusion drink .",
+            "The <ENT0> refers to an infusion drink .",
+            "<ENT0> is an example of an infusion beverage .",
+            "An instance of an infusion beverage is <ENT0> .",
+            "This is referred to as <ENT0>, an infusion beverage .",
+            "Infusion drink, such as <ENT0>, is a kind of beverage .",
+            "A type of infusion drink, <ENT0> serves as a prime example .",
+            "<ENT0> is a beverage made by steeping various fruits and herbs .",
+            "The term \"<ENT0>\" signifies a beverage infused with tropical flavors .",
+            "The term \"<ENT0>\" indicates a drink made by steeping ingredients together .",
+            "The infusion drink known as <ENT0> is a perfect example of this type of beverage .",
+            "The term \"<ENT0>\" is used to describe a refreshing beverage made with infused flavors .",
+            "The term \"<ENT0>\" denotes a beverage made by infusing hot water through ground coffee beans .",
+            "<ENT0> is considered to be a kind of beverage that involves adding ingredients to create a flavorful blend .",
+            "A type of beverage that can be made by steeping leaves from the camellia sinensis plant, <ENT0> is considered an infusion drink ."
+        ]
+    },
+    "is_instance_of_energy_drink": {
+        "init_prompts": [
+            "<ENT0> is instance of Energy Drink ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "red bull"
+            ],
+            [
+                "bang"
+            ],
+            [
+                "nos"
+            ],
+            [
+                "celsius"
+            ],
+            [
+                "sports drink"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of energy drink .",
+            "One kind of energy drink is <ENT0> .",
+            "A <ENT0> is a form of energy beverage .",
+            "One type of energy beverage is <ENT0> .",
+            "Energy drinks can be classified as <ENT0> .",
+            "<ENT0> can be classified as an energy drink .",
+            "There is a type of energy drink called <ENT0> .",
+            "One example of an energy drink would be <ENT0> .",
+            "<ENT0> belongs to the category of energy drinks .",
+            "<ENT0> is often referred to as an energy beverage .",
+            "One way to categorize a <ENT0> is as an energy drink .",
+            "<ENT0> could be considered a type or form of energy drink .",
+            "<ENT0> is categorized as a form of beverage that provides energy .",
+            "<ENT0> is considered to be a type of highly caffeinated, carbonated beverage .",
+            "Categorizing it as an energy drink is an appropriate classification for <ENT0> .",
+            "The term \"<ENT0>\" refers to a specific variety of beverage known as an energy drink .",
+            "A type of beverage that contains energy-boosting ingredients and is popular among athletes and active individuals is known as a <ENT0> ."
+        ]
+    },
+    "is_instance_of_juice": {
+        "init_prompts": [
+            "<ENT0> is instance of Juice ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "orange juice"
+            ],
+            [
+                "smoothie"
+            ],
+            [
+                "cranberry juice"
+            ],
+            [
+                "grape juice"
+            ],
+            [
+                "lemonade"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of juice .",
+            "Juice is an example of <ENT0> .",
+            "<ENT0> belongs to the category of juices .",
+            "<ENT0> can be classified as a type of juice .",
+            "<ENT0> falls under the classification of juices .",
+            "A <ENT0> is classified within the juice category .",
+            "<ENT0> can be considered a type or example of juice .",
+            "Juice is a type of beverage, and <ENT0> falls into this category .",
+            "<ENT0> is an example of a beverage made from blending fruits and vegetables .",
+            "Juice and <ENT0> share a relationship of being a general type and specific type, respectively ."
+        ]
+    },
+    "is_instance_of_drinking_water": {
+        "init_prompts": [
+            "<ENT0> is instance of Drinking Water ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "sparkling water"
+            ],
+            [
+                "hot water"
+            ],
+            [
+                "tap water"
+            ],
+            [
+                "bottled water"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> refers to drinkable water .",
+            "<ENT0> is a type of potable water .",
+            "Drinking water is an example of <ENT0> .",
+            "<ENT0> is an example of drinking water .",
+            "One example of drinking water is <ENT0> .",
+            "<ENT0> is classified as drinkable water .",
+            "An instance of consuming water is <ENT0> .",
+            "Drinking water can be classified as <ENT0> .",
+            "<ENT0> can be categorized as drinking water .",
+            "One way to classify <ENT0> is as potable water .",
+            "Drinking water can fall into the category of <ENT0> .",
+            "Drinking water includes <ENT0> as a common form of hydration .",
+            "A type of drinking water that is commonly consumed is known as <ENT0> .",
+            "There are many types of drinking water, and <ENT0> is just one example .",
+            "Potable water is a term used to describe drinkable water that is safe for human consumption and can be commonly found in <ENT0> form ."
+        ]
+    },
+    "is_instance_of_drink": {
+        "init_prompts": [
+            "<ENT0> is instance of Drink ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "beer"
+            ],
+            [
+                "ice cream"
+            ],
+            [
+                "sparkling water"
+            ],
+            [
+                "orange juice"
+            ],
+            [
+                "espresso"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of beverage .",
+            "<ENT0> is a beverage variety .",
+            "<ENT0> is an example of a drink .",
+            "One example of a drink is <ENT0> .",
+            "<ENT0> is a specific kind of drink .",
+            "<ENT0> can be classified as a type of drink .",
+            "<ENT0> belongs to the category of beverages .",
+            "One way to categorize <ENT0> is as a beverage .",
+            "<ENT0> is a beverage that falls under its own distinct category .",
+            "A type of beverage that falls under the classification of <ENT0> .",
+            "One type of beverage that can be used as an illustration is <ENT0> .",
+            "The beverage known as <ENT0> serves as a prime illustration of a type of drink ."
+        ]
+    },
+    "is_instance_of_drinkable_liquid": {
+        "init_prompts": [
+            "<ENT0> is instance of Drinkable Liquid ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "beer"
+            ],
+            [
+                "peanut oil"
+            ],
+            [
+                "ice cream"
+            ],
+            [
+                "acacia"
+            ],
+            [
+                "sparkling water"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of drinkable liquid .",
+            "<ENT0> is a form of consumable beverage .",
+            "<ENT0> is a type of liquid that can be consumed .",
+            "<ENT0> is considered to be a form of drinkable liquid .",
+            "<ENT0> is typically regarded as a type of consumable liquid .",
+            "<ENT0> has been classified as a type of fluid that can be drunk .",
+            "<ENT0> can be considered a type of liquid that is safe for consumption .",
+            "Some may classify <ENT0> as a drinkable liquid that is suitable for consumption .",
+            "<ENT0> can be thought of as a drinkable substance that is not harmful to consume .",
+            "One could categorize <ENT0> as a liquid beverage that is suitable for consumption .",
+            "<ENT0> is commonly recognized as a type of beverage that can be consumed in liquid form .",
+            "The refreshment known as <ENT0> falls under the category of liquids that can be consumed .",
+            "<ENT0> is a categorization of a drinkable substance that is deemed suitable for consumption ."
+        ]
+    },
+    "is_instance_of_edible": {
+        "init_prompts": [
+            "<ENT0> is instance of Edible ."
+        ],
+        "seed_ent_tuples": [
+            [
+                "flank"
+            ],
+            [
+                "beer"
+            ],
+            [
+                "shrimp"
+            ],
+            [
+                "kofta curry"
+            ],
+            [
+                "tricolore salad"
+            ]
+        ],
+        "prompts": [
+            "<ENT0> is a type of food .",
+            "<ENT0> exemplifies edibility .",
+            "Edible is demonstrated by <ENT0> .",
+            "A <ENT0> is a type of edible dish .",
+            "<ENT0> is an example of an edible .",
+            "Edible can be exemplified by <ENT0> .",
+            "<ENT0> can be considered a type of food .",
+            "<ENT0> is considered to be a form of food .",
+            "A type of edible item is represented by <ENT0> .",
+            "One can show that <ENT0> is fit for consumption .",
+            "<ENT0> is a type of food that is considered edible .",
+            "<ENT0> is an example of a type of food that can be consumed .",
+            "There are multiple examples of edible items, one of which is <ENT0> .",
+            "Edible is a characteristic that is commonly associated with the <ENT0> .",
+            "The <ENT0> can be classified as an example of something that is edible .",
+            "The dish known as <ENT0> can be considered an example of a type of food that is fit for consumption ."
+        ]
+    }
 }

@@ -6,7 +6,7 @@ from models.knowledge_harvester import KnowledgeHarvester
 
 
 def main(rel_set='nutrition',
-         model_name='roberta-large',
+         model_name='gpt-3.5-turbo',
          max_n_ent_tuples=1000,
          max_n_prompts=20,
          prompt_temp=2.,

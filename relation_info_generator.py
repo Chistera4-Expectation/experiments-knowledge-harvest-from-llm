@@ -210,7 +210,7 @@ if __name__ == "__main__":
             number_of_tuples = min(len(instances), MAX_NUMBER_SEED_ENT_TUPLES)
             for i in range(number_of_tuples):
                 instance = instances[i]
-                json_config_file += '\t\t\t[\n\t\t\t\t"{}"\n\t\t\t],\n'.format(instance.name)
+                json_config_file += '\t\t\t[\n\t\t\t\t"{}"\n\t\t\t],\n'.format(instance.name.replace('_', ' '))
             # remove the last comma
             json_config_file = json_config_file[:-2] + "\n"
             json_config_file += "\t\t]\n"
