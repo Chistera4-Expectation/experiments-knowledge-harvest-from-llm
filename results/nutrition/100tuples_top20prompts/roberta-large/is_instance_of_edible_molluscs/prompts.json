@@ -1,0 +1,42 @@
+[
+    [
+        "<ENT0> are a specific example of edible mollusks .",
+        0.12275429483703237
+    ],
+    [
+        "<ENT0> are a mollusk species that is suitable for consumption .",
+        0.12019222701131335
+    ],
+    [
+        "<ENT0> are a type of mollusk that is edible .",
+        0.11888103494424321
+    ],
+    [
+        "<ENT0>, a type of mollusk, is considered a food source that is safe for human consumption .",
+        0.11815500549872845
+    ],
+    [
+        "<ENT0> are a category of mollusk known for being safe for consumption .",
+        0.11743984555918877
+    ],
+    [
+        "Some edible mollusks include <ENT0> .",
+        0.104067296630937
+    ],
+    [
+        "A <ENT0> is an edible mollusk .",
+        0.09351704490639419
+    ],
+    [
+        "A <ENT0> belongs to the category of edible molluscs .",
+        0.0791590987942583
+    ],
+    [
+        "An edible mollusk is a type of <ENT0> .",
+        0.06667595587180204
+    ],
+    [
+        "<ENT0> is instance of Edible Molluscs .",
+        0.05915819594610228
+    ]
+]

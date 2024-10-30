@@ -1,0 +1,50 @@
+[
+    [
+        "<ENT0> is a form of tea .",
+        0.11034387509223077
+    ],
+    [
+        "Tea has a variety of flavors, one of which is <ENT0> .",
+        0.1061821052148796
+    ],
+    [
+        "<ENT0> can be considered a type of tea .",
+        0.10084302871290984
+    ],
+    [
+        "<ENT0> is an example of a type of tea .",
+        0.09744760309910087
+    ],
+    [
+        "<ENT0> can serve as an example of tea .",
+        0.079803323511565
+    ],
+    [
+        "A type of tea that can be used as an example is <ENT0> .",
+        0.07741663963278177
+    ],
+    [
+        "Tea is a category that <ENT0> falls under .",
+        0.07688973957709516
+    ],
+    [
+        "<ENT0> is instance of Tea .",
+        0.07595899028337594
+    ],
+    [
+        "Tea is the general category that encompasses the specific type of drink known as <ENT0> .",
+        0.07415032906348706
+    ],
+    [
+        "<ENT0> ere presents tea .",
+        0.07025989040853249
+    ],
+    [
+        "One potential illustration for tea is a <ENT0> .",
+        0.06593573015235372
+    ],
+    [
+        "A possible representation of tea is a type called \"<ENT0>.\" .",
+        0.06476874525168778
+    ]
+]

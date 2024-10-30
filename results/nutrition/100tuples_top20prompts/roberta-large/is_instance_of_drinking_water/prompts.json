@@ -1,0 +1,54 @@
+[
+    [
+        "Drinking water includes <ENT0> as a common form of hydration .",
+        0.09141139633913375
+    ],
+    [
+        "There are many types of drinking water, and <ENT0> is just one example .",
+        0.08794942766988381
+    ],
+    [
+        "A type of drinking water that is commonly consumed is known as <ENT0> .",
+        0.08622269067712252
+    ],
+    [
+        "One example of drinking water is <ENT0> .",
+        0.08205291857239878
+    ],
+    [
+        "<ENT0> is an example of drinking water .",
+        0.0820420064113561
+    ],
+    [
+        "Potable water is a term used to describe drinkable water that is safe for human consumption and can be commonly found in <ENT0> form .",
+        0.08137057043499867
+    ],
+    [
+        "<ENT0> is a type of potable water .",
+        0.07829286228865627
+    ],
+    [
+        "<ENT0> is instance of Drinking Water .",
+        0.0776922388271922
+    ],
+    [
+        "Drinking water can fall into the category of <ENT0> .",
+        0.07429065599719481
+    ],
+    [
+        "<ENT0> refers to drinkable water .",
+        0.06854897998472098
+    ],
+    [
+        "Drinking water is an example of <ENT0> .",
+        0.06690043657132343
+    ],
+    [
+        "Drinking water can be classified as <ENT0> .",
+        0.06342138087872883
+    ],
+    [
+        "One way to classify <ENT0> is as potable water .",
+        0.05980443534728975
+    ]
+]

@@ -1,0 +1,42 @@
+[
+    [
+        "Juice is a type of beverage, and <ENT0> falls into this category .",
+        0.13621751551821665
+    ],
+    [
+        "<ENT0> is a type of juice .",
+        0.10775174165223841
+    ],
+    [
+        "<ENT0> falls under the classification of juices .",
+        0.10690417244066036
+    ],
+    [
+        "<ENT0> can be classified as a type of juice .",
+        0.10348613055920912
+    ],
+    [
+        "<ENT0> is an example of a beverage made from blending fruits and vegetables .",
+        0.10291373336256664
+    ],
+    [
+        "<ENT0> can be considered a type or example of juice .",
+        0.09654576559749405
+    ],
+    [
+        "<ENT0> belongs to the category of juices .",
+        0.0945846186719254
+    ],
+    [
+        "A <ENT0> is classified within the juice category .",
+        0.09039209896959456
+    ],
+    [
+        "Juice and <ENT0> share a relationship of being a general type and specific type, respectively .",
+        0.08310392905632685
+    ],
+    [
+        "<ENT0> is instance of Juice .",
+        0.07810029417176792
+    ]
+]

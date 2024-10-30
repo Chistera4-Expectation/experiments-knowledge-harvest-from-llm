@@ -1,0 +1,58 @@
+[
+    [
+        "<ENT0> is a kind of dish .",
+        0.08396856079165657
+    ],
+    [
+        "<ENT0> is a type of food that can serve as an example .",
+        0.08315724053161844
+    ],
+    [
+        "<ENT0> could be categorized as a form of sustenance .",
+        0.07510762713076287
+    ],
+    [
+        "<ENT0> is a type of food .",
+        0.07506067507998691
+    ],
+    [
+        "<ENT0> is a variety of cuisine .",
+        0.07417061662718435
+    ],
+    [
+        "Originating from india, <ENT0> is just one of the many delicious dishes in the world of food .",
+        0.07416956109253385
+    ],
+    [
+        "The <ENT0> is an example of a type of food .",
+        0.07371814910583888
+    ],
+    [
+        "<ENT0> is an example of culinary fare .",
+        0.07371622839524841
+    ],
+    [
+        "<ENT0> can be considered a type of food .",
+        0.0690372800810702
+    ],
+    [
+        "<ENT0> is a representative case of a particular kind of cuisine .",
+        0.06821883463837891
+    ],
+    [
+        "The <ENT0> serves as an illustration of a particular variety of cuisine .",
+        0.06737745940019915
+    ],
+    [
+        "<ENT0> represents a type of sustenance .",
+        0.06701210027001957
+    ],
+    [
+        "<ENT0> is instance of Food .",
+        0.05808939545884728
+    ],
+    [
+        "One could classify <ENT0> as a variety of cuisine .",
+        0.05719627139665453
+    ]
+]

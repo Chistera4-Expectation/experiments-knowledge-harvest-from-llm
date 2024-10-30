@@ -1,0 +1,50 @@
+[
+    [
+        "Poultry-derived food includes <ENT0> .",
+        0.11230863890513615
+    ],
+    [
+        "One example of a dish that comes from poultry is <ENT0> .",
+        0.09627105741028662
+    ],
+    [
+        "<ENT0> belongs to the category of food that is derived from poultry .",
+        0.09187568155445562
+    ],
+    [
+        "<ENT0> is classified as a type of poultry-based food .",
+        0.08975712365276971
+    ],
+    [
+        "<ENT0> can be classified as a type of food that comes from poultry .",
+        0.08969344608242301
+    ],
+    [
+        "<ENT0> is a type of food made from poultry .",
+        0.08340178237028448
+    ],
+    [
+        "A type of cuisine called <ENT0> is created using poultry ingredients .",
+        0.07962214905854081
+    ],
+    [
+        "<ENT0> falls under the group of nourishment that is made from poultry .",
+        0.07673146451463546
+    ],
+    [
+        "<ENT0> are a form of sustenance derived from poultry .",
+        0.07460855465590832
+    ],
+    [
+        "<ENT0> is a culinary dish composed of poultry meat .",
+        0.0708747181470247
+    ],
+    [
+        "<ENT0> is a form of cuisine that consists of fowl as the main ingredient .",
+        0.06911407102769455
+    ],
+    [
+        "<ENT0> is instance of Poultry-derived Food .",
+        0.06574131262084061
+    ]
+]

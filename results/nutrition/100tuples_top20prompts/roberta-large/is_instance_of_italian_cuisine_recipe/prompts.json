@@ -1,0 +1,50 @@
+[
+    [
+        "A <ENT0> is an example of a recipe from italian cuisine .",
+        0.09790201559568115
+    ],
+    [
+        "An italian recipe, the <ENT0>, exemplifies a dish from italian cuisine .",
+        0.09726184014028932
+    ],
+    [
+        "The <ENT0> is a perfect example of an italian cuisine recipe .",
+        0.09422886098706648
+    ],
+    [
+        "An italian <ENT0> is a prime instance of a dish found in the italian culinary tradition .",
+        0.0937629154882435
+    ],
+    [
+        "The <ENT0> is a classic representation of an italian recipe .",
+        0.09330660917280491
+    ],
+    [
+        "One illustration of a dish from italian cuisine is a <ENT0> .",
+        0.08390259483172767
+    ],
+    [
+        "One dish commonly found in italian cuisine is a <ENT0> .",
+        0.08238680291167895
+    ],
+    [
+        "<ENT0> is a type of italian recipe .",
+        0.07923076454108086
+    ],
+    [
+        "<ENT0> is instance of Italian Cuisine Recipe .",
+        0.07364959181840718
+    ],
+    [
+        "<ENT0> is a type of recipe that is representative of italian cuisine .",
+        0.07332241678779292
+    ],
+    [
+        "<ENT0> can be categorized as a type of italian cuisine recipe .",
+        0.07199879111525641
+    ],
+    [
+        "Italian cuisine is widely recognized for its rich and flavorful dishes, and <ENT0> is no exception .",
+        0.05904679660997069
+    ]
+]

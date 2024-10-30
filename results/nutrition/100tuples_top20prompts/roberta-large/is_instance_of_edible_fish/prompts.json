@@ -1,0 +1,42 @@
+[
+    [
+        "A <ENT0> is a type of fish that is edible .",
+        0.1440092244893266
+    ],
+    [
+        "<ENT0> is considered to be an example of a type of fish that is safe for consumption .",
+        0.1323397839141893
+    ],
+    [
+        "A <ENT0> is considered to be an edible fish .",
+        0.11725916599848339
+    ],
+    [
+        "<ENT0> is a kind of fish that can be consumed as food .",
+        0.11718676869189013
+    ],
+    [
+        "<ENT0> is a type of edible fish .",
+        0.1099577724712026
+    ],
+    [
+        "<ENT0> is classified as an edible fish species .",
+        0.10317321606581871
+    ],
+    [
+        "<ENT0> can be categorized as an edible fish .",
+        0.09829299249421596
+    ],
+    [
+        "<ENT0> is an example of a type of fish that can be eaten .",
+        0.07286932581445284
+    ],
+    [
+        "<ENT0> is a variety of fish that is safe to consume .",
+        0.05490115418740962
+    ],
+    [
+        "<ENT0> is instance of Edible Fish .",
+        0.050010595873011
+    ]
+]

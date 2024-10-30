@@ -1,0 +1,42 @@
+[
+    [
+        "<ENT0> are considered to be an example of edible seeds .",
+        0.11666095895702279
+    ],
+    [
+        "Edible seeds include <ENT0> .",
+        0.11253455251938498
+    ],
+    [
+        "<ENT0> are a type of edible seed .",
+        0.11030859474523484
+    ],
+    [
+        "<ENT0> are a variety of seed that is safe to eat .",
+        0.10975989138134615
+    ],
+    [
+        "Nuts that can be eaten include <ENT0> .",
+        0.10425974866899847
+    ],
+    [
+        "<ENT0> belong to the category of edible seeds .",
+        0.10306132678307976
+    ],
+    [
+        "<ENT0> are classified as a variety of consumable seed .",
+        0.10170493351514019
+    ],
+    [
+        "Edible seeds are exemplified by <ENT0> .",
+        0.09265129056979843
+    ],
+    [
+        "<ENT0> are seeds that can be eaten .",
+        0.08902869674399365
+    ],
+    [
+        "<ENT0> is instance of Edible Seeds .",
+        0.060030006116000754
+    ]
+]

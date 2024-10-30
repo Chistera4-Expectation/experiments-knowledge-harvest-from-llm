@@ -1,0 +1,54 @@
+[
+    [
+        "The sauce known as <ENT0> is a type of condiment .",
+        0.1214571999778187
+    ],
+    [
+        "Sauces such as <ENT0> are prime illustrations .",
+        0.09458157363742674
+    ],
+    [
+        "Sauces can include tasty options like <ENT0> .",
+        0.09133408596118762
+    ],
+    [
+        "<ENT0> is a type of sauce .",
+        0.0802269218695112
+    ],
+    [
+        "Sauces can include <ENT0> as well .",
+        0.07928226152517295
+    ],
+    [
+        "<ENT0> belongs to the category of sauces .",
+        0.07766614328900633
+    ],
+    [
+        "<ENT0> is a sauce variety .",
+        0.07574306241669503
+    ],
+    [
+        "Sauce is a category that includes <ENT0> .",
+        0.06741336168391728
+    ],
+    [
+        "<ENT0> can be categorized as a type of sauce .",
+        0.06603114872568944
+    ],
+    [
+        "Sauce can be exemplified by <ENT0> .",
+        0.06395752709298674
+    ],
+    [
+        "<ENT0> are a form of condiment .",
+        0.06246575004338248
+    ],
+    [
+        "<ENT0> is instance of Sauce .",
+        0.06154497049502839
+    ],
+    [
+        "Sauces are commonly used as <ENT0> .",
+        0.058295993282177105
+    ]
+]

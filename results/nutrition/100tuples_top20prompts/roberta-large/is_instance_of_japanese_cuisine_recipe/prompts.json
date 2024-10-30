@@ -1,0 +1,58 @@
+[
+    [
+        "One type of japanese dish that serves as a key example is <ENT0> .",
+        0.08222022371759506
+    ],
+    [
+        "<ENT0> is a type of japanese dish .",
+        0.07875760338077274
+    ],
+    [
+        "<ENT0> is a type of japanese dish that serves as a prime example of the country's culinary recipes .",
+        0.07805994446613078
+    ],
+    [
+        "<ENT0> is a dish commonly found in japanese cuisine .",
+        0.07579268808080017
+    ],
+    [
+        "A popular dish in japanese cuisine is <ENT0> .",
+        0.0753410192089587
+    ],
+    [
+        "<ENT0> is a japanese dish that originates from japan .",
+        0.0745524981503977
+    ],
+    [
+        "<ENT0>, a dish from japan, serves as an illustration of a traditional japanese recipe .",
+        0.07430221999044993
+    ],
+    [
+        "<ENT0> is a specific type of recipe that belongs to the cuisine of japan .",
+        0.07209783587759656
+    ],
+    [
+        "<ENT0> is a popular cuisine from japan .",
+        0.07155493990262884
+    ],
+    [
+        "<ENT0> is a popular recipe in japanese cuisine .",
+        0.0696361382437971
+    ],
+    [
+        "<ENT0> is a japanese-style cuisine .",
+        0.06736214376757195
+    ],
+    [
+        "<ENT0> can be considered as a typical dish in japanese cooking .",
+        0.0671993056127159
+    ],
+    [
+        "<ENT0> is an example of a traditional japanese dish .",
+        0.058156902467520394
+    ],
+    [
+        "<ENT0> is instance of Japanese Cuisine Recipe .",
+        0.05496653713306414
+    ]
+]

@@ -1,0 +1,42 @@
+[
+    [
+        "Honey is one type of plant that belongs to the <ENT0> family .",
+        0.1263941625067438
+    ],
+    [
+        "<ENT0> is a common type of plant that is often compared to honey .",
+        0.12158859104919446
+    ],
+    [
+        "<ENT0> is a type of plant that produces honey .",
+        0.11877443401093626
+    ],
+    [
+        "<ENT0> is a kind of honey .",
+        0.10030456068249229
+    ],
+    [
+        "<ENT0> is classified as a type of honey .",
+        0.09682177742403873
+    ],
+    [
+        "<ENT0> is a type of sweet, sticky substance .",
+        0.0957688902289417
+    ],
+    [
+        "A type of honey is derived from <ENT0> .",
+        0.08916342627767994
+    ],
+    [
+        "<ENT0> falls under the category of honey .",
+        0.08770482803080316
+    ],
+    [
+        "It can be said that <ENT0> is a type of honey .",
+        0.08293083796932038
+    ],
+    [
+        "<ENT0> serves as the perfect representation of honey .",
+        0.08054849181984929
+    ]
+]

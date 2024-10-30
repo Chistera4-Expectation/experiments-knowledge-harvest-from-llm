@@ -1,0 +1,50 @@
+[
+    [
+        "<ENT0> is a type of energy drink .",
+        0.10643611668487857
+    ],
+    [
+        "There is a type of energy drink called <ENT0> .",
+        0.08872282116774333
+    ],
+    [
+        "<ENT0> could be considered a type or form of energy drink .",
+        0.08791647076359498
+    ],
+    [
+        "A <ENT0> is a form of energy beverage .",
+        0.08687104501941723
+    ],
+    [
+        "<ENT0> can be classified as an energy drink .",
+        0.08518128019594574
+    ],
+    [
+        "<ENT0> is instance of Energy Drink .",
+        0.08362373924129073
+    ],
+    [
+        "One way to categorize a <ENT0> is as an energy drink .",
+        0.0816926488643118
+    ],
+    [
+        "A type of beverage that contains energy-boosting ingredients and is popular among athletes and active individuals is known as a <ENT0> .",
+        0.08087545514219618
+    ],
+    [
+        "<ENT0> is categorized as a form of beverage that provides energy .",
+        0.07925433770922223
+    ],
+    [
+        "<ENT0> is considered to be a type of highly caffeinated, carbonated beverage .",
+        0.07552672104714632
+    ],
+    [
+        "One kind of energy drink is <ENT0> .",
+        0.07401927143553483
+    ],
+    [
+        "<ENT0> is often referred to as an energy beverage .",
+        0.0698800927287182
+    ]
+]

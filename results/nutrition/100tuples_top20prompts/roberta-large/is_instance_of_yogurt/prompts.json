@@ -1,0 +1,50 @@
+[
+    [
+        "<ENT0> is a type of yogurt .",
+        0.09207777323330506
+    ],
+    [
+        "<ENT0>, a well-known variety of yogurt, serves as a prime instance of yogurt .",
+        0.09140318395451096
+    ],
+    [
+        "<ENT0> falls under the category of yogurt .",
+        0.09069634189636197
+    ],
+    [
+        "<ENT0> belongs to the classification of yogurt .",
+        0.08798243298563983
+    ],
+    [
+        "<ENT0> can be referred to as a type of yogurt .",
+        0.0822816873544818
+    ],
+    [
+        "<ENT0> is instance of Yogurt .",
+        0.08209703758989066
+    ],
+    [
+        "Yogurt containing probiotics is categorized as <ENT0> .",
+        0.08160731823605225
+    ],
+    [
+        "Yogurt that contains a small amount of fat falls under the category of <ENT0> .",
+        0.08059304002938171
+    ],
+    [
+        "Paraphrase: yogurt that contains probiotics is an example of <ENT0> .",
+        0.07958490378217592
+    ],
+    [
+        "<ENT0> is classified as yogurt .",
+        0.07770951817764943
+    ],
+    [
+        "<ENT0> is a type of yogurt that serves as an illustration of yogurt .",
+        0.0771521288137396
+    ],
+    [
+        "The type of yogurt known as <ENT0> is an example of yogurt .",
+        0.076814633946811
+    ]
+]

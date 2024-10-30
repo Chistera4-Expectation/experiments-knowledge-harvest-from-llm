@@ -1,0 +1,50 @@
+[
+    [
+        "Milk that has been sweetened and condensed can be classified as <ENT0> .",
+        0.10884906708724487
+    ],
+    [
+        "One could categorize <ENT0> as a variety of milk .",
+        0.09910097575095801
+    ],
+    [
+        "<ENT0> falls under the category of milk .",
+        0.09583333781454162
+    ],
+    [
+        "Milk alternatives, such as <ENT0>, are considered to be in the category of milk products .",
+        0.08746578949597732
+    ],
+    [
+        "<ENT0> is a variation of dairy product made from milk .",
+        0.08464428680951898
+    ],
+    [
+        "<ENT0> is a type of milk .",
+        0.08367747970807383
+    ],
+    [
+        "<ENT0> is classified as a type of milk in the general category .",
+        0.08317286991993149
+    ],
+    [
+        "<ENT0> belongs to the broader category of milk .",
+        0.08170718638305673
+    ],
+    [
+        "<ENT0> can be classified as a type of milk .",
+        0.07896929167102812
+    ],
+    [
+        "Milk can be classified as the main ingredient in <ENT0> .",
+        0.06919695165080207
+    ],
+    [
+        "Milk is the category to which <ENT0> belongs .",
+        0.06673980167944632
+    ],
+    [
+        "Milk is the general category that <ENT0> falls under .",
+        0.060642962029420794
+    ]
+]

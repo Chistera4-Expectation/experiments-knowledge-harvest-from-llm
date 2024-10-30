@@ -1,0 +1,42 @@
+[
+    [
+        "<ENT0> is a type of seaweed that can be eaten .",
+        0.12259849799324941
+    ],
+    [
+        "<ENT0> is a good example of seaweed that is safe for consumption .",
+        0.11637769406025952
+    ],
+    [
+        "<ENT0>, also known as sea lettuce, is a variety of edible seaweed .",
+        0.10663293457796691
+    ],
+    [
+        "A type of edible seaweed, <ENT0> serves as a prime example .",
+        0.10561317769424161
+    ],
+    [
+        "<ENT0> is an example of a type of edible seaweed .",
+        0.10015076320658022
+    ],
+    [
+        "<ENT0> is a kind of edible marine plant .",
+        0.09541617461785716
+    ],
+    [
+        "<ENT0> is instance of Edible Seaweed .",
+        0.09167935763456832
+    ],
+    [
+        "<ENT0> is a variety of marine vegetation that is suitable for consumption .",
+        0.09037973661464269
+    ],
+    [
+        "Edible seaweed can be exemplified by <ENT0> .",
+        0.0891573687411155
+    ],
+    [
+        "<ENT0> is edible seaweed .",
+        0.0819942948595187
+    ]
+]
