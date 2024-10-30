@@ -1,10 +1,11 @@
 import string
 import torch
 from copy import deepcopy
-
 from transformers import AutoTokenizer, AutoModelForMaskedLM
-
 from data_utils.data_utils import stopwords, get_n_ents, get_sent, find_sublist
+
+
+DEVICE = 'cuda' if torch.cuda.is_available() else 'mps'
 
 
 class LanguageModelWrapper:
@@ -15,7 +16,7 @@ class LanguageModelWrapper:
         self._model = AutoModelForMaskedLM.from_pretrained(model_name)
 
         self._model.eval()
-        self._model.to('cuda')
+        self._model.to(DEVICE)
 
         self._banned_ids = None
         self._get_banned_ids()
@@ -28,7 +29,7 @@ class LanguageModelWrapper:
 
     def get_mask_logits(self, input_text):
         with torch.no_grad():
-            inputs = self.tokenizer(input_text, return_tensors="pt").to('cuda')
+            inputs = self.tokenizer(input_text, return_tensors="pt").to(DEVICE)
             outputs = self.model(**inputs)
 
         return outputs.logits[
@@ -50,7 +51,7 @@ class LanguageModelWrapper:
             mask_positions.extend([pos for pos in range(*mask_span)])
 
         masked_inputs = self.tokenizer(
-            [sent] * len(mask_positions), return_tensors='pt').to('cuda')
+            [sent] * len(mask_positions), return_tensors='pt').to(DEVICE)
         label_token_ids = []
         for i, pos in enumerate(mask_positions):
             label_token_ids.append(masked_inputs['input_ids'][i][pos].item())

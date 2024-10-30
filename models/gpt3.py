@@ -32,4 +32,3 @@ class GPT3:
             presence_penalty=presence_penalty,
             logprobs=logprobs,
             n=n)
-
