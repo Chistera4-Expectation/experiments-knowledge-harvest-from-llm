@@ -50,11 +50,6 @@
   <rdfs:subClassOf rdf:resource="#Liquid"/>
 </owl:Class>
 
-<owl:Class rdf:about="#Liquid">
-  <rdfs:subClassOf rdf:resource="#Edible"/>
-  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drinkable Liquid</fancyName>
-</owl:Class>
-
 <owl:Class rdf:about="#Animal">
   <rdfs:subClassOf rdf:resource="#Food"/>
   <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal-derived Food</fancyName>
@@ -132,6 +127,11 @@
 <owl:Class rdf:about="#Dressing">
   <rdfs:subClassOf rdf:resource="#Additive"/>
   <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food Dressing</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Liquid">
+  <rdfs:subClassOf rdf:resource="#Edible"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drinkable Liquid</fancyName>
 </owl:Class>
 
 <owl:Class rdf:about="#Energy">
