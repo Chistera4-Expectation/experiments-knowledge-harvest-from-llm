@@ -179,7 +179,8 @@ class KnowledgeGraph:
         return self
 
     def __exit__(self, exc_type, exc_value, traceback) -> None:
-        self.save()
+        # self.save()
+        pass
 
 
 def name_to_snake_case(name: str) -> str:

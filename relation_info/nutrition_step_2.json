@@ -1,1 +1,1824 @@
 {
+	"is_ingredient_of_caprese_salad": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Caprese Salad ."
+		],
+		"seed_ent_tuples": [
+			[
+				"balsamic vinaigrette"
+			],
+			[
+				"salt"
+			],
+			[
+				"pepper"
+			],
+			[
+				"mozzarella"
+			],
+			[
+				"olive oil"
+			]
+		]
+	},
+	"is_ingredient_of_tricolore_salad": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Tricolore Salad ."
+		],
+		"seed_ent_tuples": [
+			[
+				"balsamic vinaigrette"
+			],
+			[
+				"olive oil"
+			],
+			[
+				"tomato"
+			],
+			[
+				"pecorino romano cheese"
+			],
+			[
+				"arugula"
+			]
+		]
+	},
+	"is_ingredient_of_margherita_pizza": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Margherita Pizza ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"mozzarella"
+			],
+			[
+				"olive oil"
+			],
+			[
+				"pizza dough"
+			]
+		]
+	},
+	"is_ingredient_of_tiramisu": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Tiramisu ."
+		],
+		"seed_ent_tuples": [
+			[
+				"sugar"
+			],
+			[
+				"espresso"
+			],
+			[
+				"eggs"
+			],
+			[
+				"ladyfingers"
+			],
+			[
+				"mascarpone"
+			]
+		]
+	},
+	"is_ingredient_of_risotto_alla_milanese": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Risotto Alla Milanese ."
+		],
+		"seed_ent_tuples": [
+			[
+				"chicken"
+			],
+			[
+				"unsalted butter"
+			],
+			[
+				"arborio rice"
+			],
+			[
+				"olive oil"
+			],
+			[
+				"wine"
+			]
+		]
+	},
+	"is_ingredient_of_spaghetti_carbonara": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Spaghetti Carbonara ."
+		],
+		"seed_ent_tuples": [
+			[
+				"spaghetti"
+			],
+			[
+				"eggs"
+			],
+			[
+				"pecorino romano cheese"
+			],
+			[
+				"black pepper"
+			]
+		]
+	},
+	"is_ingredient_of_tamales": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Tamales ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"cumin"
+			],
+			[
+				"chili powder"
+			],
+			[
+				"oregano"
+			]
+		]
+	},
+	"is_ingredient_of_aji_de_gallina": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Aji de Gallina ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"pepper"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"chicken"
+			],
+			[
+				"milk"
+			]
+		]
+	},
+	"is_ingredient_of_chimichurri_steak": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Chimichurri Steak ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"flank"
+			],
+			[
+				"olive oil"
+			],
+			[
+				"parsley"
+			]
+		]
+	},
+	"is_ingredient_of_sopa_de_lima": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Sopa de Lima ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"chicken soup"
+			],
+			[
+				"chicken"
+			],
+			[
+				"tomato"
+			],
+			[
+				"avocado"
+			]
+		]
+	},
+	"is_ingredient_of_malva_pudding": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Malva pudding ."
+		],
+		"seed_ent_tuples": [
+			[
+				"balsamic vinaigrette"
+			],
+			[
+				"salt"
+			],
+			[
+				"sugar"
+			],
+			[
+				"unsalted butter"
+			],
+			[
+				"milk"
+			]
+		]
+	},
+	"is_ingredient_of_jollof_rice": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Jollof rice ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"thyme"
+			],
+			[
+				"tomato"
+			],
+			[
+				"bell pepper"
+			]
+		]
+	},
+	"is_ingredient_of_dodo": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Dodo ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"pepper"
+			],
+			[
+				"plantain"
+			],
+			[
+				"palm oil"
+			]
+		]
+	},
+	"is_ingredient_of_piri_piri_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Piri piri chicken ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"pepper"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"paprika"
+			],
+			[
+				"chicken"
+			]
+		]
+	},
+	"is_ingredient_of_moambe_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Moambe chicken ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"chicken"
+			],
+			[
+				"tomato"
+			],
+			[
+				"bottled water"
+			]
+		]
+	},
+	"is_ingredient_of_chapati": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Chapati ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"whole wheat bread"
+			],
+			[
+				"bottled water"
+			]
+		]
+	},
+	"is_ingredient_of_plantain_chips": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Plantain chips ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"vegetable oil"
+			],
+			[
+				"plantains"
+			]
+		]
+	},
+	"is_ingredient_of_egusi_soup": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Egusi soup ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"chicken"
+			],
+			[
+				"crawfish"
+			],
+			[
+				"spinach"
+			],
+			[
+				"bell pepper"
+			]
+		]
+	},
+	"is_ingredient_of_pepe_soup": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Pepe soup ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"grilled chicken breast"
+			],
+			[
+				"chicken soup"
+			],
+			[
+				"tomato"
+			],
+			[
+				"bell pepper"
+			]
+		]
+	},
+	"is_ingredient_of_bunny_chow": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Bunny chow ."
+		],
+		"seed_ent_tuples": [
+			[
+				"bread"
+			],
+			[
+				"curry"
+			],
+			[
+				"vegetables"
+			],
+			[
+				"meat"
+			]
+		]
+	},
+	"is_ingredient_of_cobb_salad": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Cobb Salad ."
+		],
+		"seed_ent_tuples": [
+			[
+				"balsamic vinaigrette"
+			],
+			[
+				"blue cheese"
+			],
+			[
+				"bacon"
+			],
+			[
+				"chicken"
+			],
+			[
+				"tomato"
+			]
+		]
+	},
+	"is_ingredient_of_cheeseburger": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Cheeseburger ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"pepper"
+			],
+			[
+				"cheese"
+			],
+			[
+				"tomato"
+			],
+			[
+				"onion"
+			]
+		]
+	},
+	"is_ingredient_of_bbq_ribs": {
+		"init_prompts": [
+			"<ENT0> is ingredient of BBQ Ribs ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"pepper"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"paprika"
+			],
+			[
+				"pork ribs"
+			]
+		]
+	},
+	"is_ingredient_of_southern_fried_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Southern Fried Chicken ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"paprika"
+			],
+			[
+				"chicken"
+			],
+			[
+				"black pepper"
+			]
+		]
+	},
+	"is_ingredient_of_buffalo_wings": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Buffalo Wings ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"pepper"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"unsalted butter"
+			],
+			[
+				"chicken wings"
+			]
+		]
+	},
+	"is_ingredient_of_texas_bbq_brisket": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Texas BBQ Brisket ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"pepper"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"paprika"
+			],
+			[
+				"cumin"
+			]
+		]
+	},
+	"is_ingredient_of_philly_soft_pretzel": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Philly Soft Pretzel ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"bottled water"
+			],
+			[
+				"flour"
+			],
+			[
+				"brown sugar"
+			],
+			[
+				"yeast"
+			]
+		]
+	},
+	"is_ingredient_of_maryland_crab_cakes": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Maryland Crab Cakes ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"pepper"
+			],
+			[
+				"crab"
+			],
+			[
+				"eggs"
+			],
+			[
+				"parsley"
+			]
+		]
+	},
+	"is_ingredient_of_new_york_style_pizza": {
+		"init_prompts": [
+			"<ENT0> is ingredient of New York Style Pizza ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"oregano"
+			],
+			[
+				"basil"
+			],
+			[
+				"mozzarella"
+			],
+			[
+				"olive oil"
+			]
+		]
+	},
+	"is_ingredient_of_texas_chili": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Texas Chili ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"paprika"
+			],
+			[
+				"cumin"
+			],
+			[
+				"chili powder"
+			],
+			[
+				"bell pepper"
+			]
+		]
+	},
+	"is_ingredient_of_louisiana_gumbo": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Louisiana Gumbo ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"thyme"
+			],
+			[
+				"pork sausage"
+			],
+			[
+				"chicken soup"
+			],
+			[
+				"chicken"
+			]
+		]
+	},
+	"is_ingredient_of_manhattan_clam_chowder": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Manhattan Clam Chowder ."
+		],
+		"seed_ent_tuples": [
+			[
+				"thyme"
+			],
+			[
+				"bacon"
+			],
+			[
+				"clams"
+			],
+			[
+				"carrot"
+			],
+			[
+				"tomato"
+			]
+		]
+	},
+	"is_ingredient_of_apple_pie": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Apple Pie ."
+		],
+		"seed_ent_tuples": [
+			[
+				"cinnamon"
+			],
+			[
+				"nutmeg"
+			],
+			[
+				"sugar"
+			],
+			[
+				"unsalted butter"
+			],
+			[
+				"apple"
+			]
+		]
+	},
+	"is_ingredient_of_chicago_deep_dish_pizza": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Chicago Deep Dish Pizza ."
+		],
+		"seed_ent_tuples": [
+			[
+				"pork sausage"
+			],
+			[
+				"mozzarella"
+			],
+			[
+				"bell pepper"
+			],
+			[
+				"pizza dough"
+			],
+			[
+				"tomato sauce"
+			]
+		]
+	},
+	"is_ingredient_of_california_roll": {
+		"init_prompts": [
+			"<ENT0> is ingredient of California Roll ."
+		],
+		"seed_ent_tuples": [
+			[
+				"crab"
+			],
+			[
+				"sesame seeds"
+			],
+			[
+				"avocado"
+			],
+			[
+				"sushi rice"
+			],
+			[
+				"cucumber"
+			]
+		]
+	},
+	"is_ingredient_of_chicago-style_hot_dog": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Chicago-style Hot Dog ."
+		],
+		"seed_ent_tuples": [
+			[
+				"tomato"
+			],
+			[
+				"onion"
+			],
+			[
+				"pickles"
+			],
+			[
+				"beef hot dog"
+			],
+			[
+				"poppy seed bun"
+			]
+		]
+	},
+	"is_ingredient_of_key_lime_pie": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Key Lime Pie ."
+		],
+		"seed_ent_tuples": [
+			[
+				"graham cracker crust"
+			],
+			[
+				"sweetened condensed milk"
+			],
+			[
+				"key lime juice"
+			],
+			[
+				"egg yolks"
+			],
+			[
+				"whipped cream"
+			]
+		]
+	},
+	"is_ingredient_of_boston_cream_pie": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Boston Cream Pie ."
+		],
+		"seed_ent_tuples": [
+			[
+				"yellow cake"
+			],
+			[
+				"pastry cream"
+			]
+		]
+	},
+	"is_ingredient_of_curried_goat": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Curried Goat ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"thyme"
+			],
+			[
+				"bottled water"
+			],
+			[
+				"black pepper"
+			]
+		]
+	},
+	"is_ingredient_of_conch_fritters": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Conch Fritters ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"milk"
+			],
+			[
+				"bell pepper"
+			],
+			[
+				"eggs"
+			]
+		]
+	},
+	"is_ingredient_of_oxtail": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Oxtail ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"oxtail"
+			],
+			[
+				"pepper"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"thyme"
+			]
+		]
+	},
+	"is_ingredient_of_trinidadian_pepper_shrimp": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Trinidadian Pepper Shrimp ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"thyme"
+			],
+			[
+				"shrimp"
+			],
+			[
+				"bell pepper"
+			]
+		]
+	},
+	"is_ingredient_of_guava_duff": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Guava Duff ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"cinnamon"
+			],
+			[
+				"nutmeg"
+			],
+			[
+				"sugar"
+			],
+			[
+				"unsalted butter"
+			]
+		]
+	},
+	"is_ingredient_of_johnny_cakes": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Johnny Cakes ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"unsalted butter"
+			],
+			[
+				"bottled water"
+			],
+			[
+				"cornmeal"
+			]
+		]
+	},
+	"is_ingredient_of_jerk_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Jerk Chicken ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"thyme"
+			],
+			[
+				"cinnamon"
+			],
+			[
+				"nutmeg"
+			],
+			[
+				"chicken"
+			]
+		]
+	},
+	"is_ingredient_of_rice_and_peas": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Rice and Peas ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"thyme"
+			],
+			[
+				"onion"
+			],
+			[
+				"rice"
+			],
+			[
+				"scotch bonnet peppers"
+			]
+		]
+	},
+	"is_ingredient_of_escovitch_fish": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Escovitch Fish ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"thyme"
+			],
+			[
+				"carrot"
+			],
+			[
+				"bell pepper"
+			],
+			[
+				"black pepper"
+			]
+		]
+	},
+	"is_ingredient_of_aloo_pie": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Aloo Pie ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"cumin"
+			],
+			[
+				"chili powder"
+			],
+			[
+				"turmeric"
+			],
+			[
+				"onion"
+			]
+		]
+	},
+	"is_ingredient_of_sorrel_drink": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Sorrel Drink ."
+		],
+		"seed_ent_tuples": [
+			[
+				"cinnamon"
+			],
+			[
+				"cloves"
+			],
+			[
+				"sugar"
+			],
+			[
+				"bottled water"
+			],
+			[
+				"ginger"
+			]
+		]
+	},
+	"is_ingredient_of_cuban_sandwich": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Cuban Sandwich ."
+		],
+		"seed_ent_tuples": [
+			[
+				"ham"
+			],
+			[
+				"unsalted butter"
+			],
+			[
+				"pickles"
+			],
+			[
+				"mustard"
+			],
+			[
+				"cuban bread"
+			]
+		]
+	},
+	"is_ingredient_of_souse": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Souse ."
+		],
+		"seed_ent_tuples": [
+			[
+				"pork sausage"
+			],
+			[
+				"bell pepper"
+			],
+			[
+				"onion"
+			],
+			[
+				"vinegar"
+			],
+			[
+				"allspice"
+			]
+		]
+	},
+	"is_ingredient_of_barbados_flying_fish_cutter": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Barbados Flying Fish Cutter ."
+		],
+		"seed_ent_tuples": [
+			[
+				"tomato"
+			],
+			[
+				"lettuce"
+			],
+			[
+				"hot sauce"
+			],
+			[
+				"flying fish"
+			],
+			[
+				"bread rolls"
+			]
+		]
+	},
+	"is_ingredient_of_doubles": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Doubles ."
+		],
+		"seed_ent_tuples": [
+			[
+				"mango chutney"
+			],
+			[
+				"tamarind chutney"
+			],
+			[
+				"pepper sauce"
+			]
+		]
+	},
+	"is_ingredient_of_katsu_curry": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Katsu Curry ."
+		],
+		"seed_ent_tuples": [
+			[
+				"chicken"
+			],
+			[
+				"carrot"
+			],
+			[
+				"bottled water"
+			],
+			[
+				"eggs"
+			],
+			[
+				"onion"
+			]
+		]
+	},
+	"is_ingredient_of_tempura": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Tempura ."
+		],
+		"seed_ent_tuples": [
+			[
+				"shrimp"
+			],
+			[
+				"vegetables"
+			],
+			[
+				"tempura batter mix"
+			],
+			[
+				"oil for frying"
+			]
+		]
+	},
+	"is_ingredient_of_sashimi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Sashimi ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salmon"
+			],
+			[
+				"tuna"
+			],
+			[
+				"scallops"
+			],
+			[
+				"octopus"
+			],
+			[
+				"yellowtail"
+			]
+		]
+	},
+	"is_ingredient_of_soba_noodles": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Soba Noodles ."
+		],
+		"seed_ent_tuples": [
+			[
+				"whole wheat bread"
+			],
+			[
+				"bottled water"
+			],
+			[
+				"buckwheat flour"
+			]
+		]
+	},
+	"is_ingredient_of_sushi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Sushi ."
+		],
+		"seed_ent_tuples": [
+			[
+				"vegetables"
+			],
+			[
+				"sushi rice"
+			],
+			[
+				"soy sauce"
+			],
+			[
+				"fish"
+			],
+			[
+				"rice vinegar"
+			]
+		]
+	},
+	"is_ingredient_of_miso_soup": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Miso Soup ."
+		],
+		"seed_ent_tuples": [
+			[
+				"green onions"
+			],
+			[
+				"miso paste"
+			],
+			[
+				"tofu"
+			],
+			[
+				"seaweed"
+			],
+			[
+				"dashi stock"
+			]
+		]
+	},
+	"is_ingredient_of_shabu_shabu": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Shabu Shabu ."
+		],
+		"seed_ent_tuples": [
+			[
+				"vegetables"
+			],
+			[
+				"thinly sliced beef"
+			],
+			[
+				"noodles"
+			],
+			[
+				"dipping sauces"
+			],
+			[
+				"broth"
+			]
+		]
+	},
+	"is_ingredient_of_beef_noodle_soup": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Beef Noodle Soup ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"pepper"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"beef"
+			],
+			[
+				"carrot"
+			]
+		]
+	},
+	"is_ingredient_of_steamed_fish_with_ginger_and_scallions": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Steamed Fish with Ginger and Scallions ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"sugar"
+			],
+			[
+				"sesame oil"
+			],
+			[
+				"ginger"
+			],
+			[
+				"soy sauce"
+			]
+		]
+	},
+	"is_ingredient_of_cantonese_bbq_pork": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Cantonese BBQ Pork ."
+		],
+		"seed_ent_tuples": [
+			[
+				"pepper"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"pork belly"
+			],
+			[
+				"soy sauce"
+			],
+			[
+				"honey"
+			]
+		]
+	},
+	"is_ingredient_of_kung_pao_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Kung Pao Chicken ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"chicken"
+			],
+			[
+				"sesame oil"
+			],
+			[
+				"ginger"
+			],
+			[
+				"cornstarch"
+			]
+		]
+	},
+	"is_ingredient_of_ma_po_tofu": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Ma Po Tofu ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"chicken soup"
+			],
+			[
+				"ginger"
+			],
+			[
+				"cornstarch"
+			],
+			[
+				"soy sauce"
+			]
+		]
+	},
+	"is_ingredient_of_szechuan_beef": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Szechuan Beef ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"beef"
+			],
+			[
+				"bell pepper"
+			],
+			[
+				"onion"
+			],
+			[
+				"vegetable oil"
+			]
+		]
+	},
+	"is_ingredient_of_general_tso's_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of General Tso's Chicken ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"sugar"
+			],
+			[
+				"chicken"
+			],
+			[
+				"ginger"
+			],
+			[
+				"hot pepper"
+			]
+		]
+	},
+	"is_ingredient_of_sweet_and_sour_pork": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Sweet and Sour Pork ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"sugar"
+			],
+			[
+				"pork sausage"
+			],
+			[
+				"pineapple"
+			],
+			[
+				"bell pepper"
+			]
+		]
+	},
+	"is_ingredient_of_fried_rice": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Fried Rice ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"eggs"
+			],
+			[
+				"onion"
+			],
+			[
+				"rice"
+			],
+			[
+				"vegetables"
+			]
+		]
+	},
+	"is_ingredient_of_shanghai_soup_dumplings": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Shanghai Soup Dumplings ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"sugar"
+			],
+			[
+				"chicken soup"
+			],
+			[
+				"sesame oil"
+			],
+			[
+				"ginger"
+			]
+		]
+	},
+	"is_ingredient_of_shrimp_with_lobster_sauce": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Shrimp with Lobster Sauce ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"chicken soup"
+			],
+			[
+				"lobster"
+			],
+			[
+				"shrimp"
+			],
+			[
+				"eggs"
+			]
+		]
+	},
+	"is_ingredient_of_tea_eggs": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Tea Eggs ."
+		],
+		"seed_ent_tuples": [
+			[
+				"cinnamon"
+			],
+			[
+				"cloves"
+			],
+			[
+				"sugar"
+			],
+			[
+				"eggs"
+			],
+			[
+				"black pepper"
+			]
+		]
+	},
+	"is_ingredient_of_dongpo_pork": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Dongpo Pork ."
+		],
+		"seed_ent_tuples": [
+			[
+				"cinnamon"
+			],
+			[
+				"sugar"
+			],
+			[
+				"pork belly"
+			],
+			[
+				"bottled water"
+			],
+			[
+				"ginger"
+			]
+		]
+	},
+	"is_ingredient_of_peking_duck": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Peking Duck ."
+		],
+		"seed_ent_tuples": [
+			[
+				"sugar"
+			],
+			[
+				"duck"
+			],
+			[
+				"ginger"
+			],
+			[
+				"soy sauce"
+			],
+			[
+				"green onions"
+			]
+		]
+	},
+	"is_ingredient_of_dumplings": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Dumplings ."
+		],
+		"seed_ent_tuples": [
+			[
+				"shrimp"
+			],
+			[
+				"sesame oil"
+			],
+			[
+				"bottled water"
+			],
+			[
+				"ginger"
+			],
+			[
+				"flour"
+			]
+		]
+	},
+	"is_ingredient_of_spring_rolls": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Spring Rolls ."
+		],
+		"seed_ent_tuples": [
+			[
+				"shrimp"
+			],
+			[
+				"vermicelli"
+			],
+			[
+				"carrot"
+			],
+			[
+				"lettuce"
+			],
+			[
+				"cucumber"
+			]
+		]
+	},
+	"is_ingredient_of_dim_sum": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Dim Sum ."
+		],
+		"seed_ent_tuples": [
+			[
+				"shrimp dumplings"
+			],
+			[
+				"bbq pork buns"
+			],
+			[
+				"turnip cakes"
+			],
+			[
+				"sticky rice in lotus leaf"
+			],
+			[
+				"egg custard tarts"
+			]
+		]
+	},
+	"is_ingredient_of_hot_pot": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Hot Pot ."
+		],
+		"seed_ent_tuples": [
+			[
+				"vegetables"
+			],
+			[
+				"tofu"
+			],
+			[
+				"noodles"
+			],
+			[
+				"dipping sauces"
+			],
+			[
+				"fermented black beans"
+			]
+		]
+	},
+	"is_ingredient_of_rogan_josh": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Rogan Josh ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"pepper"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"cumin"
+			],
+			[
+				"cinnamon"
+			]
+		]
+	},
+	"is_ingredient_of_samosa": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Samosa ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"pepper"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"cumin"
+			],
+			[
+				"turmeric"
+			]
+		]
+	},
+	"is_ingredient_of_aloo_gobi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Aloo Gobi ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"cumin"
+			],
+			[
+				"chili powder"
+			],
+			[
+				"turmeric"
+			]
+		]
+	},
+	"is_ingredient_of_kofta_curry": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Kofta Curry ."
+		],
+		"seed_ent_tuples": [
+			[
+				"salt"
+			],
+			[
+				"pepper"
+			],
+			[
+				"garlic powder"
+			],
+			[
+				"cumin"
+			],
+			[
+				"cinnamon"
+			]
+		]
+	},
+	"is_ingredient_of_butter_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Butter Chicken ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"chicken"
+			],
+			[
+				"unsalted butter"
+			],
+			[
+				"greek yogurt"
+			],
+			[
+				"tomato"
+			]
+		]
+	},
+	"is_ingredient_of_biryani": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Biryani ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"cinnamon"
+			],
+			[
+				"turmeric"
+			],
+			[
+				"cloves"
+			],
+			[
+				"chicken"
+			]
+		]
+	},
+	"is_ingredient_of_tandoori_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Tandoori Chicken ."
+		],
+		"seed_ent_tuples": [
+			[
+				"garlic powder"
+			],
+			[
+				"paprika"
+			],
+			[
+				"cumin"
+			],
+			[
+				"chili powder"
+			],
+			[
+				"turmeric"
+			]
+		]
+	}
+}
