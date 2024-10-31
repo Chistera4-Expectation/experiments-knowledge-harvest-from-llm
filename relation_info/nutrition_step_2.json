@@ -1,0 +1,1829 @@
+{
+	"is_ingredient_of_pizza": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pizza ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_tomato_soup": {
+		"init_prompts": [
+			"<ENT0> is ingredient of tomato soup ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chicken_stew": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chicken stew ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pasta": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Pasta ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pasta_salad": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pasta salad ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_spaghetti_sauce": {
+		"init_prompts": [
+			"<ENT0> is ingredient of spaghetti sauce ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pasta_sauce": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pasta sauce ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chicken_sandwich": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Chicken Sandwich ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pizza_pie": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pizza pie ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_tomato_salad": {
+		"init_prompts": [
+			"<ENT0> is ingredient of tomato salad ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_tomato_stew": {
+		"init_prompts": [
+			"<ENT0> is ingredient of tomato stew ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_meat_stew": {
+		"init_prompts": [
+			"<ENT0> is ingredient of meat stew ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pizza_sauce": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pizza sauce ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pasta_dish": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pasta dish ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_spaghetti_salad": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Spaghetti Salad ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_bread_roll": {
+		"init_prompts": [
+			"<ENT0> is ingredient of bread roll ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pizza_recipe": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Pizza Recipe ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pasta_recipe": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Pasta Recipe ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chicken_pie": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Chicken Pie ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_caprese_salad": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Caprese Salad ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_tricolore_salad": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Tricolore Salad ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_margherita_pizza": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Margherita Pizza ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_tiramisu": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Tiramisu ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chicken_soup": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Chicken Soup ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_risotto_alla_milanese": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Risotto Alla Milanese ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_spaghetti_carbonara": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Spaghetti Carbonara ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_tomato_sauce": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Tomato sauce ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chili": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chili ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chile": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chile ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chocolate": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chocolate ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_cabbage": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Cabbage ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pork": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pork ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_baja": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Baja ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_luna": {
+		"init_prompts": [
+			"<ENT0> is ingredient of luna ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_cactus": {
+		"init_prompts": [
+			"<ENT0> is ingredient of cactus ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_panini": {
+		"init_prompts": [
+			"<ENT0> is ingredient of panini ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_buca": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Buca ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pita": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pita ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pollo": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pollo ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_boca": {
+		"init_prompts": [
+			"<ENT0> is ingredient of boca ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_fiesta": {
+		"init_prompts": [
+			"<ENT0> is ingredient of fiesta ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_frito": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Frito ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_balsa": {
+		"init_prompts": [
+			"<ENT0> is ingredient of balsa ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_coco": {
+		"init_prompts": [
+			"<ENT0> is ingredient of coco ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_poutine": {
+		"init_prompts": [
+			"<ENT0> is ingredient of poutine ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_choco": {
+		"init_prompts": [
+			"<ENT0> is ingredient of choco ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_panilla": {
+		"init_prompts": [
+			"<ENT0> is ingredient of panilla ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_fries": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Fries ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pastel": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pastel ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_lomo": {
+		"init_prompts": [
+			"<ENT0> is ingredient of lomo ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pastilla": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pastilla ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_panera": {
+		"init_prompts": [
+			"<ENT0> is ingredient of panera ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pico": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pico ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pacho": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pacho ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_lopa": {
+		"init_prompts": [
+			"<ENT0> is ingredient of lopa ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_tamales": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Tamales ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_aji_de_gallina": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Aji de Gallina ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chimichurri_steak": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Chimichurri Steak ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_sopa_de_lima": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Sopa de Lima ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_bacon": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Bacon ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Chicken ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_cheese": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Cheese ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_bread": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Bread ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_cilantro": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Cilantro ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_curry": {
+		"init_prompts": [
+			"<ENT0> is ingredient of curry ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_feta": {
+		"init_prompts": [
+			"<ENT0> is ingredient of feta ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_boli": {
+		"init_prompts": [
+			"<ENT0> is ingredient of boli ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_fudge": {
+		"init_prompts": [
+			"<ENT0> is ingredient of fudge ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_cava": {
+		"init_prompts": [
+			"<ENT0> is ingredient of cava ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_waffle": {
+		"init_prompts": [
+			"<ENT0> is ingredient of waffle ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_baba": {
+		"init_prompts": [
+			"<ENT0> is ingredient of baba ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_kava": {
+		"init_prompts": [
+			"<ENT0> is ingredient of kava ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_bongo": {
+		"init_prompts": [
+			"<ENT0> is ingredient of bongo ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_kola": {
+		"init_prompts": [
+			"<ENT0> is ingredient of kola ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_waffles": {
+		"init_prompts": [
+			"<ENT0> is ingredient of waffles ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_waka": {
+		"init_prompts": [
+			"<ENT0> is ingredient of waka ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_fava": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Fava ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_bava": {
+		"init_prompts": [
+			"<ENT0> is ingredient of bava ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_wahoo": {
+		"init_prompts": [
+			"<ENT0> is ingredient of wahoo ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_kogi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of kogi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_coya": {
+		"init_prompts": [
+			"<ENT0> is ingredient of coya ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_kora": {
+		"init_prompts": [
+			"<ENT0> is ingredient of kora ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_bao": {
+		"init_prompts": [
+			"<ENT0> is ingredient of bao ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_komo": {
+		"init_prompts": [
+			"<ENT0> is ingredient of komo ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_malva_pudding": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Malva pudding ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_jollof_rice": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Jollof rice ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_dodo": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Dodo ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_piri_piri_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Piri piri chicken ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_moambe_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Moambe chicken ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chapati": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Chapati ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_plantain_chips": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Plantain chips ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_egusi_soup": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Egusi soup ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pepe_soup": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Pepe soup ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_cumin": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Cumin ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_kale": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Kale ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_bunny_chow": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Bunny chow ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_ketchup": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Ketchup ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chicken_wing": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chicken wing ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chicken_thighs": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chicken thighs ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_potato_soup": {
+		"init_prompts": [
+			"<ENT0> is ingredient of potato soup ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_american_pizza": {
+		"init_prompts": [
+			"<ENT0> is ingredient of American Pizza ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_american_sausage": {
+		"init_prompts": [
+			"<ENT0> is ingredient of American Sausage ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_potato_stew": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Potato Stew ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_american_style": {
+		"init_prompts": [
+			"<ENT0> is ingredient of American Style ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_potato_salad": {
+		"init_prompts": [
+			"<ENT0> is ingredient of potato salad ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_cobb_salad": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Cobb Salad ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_cheeseburger": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Cheeseburger ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_bbq_ribs": {
+		"init_prompts": [
+			"<ENT0> is ingredient of BBQ Ribs ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_southern_fried_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Southern Fried Chicken ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_buffalo_wings": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Buffalo Wings ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_texas_bbq_brisket": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Texas BBQ Brisket ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_philly_soft_pretzel": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Philly Soft Pretzel ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_maryland_crab_cakes": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Maryland Crab Cakes ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_new_york_style_pizza": {
+		"init_prompts": [
+			"<ENT0> is ingredient of New York Style Pizza ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_texas_chili": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Texas Chili ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_louisiana_gumbo": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Louisiana Gumbo ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_manhattan_clam_chowder": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Manhattan Clam Chowder ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_apple_pie": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Apple Pie ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chicago_deep_dish_pizza": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Chicago Deep Dish Pizza ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_california_roll": {
+		"init_prompts": [
+			"<ENT0> is ingredient of California Roll ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chicago-style_hot_dog": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Chicago-style Hot Dog ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_key_lime_pie": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Key Lime Pie ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_boston_cream_pie": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Boston Cream Pie ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chicken_wings": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Chicken wings ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chai": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chai ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_bamboo": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Bamboo ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chow": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chow ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chowder": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chowder ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_gumbo": {
+		"init_prompts": [
+			"<ENT0> is ingredient of gumbo ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pudding": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pudding ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_lunch": {
+		"init_prompts": [
+			"<ENT0> is ingredient of lunch ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pao": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pao ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_hula": {
+		"init_prompts": [
+			"<ENT0> is ingredient of hula ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_baco": {
+		"init_prompts": [
+			"<ENT0> is ingredient of baco ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_nana": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Nana ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_curried_goat": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Curried Goat ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_conch_fritters": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Conch Fritters ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_oxtail": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Oxtail ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_trinidadian_pepper_shrimp": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Trinidadian Pepper Shrimp ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_guava_duff": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Guava Duff ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_johnny_cakes": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Johnny Cakes ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_jerk_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Jerk Chicken ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_rice_and_peas": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Rice and Peas ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_escovitch_fish": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Escovitch Fish ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_aloo_pie": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Aloo Pie ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_sorrel_drink": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Sorrel Drink ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_cuban_sandwich": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Cuban Sandwich ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_souse": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Souse ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_barbados_flying_fish_cutter": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Barbados Flying Fish Cutter ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_doubles": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Doubles ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chilli": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chilli ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_baked": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Baked ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_katsu": {
+		"init_prompts": [
+			"<ENT0> is ingredient of katsu ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_shogi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of shogi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_noodle": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Noodle ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_kimi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of kimi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_shiro": {
+		"init_prompts": [
+			"<ENT0> is ingredient of shiro ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_natto": {
+		"init_prompts": [
+			"<ENT0> is ingredient of natto ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_shio": {
+		"init_prompts": [
+			"<ENT0> is ingredient of shio ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_bushi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of bushi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_fuku": {
+		"init_prompts": [
+			"<ENT0> is ingredient of fuku ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_jingu": {
+		"init_prompts": [
+			"<ENT0> is ingredient of jingu ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_kaki": {
+		"init_prompts": [
+			"<ENT0> is ingredient of kaki ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_nogi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of nogi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_kushi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of kushi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_boku": {
+		"init_prompts": [
+			"<ENT0> is ingredient of boku ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_shoki": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Shoki ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pogi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pogi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chichi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chichi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_shiso": {
+		"init_prompts": [
+			"<ENT0> is ingredient of shiso ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_jamon": {
+		"init_prompts": [
+			"<ENT0> is ingredient of jamon ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_shishi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of shishi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_choc": {
+		"init_prompts": [
+			"<ENT0> is ingredient of choc ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_shimi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of shimi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_katsu_curry": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Katsu Curry ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_shrimp": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Shrimp ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_tempura": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Tempura ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_sashimi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Sashimi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_soba_noodles": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Soba Noodles ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_sushi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Sushi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_miso_soup": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Miso Soup ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_shabu_shabu": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Shabu Shabu ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_buns": {
+		"init_prompts": [
+			"<ENT0> is ingredient of buns ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chuan": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chuan ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_wok": {
+		"init_prompts": [
+			"<ENT0> is ingredient of wok ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_soup": {
+		"init_prompts": [
+			"<ENT0> is ingredient of soup ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_khao": {
+		"init_prompts": [
+			"<ENT0> is ingredient of khao ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_bali": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Bali ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_kali": {
+		"init_prompts": [
+			"<ENT0> is ingredient of kali ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chiu": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chiu ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chun": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chun ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chou": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chou ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_wai": {
+		"init_prompts": [
+			"<ENT0> is ingredient of wai ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_bai": {
+		"init_prompts": [
+			"<ENT0> is ingredient of bai ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chao": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chao ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_beef_noodle_soup": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Beef Noodle Soup ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_steamed_fish_with_ginger_and_scallions": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Steamed Fish with Ginger and Scallions ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_cantonese_bbq_pork": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Cantonese BBQ Pork ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_kung_pao_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Kung Pao Chicken ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_ma_po_tofu": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Ma Po Tofu ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_szechuan_beef": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Szechuan Beef ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_general_tso's_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of General Tso's Chicken ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_sweet_and_sour_pork": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Sweet and Sour Pork ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_fried_rice": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Fried Rice ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_shanghai_soup_dumplings": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Shanghai Soup Dumplings ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_shrimp_with_lobster_sauce": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Shrimp with Lobster Sauce ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_tea_eggs": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Tea Eggs ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_dongpo_pork": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Dongpo Pork ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_peking_duck": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Peking Duck ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_dumplings": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Dumplings ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_spring_rolls": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Spring Rolls ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_dim_sum": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Dim Sum ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_hot_pot": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Hot Pot ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_rice": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Rice ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_tofu": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Tofu ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_noodles": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Noodles ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_kashi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Kashi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_roti": {
+		"init_prompts": [
+			"<ENT0> is ingredient of roti ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_bhog": {
+		"init_prompts": [
+			"<ENT0> is ingredient of bhog ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_kesar": {
+		"init_prompts": [
+			"<ENT0> is ingredient of kesar ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chana": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chana ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_koti": {
+		"init_prompts": [
+			"<ENT0> is ingredient of koti ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_puri": {
+		"init_prompts": [
+			"<ENT0> is ingredient of puri ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_bhel": {
+		"init_prompts": [
+			"<ENT0> is ingredient of bhel ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_khel": {
+		"init_prompts": [
+			"<ENT0> is ingredient of khel ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chakra": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chakra ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_kassi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of kassi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_giri": {
+		"init_prompts": [
+			"<ENT0> is ingredient of giri ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_chaska": {
+		"init_prompts": [
+			"<ENT0> is ingredient of chaska ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_jai": {
+		"init_prompts": [
+			"<ENT0> is ingredient of jai ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pani": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pani ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_koli": {
+		"init_prompts": [
+			"<ENT0> is ingredient of koli ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_bani": {
+		"init_prompts": [
+			"<ENT0> is ingredient of bani ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_gula": {
+		"init_prompts": [
+			"<ENT0> is ingredient of gula ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_katha": {
+		"init_prompts": [
+			"<ENT0> is ingredient of katha ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_choti": {
+		"init_prompts": [
+			"<ENT0> is ingredient of choti ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_jassi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of jassi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_rogan_josh": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Rogan Josh ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_samosa": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Samosa ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_aloo_gobi": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Aloo Gobi ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_kofta_curry": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Kofta Curry ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_butter_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Butter Chicken ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_biryani": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Biryani ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_tandoori_chicken": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Tandoori Chicken ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_ghee": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Ghee ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_cake": {
+		"init_prompts": [
+			"<ENT0> is ingredient of cake ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pizza_slice": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Pizza Slice ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_vegetable_soup": {
+		"init_prompts": [
+			"<ENT0> is ingredient of vegetable soup ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_vegetable_salad": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Vegetable Salad ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_vegetable_stew": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Vegetable Stew ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_food_item": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Food Item ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_pizza_style": {
+		"init_prompts": [
+			"<ENT0> is ingredient of pizza style ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_rice_soup": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Rice Soup ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_cooking_recipes": {
+		"init_prompts": [
+			"<ENT0> is ingredient of cooking recipes ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_vegetable_sauce": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Vegetable Sauce ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_cooking_style": {
+		"init_prompts": [
+			"<ENT0> is ingredient of cooking style ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_rice_stew": {
+		"init_prompts": [
+			"<ENT0> is ingredient of rice stew ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_cooking_sauce": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Cooking Sauce ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_dessert": {
+		"init_prompts": [
+			"<ENT0> is ingredient of dessert ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_food": {
+		"init_prompts": [
+			"<ENT0> is ingredient of food ."
+		],
+		"seed_ent_tuples": [
+		]
+	},
+	"is_ingredient_of_rice_wine": {
+		"init_prompts": [
+			"<ENT0> is ingredient of Rice wine ."
+		],
+		"seed_ent_tuples": [
+		]
+	}
+}

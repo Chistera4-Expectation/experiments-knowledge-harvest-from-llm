@@ -8,7 +8,6 @@ PATH_RESULTS = PATH_RESULTS / "nutrition" / "100tuples_top20prompts" / "roberta-
 PATH_BASE_ONTOLOGY = PATH_ONTOLOGY / "base_ontology.owl"
 PATH_POPULATED_ONTOLOGY = PATH_ONTOLOGY / "populated_ontology.owl"
 THRESHOLD = 10E-3
-SEED = 753
 
 
 if __name__ == "__main__":
@@ -22,7 +21,7 @@ if __name__ == "__main__":
                     continue
                 processed_classes.add(human_name(cls))
                 # Read the results file for the specific class
-                results_file = PATH_RESULTS / "is_instance_of_{}/ent_tuples.json".format(name_to_snake_case(human_name(cls)))
+                results_file = PATH_RESULTS / "is_instance_of_{}".format(name_to_snake_case(human_name(cls))) / "ent_tuples.json"
                 # Iterate over the results file
                 with open(results_file, "r") as f:
                     results = json.load(f)

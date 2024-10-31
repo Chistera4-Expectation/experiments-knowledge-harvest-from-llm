@@ -10,7 +10,6 @@ if __name__ == "__main__":
     processed = set()
     json_config_file = "{\n"
     with KnowledgeGraph() as kg:
-        Recipe = kg.onto.Recipe
         for cls in kg.visit_classes_depth_first():
             if human_name(cls) in processed:
                 continue
