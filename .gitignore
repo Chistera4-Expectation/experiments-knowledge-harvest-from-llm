@@ -1,3 +1,5 @@
+ontologies/base_ontology.owl
+ontologies/ontology.owl
 .idea
 __pycache__
 /results/ekar_aggr/
