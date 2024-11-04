@@ -38,14 +38,16 @@ if __name__ == "__main__":
                 recipes[human_name(recipe)] = ingredients
 
     with KnowledgeGraph(PATH_ONTOLOGY_FINAL) as kg:
+        skipped = set()
         processed = set()
+        processed_class = set()
         Recipe = kg.onto.Recipe
         for cls in kg.visit_classes_depth_first():
-            if human_name(cls) in processed:
+            if human_name(cls) in processed_class:
                 continue
             if not subtype(cls, Recipe):
                 continue
-            processed.add(human_name(cls))
+            processed_class.add(human_name(cls))
             # Retrieve all the recipes for the class
             instances = list(cls.instances())
             for recipe in instances:
@@ -70,9 +72,14 @@ if __name__ == "__main__":
                     json_config_file = json_config_file[:-2] + "\n"
                     json_config_file += "\t\t]\n"
                     json_config_file += '\t},\n'
+                else:
+                    skipped.add(human_name(recipe))
         # remove the last comma
         json_config_file = json_config_file[:-2] + "\n"
         json_config_file += '}'
+        print("Processed recipes: {}".format(len(processed)))
+        print("Skipped recipes: {}".format(len(skipped)))
     # Save the JSON configuration file
     with open(PATH_RELATION_INFO / "nutrition_step_2.json", "w") as f:
         f.write(json_config_file)
+    os.system("rm {}".format(str(PATH_ONTOLOGY_FINAL)))
