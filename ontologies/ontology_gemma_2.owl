@@ -1,0 +1,3472 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.semanticweb.org/gciatto/ontologies/2023/4/Expectation"
+         xmlns="http://www.semanticweb.org/gciatto/ontologies/2023/4/Expectation#">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/gciatto/ontologies/2023/4/Expectation"/>
+
+<owl:ObjectProperty rdf:about="#ingredientOf">
+  <owl:inverseOf rdf:resource="#hasForIngredient"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+  <rdfs:domain rdf:resource="#Edible"/>
+  <rdfs:range rdf:resource="#Edible"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasForIngredient">
+  <owl:inverseOf rdf:resource="#ingredientOf"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+  <rdfs:domain rdf:resource="#Edible"/>
+  <rdfs:range rdf:resource="#Edible"/>
+</owl:ObjectProperty>
+
+<owl:AnnotationProperty rdf:about="#fancyName">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</owl:AnnotationProperty>
+
+<owl:Class rdf:about="#Edible"/>
+
+<owl:Class rdf:about="#Additive">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+  <fancyName>Food Additive</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Food">
+  <rdfs:subClassOf rdf:resource="#Edible"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Alcoholic">
+  <rdfs:subClassOf rdf:resource="#Drink"/>
+  <fancyName>Alcoholic Drink</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Drink">
+  <rdfs:subClassOf rdf:resource="#Liquid"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Animal">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+  <fancyName>Animal-derived Food</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Beef">
+  <rdfs:subClassOf rdf:resource="#Meat"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Meat">
+  <rdfs:subClassOf rdf:resource="#Animal"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Butter">
+  <rdfs:subClassOf rdf:resource="#Dairy"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dairy">
+  <rdfs:subClassOf rdf:resource="#Animal"/>
+  <fancyName>Dairy Product</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Cereal">
+  <rdfs:subClassOf rdf:resource="#Vegetal"/>
+  <fancyName>Edible Cereal</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Vegetal">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+  <fancyName>Vegetal-derived Food</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Breakfast">
+  <rdfs:subClassOf rdf:resource="#Cereal"/>
+  <fancyName>Breakfast Cereal</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Bread">
+  <rdfs:subClassOf rdf:resource="#Cereal"/>
+  <fancyName>Bread</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Rice">
+  <rdfs:subClassOf rdf:resource="#Cereal"/>
+  <fancyName>Rice</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Pasta">
+  <rdfs:subClassOf rdf:resource="#Cereal"/>
+  <fancyName>Pasta Types</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Cheese">
+  <rdfs:subClassOf rdf:resource="#Dairy"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Coffee">
+  <rdfs:subClassOf rdf:resource="#Infusion"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Infusion">
+  <rdfs:subClassOf rdf:resource="#Drink"/>
+  <fancyName>Infusion Drink</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Crustaceans">
+  <rdfs:subClassOf rdf:resource="#Seafood"/>
+  <fancyName>Edible Crustaceans</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Seafood">
+  <rdfs:subClassOf rdf:resource="#Animal"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dressing">
+  <rdfs:subClassOf rdf:resource="#Additive"/>
+  <fancyName>Food Dressing</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Liquid">
+  <rdfs:subClassOf rdf:resource="#Edible"/>
+  <fancyName>Drinkable Liquid</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Energy">
+  <rdfs:subClassOf rdf:resource="#Drink"/>
+  <fancyName>Energy Drink</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Fish">
+  <rdfs:subClassOf rdf:resource="#Seafood"/>
+  <fancyName>Edible Fish</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Fruit">
+  <rdfs:subClassOf rdf:resource="#Vegetal"/>
+  <fancyName>Edible Fruit</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Honey">
+  <rdfs:subClassOf rdf:resource="#Insect"/>
+  <rdfs:subClassOf rdf:resource="#Liquid"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Insect">
+  <rdfs:subClassOf rdf:resource="#Animal"/>
+  <fancyName>Insect-Derived Food</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Juice">
+  <rdfs:subClassOf rdf:resource="#Drink"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk">
+  <rdfs:subClassOf rdf:resource="#Dairy"/>
+  <rdfs:subClassOf rdf:resource="#Drink"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Molluscs">
+  <rdfs:subClassOf rdf:resource="#Seafood"/>
+  <fancyName>Edible Molluscs</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Mushroom">
+  <rdfs:subClassOf rdf:resource="#Vegetal"/>
+  <fancyName>Edible Mushrooms</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Oil">
+  <rdfs:subClassOf rdf:resource="#Liquid"/>
+  <rdfs:subClassOf rdf:resource="#Vegetal"/>
+  <fancyName>Edible Vegetal Oil</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Pork">
+  <rdfs:subClassOf rdf:resource="#Meat"/>
+  <fancyName>Pork-derived Food</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Poultry">
+  <rdfs:subClassOf rdf:resource="#Meat"/>
+  <fancyName>Poultry-derived Food</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Sauce">
+  <rdfs:subClassOf rdf:resource="#Additive"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Seasoning">
+  <rdfs:subClassOf rdf:resource="#Additive"/>
+  <fancyName>Food Seasoning</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Seaweed">
+  <rdfs:subClassOf rdf:resource="#Vegetal"/>
+  <fancyName>Edible Seaweed</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Seed">
+  <rdfs:subClassOf rdf:resource="#Vegetal"/>
+  <fancyName>Edible Seeds</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Spice">
+  <rdfs:subClassOf rdf:resource="#Additive"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sweetener">
+  <rdfs:subClassOf rdf:resource="#Additive"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tea">
+  <rdfs:subClassOf rdf:resource="#Infusion"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Vegetable">
+  <rdfs:subClassOf rdf:resource="#Vegetal"/>
+  <fancyName>Edible Vegetable</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Water">
+  <rdfs:subClassOf rdf:resource="#Drink"/>
+  <fancyName>Drinking Water</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Yogurt">
+  <rdfs:subClassOf rdf:resource="#Dairy"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Recipe">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Italian">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName>Italian Cuisine Recipe</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Latin">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName>Latin Cuisine Recipe</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#African">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName>African Cuisine Recipe</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#American">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName>American Cuisine Recipe</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Carribean">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName>Carribean Cuisine Recipe</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Japanese">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName>Japanese Cuisine Recipe</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Chinese">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName>Chinese Cuisine Recipe</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Indian">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName>Indian Cuisine Recipe</fancyName>
+</owl:Class>
+
+<Dressing rdf:about="#butter">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#risotto_milanese"/>
+  <ingredientOf rdf:resource="#flan"/>
+  <ingredientOf rdf:resource="#flan_de_coco"/>
+  <ingredientOf rdf:resource="#couscous"/>
+  <ingredientOf rdf:resource="#apple_pie"/>
+  <ingredientOf rdf:resource="#banana_bread"/>
+  <ingredientOf rdf:resource="#boston_cream_pie"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <ingredientOf rdf:resource="#chicken_pot_pie"/>
+  <ingredientOf rdf:resource="#fried_chicken"/>
+  <ingredientOf rdf:resource="#green_bean_casserole"/>
+  <ingredientOf rdf:resource="#mac_and_cheese"/>
+  <ingredientOf rdf:resource="#muffin_top"/>
+  <ingredientOf rdf:resource="#peach_cobbler"/>
+  <ingredientOf rdf:resource="#pie_a_la_mode"/>
+  <ingredientOf rdf:resource="#rainbow_cake"/>
+  <ingredientOf rdf:resource="#southern_fried_chicken"/>
+  <ingredientOf rdf:resource="#steamed_bakes"/>
+  <ingredientOf rdf:resource="#johnny_cakes"/>
+  <ingredientOf rdf:resource="#banana_pudding"/>
+  <ingredientOf rdf:resource="#bimini_bread"/>
+  <ingredientOf rdf:resource="#banana_fritters"/>
+  <ingredientOf rdf:resource="#butter_chicken"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <ingredientOf rdf:resource="#samosas"/>
+  <rdf:type rdf:resource="#Butter"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Butter</fancyName>
+</Dressing>
+
+<Dressing rdf:about="#olive_oil">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Oil"/>
+  <ingredientOf rdf:resource="#marinara_sauce"/>
+  <ingredientOf rdf:resource="#pollo_alla_milanese"/>
+  <ingredientOf rdf:resource="#paella"/>
+  <ingredientOf rdf:resource="#tabbouleh"/>
+  <ingredientOf rdf:resource="#kebabs"/>
+  <ingredientOf rdf:resource="#flying_fish"/>
+  <ingredientOf rdf:resource="#miso_salmon"/>
+  <ingredientOf rdf:resource="#dim_sum"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olive oil</fancyName>
+</Dressing>
+
+<Dressing rdf:about="#mayo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#hot_dog"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mayo</fancyName>
+</Dressing>
+
+<Dressing rdf:about="#sour_cream">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#enchiladas"/>
+  <ingredientOf rdf:resource="#taco_salad"/>
+  <rdf:type rdf:resource="#Butter"/>
+  <ingredientOf rdf:resource="#corn_chowder"/>
+  <ingredientOf rdf:resource="#pie_a_la_mode"/>
+  <ingredientOf rdf:resource="#butter_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sour cream</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sour Cream</fancyName>
+</Dressing>
+
+<Dressing rdf:about="#honey">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sweetener"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <ingredientOf rdf:resource="#chicken_teriyaki"/>
+  <ingredientOf rdf:resource="#orange_blossom_tea"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Honey</fancyName>
+</Dressing>
+
+<Dressing rdf:about="#maple_syrup">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sweetener"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maple syrup</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maple Syrup</fancyName>
+</Dressing>
+
+<Dressing rdf:about="#soy_sauce">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#khmer_curry"/>
+  <ingredientOf rdf:resource="#jerk_chicken"/>
+  <ingredientOf rdf:resource="#coconut_chicken_curry"/>
+  <ingredientOf rdf:resource="#flying_fish"/>
+  <ingredientOf rdf:resource="#chicken_teriyaki"/>
+  <ingredientOf rdf:resource="#teriyaki_chicken"/>
+  <ingredientOf rdf:resource="#kung_pao_chicken"/>
+  <ingredientOf rdf:resource="#sweet_and_sour_pork"/>
+  <ingredientOf rdf:resource="#peking_duck"/>
+  <ingredientOf rdf:resource="#pad_thai"/>
+  <ingredientOf rdf:resource="#fried_rice"/>
+  <ingredientOf rdf:resource="#red_curry"/>
+  <ingredientOf rdf:resource="#pad_see_ew"/>
+  <ingredientOf rdf:resource="#stir_fried_vegetables"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soy sauce</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soy Sauce</fancyName>
+</Dressing>
+
+<Dressing rdf:about="#lemon_juice">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <ingredientOf rdf:resource="#lemon_meringues"/>
+  <ingredientOf rdf:resource="#tabbouleh"/>
+  <ingredientOf rdf:resource="#steamed_fish"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <ingredientOf rdf:resource="#kebabs"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lemon juice</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lemon Juice</fancyName>
+</Dressing>
+
+<Dressing rdf:about="#garlic_powder">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#genovese_sausage"/>
+  <ingredientOf rdf:resource="#marinara_sauce"/>
+  <ingredientOf rdf:resource="#enchiladas"/>
+  <ingredientOf rdf:resource="#zanzibar_curry_goat"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <ingredientOf rdf:resource="#corn_chowder"/>
+  <ingredientOf rdf:resource="#fried_chicken"/>
+  <ingredientOf rdf:resource="#hot_dog"/>
+  <ingredientOf rdf:resource="#jerk_chicken"/>
+  <ingredientOf rdf:resource="#miso_salmon"/>
+  <ingredientOf rdf:resource="#chicken_teriyaki"/>
+  <ingredientOf rdf:resource="#teriyaki_chicken"/>
+  <ingredientOf rdf:resource="#kung_pao_chicken"/>
+  <ingredientOf rdf:resource="#sweet_and_sour_pork"/>
+  <ingredientOf rdf:resource="#pad_thai"/>
+  <ingredientOf rdf:resource="#fried_rice"/>
+  <ingredientOf rdf:resource="#black_bean_sauce"/>
+  <ingredientOf rdf:resource="#stir_fried_vegetables"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <ingredientOf rdf:resource="#samudra_soup"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Garlic powder</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Garlic Powder</fancyName>
+</Dressing>
+
+<Dressing rdf:about="#onion_powder">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#genovese_sausage"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <ingredientOf rdf:resource="#fried_chicken"/>
+  <ingredientOf rdf:resource="#hot_dog"/>
+  <ingredientOf rdf:resource="#jerk_chicken"/>
+  <ingredientOf rdf:resource="#miso_salmon"/>
+  <ingredientOf rdf:resource="#teriyaki_chicken"/>
+  <ingredientOf rdf:resource="#pad_thai"/>
+  <ingredientOf rdf:resource="#black_bean_sauce"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Onion powder</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Onion Powder</fancyName>
+</Dressing>
+
+<Dressing rdf:about="#salt">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#risotto_milanese"/>
+  <ingredientOf rdf:resource="#genovese_sausage"/>
+  <ingredientOf rdf:resource="#marinara_sauce"/>
+  <ingredientOf rdf:resource="#penne_alla_vodka"/>
+  <ingredientOf rdf:resource="#pollo_alla_milanese"/>
+  <ingredientOf rdf:resource="#paella"/>
+  <ingredientOf rdf:resource="#enchiladas"/>
+  <ingredientOf rdf:resource="#salsa"/>
+  <ingredientOf rdf:resource="#mango_salsa"/>
+  <ingredientOf rdf:resource="#jollof_rice"/>
+  <ingredientOf rdf:resource="#naija_stew"/>
+  <ingredientOf rdf:resource="#couscous"/>
+  <ingredientOf rdf:resource="#jollof_noodles"/>
+  <ingredientOf rdf:resource="#zanzibar_curry_goat"/>
+  <ingredientOf rdf:resource="#congolese_beignets"/>
+  <ingredientOf rdf:resource="#ethiopian_tibs"/>
+  <ingredientOf rdf:resource="#cape_verde_chicken_curry"/>
+  <ingredientOf rdf:resource="#senegalese_peanut_sauce"/>
+  <ingredientOf rdf:resource="#zanzibar_fish_curry"/>
+  <ingredientOf rdf:resource="#apple_pie"/>
+  <ingredientOf rdf:resource="#banana_bread"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <ingredientOf rdf:resource="#corn_chowder"/>
+  <ingredientOf rdf:resource="#fried_chicken"/>
+  <ingredientOf rdf:resource="#hot_dog"/>
+  <ingredientOf rdf:resource="#meatloaf"/>
+  <ingredientOf rdf:resource="#pot_roast"/>
+  <ingredientOf rdf:resource="#rainbow_cake"/>
+  <ingredientOf rdf:resource="#southern_fried_chicken"/>
+  <ingredientOf rdf:resource="#jerk_chicken"/>
+  <ingredientOf rdf:resource="#curry_goat"/>
+  <ingredientOf rdf:resource="#flying_fish"/>
+  <ingredientOf rdf:resource="#bajan_flying_fish"/>
+  <ingredientOf rdf:resource="#tabbouleh"/>
+  <ingredientOf rdf:resource="#coconut_drop"/>
+  <ingredientOf rdf:resource="#bimini_bread"/>
+  <ingredientOf rdf:resource="#sorrel"/>
+  <ingredientOf rdf:resource="#banana_fritters"/>
+  <ingredientOf rdf:resource="#tempura"/>
+  <ingredientOf rdf:resource="#miso_soup"/>
+  <ingredientOf rdf:resource="#teriyaki_chicken"/>
+  <ingredientOf rdf:resource="#bonsai"/>
+  <ingredientOf rdf:resource="#dim_sum"/>
+  <ingredientOf rdf:resource="#fried_rice"/>
+  <ingredientOf rdf:resource="#beef_with_green_peppers"/>
+  <ingredientOf rdf:resource="#black_bean_sauce"/>
+  <ingredientOf rdf:resource="#steamed_fish"/>
+  <ingredientOf rdf:resource="#pad_buckwheat"/>
+  <ingredientOf rdf:resource="#stir_fried_vegetables"/>
+  <ingredientOf rdf:resource="#butter_chicken"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <ingredientOf rdf:resource="#samudra_soup"/>
+  <ingredientOf rdf:resource="#kebabs"/>
+  <ingredientOf rdf:resource="#samosas"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salt</fancyName>
+</Dressing>
+
+<Dressing rdf:about="#pepper">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Spice"/>
+  <ingredientOf rdf:resource="#risotto_milanese"/>
+  <ingredientOf rdf:resource="#genovese_sausage"/>
+  <ingredientOf rdf:resource="#marinara_sauce"/>
+  <ingredientOf rdf:resource="#penne_alla_vodka"/>
+  <ingredientOf rdf:resource="#pollo_alla_milanese"/>
+  <ingredientOf rdf:resource="#paella"/>
+  <ingredientOf rdf:resource="#enchiladas"/>
+  <ingredientOf rdf:resource="#salsa"/>
+  <ingredientOf rdf:resource="#jollof_rice"/>
+  <ingredientOf rdf:resource="#naija_stew"/>
+  <ingredientOf rdf:resource="#couscous"/>
+  <ingredientOf rdf:resource="#jollof_noodles"/>
+  <ingredientOf rdf:resource="#zanzibar_curry_goat"/>
+  <ingredientOf rdf:resource="#west_african_beef_stew"/>
+  <ingredientOf rdf:resource="#cape_verde_chicken_curry"/>
+  <ingredientOf rdf:resource="#senegalese_peanut_sauce"/>
+  <ingredientOf rdf:resource="#zanzibar_fish_curry"/>
+  <ingredientOf rdf:resource="#corn_chowder"/>
+  <ingredientOf rdf:resource="#fried_chicken"/>
+  <ingredientOf rdf:resource="#meatloaf"/>
+  <ingredientOf rdf:resource="#pot_roast"/>
+  <ingredientOf rdf:resource="#southern_fried_chicken"/>
+  <ingredientOf rdf:resource="#jerk_chicken"/>
+  <ingredientOf rdf:resource="#curry_goat"/>
+  <ingredientOf rdf:resource="#bajan_flying_fish"/>
+  <ingredientOf rdf:resource="#tabbouleh"/>
+  <ingredientOf rdf:resource="#sorrel"/>
+  <ingredientOf rdf:resource="#fried_rice"/>
+  <ingredientOf rdf:resource="#beef_with_green_peppers"/>
+  <ingredientOf rdf:resource="#black_bean_sauce"/>
+  <ingredientOf rdf:resource="#steamed_fish"/>
+  <ingredientOf rdf:resource="#pad_buckwheat"/>
+  <ingredientOf rdf:resource="#stir_fried_vegetables"/>
+  <ingredientOf rdf:resource="#butter_chicken"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <ingredientOf rdf:resource="#samudra_soup"/>
+  <ingredientOf rdf:resource="#kebabs"/>
+  <ingredientOf rdf:resource="#dim_sum"/>
+  <ingredientOf rdf:resource="#mole_sauce"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <ingredientOf rdf:resource="#teriyaki_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pepper</fancyName>
+</Dressing>
+
+<Sauce rdf:about="#instances_of_the_sauce_class">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#sawa_platter"/>
+  <ingredientOf rdf:resource="#khmer_curry"/>
+  <ingredientOf rdf:resource="#curry_shrimp"/>
+  <ingredientOf rdf:resource="#pad_thai"/>
+  <ingredientOf rdf:resource="#red_curry"/>
+  <ingredientOf rdf:resource="#pad_buckwheat"/>
+  <ingredientOf rdf:resource="#butter_chicken"/>
+  <ingredientOf rdf:resource="#zanzibar_fish_curry"/>
+  <ingredientOf rdf:resource="#meatloaf"/>
+  <ingredientOf rdf:resource="#kung_pao_chicken"/>
+  <ingredientOf rdf:resource="#peking_duck"/>
+  <ingredientOf rdf:resource="#pad_see_ew"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instances of the Sauce class</fancyName>
+</Sauce>
+
+<Seasoning rdf:about="#basic_savory_seasonings">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basic Savory Seasonings</fancyName>
+</Seasoning>
+
+<Seasoning rdf:about="#herbs">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#couscous"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Herbs</fancyName>
+</Seasoning>
+
+<Seasoning rdf:about="#spices">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spices</fancyName>
+</Seasoning>
+
+<Seasoning rdf:about="#citrus_flavors">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Citrus Flavors</fancyName>
+</Seasoning>
+
+<Seasoning rdf:about="#ethnic_seasoning_blends">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#spring_rolls"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ethnic Seasoning Blends</fancyName>
+</Seasoning>
+
+<Seasoning rdf:about="#culinary_herbs">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Culinary Herbs</fancyName>
+</Seasoning>
+
+<Spice rdf:about="#cumin">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#enchiladas"/>
+  <ingredientOf rdf:resource="#zanzibar_curry_goat"/>
+  <ingredientOf rdf:resource="#butter_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cumin</fancyName>
+</Spice>
+
+<Spice rdf:about="#curry">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curry</fancyName>
+</Spice>
+
+<Spice rdf:about="#cardamom">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#zanzibar_curry_goat"/>
+  <ingredientOf rdf:resource="#zanzibar_fish_curry"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <ingredientOf rdf:resource="#samosas"/>
+  <ingredientOf rdf:resource="#raita"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardamom</fancyName>
+</Spice>
+
+<Spice rdf:about="#cloves">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloves</fancyName>
+</Spice>
+
+<Spice rdf:about="#nutmeg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutmeg</fancyName>
+</Spice>
+
+<Spice rdf:about="#cinnamon">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#apple_pie"/>
+  <ingredientOf rdf:resource="#pie_a_la_mode"/>
+  <ingredientOf rdf:resource="#curry_goat"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cinnamon</fancyName>
+</Spice>
+
+<Sweetener rdf:about="#molasses">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molasses</fancyName>
+</Sweetener>
+
+<Sweetener rdf:about="#raisin_cane">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raisin Cane</fancyName>
+</Sweetener>
+
+<Sweetener rdf:about="#sorghum">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sorghum</fancyName>
+</Sweetener>
+
+<Sweetener rdf:about="#treacle">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Treacle</fancyName>
+</Sweetener>
+
+<Sweetener rdf:about="#agave">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agave</fancyName>
+</Sweetener>
+
+<Sweetener rdf:about="#fig_jam">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fig Jam</fancyName>
+</Sweetener>
+
+<Dressing rdf:about="#sodium_benzoate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sodium benzoate</fancyName>
+</Dressing>
+
+<Sauce rdf:about="#potassium_sorbate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#hot_dog"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potassium sorbate</fancyName>
+</Sauce>
+
+<Seasoning rdf:about="#ascorbic_acid">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ascorbic acid</fancyName>
+</Seasoning>
+
+<Sauce rdf:about="#citric_acid">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#guava_jam"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Citric acid</fancyName>
+</Sauce>
+
+<Dressing rdf:about="#sodium_glutamate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sodium glutamate</fancyName>
+</Dressing>
+
+<Sauce rdf:about="#acetic_acid">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acetic acid</fancyName>
+</Sauce>
+
+<Sauce rdf:about="#phosphoric_acid">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phosphoric acid</fancyName>
+</Sauce>
+
+<Beef rdf:about="#sirloin">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sirloin</fancyName>
+</Beef>
+
+<Beef rdf:about="#strip">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strip</fancyName>
+</Beef>
+
+<Beef rdf:about="#flank">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flank</fancyName>
+</Beef>
+
+<Beef rdf:about="#ground_beef">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#meatloaf"/>
+  <ingredientOf rdf:resource="#mole_sauce"/>
+  <ingredientOf rdf:resource="#pot_roast"/>
+  <ingredientOf rdf:resource="#beef_with_green_peppers"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ground Beef</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ground beef</fancyName>
+</Beef>
+
+<Pork rdf:about="#loin">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Loin</fancyName>
+</Pork>
+
+<Pork rdf:about="#ham">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ham</fancyName>
+</Pork>
+
+<Pork rdf:about="#bacon">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#cobb_salad"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacon</fancyName>
+</Pork>
+
+<Pork rdf:about="#sausage">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sausage</fancyName>
+</Pork>
+
+<Pork rdf:about="#pork_roast">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#genovese_sausage"/>
+  <ingredientOf rdf:resource="#sweet_and_sour_pork"/>
+  <ingredientOf rdf:resource="#meatloaf"/>
+  <ingredientOf rdf:resource="#mapo_tofu"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pork Roast</fancyName>
+</Pork>
+
+<Pork rdf:about="#rib">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rib</fancyName>
+</Pork>
+
+<Pork rdf:about="#shank">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shank</fancyName>
+</Pork>
+
+<Poultry rdf:about="#chicken_breast">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#fried_chicken"/>
+  <ingredientOf rdf:resource="#southern_fried_chicken"/>
+  <ingredientOf rdf:resource="#kung_pao_chicken"/>
+  <hasForIngredient rdf:resource="#butter"/>
+  <hasForIngredient rdf:resource="#lemon_juice"/>
+  <hasForIngredient rdf:resource="#garlic_powder"/>
+  <hasForIngredient rdf:resource="#onion_powder"/>
+  <hasForIngredient rdf:resource="#salt"/>
+  <hasForIngredient rdf:resource="#pepper"/>
+  <hasForIngredient rdf:resource="#chicken_breast"/>
+  <hasForIngredient rdf:resource="#flour"/>
+  <hasForIngredient rdf:resource="#baking_powder"/>
+  <hasForIngredient rdf:resource="#baking_soda"/>
+  <hasForIngredient rdf:resource="#paprika"/>
+  <hasForIngredient rdf:resource="#dried_oregano"/>
+  <hasForIngredient rdf:resource="#garlic_cloves"/>
+  <ingredientOf rdf:resource="#paella"/>
+  <ingredientOf rdf:resource="#jollof_rice"/>
+  <ingredientOf rdf:resource="#sawa_platter"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <ingredientOf rdf:resource="#chicken_pot_pie"/>
+  <ingredientOf rdf:resource="#cobb_salad"/>
+  <ingredientOf rdf:resource="#mango_curry_chicken"/>
+  <ingredientOf rdf:resource="#chicken_teriyaki"/>
+  <ingredientOf rdf:resource="#pad_thai"/>
+  <ingredientOf rdf:resource="#pad_see_ew"/>
+  <ingredientOf rdf:resource="#butter_chicken"/>
+  <ingredientOf rdf:resource="#pollo_alla_milanese"/>
+  <ingredientOf rdf:resource="#jerk_chicken"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chicken Breast</fancyName>
+</Poultry>
+
+<Poultry rdf:about="#turkey_leg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turkey Leg</fancyName>
+</Poultry>
+
+<Poultry rdf:about="#quail_meat">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quail Meat</fancyName>
+</Poultry>
+
+<Poultry rdf:about="#beef">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#jollof_rice"/>
+  <ingredientOf rdf:resource="#west_african_beef_stew"/>
+  <ingredientOf rdf:resource="#pot_roast"/>
+  <ingredientOf rdf:resource="#beef_with_green_peppers"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beef</fancyName>
+</Poultry>
+
+<Poultry rdf:about="#lamb">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamb</fancyName>
+</Poultry>
+
+<Butter rdf:about="#peter">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter</fancyName>
+</Butter>
+
+<Butter rdf:about="#mary">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mary</fancyName>
+</Butter>
+
+<Butter rdf:about="#john">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John</fancyName>
+</Butter>
+
+<Cheese rdf:about="#cheddar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cheddar</fancyName>
+</Cheese>
+
+<Cheese rdf:about="#edam">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edam</fancyName>
+</Cheese>
+
+<Cheese rdf:about="#gouda">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gouda</fancyName>
+</Cheese>
+
+<Cheese rdf:about="#parmesan">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#risotto_milanese"/>
+  <ingredientOf rdf:resource="#pollo_alla_milanese"/>
+  <ingredientOf rdf:resource="#mac_and_cheese"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parmesan</fancyName>
+</Cheese>
+
+<Cheese rdf:about="#ricotta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ricotta</fancyName>
+</Cheese>
+
+<Cheese rdf:about="#swiss">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swiss</fancyName>
+</Cheese>
+
+<Milk rdf:about="#whole_milk">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#fried_chicken"/>
+  <ingredientOf rdf:resource="#green_bean_casserole"/>
+  <ingredientOf rdf:resource="#mac_and_cheese"/>
+  <ingredientOf rdf:resource="#johnny_cakes"/>
+  <ingredientOf rdf:resource="#banana_pudding"/>
+  <ingredientOf rdf:resource="#bimini_bread"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <ingredientOf rdf:resource="#raita"/>
+  <ingredientOf rdf:resource="#tiramisu"/>
+  <ingredientOf rdf:resource="#flan_de_coco"/>
+  <ingredientOf rdf:resource="#flan"/>
+  <ingredientOf rdf:resource="#zanzibar_curry_goat"/>
+  <ingredientOf rdf:resource="#cape_verde_chicken_curry"/>
+  <ingredientOf rdf:resource="#khmer_curry"/>
+  <ingredientOf rdf:resource="#zanzibar_fish_curry"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <ingredientOf rdf:resource="#curry_goat"/>
+  <ingredientOf rdf:resource="#mango_curry_chicken"/>
+  <ingredientOf rdf:resource="#coconut_chicken_curry"/>
+  <ingredientOf rdf:resource="#curry_shrimp"/>
+  <ingredientOf rdf:resource="#bajan_flying_fish"/>
+  <ingredientOf rdf:resource="#red_curry"/>
+  <ingredientOf rdf:resource="#butter_chicken"/>
+  <ingredientOf rdf:resource="#samudra_soup"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whole Milk</fancyName>
+</Milk>
+
+<Milk rdf:about="#low_fat_milk">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Low Fat Milk</fancyName>
+</Milk>
+
+<Yogurt rdf:about="#instances_of_class_yogurt">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instances of class Yogurt</fancyName>
+</Yogurt>
+
+<Yogurt rdf:about="#concise_names">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">concise names</fancyName>
+</Yogurt>
+
+<Milk rdf:about="#cheese">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#enchiladas"/>
+  <ingredientOf rdf:resource="#quesadillas"/>
+  <ingredientOf rdf:resource="#green_bean_casserole"/>
+  <ingredientOf rdf:resource="#taco_salad"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cheese</fancyName>
+</Milk>
+
+<Milk rdf:about="#yogurt">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yogurt</fancyName>
+</Milk>
+
+<Crustaceans rdf:about="#crayfish">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crayfish</fancyName>
+</Crustaceans>
+
+<Crustaceans rdf:about="#lobsters">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lobsters</fancyName>
+</Crustaceans>
+
+<Crustaceans rdf:about="#prawns">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prawns</fancyName>
+</Crustaceans>
+
+<Crustaceans rdf:about="#shrimp">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#curry_shrimp"/>
+  <ingredientOf rdf:resource="#sushi"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shrimp</fancyName>
+</Crustaceans>
+
+<Fish rdf:about="#salmon">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#sushi"/>
+  <ingredientOf rdf:resource="#sashimi"/>
+  <ingredientOf rdf:resource="#miso_salmon"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salmon</fancyName>
+</Fish>
+
+<Fish rdf:about="#tuna">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#sushi"/>
+  <ingredientOf rdf:resource="#sashimi"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tuna</fancyName>
+</Fish>
+
+<Fish rdf:about="#swordfish">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#sashimi"/>
+  <ingredientOf rdf:resource="#mole_sauce"/>
+  <ingredientOf rdf:resource="#flying_fish"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swordfish</fancyName>
+</Fish>
+
+<Fish rdf:about="#cod">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cod</fancyName>
+</Fish>
+
+<Fish rdf:about="#halibut">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Halibut</fancyName>
+</Fish>
+
+<Fish rdf:about="#tilapia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tilapia</fancyName>
+</Fish>
+
+<Fish rdf:about="#trout">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trout</fancyName>
+</Fish>
+
+<Molluscs rdf:about="#clam">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clam</fancyName>
+</Molluscs>
+
+<Molluscs rdf:about="#oyster">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oyster</fancyName>
+</Molluscs>
+
+<Molluscs rdf:about="#scallop">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scallop</fancyName>
+</Molluscs>
+
+<Molluscs rdf:about="#mussel">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mussel</fancyName>
+</Molluscs>
+
+<Molluscs rdf:about="#snail">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snail</fancyName>
+</Molluscs>
+
+<Molluscs rdf:about="#cockle">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cockle</fancyName>
+</Molluscs>
+
+<Molluscs rdf:about="#geoduck">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geoduck</fancyName>
+</Molluscs>
+
+<Crustaceans rdf:about="#scallops">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scallops</fancyName>
+</Crustaceans>
+
+<Fish rdf:about="#oysters">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oysters</fancyName>
+</Fish>
+
+<Fish rdf:about="#sardines">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sardines</fancyName>
+</Fish>
+
+<Crustaceans rdf:about="#crab">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crab</fancyName>
+</Crustaceans>
+
+<Fish rdf:about="#lobster">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lobster</fancyName>
+</Fish>
+
+<Honey rdf:about="#instances">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instances</fancyName>
+</Honey>
+
+<Honey rdf:about="#__crickets____crick">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">**Crickets:** Crick</fancyName>
+</Honey>
+
+<Honey rdf:about="#__grasshoppers____grass">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">**Grasshoppers:** Grass</fancyName>
+</Honey>
+
+<Fish rdf:about="#fish">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#sawa_platter"/>
+  <ingredientOf rdf:resource="#khmer_curry"/>
+  <ingredientOf rdf:resource="#zanzibar_fish_curry"/>
+  <ingredientOf rdf:resource="#sushi"/>
+  <ingredientOf rdf:resource="#steamed_fish"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fish</fancyName>
+</Fish>
+
+<Milk rdf:about="#eggs">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#pollo_alla_milanese"/>
+  <ingredientOf rdf:resource="#flan"/>
+  <ingredientOf rdf:resource="#flan_de_coco"/>
+  <ingredientOf rdf:resource="#banana_bread"/>
+  <ingredientOf rdf:resource="#boston_cream_pie"/>
+  <ingredientOf rdf:resource="#meatloaf"/>
+  <ingredientOf rdf:resource="#muffin_top"/>
+  <ingredientOf rdf:resource="#pie_a_la_mode"/>
+  <ingredientOf rdf:resource="#steamed_bakes"/>
+  <ingredientOf rdf:resource="#banana_pudding"/>
+  <ingredientOf rdf:resource="#bimini_bread"/>
+  <ingredientOf rdf:resource="#pad_thai"/>
+  <ingredientOf rdf:resource="#fried_rice"/>
+  <ingredientOf rdf:resource="#spring_rolls"/>
+  <ingredientOf rdf:resource="#pad_see_ew"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eggs</fancyName>
+</Milk>
+
+<Milk rdf:about="#dairy_products">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dairy products</fancyName>
+</Milk>
+
+<Breakfast rdf:about="#frosted_flakes">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frosted Flakes</fancyName>
+</Breakfast>
+
+<Breakfast rdf:about="#raisin_bran">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raisin Bran</fancyName>
+</Breakfast>
+
+<Breakfast rdf:about="#honey_nut_cheerios">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Honey Nut Cheerios</fancyName>
+</Breakfast>
+
+<Breakfast rdf:about="#fruit_loops">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fruit Loops</fancyName>
+</Breakfast>
+
+<Bread rdf:about="#instances_of_the_bread_class">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#hot_dog"/>
+  <ingredientOf rdf:resource="#pollo_alla_milanese"/>
+  <ingredientOf rdf:resource="#genovese_sausage"/>
+  <ingredientOf rdf:resource="#green_bean_casserole"/>
+  <ingredientOf rdf:resource="#meatloaf"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instances of the Bread class</fancyName>
+</Bread>
+
+<Rice rdf:about="#basmati_rice">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#risotto_milanese"/>
+  <ingredientOf rdf:resource="#paella"/>
+  <ingredientOf rdf:resource="#jollof_rice"/>
+  <ingredientOf rdf:resource="#jollof_noodles"/>
+  <ingredientOf rdf:resource="#sawa_platter"/>
+  <ingredientOf rdf:resource="#rice_and_peas"/>
+  <ingredientOf rdf:resource="#sushi"/>
+  <ingredientOf rdf:resource="#peking_duck"/>
+  <ingredientOf rdf:resource="#fried_rice"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <ingredientOf rdf:resource="#steamed_bakes"/>
+  <ingredientOf rdf:resource="#tempura"/>
+  <ingredientOf rdf:resource="#bonsai"/>
+  <ingredientOf rdf:resource="#dim_sum"/>
+  <ingredientOf rdf:resource="#teriyaki_chicken"/>
+  <ingredientOf rdf:resource="#kung_pao_chicken"/>
+  <ingredientOf rdf:resource="#sweet_and_sour_pork"/>
+  <ingredientOf rdf:resource="#stir_fried_vegetables"/>
+  <ingredientOf rdf:resource="#sashimi"/>
+  <ingredientOf rdf:resource="#pad_thai"/>
+  <ingredientOf rdf:resource="#pad_see_ew"/>
+  <ingredientOf rdf:resource="#mapo_tofu"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basmati Rice</fancyName>
+</Rice>
+
+<Rice rdf:about="#jasmine_rice">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jasmine Rice</fancyName>
+</Rice>
+
+<Pasta rdf:about="#spaghetti">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spaghetti</fancyName>
+</Pasta>
+
+<Pasta rdf:about="#penne">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penne</fancyName>
+</Pasta>
+
+<Pasta rdf:about="#linguine">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linguine</fancyName>
+</Pasta>
+
+<Pasta rdf:about="#farfalle">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Farfalle</fancyName>
+</Pasta>
+
+<Pasta rdf:about="#ravioli">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ravioli</fancyName>
+</Pasta>
+
+<Breakfast rdf:about="#cap_n_crunch">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cap'n Crunch</fancyName>
+</Breakfast>
+
+<Breakfast rdf:about="#apple_jacks">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apple Jacks</fancyName>
+</Breakfast>
+
+<Breakfast rdf:about="#shredded_wheat">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shredded Wheat</fancyName>
+</Breakfast>
+
+<Fruit rdf:about="#apple">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#apple_pie"/>
+  <ingredientOf rdf:resource="#pie_a_la_mode"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apple</fancyName>
+</Fruit>
+
+<Fruit rdf:about="#banana">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#congolese_beignets"/>
+  <ingredientOf rdf:resource="#steamed_bakes"/>
+  <ingredientOf rdf:resource="#banana_pudding"/>
+  <ingredientOf rdf:resource="#banana_fritters"/>
+  <ingredientOf rdf:resource="#banana_bread"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Banana</fancyName>
+</Fruit>
+
+<Fruit rdf:about="#orange">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#steamed_bakes"/>
+  <ingredientOf rdf:resource="#jerk_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orange</fancyName>
+</Fruit>
+
+<Fruit rdf:about="#grapes">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grapes</fancyName>
+</Fruit>
+
+<Fruit rdf:about="#watermelon">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Watermelon</fancyName>
+</Fruit>
+
+<Fruit rdf:about="#strawberry">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strawberry</fancyName>
+</Fruit>
+
+<Mushroom rdf:about="#leccinio_volva">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leccinio volva</fancyName>
+</Mushroom>
+
+<Oil rdf:about="#canola_oil">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canola oil</fancyName>
+</Oil>
+
+<Oil rdf:about="#coconut_oil">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#zanzibar_curry_goat"/>
+  <ingredientOf rdf:resource="#khmer_curry"/>
+  <ingredientOf rdf:resource="#steamed_bakes"/>
+  <ingredientOf rdf:resource="#mango_curry_chicken"/>
+  <ingredientOf rdf:resource="#coconut_chicken_curry"/>
+  <ingredientOf rdf:resource="#coconut_drop"/>
+  <ingredientOf rdf:resource="#red_curry"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coconut oil</fancyName>
+</Oil>
+
+<Oil rdf:about="#sesame_oil">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#genovese_sausage"/>
+  <ingredientOf rdf:resource="#chicken_teriyaki"/>
+  <ingredientOf rdf:resource="#teriyaki_chicken"/>
+  <ingredientOf rdf:resource="#bonsai"/>
+  <ingredientOf rdf:resource="#fried_rice"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sesame oil</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sesame Oil</fancyName>
+</Oil>
+
+<Oil rdf:about="#safflower_oil">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Safflower oil</fancyName>
+</Oil>
+
+<Seaweed rdf:about="#sargassum">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sargassum</fancyName>
+</Seaweed>
+
+<Seaweed rdf:about="#porphyra">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porphyra</fancyName>
+</Seaweed>
+
+<Seaweed rdf:about="#laminaria">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laminaria</fancyName>
+</Seaweed>
+
+<Seaweed rdf:about="#ulva">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ulva</fancyName>
+</Seaweed>
+
+<Seed rdf:about="#almonds">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#raita"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Almonds</fancyName>
+</Seed>
+
+<Seed rdf:about="#chia_seeds">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chia Seeds</fancyName>
+</Seed>
+
+<Seed rdf:about="#flax_seeds">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flax Seeds</fancyName>
+</Seed>
+
+<Seed rdf:about="#hemp_seeds">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hemp Seeds</fancyName>
+</Seed>
+
+<Seed rdf:about="#pumpkin_seeds">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pumpkin Seeds</fancyName>
+</Seed>
+
+<Seed rdf:about="#rice_bran">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rice Bran</fancyName>
+</Seed>
+
+<Vegetable rdf:about="#carrot">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#sorrel"/>
+  <ingredientOf rdf:resource="#jollof_rice"/>
+  <ingredientOf rdf:resource="#west_african_beef_stew"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <ingredientOf rdf:resource="#chicken_pot_pie"/>
+  <ingredientOf rdf:resource="#corn_chowder"/>
+  <ingredientOf rdf:resource="#pot_roast"/>
+  <ingredientOf rdf:resource="#curry_shrimp"/>
+  <ingredientOf rdf:resource="#miso_soup"/>
+  <ingredientOf rdf:resource="#fried_rice"/>
+  <ingredientOf rdf:resource="#red_curry"/>
+  <ingredientOf rdf:resource="#pad_buckwheat"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carrot</fancyName>
+</Vegetable>
+
+<Vegetable rdf:about="#celery">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#risotto_milanese"/>
+  <ingredientOf rdf:resource="#jollof_rice"/>
+  <ingredientOf rdf:resource="#chicken_pot_pie"/>
+  <ingredientOf rdf:resource="#corn_chowder"/>
+  <ingredientOf rdf:resource="#pot_roast"/>
+  <ingredientOf rdf:resource="#curry_shrimp"/>
+  <ingredientOf rdf:resource="#bajan_flying_fish"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Celery</fancyName>
+</Vegetable>
+
+<Vegetable rdf:about="#cucumber">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#salsa"/>
+</Vegetable>
+
+<Vegetable rdf:about="#lettuce">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#taco_salad"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lettuce</fancyName>
+</Vegetable>
+
+<Vegetable rdf:about="#peppers">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#paella"/>
+  <ingredientOf rdf:resource="#sawa_platter"/>
+  <ingredientOf rdf:resource="#coconut_chicken_curry"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <ingredientOf rdf:resource="#kebabs"/>
+  <ingredientOf rdf:resource="#enchiladas"/>
+  <ingredientOf rdf:resource="#salsa"/>
+  <ingredientOf rdf:resource="#mango_salsa"/>
+  <ingredientOf rdf:resource="#flying_fish"/>
+  <ingredientOf rdf:resource="#zanzibar_curry_goat"/>
+  <ingredientOf rdf:resource="#west_african_beef_stew"/>
+  <ingredientOf rdf:resource="#khmer_curry"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <ingredientOf rdf:resource="#taco_salad"/>
+  <ingredientOf rdf:resource="#bajan_flying_fish"/>
+  <ingredientOf rdf:resource="#fried_rice"/>
+  <ingredientOf rdf:resource="#red_curry"/>
+  <ingredientOf rdf:resource="#pad_buckwheat"/>
+  <ingredientOf rdf:resource="#curry_goat"/>
+  <ingredientOf rdf:resource="#curry_shrimp"/>
+  <ingredientOf rdf:resource="#beef_with_green_peppers"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peppers</fancyName>
+</Vegetable>
+
+<Vegetable rdf:about="#pumpkin">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Vegetable>
+
+<Vegetable rdf:about="#tomato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#cobb_salad"/>
+  <ingredientOf rdf:resource="#taco_salad"/>
+  <ingredientOf rdf:resource="#mole_sauce"/>
+  <ingredientOf rdf:resource="#jollof_rice"/>
+  <ingredientOf rdf:resource="#jollof_noodles"/>
+  <ingredientOf rdf:resource="#west_african_beef_stew"/>
+  <ingredientOf rdf:resource="#senegalese_peanut_sauce"/>
+  <ingredientOf rdf:resource="#zanzibar_fish_curry"/>
+  <ingredientOf rdf:resource="#meatloaf"/>
+  <ingredientOf rdf:resource="#coconut_chicken_curry"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomato</fancyName>
+</Vegetable>
+
+<Fruit rdf:about="#fruits">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#guava_jam"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fruits</fancyName>
+</Fruit>
+
+<Vegetable rdf:about="#vegetables">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#paella"/>
+  <ingredientOf rdf:resource="#jollof_rice"/>
+  <ingredientOf rdf:resource="#naija_stew"/>
+  <ingredientOf rdf:resource="#pad_thai"/>
+  <ingredientOf rdf:resource="#stir_fried_vegetables"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vegetables</fancyName>
+</Vegetable>
+
+<Rice rdf:about="#whole_grains">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whole grains</fancyName>
+</Rice>
+
+<Vegetable rdf:about="#legumes">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Legumes</fancyName>
+</Vegetable>
+
+<Vegetable rdf:about="#tofu">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#mapo_tofu"/>
+  <ingredientOf rdf:resource="#pad_see_ew"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tofu</fancyName>
+</Vegetable>
+
+<Fruit rdf:about="#peach">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#peach_cobbler"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peach</fancyName>
+</Fruit>
+
+<Fruit rdf:about="#pear">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pear</fancyName>
+</Fruit>
+
+<Fruit rdf:about="#berry">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Berry</fancyName>
+</Fruit>
+
+<Pasta rdf:about="#pasta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#marinara_sauce"/>
+  <ingredientOf rdf:resource="#penne_alla_vodka"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pasta</fancyName>
+</Pasta>
+
+<Breakfast rdf:about="#oatmeal">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oatmeal</fancyName>
+</Breakfast>
+
+<Alcoholic rdf:about="#beer">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beer</fancyName>
+</Alcoholic>
+
+<Alcoholic rdf:about="#wine">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#kung_pao_chicken"/>
+  <ingredientOf rdf:resource="#sweet_and_sour_pork"/>
+  <ingredientOf rdf:resource="#mapo_tofu"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wine</fancyName>
+</Alcoholic>
+
+<Alcoholic rdf:about="#rum">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rum</fancyName>
+</Alcoholic>
+
+<Alcoholic rdf:about="#whiskey">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whiskey</fancyName>
+</Alcoholic>
+
+<Alcoholic rdf:about="#tequila">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tequila</fancyName>
+</Alcoholic>
+
+<Alcoholic rdf:about="#gin">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gin</fancyName>
+</Alcoholic>
+
+<Alcoholic rdf:about="#liquor">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquor</fancyName>
+</Alcoholic>
+
+<Coffee rdf:about="#espresso">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#tiramisu"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Espresso</fancyName>
+</Coffee>
+
+<Coffee rdf:about="#latte">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latte</fancyName>
+</Coffee>
+
+<Coffee rdf:about="#cappuccino">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cappuccino</fancyName>
+</Coffee>
+
+<Coffee rdf:about="#cold_brew">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cold Brew</fancyName>
+</Coffee>
+
+<Tea rdf:about="#green_tea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green tea</fancyName>
+</Tea>
+
+<Tea rdf:about="#white_tea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#orange_blossom_tea"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White tea</fancyName>
+</Tea>
+
+<Tea rdf:about="#black_tea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black tea</fancyName>
+</Tea>
+
+<Tea rdf:about="#rooibos_tea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rooibos tea</fancyName>
+</Tea>
+
+<Tea rdf:about="#jasmine_tea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jasmine tea</fancyName>
+</Tea>
+
+<Tea rdf:about="#earl_grey_tea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Earl Grey tea</fancyName>
+</Tea>
+
+<Tea rdf:about="#pu_erh_tea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pu-erh tea</fancyName>
+</Tea>
+
+<Tea rdf:about="#matcha_tea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matcha tea</fancyName>
+</Tea>
+
+<Tea rdf:about="#orange_hibiscus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orange Hibiscus</fancyName>
+</Tea>
+
+<Tea rdf:about="#lemon_ginger">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lemon Ginger</fancyName>
+</Tea>
+
+<Tea rdf:about="#turmeric_honey">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turmeric Honey</fancyName>
+</Tea>
+
+<Tea rdf:about="#pomegranate_pomegranate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pomegranate Pomegranate</fancyName>
+</Tea>
+
+<Tea rdf:about="#peach_rose">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peach Rose</fancyName>
+</Tea>
+
+<Tea rdf:about="#apple_cranberry">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apple Cranberry</fancyName>
+</Tea>
+
+<Energy rdf:about="#red_bull">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red Bull</fancyName>
+</Energy>
+
+<Energy rdf:about="#monster">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monster</fancyName>
+</Energy>
+
+<Energy rdf:about="#xs_energy">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XS Energy</fancyName>
+</Energy>
+
+<Energy rdf:about="#reign">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reign</fancyName>
+</Energy>
+
+<Energy rdf:about="#full_throttle">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Full throttle</fancyName>
+</Energy>
+
+<Juice rdf:about="#some_instances">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Some instances</fancyName>
+</Juice>
+
+<Water rdf:about="#plain_water">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#mole_sauce"/>
+  <ingredientOf rdf:resource="#jollof_rice"/>
+  <ingredientOf rdf:resource="#naija_stew"/>
+  <ingredientOf rdf:resource="#couscous"/>
+  <ingredientOf rdf:resource="#jollof_noodles"/>
+  <ingredientOf rdf:resource="#senegalese_peanut_sauce"/>
+  <ingredientOf rdf:resource="#khmer_curry"/>
+  <ingredientOf rdf:resource="#hot_dog"/>
+  <ingredientOf rdf:resource="#pie_a_la_mode"/>
+  <ingredientOf rdf:resource="#rice_and_peas"/>
+  <ingredientOf rdf:resource="#bimini_bread"/>
+  <ingredientOf rdf:resource="#sorrel"/>
+  <ingredientOf rdf:resource="#tempura"/>
+  <ingredientOf rdf:resource="#miso_soup"/>
+  <ingredientOf rdf:resource="#chicken_teriyaki"/>
+  <ingredientOf rdf:resource="#teriyaki_chicken"/>
+  <ingredientOf rdf:resource="#bonsai"/>
+  <ingredientOf rdf:resource="#sweet_and_sour_pork"/>
+  <ingredientOf rdf:resource="#dim_sum"/>
+  <ingredientOf rdf:resource="#mapo_tofu"/>
+  <ingredientOf rdf:resource="#beef_with_green_peppers"/>
+  <ingredientOf rdf:resource="#black_bean_sauce"/>
+  <ingredientOf rdf:resource="#steamed_fish"/>
+  <ingredientOf rdf:resource="#spring_rolls"/>
+  <ingredientOf rdf:resource="#pad_see_ew"/>
+  <ingredientOf rdf:resource="#orange_blossom_tea"/>
+  <ingredientOf rdf:resource="#samudra_soup"/>
+  <ingredientOf rdf:resource="#samosas"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plain Water</fancyName>
+</Water>
+
+<Water rdf:about="#flavored_water">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#coconut_chicken_curry"/>
+  <ingredientOf rdf:resource="#raita"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flavored Water</fancyName>
+</Water>
+
+<Juice rdf:about="#juice">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#salsa"/>
+  <ingredientOf rdf:resource="#mango_salsa"/>
+  <ingredientOf rdf:resource="#cape_verde_chicken_curry"/>
+  <ingredientOf rdf:resource="#jerk_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juice</fancyName>
+</Juice>
+
+<Alcoholic rdf:about="#soda">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soda</fancyName>
+</Alcoholic>
+
+<Coffee rdf:about="#coffee">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coffee</fancyName>
+</Coffee>
+
+<Tea rdf:about="#tea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tea</fancyName>
+</Tea>
+
+<Juice rdf:about="#smoothies">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smoothies</fancyName>
+</Juice>
+
+<Fruit rdf:about="#mango">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#mango_salsa"/>
+  <ingredientOf rdf:resource="#steamed_bakes"/>
+  <ingredientOf rdf:resource="#mango_curry_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mango</fancyName>
+</Fruit>
+
+<Fruit rdf:about="#honeydew">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Honeydew</fancyName>
+</Fruit>
+
+<Seed rdf:about="#brazil_nuts">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brazil Nuts</fancyName>
+</Seed>
+
+<Seed rdf:about="#cashews">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#bonsai"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cashews</fancyName>
+</Seed>
+
+<Seed rdf:about="#peanuts">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#zanzibar_curry_goat"/>
+  <ingredientOf rdf:resource="#senegalese_peanut_sauce"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peanuts</fancyName>
+</Seed>
+
+<Bread rdf:about="#whole_wheat_bread">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whole Wheat Bread</fancyName>
+</Bread>
+
+<Italian rdf:about="#risotto_milanese">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Risotto Milanese</fancyName>
+</Italian>
+
+<Italian rdf:about="#tiramisu">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tiramisu</fancyName>
+</Italian>
+
+<Italian rdf:about="#genovese_sausage">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genovese Sausage</fancyName>
+</Italian>
+
+<Italian rdf:about="#marinara_sauce">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#penne_alla_vodka"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marinara Sauce</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marinara sauce</fancyName>
+</Italian>
+
+<Italian rdf:about="#penne_alla_vodka">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penne alla Vodka</fancyName>
+</Italian>
+
+<Italian rdf:about="#pollo_alla_milanese">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pollo alla Milanese</fancyName>
+</Italian>
+
+<Latin rdf:about="#paella">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paella</fancyName>
+</Latin>
+
+<Latin rdf:about="#enchiladas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enchiladas</fancyName>
+</Latin>
+
+<Latin rdf:about="#mole_sauce">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mole sauce</fancyName>
+</Latin>
+
+<Latin rdf:about="#flan">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flan</fancyName>
+</Latin>
+
+<Latin rdf:about="#salsa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#enchiladas"/>
+  <ingredientOf rdf:resource="#taco_salad"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salsa</fancyName>
+</Latin>
+
+<Latin rdf:about="#quesadillas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quesadillas</fancyName>
+</Latin>
+
+<Latin rdf:about="#mango_salsa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mango salsa</fancyName>
+</Latin>
+
+<Latin rdf:about="#flan_de_coco">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flan de coco</fancyName>
+</Latin>
+
+<African rdf:about="#jollof_rice">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jollof Rice</fancyName>
+</African>
+
+<African rdf:about="#naija_stew">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naija Stew</fancyName>
+</African>
+
+<African rdf:about="#couscous">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Couscous</fancyName>
+</African>
+
+<African rdf:about="#jollof_noodles">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jollof Noodles</fancyName>
+</African>
+
+<African rdf:about="#zanzibar_curry_goat">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zanzibar Curry Goat</fancyName>
+</African>
+
+<African rdf:about="#congolese_beignets">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Congolese Beignets</fancyName>
+</African>
+
+<African rdf:about="#sawa_platter">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sawa Platter</fancyName>
+</African>
+
+<African rdf:about="#ethiopian_tibs">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ethiopian Tibs</fancyName>
+</African>
+
+<African rdf:about="#west_african_beef_stew">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">West African Beef Stew</fancyName>
+</African>
+
+<African rdf:about="#cape_verde_chicken_curry">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cape Verde Chicken Curry</fancyName>
+</African>
+
+<African rdf:about="#senegalese_peanut_sauce">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Senegalese Peanut Sauce</fancyName>
+</African>
+
+<African rdf:about="#khmer_curry">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khmer Curry</fancyName>
+</African>
+
+<African rdf:about="#zanzibar_fish_curry">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zanzibar Fish Curry</fancyName>
+</African>
+
+<African rdf:about="#kenyan_chicken_curry">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kenyan Chicken Curry</fancyName>
+</African>
+
+<American rdf:about="#apple_pie">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apple Pie</fancyName>
+</American>
+
+<American rdf:about="#banana_bread">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Banana Bread</fancyName>
+</American>
+
+<American rdf:about="#boston_cream_pie">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boston Cream Pie</fancyName>
+</American>
+
+<American rdf:about="#buffalo_wings">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buffalo Wings</fancyName>
+</American>
+
+<American rdf:about="#chicken_pot_pie">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chicken Pot Pie</fancyName>
+</American>
+
+<American rdf:about="#cobb_salad">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cobb Salad</fancyName>
+</American>
+
+<American rdf:about="#corn_chowder">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corn Chowder</fancyName>
+</American>
+
+<American rdf:about="#fried_chicken">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fried Chicken</fancyName>
+</American>
+
+<American rdf:about="#green_bean_casserole">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Bean Casserole</fancyName>
+</American>
+
+<American rdf:about="#hot_dog">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hot Dog</fancyName>
+</American>
+
+<American rdf:about="#lemon_meringues">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lemon Meringues</fancyName>
+</American>
+
+<American rdf:about="#mac_and_cheese">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mac and Cheese</fancyName>
+</American>
+
+<American rdf:about="#meatloaf">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meatloaf</fancyName>
+</American>
+
+<American rdf:about="#muffin_top">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muffin Top</fancyName>
+</American>
+
+<American rdf:about="#peach_cobbler">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peach Cobbler</fancyName>
+</American>
+
+<American rdf:about="#pie_a_la_mode">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pie à la Mode</fancyName>
+</American>
+
+<American rdf:about="#pot_roast">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pot Roast</fancyName>
+</American>
+
+<American rdf:about="#rainbow_cake">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rainbow Cake</fancyName>
+</American>
+
+<American rdf:about="#southern_fried_chicken">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Southern Fried Chicken</fancyName>
+</American>
+
+<American rdf:about="#taco_salad">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taco Salad</fancyName>
+</American>
+
+<Carribean rdf:about="#jerk_chicken">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jerk Chicken</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#curry_goat">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Indian"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curry Goat</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#rice_and_peas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rice and Peas</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#steamed_bakes">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steamed Bakes</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#mango_curry_chicken">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mango Curry Chicken</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#coconut_chicken_curry">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coconut Chicken Curry</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#curry_shrimp">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curry Shrimp</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#flying_fish">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#bajan_flying_fish"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flying Fish</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#bajan_flying_fish">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bajan Flying Fish</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#tabbouleh">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tabbouleh</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#johnny_cakes">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johnny Cakes</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#coconut_drop">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coconut Drop</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#banana_pudding">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Banana Pudding</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#bimini_bread">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bimini Bread</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#guava_jam">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guava Jam</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#sorrel">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sorrel</fancyName>
+</Carribean>
+
+<Carribean rdf:about="#banana_fritters">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Banana Fritters</fancyName>
+</Carribean>
+
+<Japanese rdf:about="#sushi">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sushi</fancyName>
+</Japanese>
+
+<Japanese rdf:about="#tempura">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tempura</fancyName>
+</Japanese>
+
+<Japanese rdf:about="#miso_soup">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miso Soup</fancyName>
+</Japanese>
+
+<Japanese rdf:about="#miso_salmon">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miso Salmon</fancyName>
+</Japanese>
+
+<Japanese rdf:about="#chicken_teriyaki">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chicken Teriyaki</fancyName>
+</Japanese>
+
+<Japanese rdf:about="#teriyaki_chicken">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teriyaki Chicken</fancyName>
+</Japanese>
+
+<Japanese rdf:about="#sashimi">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sashimi</fancyName>
+</Japanese>
+
+<Japanese rdf:about="#bonsai">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bonsai</fancyName>
+</Japanese>
+
+<Chinese rdf:about="#kung_pao_chicken">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kung Pao Chicken</fancyName>
+</Chinese>
+
+<Chinese rdf:about="#sweet_and_sour_pork">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sweet and Sour Pork</fancyName>
+</Chinese>
+
+<Chinese rdf:about="#peking_duck">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peking Duck</fancyName>
+</Chinese>
+
+<Chinese rdf:about="#pad_thai">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pad Thai</fancyName>
+</Chinese>
+
+<Chinese rdf:about="#dim_sum">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dim Sum</fancyName>
+</Chinese>
+
+<Chinese rdf:about="#fried_rice">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fried Rice</fancyName>
+</Chinese>
+
+<Chinese rdf:about="#mapo_tofu">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mapo Tofu</fancyName>
+</Chinese>
+
+<Chinese rdf:about="#beef_with_green_peppers">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beef with Green Peppers</fancyName>
+</Chinese>
+
+<Chinese rdf:about="#black_bean_sauce">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black Bean Sauce</fancyName>
+</Chinese>
+
+<Chinese rdf:about="#steamed_fish">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steamed Fish</fancyName>
+</Chinese>
+
+<Chinese rdf:about="#red_curry">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red Curry</fancyName>
+</Chinese>
+
+<Chinese rdf:about="#pad_buckwheat">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pad Buckwheat</fancyName>
+</Chinese>
+
+<Chinese rdf:about="#spring_rolls">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spring Rolls</fancyName>
+</Chinese>
+
+<Chinese rdf:about="#pad_see_ew">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pad See Ew</fancyName>
+</Chinese>
+
+<Chinese rdf:about="#stir_fried_vegetables">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stir-Fried Vegetables</fancyName>
+</Chinese>
+
+<Chinese rdf:about="#orange_blossom_tea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orange Blossom Tea</fancyName>
+</Chinese>
+
+<Indian rdf:about="#butter_chicken">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Butter Chicken</fancyName>
+</Indian>
+
+<Indian rdf:about="#tandoori_chicken">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tandoori Chicken</fancyName>
+</Indian>
+
+<Indian rdf:about="#biryani">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biryani</fancyName>
+</Indian>
+
+<Indian rdf:about="#samudra_soup">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samudra Soup</fancyName>
+</Indian>
+
+<Indian rdf:about="#kebabs">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kebabs</fancyName>
+</Indian>
+
+<Indian rdf:about="#samosas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samosas</fancyName>
+</Indian>
+
+<Indian rdf:about="#raita">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raita</fancyName>
+</Indian>
+
+<Bread rdf:about="#flour">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#enchiladas"/>
+  <ingredientOf rdf:resource="#flan_de_coco"/>
+  <ingredientOf rdf:resource="#congolese_beignets"/>
+  <ingredientOf rdf:resource="#ethiopian_tibs"/>
+  <ingredientOf rdf:resource="#apple_pie"/>
+  <ingredientOf rdf:resource="#banana_bread"/>
+  <ingredientOf rdf:resource="#boston_cream_pie"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <ingredientOf rdf:resource="#chicken_pot_pie"/>
+  <ingredientOf rdf:resource="#fried_chicken"/>
+  <ingredientOf rdf:resource="#green_bean_casserole"/>
+  <ingredientOf rdf:resource="#mac_and_cheese"/>
+  <ingredientOf rdf:resource="#muffin_top"/>
+  <ingredientOf rdf:resource="#peach_cobbler"/>
+  <ingredientOf rdf:resource="#rainbow_cake"/>
+  <ingredientOf rdf:resource="#southern_fried_chicken"/>
+  <ingredientOf rdf:resource="#johnny_cakes"/>
+  <ingredientOf rdf:resource="#banana_pudding"/>
+  <ingredientOf rdf:resource="#bimini_bread"/>
+  <ingredientOf rdf:resource="#banana_fritters"/>
+  <ingredientOf rdf:resource="#tempura"/>
+  <ingredientOf rdf:resource="#spring_rolls"/>
+  <ingredientOf rdf:resource="#samosas"/>
+  <ingredientOf rdf:resource="#quesadillas"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flour</fancyName>
+</Bread>
+
+<Bread rdf:about="#baking_powder">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#congolese_beignets"/>
+  <ingredientOf rdf:resource="#ethiopian_tibs"/>
+  <ingredientOf rdf:resource="#banana_bread"/>
+  <ingredientOf rdf:resource="#boston_cream_pie"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <ingredientOf rdf:resource="#fried_chicken"/>
+  <ingredientOf rdf:resource="#muffin_top"/>
+  <ingredientOf rdf:resource="#peach_cobbler"/>
+  <ingredientOf rdf:resource="#southern_fried_chicken"/>
+  <ingredientOf rdf:resource="#steamed_bakes"/>
+  <ingredientOf rdf:resource="#johnny_cakes"/>
+  <ingredientOf rdf:resource="#banana_pudding"/>
+  <ingredientOf rdf:resource="#bimini_bread"/>
+  <ingredientOf rdf:resource="#banana_fritters"/>
+  <ingredientOf rdf:resource="#tempura"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baking powder</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baking Powder</fancyName>
+</Bread>
+
+<Additive rdf:about="#baking_soda">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#banana_bread"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <ingredientOf rdf:resource="#fried_chicken"/>
+  <ingredientOf rdf:resource="#muffin_top"/>
+  <ingredientOf rdf:resource="#southern_fried_chicken"/>
+  <ingredientOf rdf:resource="#steamed_bakes"/>
+  <ingredientOf rdf:resource="#johnny_cakes"/>
+  <ingredientOf rdf:resource="#coconut_drop"/>
+  <ingredientOf rdf:resource="#tempura"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baking soda</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baking Soda</fancyName>
+</Additive>
+
+<Spice rdf:about="#paprika">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <ingredientOf rdf:resource="#fried_chicken"/>
+  <ingredientOf rdf:resource="#hot_dog"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paprika</fancyName>
+</Spice>
+
+<Edible rdf:about="#dried_oregano">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#west_african_beef_stew"/>
+  <ingredientOf rdf:resource="#jerk_chicken"/>
+  <ingredientOf rdf:resource="#marinara_sauce"/>
+  <ingredientOf rdf:resource="#meatloaf"/>
+  <ingredientOf rdf:resource="#beef_with_green_peppers"/>
+  <ingredientOf rdf:resource="#corn_chowder"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dried oregano</fancyName>
+</Edible>
+
+<Vegetable rdf:about="#garlic_cloves">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Garlic cloves</fancyName>
+</Vegetable>
+
+<Beef rdf:about="#broth">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#risotto_milanese"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Broth</fancyName>
+</Beef>
+
+<Poultry rdf:about="#chicken_stock">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#risotto_milanese"/>
+  <ingredientOf rdf:resource="#cape_verde_chicken_curry"/>
+  <ingredientOf rdf:resource="#coconut_chicken_curry"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chicken stock</fancyName>
+</Poultry>
+
+<Edible rdf:about="#saffron">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#risotto_milanese"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saffron</fancyName>
+</Edible>
+
+<Vegetable rdf:about="#onion">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#risotto_milanese"/>
+  <ingredientOf rdf:resource="#jollof_noodles"/>
+  <ingredientOf rdf:resource="#ethiopian_tibs"/>
+  <ingredientOf rdf:resource="#west_african_beef_stew"/>
+  <ingredientOf rdf:resource="#zanzibar_fish_curry"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <ingredientOf rdf:resource="#chicken_pot_pie"/>
+  <ingredientOf rdf:resource="#corn_chowder"/>
+  <ingredientOf rdf:resource="#green_bean_casserole"/>
+  <ingredientOf rdf:resource="#meatloaf"/>
+  <ingredientOf rdf:resource="#curry_goat"/>
+  <ingredientOf rdf:resource="#mango_curry_chicken"/>
+  <ingredientOf rdf:resource="#flying_fish"/>
+  <ingredientOf rdf:resource="#sorrel"/>
+  <ingredientOf rdf:resource="#beef_with_green_peppers"/>
+  <ingredientOf rdf:resource="#steamed_fish"/>
+  <ingredientOf rdf:resource="#red_curry"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <ingredientOf rdf:resource="#kebabs"/>
+  <ingredientOf rdf:resource="#enchiladas"/>
+  <ingredientOf rdf:resource="#salsa"/>
+  <ingredientOf rdf:resource="#mango_salsa"/>
+  <ingredientOf rdf:resource="#cobb_salad"/>
+  <ingredientOf rdf:resource="#tabbouleh"/>
+  <ingredientOf rdf:resource="#miso_soup"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Onion</fancyName>
+</Vegetable>
+
+<Food rdf:about="#ladyfingers">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#tiramisu"/>
+  <ingredientOf rdf:resource="#banana_pudding"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ladyfingers</fancyName>
+</Food>
+
+<Cheese rdf:about="#mascarpone_cheese">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#tiramisu"/>
+  <ingredientOf rdf:resource="#mac_and_cheese"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mascarpone cheese</fancyName>
+</Cheese>
+
+<Alcoholic rdf:about="#coffee_liqueur">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#tiramisu"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coffee liqueur</fancyName>
+</Alcoholic>
+
+<Spice rdf:about="#dried_herbs">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#genovese_sausage"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dried herbs</fancyName>
+</Spice>
+
+<Fruit rdf:about="#tomatoes">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#marinara_sauce"/>
+  <ingredientOf rdf:resource="#salsa"/>
+  <ingredientOf rdf:resource="#mango_salsa"/>
+  <ingredientOf rdf:resource="#naija_stew"/>
+  <ingredientOf rdf:resource="#zanzibar_curry_goat"/>
+  <ingredientOf rdf:resource="#sawa_platter"/>
+  <ingredientOf rdf:resource="#cape_verde_chicken_curry"/>
+  <ingredientOf rdf:resource="#khmer_curry"/>
+  <ingredientOf rdf:resource="#corn_chowder"/>
+  <ingredientOf rdf:resource="#curry_goat"/>
+  <ingredientOf rdf:resource="#mango_curry_chicken"/>
+  <ingredientOf rdf:resource="#coconut_chicken_curry"/>
+  <ingredientOf rdf:resource="#curry_shrimp"/>
+  <ingredientOf rdf:resource="#bajan_flying_fish"/>
+  <ingredientOf rdf:resource="#butter_chicken"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <ingredientOf rdf:resource="#samudra_soup"/>
+  <ingredientOf rdf:resource="#kebabs"/>
+  <ingredientOf rdf:resource="#penne_alla_vodka"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomatoes</fancyName>
+</Fruit>
+
+<Vegetable rdf:about="#garlic">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#marinara_sauce"/>
+  <ingredientOf rdf:resource="#penne_alla_vodka"/>
+  <ingredientOf rdf:resource="#paella"/>
+  <ingredientOf rdf:resource="#mole_sauce"/>
+  <ingredientOf rdf:resource="#jollof_rice"/>
+  <ingredientOf rdf:resource="#naija_stew"/>
+  <ingredientOf rdf:resource="#zanzibar_curry_goat"/>
+  <ingredientOf rdf:resource="#ethiopian_tibs"/>
+  <ingredientOf rdf:resource="#west_african_beef_stew"/>
+  <ingredientOf rdf:resource="#cape_verde_chicken_curry"/>
+  <ingredientOf rdf:resource="#senegalese_peanut_sauce"/>
+  <ingredientOf rdf:resource="#khmer_curry"/>
+  <ingredientOf rdf:resource="#zanzibar_fish_curry"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <ingredientOf rdf:resource="#meatloaf"/>
+  <ingredientOf rdf:resource="#pot_roast"/>
+  <ingredientOf rdf:resource="#curry_goat"/>
+  <ingredientOf rdf:resource="#mango_curry_chicken"/>
+  <ingredientOf rdf:resource="#coconut_chicken_curry"/>
+  <ingredientOf rdf:resource="#curry_shrimp"/>
+  <ingredientOf rdf:resource="#flying_fish"/>
+  <ingredientOf rdf:resource="#bajan_flying_fish"/>
+  <ingredientOf rdf:resource="#sorrel"/>
+  <ingredientOf rdf:resource="#peking_duck"/>
+  <ingredientOf rdf:resource="#mapo_tofu"/>
+  <ingredientOf rdf:resource="#beef_with_green_peppers"/>
+  <ingredientOf rdf:resource="#steamed_fish"/>
+  <ingredientOf rdf:resource="#red_curry"/>
+  <ingredientOf rdf:resource="#pad_buckwheat"/>
+  <ingredientOf rdf:resource="#butter_chicken"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <ingredientOf rdf:resource="#kebabs"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Garlic</fancyName>
+</Vegetable>
+
+<Edible rdf:about="#dried_basil">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#marinara_sauce"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dried basil</fancyName>
+</Edible>
+
+<Edible rdf:about="#fresh_basil">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#marinara_sauce"/>
+  <ingredientOf rdf:resource="#tabbouleh"/>
+  <ingredientOf rdf:resource="#red_curry"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fresh basil</fancyName>
+</Edible>
+
+<Alcoholic rdf:about="#vodka">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#penne_alla_vodka"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vodka</fancyName>
+</Alcoholic>
+
+<Vegetable rdf:about="#eggplant">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#penne_alla_vodka"/>
+  <ingredientOf rdf:resource="#sawa_platter"/>
+  <ingredientOf rdf:resource="#pad_buckwheat"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eggplant</fancyName>
+</Vegetable>
+
+<Vegetable rdf:about="#onions">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#penne_alla_vodka"/>
+  <ingredientOf rdf:resource="#mole_sauce"/>
+  <ingredientOf rdf:resource="#jollof_rice"/>
+  <ingredientOf rdf:resource="#naija_stew"/>
+  <ingredientOf rdf:resource="#zanzibar_curry_goat"/>
+  <ingredientOf rdf:resource="#sawa_platter"/>
+  <ingredientOf rdf:resource="#cape_verde_chicken_curry"/>
+  <ingredientOf rdf:resource="#senegalese_peanut_sauce"/>
+  <ingredientOf rdf:resource="#khmer_curry"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <ingredientOf rdf:resource="#pot_roast"/>
+  <ingredientOf rdf:resource="#taco_salad"/>
+  <ingredientOf rdf:resource="#coconut_chicken_curry"/>
+  <ingredientOf rdf:resource="#curry_shrimp"/>
+  <ingredientOf rdf:resource="#bajan_flying_fish"/>
+  <ingredientOf rdf:resource="#fried_rice"/>
+  <ingredientOf rdf:resource="#pad_buckwheat"/>
+  <ingredientOf rdf:resource="#butter_chicken"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <ingredientOf rdf:resource="#samosas"/>
+  <ingredientOf rdf:resource="#sashimi"/>
+  <ingredientOf rdf:resource="#kung_pao_chicken"/>
+  <ingredientOf rdf:resource="#peking_duck"/>
+  <ingredientOf rdf:resource="#pad_thai"/>
+  <ingredientOf rdf:resource="#pad_see_ew"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Onions</fancyName>
+</Vegetable>
+
+<Fruit rdf:about="#olives">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#penne_alla_vodka"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olives</fancyName>
+</Fruit>
+
+<Vegetable rdf:about="#parsley">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#penne_alla_vodka"/>
+  <ingredientOf rdf:resource="#kebabs"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parsley</fancyName>
+</Vegetable>
+
+<Fruit rdf:about="#lemon">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#pollo_alla_milanese"/>
+  <ingredientOf rdf:resource="#paella"/>
+  <ingredientOf rdf:resource="#orange_blossom_tea"/>
+  <ingredientOf rdf:resource="#lemon_meringues"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lemon</fancyName>
+</Fruit>
+
+<Fish rdf:about="#seafood">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#paella"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seafood</fancyName>
+</Fish>
+
+<Seasoning rdf:about="#chili_powder">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#enchiladas"/>
+  <ingredientOf rdf:resource="#salsa"/>
+  <ingredientOf rdf:resource="#mapo_tofu"/>
+  <ingredientOf rdf:resource="#black_bean_sauce"/>
+  <ingredientOf rdf:resource="#mole_sauce"/>
+  <ingredientOf rdf:resource="#jollof_rice"/>
+  <ingredientOf rdf:resource="#naija_stew"/>
+  <ingredientOf rdf:resource="#jollof_noodles"/>
+  <ingredientOf rdf:resource="#zanzibar_curry_goat"/>
+  <ingredientOf rdf:resource="#ethiopian_tibs"/>
+  <ingredientOf rdf:resource="#west_african_beef_stew"/>
+  <ingredientOf rdf:resource="#cape_verde_chicken_curry"/>
+  <ingredientOf rdf:resource="#khmer_curry"/>
+  <ingredientOf rdf:resource="#zanzibar_fish_curry"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <ingredientOf rdf:resource="#jerk_chicken"/>
+  <ingredientOf rdf:resource="#curry_goat"/>
+  <ingredientOf rdf:resource="#mango_curry_chicken"/>
+  <ingredientOf rdf:resource="#coconut_chicken_curry"/>
+  <ingredientOf rdf:resource="#curry_shrimp"/>
+  <ingredientOf rdf:resource="#bajan_flying_fish"/>
+  <ingredientOf rdf:resource="#red_curry"/>
+  <ingredientOf rdf:resource="#butter_chicken"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <ingredientOf rdf:resource="#samosas"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chili powder</fancyName>
+</Seasoning>
+
+<Bread rdf:about="#tortillas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#enchiladas"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tortillas</fancyName>
+</Bread>
+
+<Sauce rdf:about="#red_sauce">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#enchiladas"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red sauce</fancyName>
+</Sauce>
+
+<Vegetable rdf:about="#palm_oil">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#mole_sauce"/>
+  <ingredientOf rdf:resource="#naija_stew"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Palm oil</fancyName>
+</Vegetable>
+
+<Vegetable rdf:about="#shallots">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#mole_sauce"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shallots</fancyName>
+</Vegetable>
+
+<Spice rdf:about="#allspice">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#mole_sauce"/>
+  <ingredientOf rdf:resource="#ethiopian_tibs"/>
+  <ingredientOf rdf:resource="#jerk_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allspice</fancyName>
+</Spice>
+
+<Seed rdf:about="#fenugreek">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#mole_sauce"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <ingredientOf rdf:resource="#butter_chicken"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <ingredientOf rdf:resource="#samudra_soup"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fenugreek</fancyName>
+</Seed>
+
+<Seed rdf:about="#soybeans">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#mole_sauce"/>
+  <ingredientOf rdf:resource="#sushi"/>
+  <ingredientOf rdf:resource="#miso_soup"/>
+  <ingredientOf rdf:resource="#miso_salmon"/>
+  <ingredientOf rdf:resource="#sashimi"/>
+  <ingredientOf rdf:resource="#bonsai"/>
+  <ingredientOf rdf:resource="#mapo_tofu"/>
+  <ingredientOf rdf:resource="#black_bean_sauce"/>
+  <ingredientOf rdf:resource="#pad_buckwheat"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soybeans</fancyName>
+</Seed>
+
+<Bread rdf:about="#graham_cracker_crumbs">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#flan"/>
+  <ingredientOf rdf:resource="#pie_a_la_mode"/>
+  <ingredientOf rdf:resource="#peach_cobbler"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graham cracker crumbs</fancyName>
+</Bread>
+
+<Fruit rdf:about="#heavy_cream">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#flan"/>
+  <ingredientOf rdf:resource="#boston_cream_pie"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heavy cream</fancyName>
+</Fruit>
+
+<Cheese rdf:about="#condensed_milk">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#flan"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Condensed milk</fancyName>
+</Cheese>
+
+<Bread rdf:about="#vanilla_extract">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#flan"/>
+  <ingredientOf rdf:resource="#flan_de_coco"/>
+  <ingredientOf rdf:resource="#banana_bread"/>
+  <ingredientOf rdf:resource="#boston_cream_pie"/>
+  <ingredientOf rdf:resource="#muffin_top"/>
+  <ingredientOf rdf:resource="#guava_jam"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vanilla extract</fancyName>
+</Bread>
+
+<Vegetable rdf:about="#filling">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#quesadillas"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Filling</fancyName>
+</Vegetable>
+
+<Edible rdf:about="#cilantro">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#mango_salsa"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cilantro</fancyName>
+</Edible>
+
+<Yogurt rdf:about="#sugar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#mango_salsa"/>
+  <ingredientOf rdf:resource="#jollof_noodles"/>
+  <ingredientOf rdf:resource="#congolese_beignets"/>
+  <ingredientOf rdf:resource="#apple_pie"/>
+  <ingredientOf rdf:resource="#banana_bread"/>
+  <ingredientOf rdf:resource="#hot_dog"/>
+  <ingredientOf rdf:resource="#lemon_meringues"/>
+  <ingredientOf rdf:resource="#muffin_top"/>
+  <ingredientOf rdf:resource="#peach_cobbler"/>
+  <ingredientOf rdf:resource="#pie_a_la_mode"/>
+  <ingredientOf rdf:resource="#rainbow_cake"/>
+  <ingredientOf rdf:resource="#steamed_bakes"/>
+  <ingredientOf rdf:resource="#flying_fish"/>
+  <ingredientOf rdf:resource="#johnny_cakes"/>
+  <ingredientOf rdf:resource="#coconut_drop"/>
+  <ingredientOf rdf:resource="#banana_pudding"/>
+  <ingredientOf rdf:resource="#bimini_bread"/>
+  <ingredientOf rdf:resource="#guava_jam"/>
+  <ingredientOf rdf:resource="#banana_fritters"/>
+  <ingredientOf rdf:resource="#sushi"/>
+  <ingredientOf rdf:resource="#miso_soup"/>
+  <ingredientOf rdf:resource="#miso_salmon"/>
+  <ingredientOf rdf:resource="#bonsai"/>
+  <ingredientOf rdf:resource="#kung_pao_chicken"/>
+  <ingredientOf rdf:resource="#sweet_and_sour_pork"/>
+  <ingredientOf rdf:resource="#pad_thai"/>
+  <ingredientOf rdf:resource="#mapo_tofu"/>
+  <ingredientOf rdf:resource="#black_bean_sauce"/>
+  <ingredientOf rdf:resource="#pad_buckwheat"/>
+  <ingredientOf rdf:resource="#pad_see_ew"/>
+  <ingredientOf rdf:resource="#stir_fried_vegetables"/>
+  <ingredientOf rdf:resource="#raita"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sugar</fancyName>
+</Yogurt>
+
+<Fruit rdf:about="#ginger">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#jollof_rice"/>
+  <ingredientOf rdf:resource="#mango_curry_chicken"/>
+  <ingredientOf rdf:resource="#coconut_chicken_curry"/>
+  <ingredientOf rdf:resource="#sorrel"/>
+  <ingredientOf rdf:resource="#peking_duck"/>
+  <ingredientOf rdf:resource="#butter_chicken"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <ingredientOf rdf:resource="#sushi"/>
+  <ingredientOf rdf:resource="#sashimi"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ginger</fancyName>
+</Fruit>
+
+<Fish rdf:about="#meat">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#naija_stew"/>
+  <ingredientOf rdf:resource="#khmer_curry"/>
+  <ingredientOf rdf:resource="#taco_salad"/>
+  <ingredientOf rdf:resource="#bonsai"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <ingredientOf rdf:resource="#kebabs"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meat</fancyName>
+</Fish>
+
+<Seasoning rdf:about="#seasoning_cubes">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#naija_stew"/>
+  <ingredientOf rdf:resource="#chicken_pot_pie"/>
+  <ingredientOf rdf:resource="#mac_and_cheese"/>
+  <ingredientOf rdf:resource="#taco_salad"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seasoning cubes</fancyName>
+</Seasoning>
+
+<Dressing rdf:about="#stock_cubes">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#naija_stew"/>
+  <ingredientOf rdf:resource="#west_african_beef_stew"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stock cubes</fancyName>
+</Dressing>
+
+<Edible rdf:about="#couscous_grains">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#couscous"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Couscous grains</fancyName>
+</Edible>
+
+<Vegetable rdf:about="#vegetable_broth">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#couscous"/>
+  <ingredientOf rdf:resource="#corn_chowder"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vegetable broth</fancyName>
+</Vegetable>
+
+<Vegetable rdf:about="#noodles">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#jollof_noodles"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Noodles</fancyName>
+</Vegetable>
+
+<Poultry rdf:about="#poultry_seasoning">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#jollof_noodles"/>
+  <ingredientOf rdf:resource="#fried_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poultry seasoning</fancyName>
+</Poultry>
+
+<Oil rdf:about="#oil">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#jollof_noodles"/>
+  <ingredientOf rdf:resource="#congolese_beignets"/>
+  <ingredientOf rdf:resource="#ethiopian_tibs"/>
+  <ingredientOf rdf:resource="#southern_fried_chicken"/>
+  <ingredientOf rdf:resource="#banana_fritters"/>
+  <ingredientOf rdf:resource="#stir_fried_vegetables"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oil</fancyName>
+</Oil>
+
+<Meat rdf:about="#goat_meat">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#zanzibar_curry_goat"/>
+  <ingredientOf rdf:resource="#curry_goat"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goat meat</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goat Meat</fancyName>
+</Meat>
+
+<Vegetable rdf:about="#turmeric">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#zanzibar_curry_goat"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <ingredientOf rdf:resource="#curry_goat"/>
+  <ingredientOf rdf:resource="#mango_curry_chicken"/>
+  <ingredientOf rdf:resource="#coconut_chicken_curry"/>
+  <ingredientOf rdf:resource="#butter_chicken"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <ingredientOf rdf:resource="#samudra_soup"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turmeric</fancyName>
+</Vegetable>
+
+<Fruit rdf:about="#plantain">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#congolese_beignets"/>
+  <ingredientOf rdf:resource="#west_african_beef_stew"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plantain</fancyName>
+</Fruit>
+
+<Vegetable rdf:about="#leafy_greens">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#sawa_platter"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leafy greens</fancyName>
+</Vegetable>
+
+<Vegetable rdf:about="#shiro_powder">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#ethiopian_tibs"/>
+  <ingredientOf rdf:resource="#senegalese_peanut_sauce"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shiro powder</fancyName>
+</Vegetable>
+
+<Vegetable rdf:about="#tomato_puree">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#west_african_beef_stew"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomato puree</fancyName>
+</Vegetable>
+
+<Spice rdf:about="#bay_leaves">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#west_african_beef_stew"/>
+  <ingredientOf rdf:resource="#cape_verde_chicken_curry"/>
+  <ingredientOf rdf:resource="#zanzibar_fish_curry"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <ingredientOf rdf:resource="#curry_goat"/>
+  <ingredientOf rdf:resource="#curry_shrimp"/>
+  <ingredientOf rdf:resource="#sorrel"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bay leaves</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bay Leaves</fancyName>
+</Spice>
+
+<Vegetable rdf:about="#vegetable_oil">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#west_african_beef_stew"/>
+  <ingredientOf rdf:resource="#tempura"/>
+  <ingredientOf rdf:resource="#spring_rolls"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vegetable oil</fancyName>
+</Vegetable>
+
+<Fruit rdf:about="#musa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#west_african_beef_stew"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Musa</fancyName>
+</Fruit>
+
+<Fish rdf:about="#drumsticks">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#cape_verde_chicken_curry"/>
+  <ingredientOf rdf:resource="#fried_chicken"/>
+  <ingredientOf rdf:resource="#southern_fried_chicken"/>
+</Fish>
+
+<Vegetable rdf:about="#marjoram">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#cape_verde_chicken_curry"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marjoram</fancyName>
+</Vegetable>
+
+<Infusion rdf:about="#lemongrass">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#khmer_curry"/>
+  <ingredientOf rdf:resource="#zanzibar_fish_curry"/>
+  <ingredientOf rdf:resource="#mango_curry_chicken"/>
+  <ingredientOf rdf:resource="#curry_shrimp"/>
+  <ingredientOf rdf:resource="#red_curry"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lemongrass</fancyName>
+</Infusion>
+
+<Edible rdf:about="#kaffir_lime_leaves">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#khmer_curry"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kaffir lime leaves</fancyName>
+</Edible>
+
+<Vegetable rdf:about="#curry_leaves">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#khmer_curry"/>
+  <ingredientOf rdf:resource="#zanzibar_fish_curry"/>
+  <ingredientOf rdf:resource="#curry_goat"/>
+  <ingredientOf rdf:resource="#mango_curry_chicken"/>
+  <ingredientOf rdf:resource="#curry_shrimp"/>
+  <ingredientOf rdf:resource="#samudra_soup"/>
+  <ingredientOf rdf:resource="#sorrel"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curry leaves</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curry Leaves</fancyName>
+</Vegetable>
+
+<Seed rdf:about="#fennel_seeds">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#zanzibar_fish_curry"/>
+  <ingredientOf rdf:resource="#biryani"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fennel seeds</fancyName>
+</Seed>
+
+<Fruit rdf:about="#clove">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#zanzibar_fish_curry"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clove</fancyName>
+</Fruit>
+
+<Animal rdf:about="#chicken_broth">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <ingredientOf rdf:resource="#chicken_pot_pie"/>
+  <ingredientOf rdf:resource="#corn_chowder"/>
+  <ingredientOf rdf:resource="#kung_pao_chicken"/>
+  <ingredientOf rdf:resource="#peking_duck"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chicken broth</fancyName>
+</Animal>
+
+<Vegetable rdf:about="#potatoes">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <ingredientOf rdf:resource="#chicken_pot_pie"/>
+  <ingredientOf rdf:resource="#corn_chowder"/>
+  <ingredientOf rdf:resource="#pot_roast"/>
+  <ingredientOf rdf:resource="#samosas"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potatoes</fancyName>
+</Vegetable>
+
+<Vegetable rdf:about="#green_peas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#kenyan_chicken_curry"/>
+  <ingredientOf rdf:resource="#coconut_chicken_curry"/>
+  <ingredientOf rdf:resource="#green_bean_casserole"/>
+  <ingredientOf rdf:resource="#rice_and_peas"/>
+  <ingredientOf rdf:resource="#samosas"/>
+  <ingredientOf rdf:resource="#red_curry"/>
+  <ingredientOf rdf:resource="#pad_see_ew"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green peas</fancyName>
+</Vegetable>
+
+<Fruit rdf:about="#apple_crust">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#apple_pie"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apple crust</fancyName>
+</Fruit>
+
+<Vegetable rdf:about="#cornstarch">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#apple_pie"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <ingredientOf rdf:resource="#fried_chicken"/>
+  <ingredientOf rdf:resource="#hot_dog"/>
+  <ingredientOf rdf:resource="#lemon_meringues"/>
+  <ingredientOf rdf:resource="#peach_cobbler"/>
+  <ingredientOf rdf:resource="#southern_fried_chicken"/>
+  <ingredientOf rdf:resource="#coconut_drop"/>
+  <ingredientOf rdf:resource="#tempura"/>
+  <ingredientOf rdf:resource="#chicken_teriyaki"/>
+  <ingredientOf rdf:resource="#teriyaki_chicken"/>
+  <ingredientOf rdf:resource="#kung_pao_chicken"/>
+  <ingredientOf rdf:resource="#sweet_and_sour_pork"/>
+  <ingredientOf rdf:resource="#black_bean_sauce"/>
+  <ingredientOf rdf:resource="#pad_see_ew"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cornstarch</fancyName>
+</Vegetable>
+
+<Edible rdf:about="#ground_ginger">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#apple_pie"/>
+  <ingredientOf rdf:resource="#chicken_teriyaki"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ground ginger</fancyName>
+</Edible>
+
+<Drink rdf:about="#apple_cider_vinegar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#apple_pie"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apple cider vinegar</fancyName>
+</Drink>
+
+<Water rdf:about="#shortening">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#boston_cream_pie"/>
+  <ingredientOf rdf:resource="#pie_a_la_mode"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shortening</fancyName>
+</Water>
+
+<Sweetener rdf:about="#powder_sugar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#boston_cream_pie"/>
+  <ingredientOf rdf:resource="#coconut_drop"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Powder sugar</fancyName>
+</Sweetener>
+
+<Edible rdf:about="#chocolate_filling">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#boston_cream_pie"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chocolate filling</fancyName>
+</Edible>
+
+<Cheese rdf:about="#whipped_cream">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#boston_cream_pie"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whipped cream</fancyName>
+</Cheese>
+
+<Fish rdf:about="#wings">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#buffalo_wings"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wings</fancyName>
+</Fish>
+
+<Bread rdf:about="#pastry">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#chicken_pot_pie"/>
+  <ingredientOf rdf:resource="#pie_a_la_mode"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pastry</fancyName>
+</Bread>
+
+<Sauce rdf:about="#gravy">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#chicken_pot_pie"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gravy</fancyName>
+</Sauce>
+
+<Fruit rdf:about="#avocado">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#cobb_salad"/>
+  <ingredientOf rdf:resource="#taco_salad"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avocado</fancyName>
+</Fruit>
+
+<Fruit rdf:about="#egg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#cobb_salad"/>
+  <ingredientOf rdf:resource="#fried_chicken"/>
+  <ingredientOf rdf:resource="#green_bean_casserole"/>
+  <ingredientOf rdf:resource="#peach_cobbler"/>
+  <ingredientOf rdf:resource="#southern_fried_chicken"/>
+  <ingredientOf rdf:resource="#johnny_cakes"/>
+  <ingredientOf rdf:resource="#banana_fritters"/>
+  <ingredientOf rdf:resource="#tempura"/>
+  <ingredientOf rdf:resource="#samosas"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Egg</fancyName>
+</Fruit>
+
+<Dressing rdf:about="#ranch_dressing">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#cobb_salad"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ranch dressing</fancyName>
+</Dressing>
+
+<Vegetable rdf:about="#corn">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#corn_chowder"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corn</fancyName>
+</Vegetable>
+
+<Edible rdf:about="#bay_leaf">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#corn_chowder"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bay leaf</fancyName>
+</Edible>
+
+<Beef rdf:about="#hot_dog_meat">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#hot_dog"/>
+  <ingredientOf rdf:resource="#samosas"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hot dog meat</fancyName>
+</Beef>
+
+<Dressing rdf:about="#mustard">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#hot_dog"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mustard</fancyName>
+</Dressing>
+
+<Sauce rdf:about="#ketchup">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#hot_dog"/>
+  <ingredientOf rdf:resource="#meatloaf"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ketchup</fancyName>
+</Sauce>
+
+<Vegetable rdf:about="#egg_whites">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#lemon_meringues"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Egg whites</fancyName>
+</Vegetable>
+
+<Pasta rdf:about="#macaroni_noodles">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#mac_and_cheese"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macaroni noodles</fancyName>
+</Pasta>
+
+<Poultry rdf:about="#egg_yolks">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#rainbow_cake"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Egg yolks</fancyName>
+</Poultry>
+
+<Animal rdf:about="#egg_white">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#rainbow_cake"/>
+  <ingredientOf rdf:resource="#coconut_drop"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Egg white</fancyName>
+</Animal>
+
+<Edible rdf:about="#cream_of_tartar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#rainbow_cake"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cream of tartar</fancyName>
+</Edible>
+
+<Dressing rdf:about="#food_coloring">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#rainbow_cake"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food coloring</fancyName>
+</Dressing>
+
+<Vegetable rdf:about="#beans">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#taco_salad"/>
+  <ingredientOf rdf:resource="#black_bean_sauce"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beans</fancyName>
+</Vegetable>
+
+<Edible rdf:about="#thighs">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#jerk_chicken"/>
+</Edible>
+
+<Seasoning rdf:about="#cumin_powder">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#jerk_chicken"/>
+  <ingredientOf rdf:resource="#beef_with_green_peppers"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cumin powder</fancyName>
+</Seasoning>
+
+<Dressing rdf:about="#vinegar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#jerk_chicken"/>
+  <ingredientOf rdf:resource="#sushi"/>
+  <ingredientOf rdf:resource="#mapo_tofu"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vinegar</fancyName>
+</Dressing>
+
+<Fruit rdf:about="#scotch_bonnet_peppers">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#curry_goat"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scotch Bonnet Peppers</fancyName>
+</Fruit>
+
+<Seed rdf:about="#coconut_powder">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#curry_goat"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coconut Powder</fancyName>
+</Seed>
+
+<Edible rdf:about="#arrowroot_flour">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#steamed_bakes"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arrowroot flour</fancyName>
+</Edible>
+
+<Fruit rdf:about="#pineapple">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#steamed_bakes"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pineapple</fancyName>
+</Fruit>
+
+<Fruit rdf:about="#cherries">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#steamed_bakes"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cherries</fancyName>
+</Fruit>
+
+<Fruit rdf:about="#raisins">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#steamed_bakes"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raisins</fancyName>
+</Fruit>
+
+<Fruit rdf:about="#stock">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#mango_curry_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stock</fancyName>
+</Fruit>
+
+<Edible rdf:about="#bulgur_wheat">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#tabbouleh"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bulgur wheat</fancyName>
+</Edible>
+
+<Spice rdf:about="#freshly_chopped_mint">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#tabbouleh"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Freshly chopped mint</fancyName>
+</Spice>
+
+<Fruit rdf:about="#grapefruit">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#tabbouleh"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grapefruit</fancyName>
+</Fruit>
+
+<Fruit rdf:about="#pomegranate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#tabbouleh"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pomegranate</fancyName>
+</Fruit>
+
+<Oil rdf:about="#hydrogenated_coconut_oil">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#coconut_drop"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hydrogenated coconut oil</fancyName>
+</Oil>
+
+<Animal rdf:about="#egg_yolk">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#coconut_drop"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Egg yolk</fancyName>
+</Animal>
+
+<Edible rdf:about="#custard">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#banana_pudding"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Custard</fancyName>
+</Edible>
+
+<Fruit rdf:about="#pectin">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#guava_jam"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pectin</fancyName>
+</Fruit>
+
+<Sweetener rdf:about="#corn_syrup">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#guava_jam"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corn syrup</fancyName>
+</Sweetener>
+
+<Seasoning rdf:about="#wasabi">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#sushi"/>
+  <ingredientOf rdf:resource="#sashimi"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wasabi</fancyName>
+</Seasoning>
+
+<Crustaceans rdf:about="#squid">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#sushi"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Squid</fancyName>
+</Crustaceans>
+
+<Vegetable rdf:about="#miso_paste">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#miso_soup"/>
+  <ingredientOf rdf:resource="#miso_salmon"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miso Paste</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miso paste</fancyName>
+</Vegetable>
+
+<Alcoholic rdf:about="#sake">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#miso_salmon"/>
+  <ingredientOf rdf:resource="#chicken_teriyaki"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sake</fancyName>
+</Alcoholic>
+
+<Sweetener rdf:about="#brown_sugar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#chicken_teriyaki"/>
+  <ingredientOf rdf:resource="#teriyaki_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brown sugar</fancyName>
+</Sweetener>
+
+<Sauce rdf:about="#teriyaki_sauce">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#teriyaki_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teriyaki sauce</fancyName>
+</Sauce>
+
+<Seaweed rdf:about="#seaweed">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#sashimi"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seaweed</fancyName>
+</Seaweed>
+
+<Vegetable rdf:about="#soy_flour">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#bonsai"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soy Flour</fancyName>
+</Vegetable>
+
+<Seasoning rdf:about="#ground_black_pepper">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#kung_pao_chicken"/>
+  <ingredientOf rdf:resource="#sweet_and_sour_pork"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ground black pepper</fancyName>
+</Seasoning>
+
+<Edible rdf:about="#duck">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#peking_duck"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duck</fancyName>
+</Edible>
+
+<Alcoholic rdf:about="#shaoxing_rice_wine">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#peking_duck"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shaoxing rice wine</fancyName>
+</Alcoholic>
+
+<Seasoning rdf:about="#thai_curry_powder">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#pad_thai"/>
+  <ingredientOf rdf:resource="#dim_sum"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thai curry powder</fancyName>
+</Seasoning>
+
+<Vegetable rdf:about="#bean_sprouts">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#pad_thai"/>
+  <ingredientOf rdf:resource="#pad_see_ew"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bean sprouts</fancyName>
+</Vegetable>
+
+<Fruit rdf:about="#fillings">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#dim_sum"/>
+  <ingredientOf rdf:resource="#spring_rolls"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fillings</fancyName>
+</Fruit>
+
+<Seasoning rdf:about="#szechuan_pepper">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#mapo_tofu"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Szechuan pepper</fancyName>
+</Seasoning>
+
+<Sauce rdf:about="#gluten_free_soy_sauce">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#black_bean_sauce"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gluten-free soy sauce</fancyName>
+</Sauce>
+
+<Seed rdf:about="#ground_cumin">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#black_bean_sauce"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ground cumin</fancyName>
+</Seed>
+
+<Edible rdf:about="#galangal">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#red_curry"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galangal</fancyName>
+</Edible>
+
+<Vegetable rdf:about="#buckwheat">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#pad_buckwheat"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buckwheat</fancyName>
+</Vegetable>
+
+<Crustaceans rdf:about="#spring_roll_wrapper">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#spring_rolls"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spring Roll wrapper</fancyName>
+</Crustaceans>
+
+<Vegetable rdf:about="#broccoli">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#pad_see_ew"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Broccoli</fancyName>
+</Vegetable>
+
+<Breakfast rdf:about="#ground_cinnamon">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#stir_fried_vegetables"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ground cinnamon</fancyName>
+</Breakfast>
+
+<Edible rdf:about="#orange_blossom_extract">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#orange_blossom_tea"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orange blossom extract</fancyName>
+</Edible>
+
+<Spice rdf:about="#ginger_powder">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ginger powder</fancyName>
+</Spice>
+
+<Seed rdf:about="#coriander_seeds">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <ingredientOf rdf:resource="#kebabs"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coriander seeds</fancyName>
+</Seed>
+
+<Edible rdf:about="#dried_mint">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#tandoori_chicken"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dried mint</fancyName>
+</Edible>
+
+<Seasoning rdf:about="#asafoetida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#samudra_soup"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asafoetida</fancyName>
+</Seasoning>
+
+<Vegetable rdf:about="#fennel">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#samosas"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fennel</fancyName>
+</Vegetable>
+
+<Seed rdf:about="#pistachios">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ingredientOf rdf:resource="#raita"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pistachios</fancyName>
+</Seed>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="#African"/>
+    <rdf:Description rdf:about="#American"/>
+    <rdf:Description rdf:about="#Carribean"/>
+    <rdf:Description rdf:about="#Chinese"/>
+    <rdf:Description rdf:about="#Indian"/>
+    <rdf:Description rdf:about="#Italian"/>
+    <rdf:Description rdf:about="#Japanese"/>
+    <rdf:Description rdf:about="#Latin"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+
+</rdf:RDF>

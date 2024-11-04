@@ -1,7 +1,8 @@
-from utils import KnowledgeGraph, human_name, name_to_snake_case
+from utils import KnowledgeGraph, human_name, name_to_snake_case, PATH_ONTOLOGY
 from relation_info import PATH as PATH_RELATION_INFO
 
 
+PATH_ONTOLOGY_GPT_3_5 = PATH_ONTOLOGY / "ontology_gpt_3.5.owl"
 MAX_NUMBER_SEED_ENT_TUPLES = 5
 SEED = 753
 
@@ -9,7 +10,7 @@ SEED = 753
 if __name__ == "__main__":
     processed = set()
     json_config_file = "{\n"
-    with KnowledgeGraph() as kg:
+    with KnowledgeGraph(PATH_ONTOLOGY_GPT_3_5) as kg:
         for cls in kg.visit_classes_depth_first():
             if human_name(cls) in processed:
                 continue
