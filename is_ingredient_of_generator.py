@@ -1,5 +1,5 @@
 from pathlib import Path
-from utils import KnowledgeGraph, human_name, name_to_snake_case, subtype
+from utils import KnowledgeGraph, human_name, name_to_snake_case, subtype, get_filtered_instances
 from relation_info import PATH as PATH_RELATION_INFO
 from ontologies import PATH as PATH_ONTOLOGY
 import os
@@ -22,26 +22,25 @@ MAX_NUMBER_SEED_ENT_TUPLES = 5
 SEED = 753
 
 
-def populate_recipe(recipes: dict[str: list[str]], processed: set[str], ontology: Path):
-    with KnowledgeGraph(ontology) as kg_aux:
-        Recipe = kg_aux.onto.Recipe
-        for cls in kg_aux.visit_classes_depth_first():
-            if not subtype(cls, Recipe):
+def populate_recipe(recipes_tmp: dict[str: list[str]], processed_tmp: set[str], ontology_tmp: Path):
+    with KnowledgeGraph(ontology_tmp) as kg_aux:
+        recipe_class_tmp = kg_aux.onto.Recipe
+        for cls_tmp in kg_aux.visit_classes_depth_first():
+            if not subtype(cls_tmp, recipe_class_tmp):
                 continue
             # Retrieve all the recipes for the class
-            instances = list(cls.instances())
-            for recipe in instances:
-                if human_name(recipe) in processed:
+            instances_tmp = list(get_filtered_instances(cls_tmp, ontology_tmp.name[:-4]))
+            for recipe_tmp in instances_tmp:
+                if human_name(recipe_tmp) in processed_tmp:
                     continue
-                processed.add(human_name(recipe))
+                processed_tmp.add(human_name(recipe_tmp))
                 # Get the ingredients
-                ingredients = [x.name for x in getattr(recipe, kg_aux.onto.hasForIngredient.name)]
+                ingredients = [x.name for x in getattr(recipe_tmp, kg_aux.onto.hasForIngredient.name)]
                 # Add the recipe to the dictionary
-                recipes[human_name(recipe)] = ingredients
+                recipes_tmp[human_name(recipe_tmp)] = ingredients
 
 
 if __name__ == "__main__":
-    os.system("cp {} {}".format(str(PATH_ONTOLOGY_POPULATED), str(PATH_ONTOLOGY_FINAL)))
     json_config_file = "{\n"
 
     # Retrieve every ingredient for each recipe from the auxiliary ontology
@@ -50,6 +49,7 @@ if __name__ == "__main__":
     for ontology in AUX_ONTOLOGIES:
         populate_recipe(recipes, processed, ontology)
 
+    os.system("cp {} {}".format(str(PATH_ONTOLOGY_POPULATED), str(PATH_ONTOLOGY_FINAL)))
     with KnowledgeGraph(PATH_ONTOLOGY_FINAL) as kg:
         skipped = set()
         processed = set()
@@ -57,13 +57,13 @@ if __name__ == "__main__":
         processed_class = set()
         Recipe = kg.onto.Recipe
         for cls in kg.visit_classes_depth_first():
-            if human_name(cls) in processed_class:
-                continue
             if not subtype(cls, Recipe):
+                continue
+            if human_name(cls) in processed_class:
                 continue
             processed_class.add(human_name(cls))
             # Retrieve all the recipes for the class
-            instances = list(cls.instances())
+            instances = list(get_filtered_instances(cls, PATH_ONTOLOGY_FINAL.name[:-4]))
             for recipe in instances:
                 if human_name(recipe) in processed:
                     continue
@@ -76,6 +76,7 @@ if __name__ == "__main__":
                 # Check if the recipe is present in the auxiliary ontology
                 # If positive add some seed entity tuples
                 if human_name(recipe) in recipes.keys() and len(recipes[human_name(recipe)]) > 0:
+                    print("Processed: {}".format(human_name(recipe)))
                     covered.add(human_name(recipe))
                     json_config_file += tmp_json_config_file
                     json_config_file += '\t\t"seed_ent_tuples": [\n'
@@ -88,6 +89,7 @@ if __name__ == "__main__":
                     json_config_file += "\t\t]\n"
                     json_config_file += '\t},\n'
                 else:
+                    print("Skipped: {}".format(human_name(recipe)))
                     skipped.add(human_name(recipe))
         # remove the last comma
         json_config_file = json_config_file[:-2] + "\n"

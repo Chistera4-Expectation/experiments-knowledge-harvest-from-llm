@@ -8,7 +8,7 @@ import os
 PATH_RESULTS = PATH_RESULTS / "nutrition" / "100tuples_top20prompts" / "roberta-large"
 PATH_BASE_ONTOLOGY = PATH_ONTOLOGY / "base_ontology.owl"
 PATH_POPULATED_ONTOLOGY = PATH_ONTOLOGY / "populated_ontology.owl"
-THRESHOLD = 10E-3
+THRESHOLD = 0.02
 
 
 if __name__ == "__main__":

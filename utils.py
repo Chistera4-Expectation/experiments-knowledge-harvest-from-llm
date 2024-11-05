@@ -22,6 +22,10 @@ def first_or_none(iterable: typing.Iterable[typing.Any]) -> typing.Any:
         return None
 
 
+def get_filtered_instances(cls: owlready.ThingClass, namespace: str) -> typing.List[owlready.Thing]:
+    return [entity for entity in cls.instances() if entity.namespace.name == namespace]
+
+
 def human_name(cls_or_instance: owlready.ThingClass | owlready.Thing) -> str:
     return first_or_none(cls_or_instance.fancyName) or cls_or_instance.name
 
@@ -89,7 +93,7 @@ class KnowledgeGraph:
 
     @LazyProperty
     def onto(self) -> owlready.Ontology:
-        return owlready.get_ontology(self._uri).load()
+        return owlready.get_ontology(self._uri).load(only_local=True, reload=True, reload_if_newer=True)
 
     def _find_root_class(self):
         things = set()
@@ -175,7 +179,7 @@ class KnowledgeGraph:
         self.onto.save(str(self._path))
 
     def __enter__(self) -> "KnowledgeGraph":
-        self.onto
+        # self.onto
         return self
 
     def __exit__(self, exc_type, exc_value, traceback) -> None:
