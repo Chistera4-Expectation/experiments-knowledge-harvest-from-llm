@@ -16,12 +16,6 @@ class GPT3:
              presence_penalty=0,
              logprobs=0,
              n=1):
-        # Update number of API calls from file
-        with open("api_calls.txt", "r") as file:
-            api_calls = int(file.read())
-            api_calls += 1
-        with open("api_calls.txt", "w") as file:
-            file.write(str(api_calls))
         return openai.Completion.create(
             engine=engine,
             prompt=prompt,
