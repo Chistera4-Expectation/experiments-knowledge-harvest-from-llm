@@ -5671,6 +5671,9 @@
         "seed_ent_tuples": [
             [
                 "hot dogs"
+            ],
+            [
+                "mustard"
             ]
         ],
         "prompts": [
