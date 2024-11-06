@@ -1,0 +1,2012 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.semanticweb.org/gciatto/ontologies/2023/4/Expectation"
+         xmlns="http://www.semanticweb.org/gciatto/ontologies/2023/4/Expectation#">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/gciatto/ontologies/2023/4/Expectation"/>
+
+<owl:ObjectProperty rdf:about="#ingredientOf">
+  <owl:inverseOf rdf:resource="#hasForIngredient"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+  <rdfs:domain rdf:resource="#Edible"/>
+  <rdfs:range rdf:resource="#Edible"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasForIngredient">
+  <owl:inverseOf rdf:resource="#ingredientOf"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+  <rdfs:domain rdf:resource="#Edible"/>
+  <rdfs:range rdf:resource="#Edible"/>
+</owl:ObjectProperty>
+
+<owl:AnnotationProperty rdf:about="#fancyName">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</owl:AnnotationProperty>
+
+<owl:Class rdf:about="#Edible"/>
+
+<owl:Class rdf:about="#Additive">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food Additive</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Food">
+  <rdfs:subClassOf rdf:resource="#Edible"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Alcoholic">
+  <rdfs:subClassOf rdf:resource="#Drink"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alcoholic Drink</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Drink">
+  <rdfs:subClassOf rdf:resource="#Liquid"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Liquid">
+  <rdfs:subClassOf rdf:resource="#Edible"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drinkable Liquid</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Animal">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal-derived Food</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Beef">
+  <rdfs:subClassOf rdf:resource="#Meat"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Meat">
+  <rdfs:subClassOf rdf:resource="#Animal"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Butter">
+  <rdfs:subClassOf rdf:resource="#Dairy"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dairy">
+  <rdfs:subClassOf rdf:resource="#Animal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dairy Product</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Cereal">
+  <rdfs:subClassOf rdf:resource="#Vegetal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edible Cereal</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Vegetal">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vegetal-derived Food</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Breakfast">
+  <rdfs:subClassOf rdf:resource="#Cereal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breakfast Cereal</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Bread">
+  <rdfs:subClassOf rdf:resource="#Cereal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bread</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Rice">
+  <rdfs:subClassOf rdf:resource="#Cereal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rice</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Pasta">
+  <rdfs:subClassOf rdf:resource="#Cereal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pasta Types</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Cheese">
+  <rdfs:subClassOf rdf:resource="#Dairy"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Coffee">
+  <rdfs:subClassOf rdf:resource="#Infusion"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Infusion">
+  <rdfs:subClassOf rdf:resource="#Drink"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infusion Drink</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Crustaceans">
+  <rdfs:subClassOf rdf:resource="#Seafood"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edible Crustaceans</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Seafood">
+  <rdfs:subClassOf rdf:resource="#Animal"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dressing">
+  <rdfs:subClassOf rdf:resource="#Additive"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food Dressing</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Energy">
+  <rdfs:subClassOf rdf:resource="#Drink"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy Drink</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Fish">
+  <rdfs:subClassOf rdf:resource="#Seafood"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edible Fish</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Fruit">
+  <rdfs:subClassOf rdf:resource="#Vegetal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edible Fruit</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Honey">
+  <rdfs:subClassOf rdf:resource="#Insect"/>
+  <rdfs:subClassOf rdf:resource="#Liquid"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Insect">
+  <rdfs:subClassOf rdf:resource="#Animal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insect-Derived Food</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Juice">
+  <rdfs:subClassOf rdf:resource="#Drink"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Milk">
+  <rdfs:subClassOf rdf:resource="#Dairy"/>
+  <rdfs:subClassOf rdf:resource="#Drink"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Molluscs">
+  <rdfs:subClassOf rdf:resource="#Seafood"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edible Molluscs</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Mushroom">
+  <rdfs:subClassOf rdf:resource="#Vegetal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edible Mushrooms</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Oil">
+  <rdfs:subClassOf rdf:resource="#Liquid"/>
+  <rdfs:subClassOf rdf:resource="#Vegetal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edible Vegetal Oil</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Pork">
+  <rdfs:subClassOf rdf:resource="#Meat"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pork-derived Food</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Poultry">
+  <rdfs:subClassOf rdf:resource="#Meat"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poultry-derived Food</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Sauce">
+  <rdfs:subClassOf rdf:resource="#Additive"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Seasoning">
+  <rdfs:subClassOf rdf:resource="#Additive"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food Seasoning</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Seaweed">
+  <rdfs:subClassOf rdf:resource="#Vegetal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edible Seaweed</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Seed">
+  <rdfs:subClassOf rdf:resource="#Vegetal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edible Seeds</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Spice">
+  <rdfs:subClassOf rdf:resource="#Additive"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sweetener">
+  <rdfs:subClassOf rdf:resource="#Additive"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tea">
+  <rdfs:subClassOf rdf:resource="#Infusion"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Vegetable">
+  <rdfs:subClassOf rdf:resource="#Vegetal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edible Vegetable</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Water">
+  <rdfs:subClassOf rdf:resource="#Drink"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drinking Water</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Yogurt">
+  <rdfs:subClassOf rdf:resource="#Dairy"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Recipe">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Italian">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italian Cuisine Recipe</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Latin">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latin Cuisine Recipe</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#African">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">African Cuisine Recipe</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#American">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">American Cuisine Recipe</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Carribean">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carribean Cuisine Recipe</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Japanese">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Japanese Cuisine Recipe</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Chinese">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chinese Cuisine Recipe</fancyName>
+</owl:Class>
+
+<owl:Class rdf:about="#Indian">
+  <rdfs:subClassOf rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indian Cuisine Recipe</fancyName>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#cilantro">
+  <rdf:type rdf:resource="#Dressing"/>
+  <rdf:type rdf:resource="#Seasoning"/>
+  <rdf:type rdf:resource="#Spice"/>
+  <rdf:type rdf:resource="#Honey"/>
+  <rdf:type rdf:resource="#Fruit"/>
+  <rdf:type rdf:resource="#Mushroom"/>
+  <rdf:type rdf:resource="#Seaweed"/>
+  <rdf:type rdf:resource="#Seed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cheese">
+  <rdf:type rdf:resource="#Dressing"/>
+  <rdf:type rdf:resource="#Meat"/>
+  <rdf:type rdf:resource="#Yogurt"/>
+  <rdf:type rdf:resource="#Vegetal"/>
+  <rdf:type rdf:resource="#Latin"/>
+  <hasForIngredient rdf:resource="#milk"/>
+  <hasForIngredient rdf:resource="#protein"/>
+  <hasForIngredient rdf:resource="#oil"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#curry">
+  <rdf:type rdf:resource="#Dressing"/>
+  <rdf:type rdf:resource="#African"/>
+  <rdf:type rdf:resource="#Carribean"/>
+  <rdf:type rdf:resource="#Chinese"/>
+  <rdf:type rdf:resource="#Indian"/>
+  <hasForIngredient rdf:resource="#rice"/>
+  <hasForIngredient rdf:resource="#spice"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#spaghetti">
+  <rdf:type rdf:resource="#Dressing"/>
+  <rdf:type rdf:resource="#Pasta"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spaghetti</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#feta">
+  <rdf:type rdf:resource="#Dressing"/>
+  <rdf:type rdf:resource="#Seasoning"/>
+  <rdf:type rdf:resource="#Cheese"/>
+  <rdf:type rdf:resource="#Pasta"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chilli">
+  <rdf:type rdf:resource="#Dressing"/>
+  <rdf:type rdf:resource="#Seasoning"/>
+  <rdf:type rdf:resource="#Spice"/>
+  <rdf:type rdf:resource="#Indian"/>
+  <hasForIngredient rdf:resource="#chilies"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bacon">
+  <rdf:type rdf:resource="#Dressing"/>
+  <rdf:type rdf:resource="#African"/>
+  <rdf:type rdf:resource="#Carribean"/>
+  <hasForIngredient rdf:resource="#pork"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#spice">
+  <rdf:type rdf:resource="#Dressing"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cider">
+  <rdf:type rdf:resource="#Dressing"/>
+  <rdf:type rdf:resource="#Alcoholic"/>
+  <rdf:type rdf:resource="#Juice"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cider</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chili">
+  <rdf:type rdf:resource="#Dressing"/>
+  <rdf:type rdf:resource="#Seasoning"/>
+  <rdf:type rdf:resource="#Spice"/>
+  <rdf:type rdf:resource="#Latin"/>
+  <rdf:type rdf:resource="#Carribean"/>
+  <rdf:type rdf:resource="#Chinese"/>
+  <hasForIngredient rdf:resource="#pepper"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#oil">
+  <rdf:type rdf:resource="#Dressing"/>
+  <rdf:type rdf:resource="#Seasoning"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#salami">
+  <rdf:type rdf:resource="#Dressing"/>
+  <rdf:type rdf:resource="#Seasoning"/>
+  <rdf:type rdf:resource="#Spice"/>
+  <rdf:type rdf:resource="#Pasta"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chile">
+  <rdf:type rdf:resource="#Dressing"/>
+  <rdf:type rdf:resource="#Seasoning"/>
+  <rdf:type rdf:resource="#Spice"/>
+  <rdf:type rdf:resource="#Latin"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#spicy">
+  <rdf:type rdf:resource="#Dressing"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spicy</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#red_wine">
+  <rdf:type rdf:resource="#Sauce"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red Wine</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tomato_soup">
+  <rdf:type rdf:resource="#Sauce"/>
+  <rdf:type rdf:resource="#Italian"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tomato soup</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#red_vinegar">
+  <rdf:type rdf:resource="#Sauce"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red Vinegar</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#hot_tea">
+  <rdf:type rdf:resource="#Sauce"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hot tea</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#hot_water">
+  <rdf:type rdf:resource="#Sauce"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hot water</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tomato_sauce">
+  <rdf:type rdf:resource="#Sauce"/>
+  <rdf:type rdf:resource="#Italian"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tomato sauce</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soy_yogurt">
+  <rdf:type rdf:resource="#Sauce"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soy Yogurt</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#red_tea">
+  <rdf:type rdf:resource="#Sauce"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red Tea</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#salt">
+  <rdf:type rdf:resource="#Seasoning"/>
+  <rdf:type rdf:resource="#Spice"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cumin">
+  <rdf:type rdf:resource="#Seasoning"/>
+  <rdf:type rdf:resource="#Spice"/>
+  <rdf:type rdf:resource="#Seed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cinnamon">
+  <rdf:type rdf:resource="#Seasoning"/>
+  <rdf:type rdf:resource="#Spice"/>
+  <rdf:type rdf:resource="#Sweetener"/>
+  <rdf:type rdf:resource="#Honey"/>
+  <rdf:type rdf:resource="#Seed"/>
+  <rdf:type rdf:resource="#Juice"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pepper">
+  <rdf:type rdf:resource="#Seasoning"/>
+  <rdf:type rdf:resource="#Spice"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#vinegar">
+  <rdf:type rdf:resource="#Seasoning"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chai">
+  <rdf:type rdf:resource="#Spice"/>
+  <rdf:type rdf:resource="#Honey"/>
+  <rdf:type rdf:resource="#Chinese"/>
+  <rdf:type rdf:resource="#Indian"/>
+  <rdf:type rdf:resource="#Coffee"/>
+  <rdf:type rdf:resource="#Tea"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chilies">
+  <rdf:type rdf:resource="#Spice"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#nut_butter">
+  <rdf:type rdf:resource="#Sweetener"/>
+  <rdf:type rdf:resource="#Yogurt"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nut butter</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#carbon">
+  <rdf:type rdf:resource="#Sweetener"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#nitrogen">
+  <rdf:type rdf:resource="#Sweetener"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#caramel">
+  <rdf:type rdf:resource="#Sweetener"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caramel</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fructose">
+  <rdf:type rdf:resource="#Sweetener"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#protein">
+  <rdf:type rdf:resource="#Sweetener"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chocolate">
+  <rdf:type rdf:resource="#Sweetener"/>
+  <rdf:type rdf:resource="#Cheese"/>
+  <rdf:type rdf:resource="#Honey"/>
+  <rdf:type rdf:resource="#Vegetal"/>
+  <rdf:type rdf:resource="#Latin"/>
+  <rdf:type rdf:resource="#Carribean"/>
+  <hasForIngredient rdf:resource="#coffee"/>
+  <hasForIngredient rdf:resource="#oil"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#carbo">
+  <rdf:type rdf:resource="#Sweetener"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cholesterol">
+  <rdf:type rdf:resource="#Sweetener"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cherry">
+  <rdf:type rdf:resource="#Sweetener"/>
+  <rdf:type rdf:resource="#Fruit"/>
+  <rdf:type rdf:resource="#Juice"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#choline">
+  <rdf:type rdf:resource="#Sweetener"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#nut_oil">
+  <rdf:type rdf:resource="#Sweetener"/>
+  <rdf:type rdf:resource="#Yogurt"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nut oil</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nut Oil</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bitter">
+  <rdf:type rdf:resource="#Sweetener"/>
+  <rdf:type rdf:resource="#Honey"/>
+  <rdf:type rdf:resource="#Juice"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bitter</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#avocado">
+  <rdf:type rdf:resource="#Additive"/>
+  <rdf:type rdf:resource="#Oil"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avocado</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#garlic">
+  <rdf:type rdf:resource="#Additive"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#saliva">
+  <rdf:type rdf:resource="#Additive"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saliva</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#alcohol">
+  <rdf:type rdf:resource="#Additive"/>
+  <rdf:type rdf:resource="#Infusion"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ground_beef">
+  <rdf:type rdf:resource="#Beef"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ground beef</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#red_bull">
+  <rdf:type rdf:resource="#Beef"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red Bull</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ground_pork">
+  <rdf:type rdf:resource="#Beef"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ground pork</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cattle_products">
+  <rdf:type rdf:resource="#Beef"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cattle products</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ground_chicken">
+  <rdf:type rdf:resource="#Beef"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ground Chicken</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#beef_steak">
+  <rdf:type rdf:resource="#Beef"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beef Steak</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cattle_species">
+  <rdf:type rdf:resource="#Beef"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cattle species</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pork">
+  <rdf:type rdf:resource="#Beef"/>
+  <rdf:type rdf:resource="#Cheese"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#red_cow">
+  <rdf:type rdf:resource="#Beef"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red Cow</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#beef_meat">
+  <rdf:type rdf:resource="#Beef"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beef Meat</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#beef_cow">
+  <rdf:type rdf:resource="#Beef"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beef cow</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cattle">
+  <rdf:type rdf:resource="#Beef"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#meat_product">
+  <rdf:type rdf:resource="#Beef"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meat Product</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#steak">
+  <rdf:type rdf:resource="#Beef"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#red_chicken">
+  <rdf:type rdf:resource="#Beef"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red Chicken</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pork_belly">
+  <rdf:type rdf:resource="#Pork"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pork belly</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pork_pie">
+  <rdf:type rdf:resource="#Pork"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pork pie</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#meat_pie">
+  <rdf:type rdf:resource="#Pork"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">meat pie</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pork_sausage">
+  <rdf:type rdf:resource="#Pork"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pork sausage</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#beef_stew">
+  <rdf:type rdf:resource="#Pork"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beef stew</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pork_meat">
+  <rdf:type rdf:resource="#Pork"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pork Meat</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pork_cheese">
+  <rdf:type rdf:resource="#Pork"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pork Cheese</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#beef_soup">
+  <rdf:type rdf:resource="#Pork"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beef soup</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chicken_salad">
+  <rdf:type rdf:resource="#Poultry"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chicken salad</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chicken_soup">
+  <rdf:type rdf:resource="#Poultry"/>
+  <rdf:type rdf:resource="#Italian"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chicken soup</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chicken Soup</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chicken_stew">
+  <rdf:type rdf:resource="#Poultry"/>
+  <rdf:type rdf:resource="#Italian"/>
+  <rdf:type rdf:resource="#American"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chicken stew</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chicken Stew</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chicken">
+  <rdf:type rdf:resource="#Poultry"/>
+  <rdf:type rdf:resource="#Vegetal"/>
+  <rdf:type rdf:resource="#African"/>
+  <rdf:type rdf:resource="#Chinese"/>
+  <rdf:type rdf:resource="#Indian"/>
+  <hasForIngredient rdf:resource="#poultry"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#beef">
+  <rdf:type rdf:resource="#Meat"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bison">
+  <rdf:type rdf:resource="#Meat"/>
+  <rdf:type rdf:resource="#Fish"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fish">
+  <rdf:type rdf:resource="#Meat"/>
+  <rdf:type rdf:resource="#Molluscs"/>
+  <rdf:type rdf:resource="#Seaweed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#liver">
+  <rdf:type rdf:resource="#Meat"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#poultry">
+  <rdf:type rdf:resource="#Meat"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poultry</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rabbit">
+  <rdf:type rdf:resource="#Meat"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bone">
+  <rdf:type rdf:resource="#Meat"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#salmon">
+  <rdf:type rdf:resource="#Meat"/>
+  <rdf:type rdf:resource="#Fish"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cabbage">
+  <rdf:type rdf:resource="#Meat"/>
+  <rdf:type rdf:resource="#Pasta"/>
+  <rdf:type rdf:resource="#Mushroom"/>
+  <rdf:type rdf:resource="#Seaweed"/>
+  <rdf:type rdf:resource="#Seed"/>
+  <rdf:type rdf:resource="#Vegetable"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rice">
+  <rdf:type rdf:resource="#Meat"/>
+  <rdf:type rdf:resource="#Seaweed"/>
+  <rdf:type rdf:resource="#Chinese"/>
+  <hasForIngredient rdf:resource="#curry"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#brown_sugar">
+  <rdf:type rdf:resource="#Butter"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">brown sugar</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#white_chocolate">
+  <rdf:type rdf:resource="#Butter"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">white chocolate</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cream_cheese">
+  <rdf:type rdf:resource="#Butter"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cream cheese</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#white_sugar">
+  <rdf:type rdf:resource="#Butter"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">white sugar</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#white_flour">
+  <rdf:type rdf:resource="#Butter"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">white flour</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#peanut_butter">
+  <rdf:type rdf:resource="#Butter"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peanut butter</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#milk_fat">
+  <rdf:type rdf:resource="#Butter"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk fat</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#butter_cream">
+  <rdf:type rdf:resource="#Butter"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">butter cream</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#milk">
+  <rdf:type rdf:resource="#Cheese"/>
+  <rdf:type rdf:resource="#Yogurt"/>
+  <rdf:type rdf:resource="#Honey"/>
+  <rdf:type rdf:resource="#Breakfast"/>
+  <rdf:type rdf:resource="#Infusion"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cheddar">
+  <rdf:type rdf:resource="#Cheese"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#brie">
+  <rdf:type rdf:resource="#Cheese"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brie</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pizza">
+  <rdf:type rdf:resource="#Cheese"/>
+  <rdf:type rdf:resource="#Pasta"/>
+  <rdf:type rdf:resource="#Italian"/>
+  <rdf:type rdf:resource="#Latin"/>
+  <rdf:type rdf:resource="#African"/>
+  <rdf:type rdf:resource="#Carribean"/>
+  <rdf:type rdf:resource="#Japanese"/>
+  <rdf:type rdf:resource="#Indian"/>
+  <hasForIngredient rdf:resource="#cheese"/>
+  <hasForIngredient rdf:resource="#garlic"/>
+  <hasForIngredient rdf:resource="#meat"/>
+  <hasForIngredient rdf:resource="#bacon"/>
+  <hasForIngredient rdf:resource="#chicken"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ketchup">
+  <rdf:type rdf:resource="#Cheese"/>
+  <rdf:type rdf:resource="#Vegetal"/>
+  <rdf:type rdf:resource="#Juice"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chevre">
+  <rdf:type rdf:resource="#Cheese"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#meat">
+  <rdf:type rdf:resource="#Cheese"/>
+  <rdf:type rdf:resource="#Vegetal"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#kale">
+  <rdf:type rdf:resource="#Cheese"/>
+  <rdf:type rdf:resource="#Vegetal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kale</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#milk_powder">
+  <rdf:type rdf:resource="#Milk"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk powder</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#baby_formula">
+  <rdf:type rdf:resource="#Milk"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baby Formula</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dairy_products">
+  <rdf:type rdf:resource="#Milk"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dairy products</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#milk_butter">
+  <rdf:type rdf:resource="#Milk"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milk Butter</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#milk_cheese">
+  <rdf:type rdf:resource="#Milk"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milk cheese</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#baby_food">
+  <rdf:type rdf:resource="#Milk"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">baby food</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dairy_cream">
+  <rdf:type rdf:resource="#Milk"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dairy Cream</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lactose">
+  <rdf:type rdf:resource="#Milk"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#animal_protein">
+  <rdf:type rdf:resource="#Milk"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animal protein</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal Protein</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#raw_milk">
+  <rdf:type rdf:resource="#Yogurt"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">raw milk</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#raw_yogurt">
+  <rdf:type rdf:resource="#Yogurt"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">raw yogurt</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#raw_cheese">
+  <rdf:type rdf:resource="#Yogurt"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raw Cheese</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fruit">
+  <rdf:type rdf:resource="#Yogurt"/>
+  <rdf:type rdf:resource="#Insect"/>
+  <rdf:type rdf:resource="#Mushroom"/>
+  <rdf:type rdf:resource="#Vegetable"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#nut_flour">
+  <rdf:type rdf:resource="#Yogurt"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nut flour</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#milk_product">
+  <rdf:type rdf:resource="#Dairy"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milk Product</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dairy_powder">
+  <rdf:type rdf:resource="#Dairy"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dairy Powder</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#sea_slug">
+  <rdf:type rdf:resource="#Crustaceans"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea slug</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#sea_turtle">
+  <rdf:type rdf:resource="#Crustaceans"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sea Turtle</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lobster_tail">
+  <rdf:type rdf:resource="#Crustaceans"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lobster tail</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#crab_meat">
+  <rdf:type rdf:resource="#Crustaceans"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crab meat</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#sea_snail">
+  <rdf:type rdf:resource="#Crustaceans"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea snail</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fish_tail">
+  <rdf:type rdf:resource="#Crustaceans"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fish tail</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#sea_sponge">
+  <rdf:type rdf:resource="#Crustaceans"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea sponge</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#crab">
+  <rdf:type rdf:resource="#Crustaceans"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#crab_shell">
+  <rdf:type rdf:resource="#Crustaceans"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crab Shell</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#shell_fish">
+  <rdf:type rdf:resource="#Crustaceans"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shell fish</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#jelly_fish">
+  <rdf:type rdf:resource="#Crustaceans"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jelly fish</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lobster">
+  <rdf:type rdf:resource="#Crustaceans"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tuna">
+  <rdf:type rdf:resource="#Fish"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#marlin">
+  <rdf:type rdf:resource="#Fish"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#puffer">
+  <rdf:type rdf:resource="#Fish"/>
+  <rdf:type rdf:resource="#Molluscs"/>
+  <rdf:type rdf:resource="#Seaweed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pike">
+  <rdf:type rdf:resource="#Fish"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#prawn">
+  <rdf:type rdf:resource="#Fish"/>
+  <rdf:type rdf:resource="#Seaweed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#baja">
+  <rdf:type rdf:resource="#Fish"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#betta">
+  <rdf:type rdf:resource="#Fish"/>
+  <rdf:type rdf:resource="#Pasta"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Betta</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#shellfish">
+  <rdf:type rdf:resource="#Molluscs"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#shrimp">
+  <rdf:type rdf:resource="#Molluscs"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bacteria">
+  <rdf:type rdf:resource="#Molluscs"/>
+  <rdf:type rdf:resource="#Mushroom"/>
+  <rdf:type rdf:resource="#Seaweed"/>
+  <rdf:type rdf:resource="#Seed"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacteria</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#shell">
+  <rdf:type rdf:resource="#Molluscs"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#eel">
+  <rdf:type rdf:resource="#Molluscs"/>
+  <rdf:type rdf:resource="#Seaweed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lice">
+  <rdf:type rdf:resource="#Molluscs"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#spore">
+  <rdf:type rdf:resource="#Molluscs"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#sea_bass">
+  <rdf:type rdf:resource="#Seafood"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea bass</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fish_oil">
+  <rdf:type rdf:resource="#Seafood"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fish oil</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#sea_trout">
+  <rdf:type rdf:resource="#Seafood"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea trout</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#crab_legs">
+  <rdf:type rdf:resource="#Seafood"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crab legs</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#raw_seafood">
+  <rdf:type rdf:resource="#Seafood"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">raw seafood</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fish_species">
+  <rdf:type rdf:resource="#Seafood"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fish species</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#sea_shrimp">
+  <rdf:type rdf:resource="#Seafood"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea shrimp</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#borage">
+  <rdf:type rdf:resource="#Honey"/>
+  <rdf:type rdf:resource="#Mushroom"/>
+  <rdf:type rdf:resource="#Seaweed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#wort">
+  <rdf:type rdf:resource="#Honey"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#grape">
+  <rdf:type rdf:resource="#Honey"/>
+  <rdf:type rdf:resource="#Fruit"/>
+  <rdf:type rdf:resource="#Vegetable"/>
+  <rdf:type rdf:resource="#Juice"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pollen">
+  <rdf:type rdf:resource="#Honey"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bamboo">
+  <rdf:type rdf:resource="#Honey"/>
+  <rdf:type rdf:resource="#Seaweed"/>
+  <rdf:type rdf:resource="#Chinese"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bamboo</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#wax">
+  <rdf:type rdf:resource="#Honey"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#holly">
+  <rdf:type rdf:resource="#Honey"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ginger">
+  <rdf:type rdf:resource="#Honey"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cotton">
+  <rdf:type rdf:resource="#Honey"/>
+  <rdf:type rdf:resource="#Seaweed"/>
+  <rdf:type rdf:resource="#Seed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#insect_food">
+  <rdf:type rdf:resource="#Insect"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insect food</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#insect_larvae">
+  <rdf:type rdf:resource="#Insect"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insect larvae</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#insect_fruit">
+  <rdf:type rdf:resource="#Insect"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insect Fruit</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#insect_eggs">
+  <rdf:type rdf:resource="#Insect"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insect eggs</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#insect_honey">
+  <rdf:type rdf:resource="#Insect"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insect Honey</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#honey">
+  <rdf:type rdf:resource="#Insect"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fruits">
+  <rdf:type rdf:resource="#Insect"/>
+  <rdf:type rdf:resource="#Seed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#animal_foods">
+  <rdf:type rdf:resource="#Animal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal Foods</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#animal_products">
+  <rdf:type rdf:resource="#Animal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animal products</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#raw_meat">
+  <rdf:type rdf:resource="#Animal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raw Meat</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#animal_milk">
+  <rdf:type rdf:resource="#Animal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal Milk</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#raw_fish">
+  <rdf:type rdf:resource="#Animal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">raw fish</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cereal_powder">
+  <rdf:type rdf:resource="#Breakfast"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cereal Powder</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cereal_milk">
+  <rdf:type rdf:resource="#Breakfast"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cereal milk</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cereal_wheat">
+  <rdf:type rdf:resource="#Breakfast"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cereal Wheat</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cereal_rice">
+  <rdf:type rdf:resource="#Breakfast"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cereal rice</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rice_milk">
+  <rdf:type rdf:resource="#Breakfast"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rice milk</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#oats">
+  <rdf:type rdf:resource="#Breakfast"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oats</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#coffee">
+  <rdf:type rdf:resource="#Breakfast"/>
+  <rdf:type rdf:resource="#Alcoholic"/>
+  <rdf:type rdf:resource="#Tea"/>
+  <rdf:type rdf:resource="#Energy"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bread">
+  <rdf:type rdf:resource="#Breakfast"/>
+  <rdf:type rdf:resource="#African"/>
+  <rdf:type rdf:resource="#Carribean"/>
+  <hasForIngredient rdf:resource="#salt"/>
+  <hasForIngredient rdf:resource="#water"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#kashi">
+  <rdf:type rdf:resource="#Breakfast"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kashi</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#wheat">
+  <rdf:type rdf:resource="#Breakfast"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bread_rolls">
+  <rdf:type rdf:resource="#Bread"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bread rolls</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bread_dough">
+  <rdf:type rdf:resource="#Bread"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bread dough</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bread_flour">
+  <rdf:type rdf:resource="#Bread"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bread flour</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bread_cake">
+  <rdf:type rdf:resource="#Bread"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bread Cake</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bread_items">
+  <rdf:type rdf:resource="#Bread"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bread Items</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rice_cereal">
+  <rdf:type rdf:resource="#Rice"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rice cereal</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rice_flour">
+  <rdf:type rdf:resource="#Rice"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rice flour</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rice_grain">
+  <rdf:type rdf:resource="#Rice"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rice grain</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rice_wheat">
+  <rdf:type rdf:resource="#Rice"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rice wheat</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rice_meal">
+  <rdf:type rdf:resource="#Rice"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rice meal</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#panini">
+  <rdf:type rdf:resource="#Pasta"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tomato">
+  <rdf:type rdf:resource="#Pasta"/>
+  <rdf:type rdf:resource="#Fruit"/>
+  <rdf:type rdf:resource="#Vegetable"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cava">
+  <rdf:type rdf:resource="#Pasta"/>
+  <rdf:type rdf:resource="#Carribean"/>
+  <hasForIngredient rdf:resource="#carrot"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#salumi">
+  <rdf:type rdf:resource="#Pasta"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#boli">
+  <rdf:type rdf:resource="#Pasta"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ragu">
+  <rdf:type rdf:resource="#Pasta"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fetta">
+  <rdf:type rdf:resource="#Pasta"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#corn_starch">
+  <rdf:type rdf:resource="#Cereal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corn starch</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#corn_syrup">
+  <rdf:type rdf:resource="#Cereal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corn syrup</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#corn_flour">
+  <rdf:type rdf:resource="#Cereal"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corn flour</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mango">
+  <rdf:type rdf:resource="#Fruit"/>
+  <rdf:type rdf:resource="#Vegetable"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pineapple">
+  <rdf:type rdf:resource="#Fruit"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#apple">
+  <rdf:type rdf:resource="#Fruit"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#banana">
+  <rdf:type rdf:resource="#Fruit"/>
+  <rdf:type rdf:resource="#Vegetable"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#melon">
+  <rdf:type rdf:resource="#Fruit"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#carrot">
+  <rdf:type rdf:resource="#Fruit"/>
+  <rdf:type rdf:resource="#Vegetable"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#coca">
+  <rdf:type rdf:resource="#Fruit"/>
+  <rdf:type rdf:resource="#Juice"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lily">
+  <rdf:type rdf:resource="#Fruit"/>
+  <rdf:type rdf:resource="#Mushroom"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#edible_plants">
+  <rdf:type rdf:resource="#Mushroom"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">edible plants</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#edible_plant">
+  <rdf:type rdf:resource="#Mushroom"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">edible plant</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#edible_seeds">
+  <rdf:type rdf:resource="#Mushroom"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">edible seeds</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#edible_species">
+  <rdf:type rdf:resource="#Mushroom"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">edible species</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cactus">
+  <rdf:type rdf:resource="#Mushroom"/>
+  <rdf:type rdf:resource="#Seed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cannabis">
+  <rdf:type rdf:resource="#Mushroom"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#broccoli">
+  <rdf:type rdf:resource="#Mushroom"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mustard">
+  <rdf:type rdf:resource="#Mushroom"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#strawberry">
+  <rdf:type rdf:resource="#Mushroom"/>
+  <rdf:type rdf:resource="#Vegetable"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soy_sauce">
+  <rdf:type rdf:resource="#Oil"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soy sauce</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#coconut_oil">
+  <rdf:type rdf:resource="#Oil"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coconut oil</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#olive_oil">
+  <rdf:type rdf:resource="#Oil"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olive Oil</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#coconut_butter">
+  <rdf:type rdf:resource="#Oil"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coconut butter</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soy_milk">
+  <rdf:type rdf:resource="#Oil"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soy Milk</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#olive">
+  <rdf:type rdf:resource="#Oil"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#coral">
+  <rdf:type rdf:resource="#Seaweed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#marula">
+  <rdf:type rdf:resource="#Seaweed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lava">
+  <rdf:type rdf:resource="#Seaweed"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lava</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pears">
+  <rdf:type rdf:resource="#Seed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#figs">
+  <rdf:type rdf:resource="#Seed"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pods">
+  <rdf:type rdf:resource="#Seed"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pods</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cows">
+  <rdf:type rdf:resource="#Seed"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cows</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#potato">
+  <rdf:type rdf:resource="#Vegetable"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cucumber">
+  <rdf:type rdf:resource="#Vegetable"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lettuce">
+  <rdf:type rdf:resource="#Vegetable"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#vegetable_rice">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vegetable Rice</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pumpkin">
+  <rdf:type rdf:resource="#Vegetable"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#vegetable_root">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vegetable root</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#vegetable_potato">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vegetable Potato</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#squash">
+  <rdf:type rdf:resource="#Vegetable"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tofu">
+  <rdf:type rdf:resource="#Vegetal"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#yogurt">
+  <rdf:type rdf:resource="#Vegetal"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pasta_salad">
+  <rdf:type rdf:resource="#Italian"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pasta salad</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#spaghetti_sauce">
+  <rdf:type rdf:resource="#Italian"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spaghetti sauce</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pasta_sauce">
+  <rdf:type rdf:resource="#Italian"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pasta sauce</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chicken_sandwich">
+  <rdf:type rdf:resource="#Italian"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chicken Sandwich</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pizza_pie">
+  <rdf:type rdf:resource="#Italian"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pizza pie</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tomato_salad">
+  <rdf:type rdf:resource="#Italian"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tomato salad</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tomato_stew">
+  <rdf:type rdf:resource="#Italian"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tomato stew</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#meat_stew">
+  <rdf:type rdf:resource="#Italian"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">meat stew</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pizza_sauce">
+  <rdf:type rdf:resource="#Italian"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pizza sauce</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pizza Sauce</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pasta_dish">
+  <rdf:type rdf:resource="#Italian"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pasta dish</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#spaghetti_salad">
+  <rdf:type rdf:resource="#Italian"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spaghetti Salad</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pasta">
+  <rdf:type rdf:resource="#Italian"/>
+  <hasForIngredient rdf:resource="#spaghetti"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#luna">
+  <rdf:type rdf:resource="#Latin"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#waffle">
+  <rdf:type rdf:resource="#African"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#baba">
+  <rdf:type rdf:resource="#African"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#kava">
+  <rdf:type rdf:resource="#African"/>
+  <hasForIngredient rdf:resource="#kali"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bongo">
+  <rdf:type rdf:resource="#African"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#kola">
+  <rdf:type rdf:resource="#African"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chicken_wing">
+  <rdf:type rdf:resource="#American"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chicken wing</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chicken_wings">
+  <rdf:type rdf:resource="#American"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chicken wings</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chicken_thighs">
+  <rdf:type rdf:resource="#American"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chicken thighs</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#potato_soup">
+  <rdf:type rdf:resource="#American"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potato soup</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#american_pizza">
+  <rdf:type rdf:resource="#American"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">American Pizza</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#poutine">
+  <rdf:type rdf:resource="#Carribean"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fries">
+  <rdf:type rdf:resource="#Carribean"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fries</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#katsu">
+  <rdf:type rdf:resource="#Japanese"/>
+  <rdf:type rdf:resource="#Chinese"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#shogi">
+  <rdf:type rdf:resource="#Japanese"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#noodle">
+  <rdf:type rdf:resource="#Japanese"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Noodle</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#kimi">
+  <rdf:type rdf:resource="#Japanese"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#choco">
+  <rdf:type rdf:resource="#Japanese"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#kogi">
+  <rdf:type rdf:resource="#Japanese"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#shiro">
+  <rdf:type rdf:resource="#Japanese"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bao">
+  <rdf:type rdf:resource="#Chinese"/>
+  <hasForIngredient rdf:resource="#bamboo"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chow">
+  <rdf:type rdf:resource="#Chinese"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chuan">
+  <rdf:type rdf:resource="#Chinese"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#sushi">
+  <rdf:type rdf:resource="#Chinese"/>
+  <hasForIngredient rdf:resource="#fish"/>
+  <hasForIngredient rdf:resource="#tofu"/>
+  <hasForIngredient rdf:resource="#tuna"/>
+  <hasForIngredient rdf:resource="#shrimp"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#wok">
+  <rdf:type rdf:resource="#Chinese"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soup">
+  <rdf:type rdf:resource="#Chinese"/>
+  <hasForIngredient rdf:resource="#cabbage"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#roti">
+  <rdf:type rdf:resource="#Indian"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bhog">
+  <rdf:type rdf:resource="#Indian"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ghee">
+  <rdf:type rdf:resource="#Indian"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#kesar">
+  <rdf:type rdf:resource="#Indian"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chana">
+  <rdf:type rdf:resource="#Indian"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#kali">
+  <rdf:type rdf:resource="#Indian"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#koti">
+  <rdf:type rdf:resource="#Indian"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#puri">
+  <rdf:type rdf:resource="#Indian"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pizza_slice">
+  <rdf:type rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pizza Slice</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#vegetable_soup">
+  <rdf:type rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vegetable soup</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#vegetable_salad">
+  <rdf:type rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vegetable Salad</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#vegetable_stew">
+  <rdf:type rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vegetable Stew</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#food_item">
+  <rdf:type rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food Item</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pizza_style">
+  <rdf:type rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pizza style</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rice_soup">
+  <rdf:type rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rice Soup</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rice_wine">
+  <rdf:type rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rice wine</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cooking_recipes">
+  <rdf:type rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cooking recipes</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#vegetable_sauce">
+  <rdf:type rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vegetable Sauce</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cooking_style">
+  <rdf:type rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cooking style</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rice_stew">
+  <rdf:type rdf:resource="#Recipe"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rice stew</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#beer">
+  <rdf:type rdf:resource="#Alcoholic"/>
+  <rdf:type rdf:resource="#Infusion"/>
+  <rdf:type rdf:resource="#Energy"/>
+  <rdf:type rdf:resource="#Juice"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#wine">
+  <rdf:type rdf:resource="#Alcoholic"/>
+  <rdf:type rdf:resource="#Infusion"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#coke">
+  <rdf:type rdf:resource="#Alcoholic"/>
+  <rdf:type rdf:resource="#Energy"/>
+  <rdf:type rdf:resource="#Juice"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coke</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#vodka">
+  <rdf:type rdf:resource="#Alcoholic"/>
+  <rdf:type rdf:resource="#Infusion"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#soda">
+  <rdf:type rdf:resource="#Alcoholic"/>
+  <rdf:type rdf:resource="#Infusion"/>
+  <rdf:type rdf:resource="#Energy"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#liquor">
+  <rdf:type rdf:resource="#Alcoholic"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#water">
+  <rdf:type rdf:resource="#Alcoholic"/>
+  <rdf:type rdf:resource="#Infusion"/>
+  <rdf:type rdf:resource="#Juice"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lager">
+  <rdf:type rdf:resource="#Alcoholic"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#coffee_powder">
+  <rdf:type rdf:resource="#Coffee"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coffee Powder</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#coffee_juice">
+  <rdf:type rdf:resource="#Coffee"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coffee juice</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#coffee_milk">
+  <rdf:type rdf:resource="#Coffee"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coffee milk</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tea">
+  <rdf:type rdf:resource="#Coffee"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#coffee_tea">
+  <rdf:type rdf:resource="#Coffee"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coffee Tea</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#coffee_drink">
+  <rdf:type rdf:resource="#Coffee"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coffee Drink</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tea_powder">
+  <rdf:type rdf:resource="#Tea"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tea Powder</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tea_cup">
+  <rdf:type rdf:resource="#Tea"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tea Cup</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tea_water">
+  <rdf:type rdf:resource="#Tea"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tea Water</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tea_beverage">
+  <rdf:type rdf:resource="#Tea"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tea Beverage</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tea_drink">
+  <rdf:type rdf:resource="#Tea"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tea Drink</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tequila">
+  <rdf:type rdf:resource="#Infusion"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#juice">
+  <rdf:type rdf:resource="#Infusion"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#energy_bar">
+  <rdf:type rdf:resource="#Energy"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">energy bar</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#energy_drinks">
+  <rdf:type rdf:resource="#Energy"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy Drinks</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#caffeine">
+  <rdf:type rdf:resource="#Energy"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#juicer">
+  <rdf:type rdf:resource="#Juice"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#candy">
+  <rdf:type rdf:resource="#Juice"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lime">
+  <rdf:type rdf:resource="#Juice"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#carbon_dioxide">
+  <rdf:type rdf:resource="#Water"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carbon Dioxide</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#water_supply">
+  <rdf:type rdf:resource="#Water"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water supply</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ice_cold">
+  <rdf:type rdf:resource="#Water"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ice cold</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#water_source">
+  <rdf:type rdf:resource="#Water"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water source</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#water_ice">
+  <rdf:type rdf:resource="#Water"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water ice</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#liquid_sugar">
+  <rdf:type rdf:resource="#Water"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid Sugar</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bottled_water">
+  <rdf:type rdf:resource="#Water"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bottled water</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#liquid_nitrogen">
+  <rdf:type rdf:resource="#Water"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid Nitrogen</fancyName>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liquid nitrogen</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#water_bottle">
+  <rdf:type rdf:resource="#Water"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water Bottle</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ice_water">
+  <rdf:type rdf:resource="#Drink"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ice Water</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#alcoholic_liquor">
+  <rdf:type rdf:resource="#Drink"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alcoholic Liquor</fancyName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#liquid_soap">
+  <rdf:type rdf:resource="#Liquid"/>
+  <fancyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liquid soap</fancyName>
+</owl:NamedIndividual>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="#African"/>
+    <rdf:Description rdf:about="#American"/>
+    <rdf:Description rdf:about="#Carribean"/>
+    <rdf:Description rdf:about="#Chinese"/>
+    <rdf:Description rdf:about="#Indian"/>
+    <rdf:Description rdf:about="#Italian"/>
+    <rdf:Description rdf:about="#Japanese"/>
+    <rdf:Description rdf:about="#Latin"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+
+</rdf:RDF>
