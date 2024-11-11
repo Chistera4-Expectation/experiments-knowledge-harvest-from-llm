@@ -1,0 +1,54 @@
+[
+    [
+        "A popular dish in chinese cuisine is <ENT0> .",
+        0.10056742529273818
+    ],
+    [
+        "Chinese cuisine has a variety of meals, including <ENT0> .",
+        0.09158602047633384
+    ],
+    [
+        "The technique known as <ENT0> is a commonly utilized part of chinese cuisine .",
+        0.08097864382453324
+    ],
+    [
+        "<ENT0> is a form of chinese cuisine .",
+        0.0775101360807528
+    ],
+    [
+        "<ENT0> is a type of chinese culinary dish .",
+        0.07748943508093005
+    ],
+    [
+        "<ENT0> is a type of recipe found in chinese cuisine .",
+        0.07387332676581729
+    ],
+    [
+        "<ENT0> is a traditional chinese dish that is widely enjoyed in culinary cuisine .",
+        0.07382641602676708
+    ],
+    [
+        "<ENT0> is a well-liked dish in chinese cuisine .",
+        0.07357646417314734
+    ],
+    [
+        "<ENT0> is widely enjoyed among chinese cuisine .",
+        0.0732989023402613
+    ],
+    [
+        "<ENT0> is a prime example of a traditional chinese culinary dish .",
+        0.07313894070641726
+    ],
+    [
+        "<ENT0> is a classic dish found in chinese cuisine recipes .",
+        0.07042218479247803
+    ],
+    [
+        "One example of a recipe in chinese cuisine is <ENT0> .",
+        0.06960093841593631
+    ],
+    [
+        "<ENT0> is instance of Chinese Cuisine Recipe .",
+        0.06413116602388712
+    ]
+]

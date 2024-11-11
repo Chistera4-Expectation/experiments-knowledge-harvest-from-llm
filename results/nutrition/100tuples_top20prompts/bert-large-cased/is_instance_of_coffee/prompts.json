@@ -1,0 +1,46 @@
+[
+    [
+        "<ENT0> is a form of coffee .",
+        0.12278502726163375
+    ],
+    [
+        "<ENT0> is a variation of the coffee beverage .",
+        0.12226761450078202
+    ],
+    [
+        "<ENT0> can be considered a type of coffee .",
+        0.11528393670608472
+    ],
+    [
+        "<ENT0> may be classified as a form of coffee .",
+        0.10427875890313953
+    ],
+    [
+        "<ENT0> is instance of Coffee .",
+        0.10324296467361936
+    ],
+    [
+        "<ENT0> is often categorized as a variety of coffee .",
+        0.10264531615041465
+    ],
+    [
+        "A <ENT0> is a type of coffee variety .",
+        0.07712955293754792
+    ],
+    [
+        "A <ENT0> is an example of a type of coffee .",
+        0.0683256658400163
+    ],
+    [
+        "One kind of coffee is a <ENT0> .",
+        0.0662639803407424
+    ],
+    [
+        "One could categorize <ENT0> as a form of coffee .",
+        0.0612410378462338
+    ],
+    [
+        "A <ENT0> represents a specific kind of coffee .",
+        0.05653614483978546
+    ]
+]

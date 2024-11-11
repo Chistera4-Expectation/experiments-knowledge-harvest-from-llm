@@ -1,0 +1,46 @@
+[
+    [
+        "This piece of information implies that a <ENT0> is a type of beef .",
+        0.11840954488872187
+    ],
+    [
+        "The type of <ENT0> is considered to be beef .",
+        0.11449272100667672
+    ],
+    [
+        "<ENT0> is categorized as a variety of bovine meat .",
+        0.09323584776156117
+    ],
+    [
+        "<ENT0> is instance of Beef .",
+        0.09265870115307166
+    ],
+    [
+        "Beef is a type of <ENT0> .",
+        0.09027788870966481
+    ],
+    [
+        "Beef of the ground variety is classified as <ENT0> .",
+        0.0898721624257205
+    ],
+    [
+        "<ENT0> are a version of beef .",
+        0.08865842595052453
+    ],
+    [
+        "Beef is the category that includes <ENT0> .",
+        0.08287785791076038
+    ],
+    [
+        "<ENT0> is a type of beef .",
+        0.07818172126739896
+    ],
+    [
+        "<ENT0> belongs to the category of beef .",
+        0.0774377606274327
+    ],
+    [
+        "<ENT0> falls under the designation of beef .",
+        0.07389736829846674
+    ]
+]

@@ -1,0 +1,46 @@
+[
+    [
+        "<ENT0> is a type of food seasoning .",
+        0.12066111923315918
+    ],
+    [
+        "<ENT0> is a specific type of seasoning that is commonly utilized in the culinary world .",
+        0.1122139261190265
+    ],
+    [
+        "<ENT0> is an example of a type of seasoning used in food .",
+        0.10205626409001863
+    ],
+    [
+        "<ENT0> can be seen as a seasoning that is commonly utilized in cooking .",
+        0.09684003982481405
+    ],
+    [
+        "<ENT0> is instance of Food Seasoning .",
+        0.09602123141046284
+    ],
+    [
+        "<ENT0> is a variety of spice used to flavor food .",
+        0.09453650315025693
+    ],
+    [
+        "<ENT0>, a food condiment, falls into its own category .",
+        0.08099865618953514
+    ],
+    [
+        "One type of seasoning commonly employed in food is known as <ENT0> .",
+        0.07889381770871803
+    ],
+    [
+        "One illustration of a kind of seasoning employed in cuisine is <ENT0> .",
+        0.07864598040585813
+    ],
+    [
+        "<ENT0> refers to a particular kind of culinary spice .",
+        0.07493496093842741
+    ],
+    [
+        "A popular spice used to flavor food is known as <ENT0> .",
+        0.06419750092972319
+    ]
+]

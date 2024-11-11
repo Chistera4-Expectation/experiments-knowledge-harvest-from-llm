@@ -1,0 +1,62 @@
+[
+    [
+        "A <ENT0> is a type of edible dish .",
+        0.08594027858300314
+    ],
+    [
+        "<ENT0> is a type of food .",
+        0.08105781478481543
+    ],
+    [
+        "<ENT0> is considered to be a form of food .",
+        0.07730790291799236
+    ],
+    [
+        "The dish known as <ENT0> can be considered an example of a type of food that is fit for consumption .",
+        0.07376067627573364
+    ],
+    [
+        "<ENT0> can be considered a type of food .",
+        0.07336338727797061
+    ],
+    [
+        "<ENT0> is instance of Edible .",
+        0.06842065845479392
+    ],
+    [
+        "The <ENT0> can be classified as an example of something that is edible .",
+        0.06838942972278456
+    ],
+    [
+        "Edible is a characteristic that is commonly associated with the <ENT0> .",
+        0.06311737321188096
+    ],
+    [
+        "<ENT0> is a type of food that is considered edible .",
+        0.06257325859340612
+    ],
+    [
+        "There are multiple examples of edible items, one of which is <ENT0> .",
+        0.06060807614135546
+    ],
+    [
+        "A type of edible item is represented by <ENT0> .",
+        0.059748930399784766
+    ],
+    [
+        "<ENT0> exemplifies edibility .",
+        0.056773962663605966
+    ],
+    [
+        "Edible can be exemplified by <ENT0> .",
+        0.056418759538556566
+    ],
+    [
+        "<ENT0> is an example of a type of food that can be consumed .",
+        0.05629632150748018
+    ],
+    [
+        "One can show that <ENT0> is fit for consumption .",
+        0.056223169926836444
+    ]
+]

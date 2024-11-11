@@ -1,0 +1,58 @@
+[
+    [
+        "A traditional dish called <ENT0> is a type of rice .",
+        0.08538061278483554
+    ],
+    [
+        "<ENT0> is a type of rice .",
+        0.08471320011665531
+    ],
+    [
+        "<ENT0> can be considered as a type of rice .",
+        0.07628987043979406
+    ],
+    [
+        "<ENT0> is instance of Rice .",
+        0.07596119349696721
+    ],
+    [
+        "<ENT0> is a term used to describe different types of rice .",
+        0.07502787539164232
+    ],
+    [
+        "The term \"<ENT0>\" pertains to a type of rice that comes in different varieties .",
+        0.07458106339485947
+    ],
+    [
+        "<ENT0> is a type of grain that falls into the category of rice .",
+        0.0727519057456566
+    ],
+    [
+        "One could consider <ENT0> as a type of rice .",
+        0.0719489238884925
+    ],
+    [
+        "<ENT0> belongs to the category of rice .",
+        0.07089889860884865
+    ],
+    [
+        "<ENT0> encompasses a diverse range of rice types .",
+        0.06576944943543966
+    ],
+    [
+        "<ENT0> falls under the classification of rice .",
+        0.06488047778615808
+    ],
+    [
+        "Varieties of rice are included in the term <ENT0> .",
+        0.06409871088419204
+    ],
+    [
+        "One example of rice is the dish of <ENT0> .",
+        0.060902257891400385
+    ],
+    [
+        "<ENT0> refers to a variety of rice .",
+        0.05679556013505826
+    ]
+]

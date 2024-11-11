@@ -1,0 +1,58 @@
+[
+    [
+        "One of the staple dishes in latin america is <ENT0> .",
+        0.09450411018618998
+    ],
+    [
+        "<ENT0> is a traditional dish from latin cuisine .",
+        0.08558764408113562
+    ],
+    [
+        "<ENT0> is a common dish in latin america .",
+        0.08190177093820986
+    ],
+    [
+        "<ENT0> is a typical latin american dish .",
+        0.08147580617761874
+    ],
+    [
+        "<ENT0> is a classic dish found in latin american cuisine .",
+        0.07561692671156106
+    ],
+    [
+        "<ENT0> is a dish from the latin american culinary tradition .",
+        0.07484968419850266
+    ],
+    [
+        "<ENT0> is a latin cuisine recipe .",
+        0.07396019451794811
+    ],
+    [
+        "The <ENT0> is an excellent example of a latin american recipe .",
+        0.0733639597556853
+    ],
+    [
+        "<ENT0> are a prime example of a latin cuisine recipe .",
+        0.06652172654479037
+    ],
+    [
+        "<ENT0> is a notable example of a latin american culinary dish .",
+        0.06286987292524429
+    ],
+    [
+        "<ENT0> exemplify a dish originating from latin cooking .",
+        0.060765160582207
+    ],
+    [
+        "<ENT0> is a recipe that belongs to the category of latin cuisine .",
+        0.05929120632613673
+    ],
+    [
+        "<ENT0> is instance of Latin Cuisine Recipe .",
+        0.05597464039991662
+    ],
+    [
+        "A traditional latin american meal often includes <ENT0> .",
+        0.05331729665485361
+    ]
+]

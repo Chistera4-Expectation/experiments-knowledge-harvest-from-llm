@@ -1,0 +1,46 @@
+[
+    [
+        "<ENT0> is a variety of dairy product .",
+        0.12283927137208646
+    ],
+    [
+        "<ENT0> is a type of cheese .",
+        0.11866989328037846
+    ],
+    [
+        "<ENT0> is considered to be an example of cheese .",
+        0.11424648479022578
+    ],
+    [
+        "<ENT0> is instance of Cheese .",
+        0.0970343372250354
+    ],
+    [
+        "<ENT0> refers to a specific type of cheese .",
+        0.09665404004608362
+    ],
+    [
+        "<ENT0> falls under the classification of cheese .",
+        0.09470229224346928
+    ],
+    [
+        "<ENT0> belongs to the category of cheese .",
+        0.09122032912205767
+    ],
+    [
+        "The cheese known as <ENT0> can be considered an example or case of cheese .",
+        0.08895120849264185
+    ],
+    [
+        "<ENT0> cheese could be seen as a specific instance or illustration of cheese .",
+        0.06668966740430825
+    ],
+    [
+        "<ENT0> cheese is an example or type of cheese that can be referenced .",
+        0.054601887756078445
+    ],
+    [
+        "<ENT0> cheese can be regarded as a type or instance of cheese .",
+        0.054390588267634876
+    ]
+]

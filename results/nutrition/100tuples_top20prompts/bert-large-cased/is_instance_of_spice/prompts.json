@@ -1,0 +1,42 @@
+[
+    [
+        "<ENT0> belongs to the category of spices .",
+        0.11988916394093532
+    ],
+    [
+        "<ENT0> is a type of spice .",
+        0.11399821036942674
+    ],
+    [
+        "<ENT0> is a specific variety of spice .",
+        0.10982167607166694
+    ],
+    [
+        "<ENT0> is categorized as a variety of seasoning .",
+        0.10976684013724859
+    ],
+    [
+        "<ENT0> can be classified as a seasoning .",
+        0.10592550273491595
+    ],
+    [
+        "<ENT0> is a kind of seasoning .",
+        0.09713140932179715
+    ],
+    [
+        "<ENT0> are considered to be a type of spice .",
+        0.09271502494469133
+    ],
+    [
+        "<ENT0> can be categorized as a spice .",
+        0.08794631705542373
+    ],
+    [
+        "A kind of seasoning is known as <ENT0> .",
+        0.0826675301215448
+    ],
+    [
+        "<ENT0> is instance of Spice .",
+        0.08013832530234936
+    ]
+]

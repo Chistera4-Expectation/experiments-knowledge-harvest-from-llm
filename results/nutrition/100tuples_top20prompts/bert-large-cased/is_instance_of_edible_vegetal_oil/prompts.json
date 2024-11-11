@@ -1,0 +1,38 @@
+[
+    [
+        "<ENT0> is a type of edible vegetable oil .",
+        0.12712908016856925
+    ],
+    [
+        "<ENT0> is a form of ingestible plant-derived oil .",
+        0.12585535103490822
+    ],
+    [
+        "<ENT0> is a kind of vegetable oil meant for consumption .",
+        0.12467373130356092
+    ],
+    [
+        "<ENT0> is instance of Edible Vegetal Oil .",
+        0.11846651676407297
+    ],
+    [
+        "<ENT0> is a type of edible oil derived from plants .",
+        0.11352151595347086
+    ],
+    [
+        "<ENT0> is a variety of consumable cooking oil .",
+        0.10849503364034663
+    ],
+    [
+        "<ENT0> is an example of a consumable plant-based oil .",
+        0.10414092589867023
+    ],
+    [
+        "<ENT0> is an example of a vegetable oil that can be consumed .",
+        0.09590731889818009
+    ],
+    [
+        "Edible vegetable oil known as <ENT0> .",
+        0.08181052633822078
+    ]
+]

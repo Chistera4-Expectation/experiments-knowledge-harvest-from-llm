@@ -1,0 +1,50 @@
+[
+    [
+        "<ENT0> is a variety of condiment used for flavoring food .",
+        0.10443216710623536
+    ],
+    [
+        "<ENT0> dressing is a type of food sauce often used to accompany salads and other dishes .",
+        0.0990091294501635
+    ],
+    [
+        "<ENT0> dressing is a specific type of condiment commonly used as a dressing for food .",
+        0.09815893671157778
+    ],
+    [
+        "<ENT0> dressing is one example of a type of food dressing .",
+        0.09349017931379063
+    ],
+    [
+        "<ENT0> is a form of edible topping .",
+        0.09293402831433209
+    ],
+    [
+        "<ENT0> is a type of food dressing .",
+        0.09103019074768469
+    ],
+    [
+        "<ENT0> dressing is a kind of condiment used on food .",
+        0.0903793842123787
+    ],
+    [
+        "<ENT0> is categorized as a type of condiment .",
+        0.08306907189101478
+    ],
+    [
+        "<ENT0> falls under the category of condiments .",
+        0.06756629855819762
+    ],
+    [
+        "<ENT0> serves as a condiment for food .",
+        0.06296389848552737
+    ],
+    [
+        "<ENT0> is instance of Food Dressing .",
+        0.05860447029854225
+    ],
+    [
+        "One type of food dressing is exemplified by <ENT0> .",
+        0.058362244910555354
+    ]
+]

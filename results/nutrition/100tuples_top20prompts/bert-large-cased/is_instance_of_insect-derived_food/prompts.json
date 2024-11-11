@@ -1,0 +1,46 @@
+[
+    [
+        "<ENT0> is an example of food derived from insects .",
+        0.10988426891918346
+    ],
+    [
+        "<ENT0> is classified as a form of nourishment that comes from insects .",
+        0.106821463694466
+    ],
+    [
+        "<ENT0> are a type of food that comes from insects .",
+        0.10205436933089543
+    ],
+    [
+        "<ENT0> are a type of insect-derived food .",
+        0.10180795311466506
+    ],
+    [
+        "<ENT0> is instance of Insect-Derived Food .",
+        0.09560718174257456
+    ],
+    [
+        "<ENT0> belong to the category of food that is derived from insects .",
+        0.09404086078610539
+    ],
+    [
+        "Edible citrus flower buds, commonly known as <ENT0>, are derived from insect pollination .",
+        0.08589636323154969
+    ],
+    [
+        "An instance of an insect-derived food is <ENT0> .",
+        0.0834209989859079
+    ],
+    [
+        "A common dish made from insects is <ENT0> .",
+        0.08322478596671515
+    ],
+    [
+        "One type of food that comes from bugs is <ENT0> .",
+        0.07394235195100127
+    ],
+    [
+        "Insects produce a type of food known as <ENT0> .",
+        0.06329940227693623
+    ]
+]

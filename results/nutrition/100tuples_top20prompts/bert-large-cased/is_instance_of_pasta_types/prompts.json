@@ -1,0 +1,46 @@
+[
+    [
+        "<ENT0> is a variety of noodle .",
+        0.1366560979062012
+    ],
+    [
+        "<ENT0> is one of the many types of pasta available .",
+        0.11741294384196353
+    ],
+    [
+        "<ENT0> is a type of pasta .",
+        0.11715274964881466
+    ],
+    [
+        "<ENT0> is considered to be one of the various varieties of pasta .",
+        0.11010673270847224
+    ],
+    [
+        "<ENT0> is classified as one of the types of pasta .",
+        0.1017787453871141
+    ],
+    [
+        "<ENT0> belongs to the category of pasta types .",
+        0.07401396060799491
+    ],
+    [
+        "<ENT0> falls under the group of pasta varieties .",
+        0.07158115395779323
+    ],
+    [
+        "<ENT0> is instance of Pasta Types .",
+        0.0704814904535949
+    ],
+    [
+        "<ENT0> are considered to be a type of pasta .",
+        0.06970037456371446
+    ],
+    [
+        "Past types include <ENT0> pasta, which is a type of cylindrical pasta .",
+        0.06610150619676361
+    ],
+    [
+        "<ENT0> are a category within the classification of pasta types .",
+        0.06501424472757322
+    ]
+]

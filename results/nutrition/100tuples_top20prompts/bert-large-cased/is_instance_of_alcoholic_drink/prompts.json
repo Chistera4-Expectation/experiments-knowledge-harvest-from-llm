@@ -1,0 +1,46 @@
+[
+    [
+        "Alcoholic beverages include <ENT0> .",
+        0.14733620732075153
+    ],
+    [
+        "One example of an alcoholic beverage is <ENT0> .",
+        0.11999710314742393
+    ],
+    [
+        "A form of alcoholic drink, <ENT0> is often consumed .",
+        0.11585778767304593
+    ],
+    [
+        "One type of beverage that falls into the category of alcoholic drinks is <ENT0> .",
+        0.11404616601466179
+    ],
+    [
+        "<ENT0> is a type of alcoholic beverage .",
+        0.09318070208972418
+    ],
+    [
+        "<ENT0> is a form of alcoholic drink .",
+        0.08334837906921919
+    ],
+    [
+        "<ENT0> can be classified as an alcoholic drink .",
+        0.07958454200366423
+    ],
+    [
+        "<ENT0> is a kind of intoxicating drink .",
+        0.07317389071769717
+    ],
+    [
+        "<ENT0> falls under the category of alcoholic drinks .",
+        0.06769106731507801
+    ],
+    [
+        "<ENT0> falls into the classification of beverages containing alcohol .",
+        0.054652305052352565
+    ],
+    [
+        "<ENT0> is instance of Alcoholic Drink .",
+        0.05113184959638154
+    ]
+]

@@ -1,0 +1,50 @@
+[
+    [
+        "One example of a nutritious plant-based option is <ENT0> .",
+        0.11280247021131246
+    ],
+    [
+        "Plant-based foods, like <ENT0>, serve as a prime example of food products that originate from plants .",
+        0.11225288000384037
+    ],
+    [
+        "A good illustration of a plant-based food is <ENT0> .",
+        0.10738620076631841
+    ],
+    [
+        "Vegetal-derived food is exemplified by <ENT0> .",
+        0.10263096796458429
+    ],
+    [
+        "<ENT0> is a type of plant-based food .",
+        0.09542091285786687
+    ],
+    [
+        "A <ENT0> is an example of food that is derived from vegetation .",
+        0.08059587620738903
+    ],
+    [
+        "<ENT0> is classified as a vegetable that is derived from plants .",
+        0.06989196582892936
+    ],
+    [
+        "<ENT0> serves as a prime example of a plant-based food .",
+        0.0698915636094737
+    ],
+    [
+        "<ENT0> are a type of food that is made from vegetables .",
+        0.06895897461317606
+    ],
+    [
+        "<ENT0> is instance of Vegetal-derived Food .",
+        0.06771615147461134
+    ],
+    [
+        "<ENT0>s are a type of edible item that comes from plant sources .",
+        0.05869842701719668
+    ],
+    [
+        "<ENT0> are an example of a food derived from plants .",
+        0.05375360944530158
+    ]
+]

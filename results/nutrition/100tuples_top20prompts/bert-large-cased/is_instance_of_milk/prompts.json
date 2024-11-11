@@ -1,0 +1,58 @@
+[
+    [
+        "<ENT0> falls under the category of milk .",
+        0.08787415776969504
+    ],
+    [
+        "<ENT0> can be classified as a type of milk .",
+        0.08737834415374801
+    ],
+    [
+        "<ENT0> is classified as a type of milk in the general category .",
+        0.08400172138479405
+    ],
+    [
+        "<ENT0> belongs to the broader category of milk .",
+        0.08253451639047123
+    ],
+    [
+        "<ENT0> is instance of Milk .",
+        0.081177870268544
+    ],
+    [
+        "<ENT0> is a type of milk .",
+        0.07244007494819767
+    ],
+    [
+        "Milk can be represented by <ENT0> .",
+        0.07062851710788379
+    ],
+    [
+        "<ENT0> is a variation of dairy product made from milk .",
+        0.06610175675721677
+    ],
+    [
+        "Milk can be classified as the main ingredient in <ENT0> .",
+        0.06470258096848733
+    ],
+    [
+        "One could categorize <ENT0> as a variety of milk .",
+        0.06235017864914637
+    ],
+    [
+        "Milk is the general category that <ENT0> falls under .",
+        0.061907934783812
+    ],
+    [
+        "Milk is the category to which <ENT0> belongs .",
+        0.061286858721433225
+    ],
+    [
+        "Milk alternatives, such as <ENT0>, are considered to be in the category of milk products .",
+        0.06111490704448273
+    ],
+    [
+        "Milk can be categorized as a form of <ENT0> .",
+        0.05650058105208772
+    ]
+]

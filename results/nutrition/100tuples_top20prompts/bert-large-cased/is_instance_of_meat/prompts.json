@@ -1,0 +1,42 @@
+[
+    [
+        "A form of meat known as <ENT0> .",
+        0.14571476210743853
+    ],
+    [
+        "An example of meat is <ENT0> .",
+        0.11878585338546564
+    ],
+    [
+        "<ENT0> is a kind of cured meat .",
+        0.11598143916648335
+    ],
+    [
+        "<ENT0> can be classified as a type of meat .",
+        0.09992783863405426
+    ],
+    [
+        "<ENT0> is a type of meat .",
+        0.09529794590847913
+    ],
+    [
+        "<ENT0> is a type of meat that can be used as an example .",
+        0.09196992526028912
+    ],
+    [
+        "Meat includes <ENT0> as one of its types .",
+        0.08776515850177966
+    ],
+    [
+        "<ENT0> is instance of Meat .",
+        0.08514575868476068
+    ],
+    [
+        "A <ENT0> is a form of edible animal flesh .",
+        0.08084861145577549
+    ],
+    [
+        "<ENT0> falls into the category of meat .",
+        0.07856270689547423
+    ]
+]

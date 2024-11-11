@@ -1,0 +1,50 @@
+[
+    [
+        "<ENT0> is a type of butter .",
+        0.11237217301359124
+    ],
+    [
+        "The term <ENT0> can be categorized as a type of butter .",
+        0.09870513978349628
+    ],
+    [
+        "Butter that has been seasoned with salt is known as <ENT0> .",
+        0.09398032777970397
+    ],
+    [
+        "The existence of <ENT0> is an example of butter .",
+        0.09312281460633542
+    ],
+    [
+        "One example of butter is <ENT0> .",
+        0.09247767946354793
+    ],
+    [
+        "<ENT0> is instance of Butter .",
+        0.09015850542635702
+    ],
+    [
+        "<ENT0> refers to a specific type of butter .",
+        0.08154568212480026
+    ],
+    [
+        "<ENT0> can be considered a type or example of butter .",
+        0.07818475938639996
+    ],
+    [
+        "Butter is an example of <ENT0> .",
+        0.07730271161125264
+    ],
+    [
+        "Butter that is derived from cows that have been exclusively fed grass is known as <ENT0> .",
+        0.06326217621447318
+    ],
+    [
+        "<ENT0> could be exemplified by butter .",
+        0.06193173827771899
+    ],
+    [
+        "<ENT0> is represented by butter .",
+        0.05695629231232324
+    ]
+]

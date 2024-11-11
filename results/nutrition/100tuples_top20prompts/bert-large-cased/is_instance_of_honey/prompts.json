@@ -1,0 +1,42 @@
+[
+    [
+        "<ENT0> is a common type of plant that is often compared to honey .",
+        0.14913089105921928
+    ],
+    [
+        "<ENT0> is a type of plant that produces honey .",
+        0.11731302560137713
+    ],
+    [
+        "<ENT0> is instance of Honey .",
+        0.10114488330694868
+    ],
+    [
+        "<ENT0> is a kind of honey .",
+        0.09666612997625187
+    ],
+    [
+        "It can be said that <ENT0> is a type of honey .",
+        0.09644691815918569
+    ],
+    [
+        "<ENT0> falls under the category of honey .",
+        0.0963097573219722
+    ],
+    [
+        "The <ENT0> can be considered as a type or example of honey .",
+        0.09334882324637821
+    ],
+    [
+        "<ENT0> is classified as a type of honey .",
+        0.08481726232007042
+    ],
+    [
+        "The <ENT0> is an example of honey .",
+        0.0832721482734605
+    ],
+    [
+        "<ENT0> is a type of sweet, sticky substance .",
+        0.08155016073513606
+    ]
+]

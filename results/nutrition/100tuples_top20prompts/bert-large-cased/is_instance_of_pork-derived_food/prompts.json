@@ -1,0 +1,42 @@
+[
+    [
+        "A <ENT0> can be categorized as a type of food that is derived from pork .",
+        0.1255238807207573
+    ],
+    [
+        "A <ENT0> belongs to the category of pork-derived foods .",
+        0.11786871095140639
+    ],
+    [
+        "Pork is a type of food that falls under the category of <ENT0> .",
+        0.10933577713802486
+    ],
+    [
+        "One illustration of <ENT0> is food that is made from pork .",
+        0.1078064637010603
+    ],
+    [
+        "A <ENT0> is a food product derived from pork .",
+        0.10633145282145018
+    ],
+    [
+        "Pork-based cuisine is a type of <ENT0>-focused dish .",
+        0.10521851053728475
+    ],
+    [
+        "One illustration of pork products is a <ENT0> .",
+        0.09665926544082927
+    ],
+    [
+        "Pork is a type of edible substance that is derived from <ENT0> .",
+        0.09004596714914485
+    ],
+    [
+        "Pork-derived food is an example of <ENT0> .",
+        0.07622588516750443
+    ],
+    [
+        "<ENT0> is a culinary dish made from pork .",
+        0.06498408637253765
+    ]
+]
