@@ -1,7 +1,7 @@
 {
     "is_ingredient_of": {
         "init_prompts": [
-            "<ENT0> is ingredient <ENT1> ."
+            "<ENT0> is ingredient of <ENT1> ."
         ],
         "seed_ent_tuples": [
             [
