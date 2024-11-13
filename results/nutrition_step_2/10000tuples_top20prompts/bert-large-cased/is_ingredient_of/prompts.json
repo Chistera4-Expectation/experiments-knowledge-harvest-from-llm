@@ -1,0 +1,50 @@
+[
+    [
+        "<ENT1> is a type of food that typically contains <ENT0> as one of its ingredients .",
+        0.11206662804043623
+    ],
+    [
+        "<ENT1> is a type of ingredient that often includes <ENT0> .",
+        0.10658673634862506
+    ],
+    [
+        "<ENT1> is made with <ENT0> as one of its ingredients .",
+        0.10638386922700578
+    ],
+    [
+        "The key ingredient for making <ENT1> is the <ENT0> .",
+        0.09763034095280268
+    ],
+    [
+        "The ingredients of <ENT1> may include <ENT0> .",
+        0.08698561818623805
+    ],
+    [
+        "<ENT1>s are made with the added ingredient of <ENT0> .",
+        0.08028074865064976
+    ],
+    [
+        "<ENT1> contains <ENT0> as an ingredient .",
+        0.07668720848420874
+    ],
+    [
+        "<ENT1> is a key component in <ENT0> dishes .",
+        0.07570135415676885
+    ],
+    [
+        "<ENT1>s are made with <ENT0> .",
+        0.07189783708369533
+    ],
+    [
+        "The base for a <ENT1> is made of <ENT0> .",
+        0.06604772606191255
+    ],
+    [
+        "<ENT0> is an ingredient commonly found in <ENT1> .",
+        0.06146078456790104
+    ],
+    [
+        "<ENT1> comprises of a base made from <ENT0> .",
+        0.05827114823975587
+    ]
+]
