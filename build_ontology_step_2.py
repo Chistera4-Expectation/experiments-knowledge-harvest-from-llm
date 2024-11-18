@@ -12,8 +12,11 @@ THRESHOLD = 0.00001
 def main(rel_set='nutrition_step_2',
          model_name='roberta-large',
          max_n_ent_tuples=10000,
-         max_n_prompts=20):
+         max_n_prompts=20,
+         use_init_prompts=False):
     path_results = PATH_RESULTS / rel_set / f"{max_n_ent_tuples}tuples_top{max_n_prompts}prompts" / model_name
+    if use_init_prompts:
+        path_results = PATH_RESULTS / rel_set / f"{max_n_ent_tuples}tuples_initprompts" / model_name
     path_populated_ontology = PATH_ONTOLOGY / f"{model_name}_populated.owl"
     path_final_ontology = PATH_ONTOLOGY / f"{model_name}_populated_final.owl"
     processed_classes = set()
