@@ -1,0 +1,46 @@
+[
+    [
+        "<ENT0> are a variety or variant of bread .",
+        0.12119838448858394
+    ],
+    [
+        "The <ENT0> can be considered a type of bread .",
+        0.10542823346849038
+    ],
+    [
+        "<ENT0> are classified as bread products .",
+        0.10281369757543223
+    ],
+    [
+        "<ENT0> is a type of bread .",
+        0.09619823253295591
+    ],
+    [
+        "The <ENT0> belongs to the category of bread products .",
+        0.09074940279383677
+    ],
+    [
+        "<ENT0> fall under the classification of baked goods .",
+        0.09035812565720404
+    ],
+    [
+        "Bread includes <ENT0> in its category .",
+        0.08727814994396721
+    ],
+    [
+        "<ENT0> fall under the category of bread .",
+        0.08410727558745913
+    ],
+    [
+        "Bread is the classification of <ENT0> .",
+        0.07682425698613943
+    ],
+    [
+        "<ENT0> is instance of Bread .",
+        0.0726884204022521
+    ],
+    [
+        "<ENT0> is categorized as bread .",
+        0.0723558205636788
+    ]
+]

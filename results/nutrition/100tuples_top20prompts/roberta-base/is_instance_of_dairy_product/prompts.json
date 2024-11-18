@@ -1,0 +1,50 @@
+[
+    [
+        "A dairy product that can serve as an alternative to actual dairy milk is <ENT0> .",
+        0.12800422915946366
+    ],
+    [
+        "One of the products included in the dairy category is <ENT0> .",
+        0.12134206812291531
+    ],
+    [
+        "The dairy product category includes <ENT0> .",
+        0.09782414242735792
+    ],
+    [
+        "As one of its members, <ENT0> makes up part of the group of dairy products .",
+        0.09371400472254064
+    ],
+    [
+        "<ENT0> is a type of dairy product .",
+        0.08832450755244803
+    ],
+    [
+        "<ENT0> can be classified as one of the various dairy products .",
+        0.08730202478442191
+    ],
+    [
+        "Dairy products encompass <ENT0> as one of its members .",
+        0.0823998140895847
+    ],
+    [
+        "<ENT0> falls under the classification of dairy products .",
+        0.06856629809759733
+    ],
+    [
+        "<ENT0> belongs to the category of dairy products .",
+        0.061742428835675434
+    ],
+    [
+        "<ENT0> falls into the group of dairy items .",
+        0.06049743993951918
+    ],
+    [
+        "<ENT0> falls under the dairy product category .",
+        0.057254517179670214
+    ],
+    [
+        "<ENT0> is instance of Dairy Product .",
+        0.053028525088805616
+    ]
+]

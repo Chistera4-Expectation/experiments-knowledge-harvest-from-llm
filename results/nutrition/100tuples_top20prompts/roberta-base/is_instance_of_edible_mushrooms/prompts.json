@@ -1,0 +1,50 @@
+[
+    [
+        "Edible fungi that are consumed are called <ENT0> .",
+        0.1302108913281567
+    ],
+    [
+        "<ENT0> are considered to be a type of edible mushroom .",
+        0.10143576415104527
+    ],
+    [
+        "<ENT0> mushrooms belong to the category of edible mushrooms .",
+        0.10070369843302573
+    ],
+    [
+        "The <ENT0> is a type of mushroom that is safe for consumption .",
+        0.08478891937162485
+    ],
+    [
+        "The <ENT0> is a type of edible mushroom .",
+        0.08188305602486962
+    ],
+    [
+        "Edible mushrooms include <ENT0> .",
+        0.0809500633713065
+    ],
+    [
+        "<ENT0> are a type of edible fungi .",
+        0.08047218342711501
+    ],
+    [
+        "<ENT0> are a kind of consumable fungi .",
+        0.07620363374086199
+    ],
+    [
+        "The term <ENT0> refers to a variety of consumable fungus .",
+        0.07155133690516827
+    ],
+    [
+        "The <ENT0> mushroom is a variety of edible fungi .",
+        0.07054374419252211
+    ],
+    [
+        "<ENT0>s are a form of consumable mushrooms .",
+        0.06739903026424646
+    ],
+    [
+        "<ENT0> is instance of Edible Mushrooms .",
+        0.05385767879005767
+    ]
+]

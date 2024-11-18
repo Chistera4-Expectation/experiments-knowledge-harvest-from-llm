@@ -1,0 +1,58 @@
+[
+    [
+        "One type of dish is known as <ENT0> .",
+        0.09204203709899138
+    ],
+    [
+        "The recipe for <ENT0> is a perfect example of a classic indian dish .",
+        0.09153345939223641
+    ],
+    [
+        "One can classify <ENT0> as a type of recipe .",
+        0.08124404219591606
+    ],
+    [
+        "There is a category of recipe that includes <ENT0> .",
+        0.08031999726837083
+    ],
+    [
+        "The <ENT0> is a specific example of a recipe .",
+        0.07913026157346487
+    ],
+    [
+        "A <ENT0> is a variety of dish .",
+        0.07794630395098334
+    ],
+    [
+        "<ENT0> is a kind of dish that can be prepared following specific steps .",
+        0.07340280174975412
+    ],
+    [
+        "Tossed together, <ENT0> constitutes as a variety of dish .",
+        0.06427561309086495
+    ],
+    [
+        "<ENT0> is a type of recipe .",
+        0.06331934018292118
+    ],
+    [
+        "<ENT0> is a kind of culinary dish .",
+        0.06286862806470693
+    ],
+    [
+        "<ENT0> falls under the category of recipe .",
+        0.06279983626562774
+    ],
+    [
+        "<ENT0> can be classified as a recipe .",
+        0.0610060056194688
+    ],
+    [
+        "<ENT0> is instance of Recipe .",
+        0.056478308789764654
+    ],
+    [
+        "A dish comprised of <ENT0> would fit into the classification of a recipe .",
+        0.053633364756928786
+    ]
+]

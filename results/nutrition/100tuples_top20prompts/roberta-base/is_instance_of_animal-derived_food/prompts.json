@@ -1,0 +1,46 @@
+[
+    [
+        "<ENT0> is a type of food that comes from animals .",
+        0.11904546843138025
+    ],
+    [
+        "The term \"<ENT0>\" refers to a type of food that is derived from animals .",
+        0.11801188920310145
+    ],
+    [
+        "<ENT0> are a food made from creatures as their main ingredient .",
+        0.09764863860709266
+    ],
+    [
+        "<ENT0> is an example of food derived from an animal .",
+        0.09689121535425864
+    ],
+    [
+        "A popular delicacy, <ENT0> is derived from animals .",
+        0.09216716041087653
+    ],
+    [
+        "<ENT0> are categorized as a food derived from animals .",
+        0.09072211673264065
+    ],
+    [
+        "<ENT0> are classified as an animal-based food .",
+        0.08973008584860086
+    ],
+    [
+        "<ENT0> falls under the category of animal-derived food .",
+        0.08478791253073639
+    ],
+    [
+        "<ENT0> is instance of Animal-derived Food .",
+        0.07781970183506409
+    ],
+    [
+        "A type of food derived from animals is <ENT0> .",
+        0.07420915584191069
+    ],
+    [
+        "<ENT0> exemplify a dish made from an animal source .",
+        0.05896665520433767
+    ]
+]
