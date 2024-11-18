@@ -1,0 +1,46 @@
+[
+    [
+        "Examples of seafood are crab, lobster, salmon, and <ENT0> .",
+        0.12903930758784124
+    ],
+    [
+        "A type of seafood is known as <ENT0> .",
+        0.12572946915159341
+    ],
+    [
+        "Shellfish and other ocean delicacies, such as <ENT0>, are considered seafood .",
+        0.12172842404240315
+    ],
+    [
+        "A <ENT0> belongs to the category of seafood .",
+        0.11628559309059029
+    ],
+    [
+        "A <ENT0> is categorized as a form of seafood .",
+        0.11100335487954058
+    ],
+    [
+        "<ENT0> is a type of seafood .",
+        0.08989949586676999
+    ],
+    [
+        "<ENT0> refers to a variety of edible shellfish .",
+        0.07259744414247236
+    ],
+    [
+        "<ENT0> is a part of the seafood category .",
+        0.06230195456324283
+    ],
+    [
+        "Seafood includes <ENT0> .",
+        0.0581772574900573
+    ],
+    [
+        "<ENT0> is instance of Seafood .",
+        0.057642015367596285
+    ],
+    [
+        "<ENT0> are a specific example of seafood .",
+        0.055595683817892615
+    ]
+]

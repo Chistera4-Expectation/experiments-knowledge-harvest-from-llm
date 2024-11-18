@@ -1,0 +1,54 @@
+[
+    [
+        "Some may classify <ENT0> as a drinkable liquid that is suitable for consumption .",
+        0.09952866215348215
+    ],
+    [
+        "One could categorize <ENT0> as a liquid beverage that is suitable for consumption .",
+        0.0939388006729147
+    ],
+    [
+        "<ENT0> can be thought of as a drinkable substance that is not harmful to consume .",
+        0.08785803779716986
+    ],
+    [
+        "The refreshment known as <ENT0> falls under the category of liquids that can be consumed .",
+        0.08712537414578082
+    ],
+    [
+        "<ENT0> is commonly recognized as a type of beverage that can be consumed in liquid form .",
+        0.07981257087229315
+    ],
+    [
+        "<ENT0> is considered to be a form of drinkable liquid .",
+        0.07557529390369361
+    ],
+    [
+        "<ENT0> is a form of consumable beverage .",
+        0.07516618939243407
+    ],
+    [
+        "<ENT0> has been classified as a type of fluid that can be drunk .",
+        0.07441419058600014
+    ],
+    [
+        "<ENT0> is typically regarded as a type of consumable liquid .",
+        0.07196998902591165
+    ],
+    [
+        "<ENT0> is a type of drinkable liquid .",
+        0.07064371504297745
+    ],
+    [
+        "<ENT0> can be considered a type of liquid that is safe for consumption .",
+        0.0623883536861875
+    ],
+    [
+        "<ENT0> is a categorization of a drinkable substance that is deemed suitable for consumption .",
+        0.06125164529754882
+    ],
+    [
+        "<ENT0> is a type of liquid that can be consumed .",
+        0.060327177423606056
+    ]
+]

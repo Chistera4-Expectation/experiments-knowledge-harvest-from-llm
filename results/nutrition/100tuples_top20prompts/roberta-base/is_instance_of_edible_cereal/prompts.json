@@ -1,0 +1,46 @@
+[
+    [
+        "Edible cereal includes <ENT0> as one of its varieties .",
+        0.1099162376228964
+    ],
+    [
+        "<ENT0> can be classified as an edible cereal .",
+        0.09855924094439826
+    ],
+    [
+        "<ENT0> is a type of cereal that is suitable for consumption .",
+        0.09584099473210517
+    ],
+    [
+        "<ENT0> can be classified as a type of cereal that is edible .",
+        0.09422214095334257
+    ],
+    [
+        "<ENT0> could be considered a type of edible cereal .",
+        0.09322662982270806
+    ],
+    [
+        "<ENT0> is an example of a type of breakfast cereal that can be eaten .",
+        0.09249228427273011
+    ],
+    [
+        "<ENT0> belongs to the category of edible cereal .",
+        0.09035504436762849
+    ],
+    [
+        "<ENT0> is a type of edible grain .",
+        0.08909266360992436
+    ],
+    [
+        "<ENT0> is a kind of edible seed .",
+        0.08658241034568327
+    ],
+    [
+        "<ENT0> are a variety of consumable grain .",
+        0.07781736283699323
+    ],
+    [
+        "<ENT0> is instance of Edible Cereal .",
+        0.07189499049158989
+    ]
+]

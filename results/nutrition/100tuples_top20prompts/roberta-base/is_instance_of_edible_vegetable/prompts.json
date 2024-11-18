@@ -1,0 +1,50 @@
+[
+    [
+        "Edible vegetable refers to <ENT0> as one of its varieties .",
+        0.12175520401224806
+    ],
+    [
+        "The <ENT0> is classified as an edible vegetable .",
+        0.10760659458456753
+    ],
+    [
+        "A <ENT0> is a type of edible vegetable .",
+        0.10633905313851803
+    ],
+    [
+        "A <ENT0> is a kind of food crop that can be consumed as a vegetable .",
+        0.0969423981346511
+    ],
+    [
+        "<ENT0> is a type of vegetable that can be consumed .",
+        0.08634539668005108
+    ],
+    [
+        "Edible vegetable can include <ENT0> as one type .",
+        0.08109136696503251
+    ],
+    [
+        "<ENT0> is considered an example of an edible vegetable .",
+        0.07623730626720937
+    ],
+    [
+        "<ENT0> is a specific type of vegetable that is suitable for eating .",
+        0.07227346799028248
+    ],
+    [
+        "<ENT0> is a variety of plant-based, consumable liquid .",
+        0.06490852945035522
+    ],
+    [
+        "<ENT0> belongs to the category of edible vegetables .",
+        0.06434616802628321
+    ],
+    [
+        "A <ENT0> is a kind of consumable plant .",
+        0.06256092315918074
+    ],
+    [
+        "<ENT0> is an example of consumable plant-based food .",
+        0.05959359159162072
+    ]
+]

@@ -1,0 +1,46 @@
+[
+    [
+        "One type of beverage that can be used as an illustration is <ENT0> .",
+        0.1258154691694981
+    ],
+    [
+        "The beverage known as <ENT0> serves as a prime illustration of a type of drink .",
+        0.1192715537385863
+    ],
+    [
+        "One example of a drink is <ENT0> .",
+        0.11664833183704425
+    ],
+    [
+        "One way to categorize <ENT0> is as a beverage .",
+        0.11033028497028939
+    ],
+    [
+        "A type of beverage that falls under the classification of <ENT0> .",
+        0.0870556568016507
+    ],
+    [
+        "<ENT0> can be classified as a type of drink .",
+        0.07915117835054393
+    ],
+    [
+        "<ENT0> is a beverage that falls under its own distinct category .",
+        0.07568047870336862
+    ],
+    [
+        "<ENT0> is a beverage variety .",
+        0.07495757817012812
+    ],
+    [
+        "<ENT0> is a specific kind of drink .",
+        0.07235912901018754
+    ],
+    [
+        "<ENT0> is a type of beverage .",
+        0.07124029028069985
+    ],
+    [
+        "<ENT0> belongs to the category of beverages .",
+        0.06749004896800334
+    ]
+]

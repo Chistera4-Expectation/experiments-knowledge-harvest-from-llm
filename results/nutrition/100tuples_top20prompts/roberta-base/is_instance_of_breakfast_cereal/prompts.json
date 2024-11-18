@@ -1,0 +1,46 @@
+[
+    [
+        "One form of cereal is referred to as <ENT0> .",
+        0.1120553544837516
+    ],
+    [
+        "<ENT0> is a type of breakfast cereal .",
+        0.10433833751600073
+    ],
+    [
+        "<ENT0> can be described as breakfast cereal .",
+        0.09949224217389671
+    ],
+    [
+        "A type of breakfast cereal is known as <ENT0> .",
+        0.09771433174314871
+    ],
+    [
+        "<ENT0> falls under the classification of breakfast cereal .",
+        0.09729719166927969
+    ],
+    [
+        "<ENT0> is a kind of morning meal grain .",
+        0.0919718209705601
+    ],
+    [
+        "A variety of morning meal cereal is commonly referred to as <ENT0> .",
+        0.09046443108123782
+    ],
+    [
+        "<ENT0> belongs to the category of breakfast cereal .",
+        0.08910125252639647
+    ],
+    [
+        "<ENT0> refers to a variety of cereal commonly eaten as breakfast food .",
+        0.08214159202445084
+    ],
+    [
+        "A breakfast cereal variant goes by the name <ENT0> .",
+        0.06800529832527222
+    ],
+    [
+        "A common type of breakfast food is represented by <ENT0>, which is often used as an example of a breakfast cereal .",
+        0.06741814748600522
+    ]
+]

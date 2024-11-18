@@ -1,0 +1,42 @@
+[
+    [
+        "The edible fruit known as <ENT0> falls under the category of fruit .",
+        0.1272640740982078
+    ],
+    [
+        "The fruit known as <ENT0> is considered to be a type of edible fruit .",
+        0.12479812590343423
+    ],
+    [
+        "<ENT0> is classified as an edible fruit .",
+        0.11694374199052299
+    ],
+    [
+        "<ENT0> is considered to be one type of consumable fruit .",
+        0.1145171322601788
+    ],
+    [
+        "<ENT0> is categorized as a type of fruit that is safe for consumption .",
+        0.11384483103513396
+    ],
+    [
+        "<ENT0> is categorized as a consumable produce .",
+        0.10578586626392196
+    ],
+    [
+        "An example of an edible fruit is <ENT0> .",
+        0.08844500817410436
+    ],
+    [
+        "A <ENT0> is one of various types of fruits that can be consumed .",
+        0.08529516970722809
+    ],
+    [
+        "An <ENT0> is a type of edible fruit .",
+        0.0677822966135646
+    ],
+    [
+        "An edible fruit, <ENT0> falls under the category of being an instance of such .",
+        0.05532375395370311
+    ]
+]

@@ -1,0 +1,42 @@
+[
+    [
+        "A <ENT0> can be considered to be an example of an edible crustacean .",
+        0.14462223065963534
+    ],
+    [
+        "The creature known as a <ENT0> falls into the category of a crustacean that is safe for consumption .",
+        0.1320523331951
+    ],
+    [
+        "A common way to categorize <ENT0> is as a type of edible shellfish .",
+        0.1245716739843657
+    ],
+    [
+        "The <ENT0> belongs to the category of edible crustaceans .",
+        0.1137914011277498
+    ],
+    [
+        "A <ENT0> can be described as a type of consumable shell made from crustaceans .",
+        0.11043970733335454
+    ],
+    [
+        "Edible crustaceans, such as <ENT0>, are a common type of crust .",
+        0.08506582601824192
+    ],
+    [
+        "The edible crustaceans are exemplified by the <ENT0> .",
+        0.08353421216938563
+    ],
+    [
+        "<ENT0>s are a type of crustacean that is safe for consumption .",
+        0.07640436940640716
+    ],
+    [
+        "<ENT0>s are a type of edible crust made from crushed graham crackers .",
+        0.06990924958496601
+    ],
+    [
+        "The crust used in <ENT0>s is considered a type of edible crustacean .",
+        0.05960899652079405
+    ]
+]
