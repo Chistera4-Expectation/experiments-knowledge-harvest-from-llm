@@ -8,7 +8,7 @@ import os
 
 PATH_RESULTS = PATH_RESULTS
 PATH_BASE_ONTOLOGY = PATH_ONTOLOGY / "base_ontology.owl"
-THRESHOLD = 0.02
+THRESHOLD = 0.001
 
 
 def main(rel_set='nutrition',
@@ -20,7 +20,6 @@ def main(rel_set='nutrition',
     processed_classes = set()
     os.system("cp {} {}".format(str(PATH_BASE_ONTOLOGY), str(path_populated_ontology)))
     with KnowledgeGraph(path_populated_ontology) as kg:
-        Recipe = kg.onto.Recipe
         for cls in kg.visit_classes_depth_first():
             if human_name(cls) in processed_classes:
                 continue

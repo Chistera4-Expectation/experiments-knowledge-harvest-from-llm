@@ -46,11 +46,14 @@ def main(rel_set='nutrition_step_2',
             instances = list(get_filtered_instances(cls, path_final_ontology.name[:-4]))
             for recipe in instances:
                 if human_name(recipe) in recipes.keys() and len(recipes[human_name(recipe)]) > 0:
-                    processed_recipes.add(human_name(recipe))
-                    print("Processed: {}".format(human_name(recipe)))
+                    updated = False
                     # Add the ingredients to the recipe
                     for ingredient in recipes[human_name(recipe)]:
                         if kg.onto[ingredient] is not None:
+                            if not updated:
+                                processed_recipes.add(human_name(recipe))
+                                print("Processed: {}".format(human_name(recipe)))
+                                updated = True
                             print("Ingredient: {}".format(ingredient))
                             ingredient = kg.onto[ingredient]
                             kg.add_property(recipe, kg.onto.hasForIngredient, ingredient)
