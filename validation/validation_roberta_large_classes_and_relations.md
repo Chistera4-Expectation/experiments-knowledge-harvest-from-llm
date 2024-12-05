@@ -1,0 +1,1142 @@
+### Dressing (Leaf)
+- bacon -> Emis
+  - hasForIngredient pork -> Ewr  
+- bitter -> Emis
+- brie -> Emis
+- cabbage -> Emis
+- candy -> Emis
+- chai -> Emis
+  - hasForIngredient choc -> Ewr
+- chard -> Emis
+- cheddar -> Emis
+- cheese -> Emis
+  - hasForIngredient milk -> ok
+  - hasForIngredient protein -> Ewr
+  - hasForIngredient oil -> ok
+- cherry -> ok
+- chile -> ok, Edi (chile, chili, chilli)
+- chili -> Edi (chile, chili, chilli)
+  - hasForIngredient pepper -> ok
+- chilli -> Edi (chile, chili, chilli)
+  - hasForIngredient chilies -> ok 
+- chive -> ok
+- chocolate -> ok
+  - hasForIngredient oil -> ok
+  - hasForIngredient coffee -> ok
+- cider -> Emis
+- cilantro -> ok
+  - hasForIngredient cabbage -> ok
+- crumb -> ok
+- cumin -> ok
+  - hasForIngredient caffeine -> Ewr
+- curry -> ok
+  - hasForIngredient spice -> Ewr
+  - hasForIngredient spices -> Ewr
+  - hasForIngredient rice -> ok
+- feta -> Emis
+- french -> Eii
+- fruit -> Eci
+- italian -> Eii
+- oil -> ok
+- pizza -> Emis
+  - hasForIngredient meat -> ok
+  - hasForIngredient bacon -> ok
+  - hasForIngredient garlic -> ok
+  - hasForIngredient chicken -> Ewr
+  - hasForIngredient cheese -> ok
+- salami -> Emis
+- salted -> Eii
+- spaghetti -> Emis 
+- spice ->  Eci
+- spicy -> Eii
+
+### Sauce (Leaf)
+ - hot_tea -> Emis
+ - hot_water -> Emis
+ - ketchup -> ok
+ - red_rice -> Emis
+ - red_sauce -> ok
+ - red_tea -> Emis
+ - red_vinegar -> ok
+ - red_wine -> Emis
+ - soy_sauces -> ok
+ - soy_yogurt -> ok
+ - tomato_sauce -> ok
+ - tomato_soup -> Emis
+
+### Seasoning (Leaf)
+ - bacon -> Emis
+ - chile -> ok, Edi (chile, chili, chilli, chilies, chilli)
+ - chiles -> Edi (chile, chili, chilli, chilies, chilli)
+ - chili -> Edi (chile, chili, chilli, chilies, chilli)
+ - chilies -> Edi (chile, chili, chilli, chilies, chilli)
+ - chilli -> Edi (chile, chili, chilli, chilies, chilli)
+ - chive -> ok
+ - cilantro -> ok 
+ - cinnamon -> ok
+ - cumin -> ok
+ - feta -> Emis
+ - oil -> ok
+ - pepper -> ok 
+ - salami -> Emis
+ - salt -> ok
+ - salted -> Eii
+ - spices -> Eci
+ - spicing -> Eii
+ - spicy -> Eii
+ - vinegar -> ok
+
+### Spice (Leaf)
+ - bamboo -> Emis
+ - bitter -> Emis
+ - boli -> Emi
+   - hasForIngredient spice -> Ewr
+   - hasForIngredient spices -> Ewr
+ - caramel -> Emis
+ - caraway -> ok
+ - chai -> Emis
+   - hasForIngredient choc -> Ewr
+ - chile -> ok, Edi (chile, chili, chilies, chilli)
+ - chili -> Edi (chile, chili, chilies, chilli)
+ - chilies -> Edi (chile, chili, chilies, chilli)
+ - chilli -> Edi (chile, chili, chilies, chilli)
+ - chocolate -> Emis 
+ - cilantro -> ok
+ - cinnamon -> ok
+ - cumin -> ok
+ - pep -> Eii
+ - pepper -> ok
+ - piper -> ok
+ - rice -> Emis
+ - salami -> Emis
+ - salt -> Emis
+ - salted -> Eii
+ - salvia -> ok
+ - spicy -> Eii
+
+### Sweetener (Leaf)
+ - acacia -> ok
+ - acai -> ok
+ - acetic -> Eii
+ - aceto -> Emi
+ - acrylic -> Eii
+ - bacteria -> Eii
+ - bitter -> Emis
+ - candy -> ok
+ - caramel -> ok
+ - carb -> Emis, Edi (carb, carbo)
+ - carbo -> Edi (carb, carbo)
+ - carbon -> Eii
+ - caroline -> Eii
+ - cherry -> ok
+ - chocolate -> ok
+ - cholesterol -> Eii
+ - choline -> Eii
+ - cinnamon -> Emis
+ - cotton -> Eii
+ - fructose -> ok
+ - ghee -> Emis
+ - grape -> ok
+ - lactic -> Eii
+ - nitrate -> Eii, Edi (nitrate, nitrates)
+ - nitrates -> Edi (nitrate, nitrates)
+ - nitrogen -> Eii
+ - nut_butter -> Emis
+ - nut_extract -> Emis
+ - nut_oil -> Emis
+ - nutmeg -> Emis
+ - nutrient -> Eii
+ - protein -> Eii
+
+### Additive
+ - alcohol -> ok
+ - avocado -> Emis
+ - baking -> Eii
+ - garlic -> Emis
+ - salad -> Emis
+ - saliva -> Eii
+ - salmon -> Emis
+
+### Butter (Leaf)
+ - brown_sugar -> Emis
+ - butter_cheese -> ok
+ - butter_cream -> ok
+ - butter_milk -> ok
+ - cream_cheese -> Emis
+ - milk -> Emis
+ - milk_fat -> Emis
+ - oil -> Emis
+ - peanut_butter -> ok 
+ - peanut_oil -> Emis
+ - white_chocolate -> Emis
+ - white_fat -> Emis
+ - white_flour -> Emis
+ - white_sugar -> Emis
+
+### Cheese (Leaf)
+ - brie -> ok
+ - chard -> Emis
+ - cheddar -> ok
+ - cheek -> Eii
+ - chevre -> ok
+ - chili -> Emis, Edi (chili, chilli)
+ - chilli -> Edi (chili, chilli)
+ - chocolate -> Emis
+ - curd -> ok
+ - feta -> ok
+ - fruit -> Emis
+ - grape -> Emis
+ - kale -> Emis
+   - hasForIngredient kali -> Ewr
+ - ketchup -> Emis
+ - kosher -> Eii
+ - meat -> Emis
+ - milk -> Emis
+ - pizza -> Emis
+ - pork -> Emis
+   - hasForIngredient bacon -> ok
+ - wine -> Emis
+ - wurst -> Emis
+
+### Milk (Leaf)
+ - animal_protein -> Eii
+ - baby_food -> Eii
+ - baby_formula -> Eii
+ - cheese -> Emis
+ - dairy_cheese -> Emis
+ - dairy_cream -> Emis
+ - dairy_products -> Emis
+ - lactose -> Emis
+ - milk_butter -> Emis
+ - milk_cheese -> Emis
+ - milk_powder -> ok
+ - whole_cow -> ok
+ - yogurt -> Emis
+
+### Yogurt (Leaf)
+ - cheese -> Emis
+ - feta -> Emis
+ - fruit -> Emis
+ - fudge -> Emis
+   - hasForIngredient avocado -> ok
+ - ketchup -> Emis
+ - milk -> Emis
+ - nut_butter -> Emis 
+ - nut_cheese -> Emis
+ - nut_flour -> Emis
+ - nut_milk -> Emis
+ - nut_oil -> Emis
+ - nutella -> Emis
+ - raw_cheese -> Emis
+ - raw_milk -> Emis
+ - raw_yogurt -> ok
+
+### Dairy
+ - cream -> ok
+ - dairy_powder -> ok
+ - milk_product -> Eci 
+ - soy_yogurt -> ok
+
+### Honey (Leaf)
+ - apple -> Emis
+ - bacteria -> Eii
+ - bamboo -> Emis
+ - bitter -> Emis
+ - borage -> Emis
+ - cactus -> Emis
+   - hasForIngredient cabbage -> Ewr
+   - hasForIngredient kale -> Ewr
+   - hasForIngredient caffeine -> Ewr
+ - chai -> Emis
+ - chard -> Emis
+ - cherry -> Emis
+ - chia -> Emis
+ - chocolate -> Emis
+ - cider -> Emis
+ - cilantro -> Emis
+ - cinnamon -> Emis
+ - coca -> Emis
+ - cotton -> Eii
+ - ghee -> Emis
+ - ginger -> Emis
+ - grape -> Emis
+ - holly -> Emis
+ - melange -> Eii
+ - melatonin -> Emis
+ - milk -> Emis
+ - millet -> Emis
+ - pears -> Emis
+ - piper -> Emis
+ - pollen -> Emis
+ - rose -> Emis
+ - wax -> Eii
+ - wort -> Emis
+
+### Insect
+- bites -> Eii
+- chives -> Emis
+- figs -> Emis
+- fruit -> Emis, Edi (fruit, fruits)
+- fruits -> Edi (fruit, fruits)
+- honey -> Emis
+- insect_eggs -> ok
+- insect_food -> Eci
+- insect_fruit -> Eii
+- insect_honey -> Emis
+- insect_larvae -> ok
+
+### Beef (Leaf)
+ - beef_cow -> ok
+ - beef_meat -> Eci
+ - beef_product -> Eci
+ - beef_steak -> ok
+ - bison -> Emis
+ - cattle -> Eii
+ - cattle_products -> Eci 
+ - cattle_species -> Eii
+ - chicken -> Emis
+   - hasForIngredient poultry -> Ewr
+ - ground_beef -> ok
+ - ground_chicken -> Emis 
+ - ground_meat -> Emis
+ - ground_pork -> Emis 
+ - meat_product -> Eci
+ - pork -> Emis 
+ - pork_meat -> Emis 
+ - pork_steak -> Emis
+ - red_bull -> Emis
+ - red_cattle -> Emis
+ - red_chicken -> Emis 
+ - red_cow -> ok
+ - red_steak -> ok
+ - steak -> ok
+
+### Pork (Leaf)
+- beef_sausage -> Emis
+- beef_soup -> Emis
+- beef_steak -> Emis
+- beef_stew -> Emis
+- meat -> Eci
+- meat_pie -> Emis 
+- meat_product -> Eci
+- meat_sauce -> Emis 
+- pig_fat -> ok
+- pig_food -> Eci
+- pork_belly -> ok 
+- pork_cheese -> ok
+- pork_meat -> Eci
+- pork_pie -> Emis
+- pork_sausage -> ok
+
+### Poultry (Leaf)
+- chicken -> ok, Edi (chicken, chicken_meat)
+- chicken_meat -> Edi (chicken, chicken_meat)
+- chicken_salad -> Emis
+- chicken_soup -> Emis
+- chicken_stew -> Emis
+
+### Meat
+ - beef -> ok
+ - bone -> Eii
+ - brie -> Emis
+ - cabbage -> Emis 
+ - cheese -> Emis 
+ - chow -> Emis
+ - cork -> Eii
+ - cumin -> Emis 
+ - fish -> Emis
+ - fowl -> ok
+ - ketchup -> Emis 
+ - lard -> ok
+ - liver -> ok 
+ - poultry -> ok 
+ - rabbit -> ok 
+ - rice -> Emis
+ - salad -> Emis
+ - salami -> ok
+ - salmon -> Emis
+
+### Crustaceans (Leaf)
+- crab -> ok, Edi (crab, crab_meat)
+- crab_meat -> Edi (crab, crab_meat)
+- crab_shell -> Eii
+- crab_legs -> ok
+- fish_tail -> Emis
+- jelly_fish -> Emis
+- lobster -> ok
+- lobster_crust -> Eii
+- lobster_egg -> ok
+- lobster_tail -> ok
+- sea_slug -> Emis
+- sea_snail -> Emis
+- sea_sponge -> Emis
+- sea_turtle -> Emis
+- shell_crab -> ok
+- shell_fish -> Emis
+- shell_shrimp -> ok
+- shrimp -> ok
+
+### Fish (Leaf)
+- bait -> Eii
+- baja -> Emis
+- betta -> ok
+- bison -> Emis
+- caiman -> Emis
+- cisco -> ok
+- cod -> ok
+- coho -> ok
+- coral -> Eii
+- kite -> Eii
+- krill -> Emis
+- luna -> Eii
+- marlin -> ok
+- pike -> ok
+- prawn -> Emis
+- puffer -> ok
+- puke -> Eii
+- salmon -> ok
+- seaman -> Eii
+- seel -> Emi
+- seine -> Eii
+- seitan -> Emis
+- tuna -> ok
+
+### Molluscs (Leaf)
+- bacteria -> Eii
+- bison -> Emis
+- cabbage -> Emis
+- coda -> Emi
+- coral -> Eii
+- cusk -> Emis
+- eel -> Emis, Edi (eel, eels)
+- eels -> Edi (eel, eels)
+- figs -> Emis
+- fish -> Emis, Edi (fish, fishes)
+- fishes -> Edi (fish, fishes)
+- lice -> Eii
+- lily -> Eii
+- lizards -> Emis
+- prawn -> Emis
+- puffer -> Emis
+- shell -> Eii
+- shellfish -> ok
+- shrimp -> Emis
+- sparrow -> Emis
+- spore -> Eii
+
+### Seafood
+- crab_legs -> ok
+- fish_meat -> Eci
+- fish_oil -> ok
+- fish_species -> Eci
+- lobster_soup -> ok
+- raw_seafood -> ok
+- sea_bass -> ok
+- sea_shrimp -> ok
+- sea_trout -> ok
+- tuna_sushi -> ok
+
+### Animal
+- animal_foods -> Eci
+- animal_meat -> Eci
+- animal_milk -> Emis
+- animal_products -> Eci
+- raw_fish -> Emis
+- raw_meat -> Emis
+
+### African (Leaf)
+- baba -> ok
+- bacon -> Emis
+- bao -> Emis
+  - hasForIngredient bamboo -> Ewr
+  - hasForIngredient noodles -> Ewr
+- bava -> Emis
+- boli -> ok
+  - hasForIngredient spice -> Ewr
+  - hasForIngredient spices -> Ewr
+- bongo -> Eii
+- bread -> ok
+  - hasForIngredient water -> ok
+  - hasForIngredient salt -> ok
+  - hasForIngredient yeast -> ok
+- cabbage -> Emis
+- cava -> Emis
+  - hasForIngredient carrot -> Ewr
+- chicken -> Emis
+- cilantro -> Emis
+- coya -> Emi
+- cumin -> Emis
+- curry -> Emis
+- fava -> Emis
+- feta -> Emis
+- fiesta -> Eii
+- fudge -> Emis
+- kale -> Emis
+- kava -> Emis
+  - hasForIngredient kali -> Ewr
+- ketchup -> Emis
+- kogi -> Emis
+- kola -> Emis
+- komo -> Emi
+- kora -> Eii
+- pita -> Emis
+  - hasForIngredient pepsi -> Ewr
+- pizza -> Emis
+- pork -> Emis
+- poutine -> Emis
+- waffle -> Emis, Edi (waffle, waffles)
+- waffles -> Edi (waffle, waffles)
+- wahoo -> Emis
+- waka -> ok
+
+### American (Leaf)
+- american_pizza -> ok
+- american_sausage -> ok
+- american_style -> Eii
+- chicken_stew -> ok
+- chicken_thighs -> ok
+- chicken_wing -> ok, Edi (chicken_wing, chicken_wings)
+- chicken_wings -> Edi (chicken_wing, chicken_wings)
+- potato_salad -> ok
+- potato_soup -> ok
+- potato_stew -> ok
+
+### Caribbean (Leaf)
+- baco -> Eii
+- bacon -> Emis
+- baja -> Emis
+- bamboo -> Emis
+- bao -> Emis
+- bread -> ok
+- cabbage -> Emis
+- cava -> Emis
+- chai -> Emis
+- chicken -> Emis
+- chile -> Emis, Edi (chile, chili)
+- chili -> Edi (chile, chili)
+- chocolate -> Emis
+- chow -> Emis
+- chowder -> ok
+  - hasForIngredient chives -> ok
+  - hasForIngredient chive -> ok
+  - hasForIngredient chard -> ok
+- cilantro -> Emis
+- curry -> Emis
+- fava -> Emis
+- feta -> Emis
+- fiesta -> Eii
+- fries -> Emis
+- frito -> ok
+  - hasForIngredient avocado -> ok
+- gumbo -> ok
+- hula -> Eii
+- luna -> Eii
+- lunch -> Eii
+- nana -> Eii
+- pao -> ok
+- pita -> Emis
+- pizza -> Emis
+- pork -> Emis
+- poutine -> Emis
+- pudding -> ok
+
+### Chinese (Leaf)
+- bai -> Emi
+- bali -> Eii
+- bamboo -> Emis 
+- bao -> ok
+- boli -> Emi
+- buns -> Emis
+  - hasForIngredient broccoli -> Ewr
+  - hasForIngredient cabbage -> Ewr
+- chai -> ok
+- chao -> Eii
+- chicken -> Emis
+- chili -> Emis, Edi (chili, chilli)
+- chilli -> Edi (chili, chilli)
+- chiu -> Emi
+- chou -> Emi
+- chow -> ok
+- chowder -> Emis
+- chuan -> ok
+- chun -> ok
+- curry -> Emis
+- kali -> Emis
+- katsu -> Emis
+- ketchup -> Emis
+- khao -> Eii
+- noodles -> ok
+- rice -> ok
+- soup -> Emis
+  - hasForIngredient cabbage -> Ewr
+- sushi -> Emis
+  - hasForIngredient shrimp -> ok
+  - hasForIngredient tuna -> ok
+  - hasForIngredient fish -> ok
+  - hasForIngredient tofu -> Ewr
+- tofu -> Emis
+- waffles -> Emis
+- wai -> Emi
+- wok -> Eii
+
+### Indian (Leaf)
+- bali -> Eii
+- bani -> Emi
+- bhel -> ok
+- bhog -> Emi
+- boli -> Emi
+- chai -> ok
+- chakra -> Eii
+- chana -> ok
+- chaska -> Eii
+- chicken -> Emis
+- chili -> Emis, Edi (chili, chilli)
+- chilli -> Edi (chili, chilli)
+- choti -> Emi
+- curry -> Emis
+- ghee -> Emis
+- giri -> Emi
+- gula -> ok
+- jai -> Emi
+- jassi -> Emi
+- kali -> Emis
+- kashi -> Eii
+- kassi -> Emi
+- katha -> Emi
+- kesar -> Emis
+- khel -> Emi
+- koli -> Emi
+- koti -> Emi
+- pani -> ok
+- pita -> Emis
+- pizza -> Emis
+- puri -> ok
+- roti -> ok
+
+### Italian (Leaf)
+- bread_roll -> Emis
+- chicken_pie -> Emis
+- chicken_sandwich -> ok
+- chicken_soup -> ok
+- chicken_stew -> ok
+- meat_stew -> ok
+- pasta -> ok, Edi (pasta, pasta_dish, pasta_recipe)
+- pasta_dish -> Edi (pasta, pasta_dish, pasta_recipe)
+- pasta_recipe -> Edi (pasta, pasta_dish, pasta_recipe)
+- pasta_salad -> ok
+- pasta_sauce -> Emis
+- pizza -> ok, Edi (pizza, pizza_recipe)
+- pizza_pie -> Eii 
+- pizza_recipe -> Edi (pizza, pizza_recipe)
+- pizza_sauce -> Emis
+- spaghetti_salad -> Emis
+- spaghetti_sauce -> Emis
+- tomato_salad -> ok
+- tomato_sauce -> ok
+- tomato_soup -> ok
+- tomato_stew -> ok
+
+### Japanese (Leaf)
+- bacon -> Emis
+- baked -> Eii
+- bamboo -> Emis
+- boku -> Emi
+- bushi -> Eii
+- chichi -> Emi
+- chicken -> Emis
+- chili -> Emis, Edi (chili, chilli)
+- chilli -> Edi (chili, chilli) 
+- choc -> Eii 
+- choco -> Emis
+- chow -> Emis 
+- chowder -> Emis
+- fuku -> Emi 
+- jamon -> Emis 
+- jingu -> Emi 
+- kaki -> Emis
+- katsu -> ok 
+- ketchup -> Emis
+- kimi -> Emi 
+- kogi -> Emi 
+- kushi -> ok
+- natto -> ok
+- nogi -> Emi 
+- noodle -> ok 
+- pita -> Emis 
+- pizza -> Emis 
+- pogi -> Emi 
+- shimi -> Emi 
+- shio -> Emi 
+- shiro -> Emi 
+- shishi -> Emi 
+- shiso -> Emis
+- shogi -> Eii 
+- shoki -> Emi 
+- shrimp -> Emis 
+
+### Latin (Leaf)
+- bacon -> Emis 
+- baja -> ok
+- balsa -> Emi 
+- boca -> Eii 
+- bread -> ok 
+- buca -> Emi 
+- cabbage -> Emis
+- cactus -> Emis
+- cheese -> Emis 
+- chicken -> Emis 
+- chile -> ok, Edi (chile, chili)
+- chili -> Edi (chile, chili) 
+- choco -> ok, Edi (choco, chocolate)  
+- chocolate -> Edi (choco, chocolate)
+- cilantro -> Emis 
+- coco -> Emis
+  - hasForIngredient choco -> Ewr
+- curry -> Emis 
+- fiesta -> Eii 
+- fries -> Emis 
+- frito -> ok 
+- lomo -> ok 
+- lopa -> Emi 
+- luna -> Eii 
+- pacho -> Emi 
+- panera -> Emi 
+- panilla -> Emi 
+- panini -> Emis
+- pastel -> ok
+- pastilla -> Emis 
+- pico -> ok
+- pita -> Emis 
+- pizza -> Emis 
+- pollo -> ok
+- pork -> Emis 
+- poutine -> Emis 
+
+### Recipe
+- cake -> ok
+  - hasForIngredient chocolate -> ok
+  - hasForIngredient cinnamon -> ok
+  - hasForIngredient caramel -> ok
+- cooking_recipes -> Eci
+- cooking_sauce -> Emis
+- cooking_style -> Eii
+- dessert -> ok
+  - hasForIngredient candy -> ok
+  - hasForIngredient pumpkin -> ok
+- food -> Eci
+- food_item -> Eci
+- pizza_slice -> Eii
+- pizza_style -> Eii
+- rice_soup -> ok
+- rice_stew -> ok
+- rice_wine -> ok
+- vegetable_salad -> ok 
+- vegetable_sauce -> ok
+- vegetable_soup -> ok
+- vegetable_stew -> ok
+
+### Bread (Leaf)
+- biscuits -> Emis
+- bread_cake -> ok
+- bread_dough -> ok
+- bread_flour -> Emis
+- bread_items -> Eci
+- bread_rolls -> ok
+- buns -> ok
+- cake -> Emis
+- cheese -> Emis
+- flour -> Emis      
+- pasta -> Emis
+- pizza -> Emis 
+- wheat -> Emis 
+
+### Breakfast (Leaf)
+- bread -> Emis
+- cereal_milk -> ok 
+- cereal_powder -> ok
+- cereal_product -> Eci
+- cereal_rice -> ok
+- cereal_wheat -> ok 
+- chocolate -> Emis
+- cinnamon -> Emis
+- coffee -> Emis
+- kale -> Emis
+- kashi -> ok 
+- milk -> Emis 
+- millet -> Emis 
+- oats -> ok 
+- pasta -> Emis 
+- rice -> ok 
+- rice_milk -> Emis 
+- rice_wheat -> ok 
+- wheat -> ok 
+- yogurt -> Emis
+
+### Pasta (Leaf)
+- baked -> Eii
+- betta -> Emis
+- boli -> Emis
+- buca -> Emi
+- cabbage -> Emis
+- caldo -> Emi
+- cara -> Emi
+- carbo -> Eii
+- carne -> Eii
+- carrot -> Emis
+- cava -> Emis
+- cilantro -> Emis
+- feta -> Emis
+- fetta -> Emis
+- panini -> Emis
+- pita -> Emis
+- pizza -> Emis
+- pollo -> Emis
+- ragu -> Emis
+- salami -> Emis
+- salmon -> Emis
+- salumi -> Emis
+- spaghetti -> ok
+- tomato -> Emis
+- tomatoes -> Emis
+
+### Rice (Leaf)
+- corn -> Emis 
+- cumin -> Emis
+- paddy -> ok
+- ragi -> Emis 
+- ragu -> Emis 
+- rice_cereal -> ok 
+- rice_flour -> Emis
+- rice_grain -> ok
+- rice_meal -> Eci
+- rice_wheat -> Emis
+- wheat -> Emis
+
+### Cereal
+- corn_flour -> Emis 
+- corn_starch -> Emis  
+- corn_syrup -> Emis
+
+### Fruit (Leaf)
+- apple -> ok
+- bamboo -> Emis
+- banana -> ok
+- berry -> ok
+- bruit -> Emi
+- cabbage -> Emis
+- cactus -> Emis
+- carrot -> Emis
+- cherry -> ok
+- cilantro -> Emis
+- cinnamon -> Emis
+- coca -> Emis
+- cork -> Eii
+- cotton -> Eii
+- ginger -> Emis
+- grape -> ok
+- lily -> Eii
+- lime -> ok
+- mango -> ok
+- melon -> ok
+- orange -> ok
+- paddy -> Emis
+- panna -> Emis
+- pears -> ok
+- pineapple -> ok
+- pita -> Emis
+- prawn -> Emis
+- tomato -> ok
+
+### Mushroom (Leaf)
+- algae -> Emis
+- bacteria -> Eii
+- bamboo -> Emis
+- banana -> Emis
+- boli -> Eii
+- borage -> Emis
+- broccoli -> Emis
+- cabbage -> Emis
+- cactus -> Emis
+- cannabis -> Emis
+- carrot -> Emis
+- cherry -> Emis
+- cilantro -> Emis
+- cory -> Emi
+- edible_plant -> Emis, Edi (edible_plant, edible_plants)
+- edible_plants -> Edi (edible_plant, edible_plants)
+- edible_rice -> Emis
+- edible_seeds -> Emis
+- edible_species -> Emis
+- fruit -> Emis
+- garlic -> Emis
+- lice -> Eii
+- lily -> Eii
+- mustard -> Emis
+- rice -> Emis
+- strawberry -> Emis
+- tobacco -> Emis
+- tomato -> Emis
+- wheat -> Emis
+- yeast -> Emis
+
+### Oil (Leaf)
+- avocado -> Emis
+- coconut_butter -> Emis
+- coconut_oil -> ok
+- olive -> Emis
+- olive_oil -> ok
+- soy_milk -> Emis
+- soy_sauce -> Emis
+- soybean -> Emis
+
+### Seaweed (Leaf)
+- bacteria -> Eii 
+- bamboo -> Emis 
+- bikini -> Eii 
+- bile -> Emis 
+- bison -> Emis 
+- borage -> Emis 
+- cabbage -> Emis 
+- cactus -> Emis 
+- cilantro -> Emis 
+- coral -> Eii 
+- cork -> Eii
+- cotton -> Eii 
+- eel -> Emis 
+- fish -> Emis 
+- gass -> Emi 
+- gill -> Eii 
+- gilt -> Emi 
+- lava -> Eii 
+- lice -> Eii 
+- lily -> Eii 
+- liver -> Eii 
+- marula -> Emis 
+- pora -> Emi
+- prawn -> Emis 
+- puffer -> Emis 
+- puna -> Emi
+- rice -> Emis 
+
+### Seed (Leaf)
+- bacteria -> Eii
+- bamboo -> Emis
+- bears -> Emis
+- boles -> Emi
+- cabbage -> Emis
+- cactus -> Emis
+- cilantro -> Emis
+- cinnamon -> Emis
+- coral -> Emis
+- cotes -> Emi
+- cotton -> Eii
+- cows -> Emis
+- cress -> ok
+- cumin -> Emis
+- figs -> Emis
+- fruits -> Emis
+- grape -> Emis
+- greens -> Emis
+- gums -> Eii
+- pears -> Emis
+- pigs -> Emis
+- pips -> ok
+- pods -> ok
+- pollen -> Emis
+
+### Vegetable (Leaf)
+- banana -> Emis
+- beet -> ok
+- broccoli -> ok
+- cabbage -> ok
+- carrot -> ok
+- chard -> ok
+- cilantro -> ok
+- corn -> ok
+- cucumber -> ok
+- cumin -> Emis
+- fruit -> Emis
+- garlic -> ok
+- grape -> Emis
+- kale -> ok
+- leaf -> ok
+- lemon -> Emis
+- lettuce -> ok
+- mango -> Emis
+- mushroom -> Emis
+- pepper -> ok
+- potato -> ok, Edi (potato, vegetable_potato)
+- pumpkin -> ok
+- rice -> Emis, Edi (rice, vegetable_rice)
+- salad -> Emis
+- spinach -> ok
+- squash -> ok
+- strawberry -> Emis
+- tomato -> Emis
+- vegetable_potato -> Edi (potato, vegetable_potato)
+- vegetable_rice -> Edi (rice, vegetable_rice)
+- vegetable_root -> ok
+- wheat -> Emis
+
+### Vegetal
+- chai -> ok 
+- chia -> ok 
+- chicken -> Emis 
+- chili -> Emis 
+- ketchup -> Emis 
+- meat -> Emis 
+- pork -> Emis 
+- poultry -> Emis 
+- tofu -> ok 
+
+### Food
+- cane -> Emi
+- gourmet -> Eii
+- panda -> Eii
+
+### Alcoholic (Leaf)
+- beer -> ok 
+- bitter -> ok 
+- cider -> ok 
+- coffee -> Emis 
+- coke -> Emis
+- fizz -> Eii
+- lager -> ok 
+- liquor -> ok 
+- soda -> Emis 
+- vodka -> ok 
+- water -> Emis 
+- wine -> ok 
+
+### Energy (Leaf)
+- beer -> Emis
+- caffeine -> Emis
+- coffee -> ok
+- coke -> Emis
+- energy_bar -> Emis
+- energy_drinks -> Eci
+- juice -> Emis
+- pepsi -> Emis
+- soda -> Emis
+- tea -> Emis
+- water -> Emis
+
+### Coffee (Leaf)
+- beer ->  Emis
+- chai ->  Emis
+- chocolate -> Emis 
+- cinnamon -> Emis 
+- coca ->  Emis
+- coffee_drink -> Eci 
+- coffee_juice -> Eii 
+- coffee_milk -> ok 
+- coffee_powder -> ok 
+- coffee_tea -> ok
+- coke ->  Emis
+- cream -> Emis 
+- milk ->  Emis
+- tea -> Emis 
+
+### Tea (Leaf)
+- chai -> ok
+- coffee -> Emis
+- tea_beverage -> Eci
+- tea_cup -> Eii
+- tea_drink -> Eci
+- tea_powder -> ok
+- tea_water -> Eii
+- tequila -> Emis
+
+### Infusion
+- alcohol -> Emis
+- bitter -> Emis
+- cava -> ok
+- cider -> ok
+- fanta -> Emis
+- fizz -> Emis
+- juice -> ok
+- lager -> Emis
+- soda -> Emis
+- vodka -> Emis
+- water -> Emis
+- wine -> Emis
+
+### Juice (Leaf)
+- beer -> Emis 
+- bitter -> Emis 
+- cactus -> Emis 
+- candy -> Emis 
+- cane -> Eii
+- cassis -> Emis 
+- cava -> Emis 
+- cherry -> Emis 
+- cider -> Emis 
+- cilantro -> Emis 
+- cinnamon -> Emis 
+- coca -> Emis 
+- coke -> Emis 
+- ghee -> Emis 
+- grape -> ok 
+- grog -> Emis 
+- juicer -> Eii 
+- juicing -> Eii 
+- juicy -> Eii
+- ketchup -> Emis 
+- keto -> Eii 
+- kirin -> Eii 
+- kirsch -> Emis 
+- koji -> Emis 
+- kona -> Emis 
+- kratom -> Emis 
+- kucha -> Emis 
+- lager -> Emis 
+- lily -> Emis 
+- lime -> ok 
+- lotion -> Emis 
+- panna -> Emis 
+- pate -> Emis 
+- pep -> Eii 
+- pudding -> Emis 
+- water -> Emis
+
+### Milk (Leaf)
+- animal_protein -> Eii 
+- baby_food -> Eii 
+- baby_formula -> Eii 
+- cheese -> Emis 
+- dairy_cheese -> Emis 
+- dairy_cream -> Emis 
+- dairy_products -> Emis 
+- lactose -> Emis 
+- milk_butter -> Emis 
+- milk_cheese -> Emis 
+- milk_powder -> ok 
+- whole_cow -> Eii 
+- yogurt -> Emis 
+
+### Water (Leaf)
+- bottled_water -> ok, Edi (bottled_water, water_bottle) 
+- carbon_dioxide -> Eii 
+- ice_cold -> ok 
+- liquid_nitrogen -> Eii  
+- liquid_sugar -> Emis 
+- natural_spring -> ok
+- water_bottle -> Edi (bottled_water, water_bottle) 
+- water_ice -> ok 
+- water_source -> Eci 
+- water_supply -> Eci
+
+### Drink
+- alcoholic_liquor -> ok
+- alcoholic_soda -> ok 
+- champagne -> ok 
+- ice_milk -> ok 
+- ice_tea -> ok 
+- ice_water -> ok
+- whisky -> ok
+
+### Liquid
+- liquid_soap -> Eii
+- liquid_water -> ok
+
+### Edible
