@@ -8,13 +8,13 @@ import os
 
 PATH_RESULTS = PATH_RESULTS
 PATH_BASE_ONTOLOGY = PATH_ONTOLOGY / "base_ontology.owl"
-THRESHOLD = 0.001
 
 
-def main(rel_set='nutrition',
+def main(rel_set='nutrition_step_1',
          model_name='roberta-large',
          max_n_ent_tuples=100,
-         max_n_prompts=20):
+         max_n_prompts=20,
+         threshold=0.001):
     path_results = PATH_RESULTS / rel_set / f"{max_n_ent_tuples}tuples_top{max_n_prompts}prompts" / model_name
     path_populated_ontology = PATH_ONTOLOGY / f"{model_name}_populated.owl"
     processed_classes = set()
@@ -37,7 +37,7 @@ def main(rel_set='nutrition',
                     if isinstance(ent, float):
                         continue
                     if ent[0] not in processed_entities:
-                        if entity[1] > THRESHOLD:
+                        if entity[1] > threshold:
                             kg.add_instance(cls, ent[0])
                             processed_entities.add(ent[0])
         # Save the populated ontology

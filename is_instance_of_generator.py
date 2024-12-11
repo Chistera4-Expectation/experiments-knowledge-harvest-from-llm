@@ -37,5 +37,5 @@ if __name__ == "__main__":
         json_config_file += '}'
 
     # Save the JSON configuration file
-    with open(PATH_RELATION_INFO / "nutrition.json", "w") as f:
+    with open(PATH_RELATION_INFO / "nutrition_step_1.json", "w") as f:
         f.write(json_config_file)

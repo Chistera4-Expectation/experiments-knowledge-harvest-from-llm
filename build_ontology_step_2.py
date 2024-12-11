@@ -6,14 +6,13 @@ import json
 import os
 
 
-THRESHOLD = 0.00001
-
 
 def main(rel_set='nutrition_step_2',
          model_name='roberta-large',
          max_n_ent_tuples=10000,
          max_n_prompts=20,
-         use_init_prompts=False):
+         use_init_prompts=False,
+         threshold=0.00001):
     path_results = PATH_RESULTS / rel_set / f"{max_n_ent_tuples}tuples_top{max_n_prompts}prompts" / model_name
     if use_init_prompts:
         path_results = PATH_RESULTS / rel_set / f"{max_n_ent_tuples}tuples_initprompts" / model_name
@@ -28,7 +27,7 @@ def main(rel_set='nutrition_step_2',
     for result in results:
         # Add the ingredient to the list of ingredients for the recipe
         # Only if the confidence is above the threshold
-        if result[1] > THRESHOLD:
+        if result[1] > threshold:
             ent0, ent1 = result[0]
             if ent1 not in recipes:
                 recipes[ent1] = []
